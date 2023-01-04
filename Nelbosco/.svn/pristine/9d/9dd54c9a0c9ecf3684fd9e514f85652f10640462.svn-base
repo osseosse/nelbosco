@@ -1,0 +1,126 @@
+﻿<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head th:replace="fragments/head :: headFragment"></head>
+<body>
+<div id="wrap">
+<!-- ====================== * HEADER *========================== -->
+<header th:replace="fragments/mainHeader :: headerFragment"></header>
+<!-- ======================* //HEADER *========================== -->
+
+	<!-- ====================== * contant * ========================== -->
+	<div id="contant">
+		<!-- subBigBanner -->
+		<div class="container100">
+			<div class="row">
+			  <div class="col-md-12 bg_lab subTop">
+				<div class="coffeType">
+					<p class="f20_7w f_mw">nelBosco Lab</p>
+					<p class="f45_4w mt20">넬보스코 연구소</p>
+				</div>
+			  </div>
+			</div>
+		</div><!-- // container100 -->
+		<!-- //subBigBanner -->
+
+
+		<!--// Portfolio Cobbles Start //-->
+		<section class="section">
+			<div class="container">
+				<div class="wBox m_dim">
+					<p class="f20_3_fx">가장 건강하고 맛있는</p>
+					<p class="f20_7_fx"><b>커피&베이커리를 위한 <br>넬보스코 연구소</b></p>
+					<p class="f20_4 mt20"> 
+						믿고 먹을 수 있는 먹거리 개발을 위한 정식품의 45년 열정 그대로,
+					</p>
+					<p class="f20_4 mt5"> 
+						최고의 맛과 품질을 위한 넬보스코의 연구는 지금도 계속됩니다.
+					</p>
+				</div>
+
+				<div class="row mt160">
+				  <div class="col-lg-4 col-md-12 col-sm-12 pc_dim mb70" >
+						<p class="f36_3">가장 건강하고 맛있는</p>
+						<p class="f36_4"><b>커피&베이커리를 위한 <br>넬보스코 연구소</b></p>
+						<p class="f20_4 mt50"> 
+							믿고 먹을 수 있는 먹거리 개발을 위한
+							정식품의 45년 열정 그대로, 
+						</p>
+						<p class="f20_4 mt5"> 
+						최고의 맛과 품질을 위한 넬보스코의 연구는
+						지금도 계속됩니다. 
+						</p>
+				  </div>
+				  <div class="col-lg-8 col-md-12 col-sm-12" >
+						<img class="img100" th:src="@{/img/lab_01.jpg}" alt=""/>
+				  </div>
+				</div>
+				
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 mb70 center lab_round">
+						<p><img th:src="@{/img/lab_round.png" alt="different speciality signature"/></p>
+					</div>
+				</div>
+			</div>
+			<!--// .container100_15 //-->
+
+
+			<div class="container">
+				<div class="row" >
+					<div class="col-lg-6 col-md-6 col-sm-6 mt70">
+						<ul class="about_ul">
+							<li class="f32_7">Different</li>
+							<li class="f20_4 mt5">건강한 식음료를 위한<br>차별화된 접근</li>
+						</ul>
+						<p class="mt40"><img th:src="@{/img/lab_02.jpg}" alt="제품사진"/></p>
+						<p class="mt20 f20_4">
+							최고급 원두, 유기농 재료와 제철 과일, <br>
+							하나 하나 엄선된 원재료를 사용하며 <br>
+							매장에서 직접 로스팅한 신선한 원두를 <br>
+							사용하여 최고의 서비스를 제공하고자 합니다.
+						</p>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 mt300">
+						<ul class="about_ul">
+							<li class="f32_7">Speciality</li>
+							<li class="f20_4 mt5">45년의 전통 두유 제조 노하우가<br>만들어낸 전문성</li>
+						</ul>
+						<p class="mt40"><img th:src="@{/img/lab_03.jpg}" alt="제품사진"/></p>
+						<p class="mt20 f20_4">
+						45년 전통의 식품 제조 노하우가 담긴 전문화된 관리.<br>
+						엄격한 원료 선정<br>
+						체계적인 원두 관리 시스템<br>
+						철저한 위생 관리<br>
+						모두가 안심하고 즐길 수 있는 건강한 메뉴를 제공합니다.
+						</p>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 mt100m2">
+						<ul class="about_ul">
+							<li class="f32_7">Signature</li>
+							<li class="f20_4 mt5">넬 보스코 만이 선보일 수 있는<br>특별한 메뉴</li>
+						</ul>
+						<p class="mt40"><img th:src="@{/img/lab_04.jpg}" alt="제품사진"/></p>
+						<p class="mt20 f20_4">
+							시그니처 두유를 이용한 건강하고 맛있는 <br>
+							소이 음료와 디저트, 채식주의자를 위한 <br>
+							비건 음료 등 넬보스코에서만 경험할 수 있는 메뉴들을 제공합니다.
+						</p>
+					</div>
+				</div>
+				<!-- row -->
+			</div><!-- // container -->
+
+
+		</section>
+		<!--// Portfolio Cobbles End //-->
+		
+	</div>
+	<!-- ====================== * //contant * ========================== -->
+	
+	<!-- ====================== * FOOTER * ========================== -->
+	<footer class="container100" th:replace="fragments/mainFooter :: footerFragment"></footer>
+	<!-- ====================== * //FOOTER * ========================== -->
+	<div th:replace="fragments/footerScript :: footerScriptFragment"></div> 
+	
+</div><!-- // wrap -->
+</body>
+</html>

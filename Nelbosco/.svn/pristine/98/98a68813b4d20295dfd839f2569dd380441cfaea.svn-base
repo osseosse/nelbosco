@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head th:fragment="headFragment">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+	<meta name="generator" content="Jekyll v4.0.1">
+	<title>넬보스코</title>
+	<link rel="shortcut icon" href="#">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.2.js"></script>
+	<script type="text/javascript" th:src="@{/js/common.js}"></script><!-- GNB PC웹접근성 메뉴 -->
+	<script th:src="@{/js/jquery.collapse.js}"></script><!-- 모바일 메뉴 -->
+	<link th:href="@{/css/reset.css}" rel="stylesheet">
+	<link th:href="@{/css/bootstrap.css}" rel="stylesheet">
+	<link th:href="@{/css/style.css}" rel="stylesheet">
+	<!-- 제스터 : REVOLUTION LAYERS STYLES (메인슬라이드) -->
+	<link rel="stylesheet" type="text/css" th:href="@{/css/layers.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/settings.css}">
+</head>
+</html>

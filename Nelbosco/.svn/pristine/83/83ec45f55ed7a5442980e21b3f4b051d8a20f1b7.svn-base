@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<header id="b_header" th:fragment="headerFragment">
+<div class="window" id="fx">
+  <div class="header"  >
+	<div class="burger-container">
+	  <div id="burger">
+		<div class="bar topBar"></div>
+		<div class="bar btmBar"></div>
+	  </div>
+	</div>
+	<div class="icon icon-apple"><div class="logo"><a href="/restaurant/b_main"><img th:src="@{/img/logo2.png}" alt="로고"></a></div></div>
+	<!-- Vetical -->
+	<div id="css3-animated-example">
+		<h3 class="cae "><p>About</p></h3>
+		<div>
+			<div class="v_content">
+				<ul>
+					<li><a href="/restaurant/about/about">브런치 레스토랑 소개</a></li>
+					<li><a href="/restaurant/about/chef">쉐프 소개</a></li>
+					<li><a href="/restaurant/about/bi">브랜드 아이덴티티</a></li>
+					<li><a href="/restaurant/about/tour">남촌(南村) 둘러보기</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<h3 class="cae"><p>Menu</p></h3>
+		<div>
+			<div class="v_content">
+				 <ul>
+					<li><a href="/restaurant/menu/brunch">Brunch</a></li>
+					<li><a href="/restaurant/menu/dinner">Dinner</a></li>
+				</ul> 
+			</div>
+		</div>
+		<h3 class="cae"><p>Music</p></h3>
+		<div>
+			<div class="v_content">
+				 <ul>
+					<li><a href="/restaurant/music/music">음악 이야기</a></li>
+					<li><a href="/restaurant/music/artist">아티스트 소개</a></li>
+				</ul> 
+			</div>
+		</div>
+        <h3 class="cae"><p>Contact</p></h3>
+		<div>
+			<div class="v_content">
+				 <ul>
+					<li><a href="/restaurant/bcontact/notice">공지사항</a></li>
+					<li><a href="/restaurant/bcontact/contact">고객상담</a></li>
+					<li><a href="/restaurant/bcontact/event">이벤트</a></li>
+					<li><a href="/restaurant/bcontact/map">오시는길</a></li>
+					<li><a href="/restaurant/bcontact/faq">자주묻는질문</a></li>
+					<li><a href="#">예약문의</a></li>
+				</ul> 
+			</div>
+		</div>
+	</div>
+
+	<script>
+	$("#css3-animated-example").collapse({
+	  accordion: true,
+	  open: function() {
+		this.addClass("open");
+		this.css({ height: this.children().outerHeight() });
+	  },
+	  close: function() {
+		this.css({ height: "0px" });
+		this.removeClass("open");
+	  }
+	});
+	</script>
+	<!-- // Vetical -->
+	
+  </div>
+</div>
+<!-- //모바일 메뉴 -->
+
+<div id="gnb">
+	<div class="gnbBG b_gnbBG"></div>
+	<div class="logo"><a href="/restaurant/b_main"><img th:src="@{/img/logo2.png}" alt="로고"></a></div>
+	<!-- <p class="menu_BR"><a href="./index_b.html"><img th:src="@{/img/menu_BR.png" /></a></p> -->
+	<ul>
+		<li class="first"><a href="/restaurant/about/about" class="dep01">About</a>
+			<ul>
+				<li><a href="/restaurant/about/about">레스토랑 소개</a></li>
+				<li><a href="/restaurant/about/bi">브랜드 아이덴티티</a></li>
+				<li><a href="/restaurant/about/chef">쉐프 소개</a></li>
+				<li><a href="/restaurant/about/tour">남촌(南村) 둘러보기</a></li>
+			</ul>
+		</li>
+		<li><a href="#" class="dep01">Menu</a>
+			<ul>
+				<li><a href="/restaurant/menu/brunch">Brunch</a></li>
+				<li><a href="/restaurant/menu/dinner">Dinner</a></li>
+			</ul>
+		</li>
+		<li><a href="#" class="dep01">Music</a>
+			<ul>
+				<li><a href="/restaurant/music/music">음악 이야기</a></li>
+				<li><a href="/restaurant/music/artist">아티스트 소개</a></li>
+			</ul>
+		</li>
+		<li><a href="#" class="dep01">Contact</a>
+			<ul>
+				<li><a href="/restaurant/bcontact/notice">공지사항</a></li>
+				<li><a href="/restaurant/bcontact/contact">고객상담</a></li>
+				<li><a href="/restaurant/bcontact/event">이벤트</a></li>
+				<li><a href="/restaurant/bcontact/map">오시는길</a></li>
+				<li><a href="/restaurant/bcontact/faq">자주묻는질문</a></li>
+				<li><a href="#">예약문의</a></li>
+			</ul>
+		</li>
+	</ul>
+	
+</div>
+  
+
+
+
+<div class="q_menu"><a href="/cafe/main"><img th:src="@{/img/q_menu_c.png}" alt="남촌빵집바로가기"/></a></div>
+<script>
+// gnb
+function chk(){
+		if(cc == 1){
+		$("#gnb ul li ul").slideDown(200);
+		$(".gnbBG").slideDown(200);
+		//$("#gnb .gnb_bg").slideDown(100);
+	}else{
+		$("#gnb ul li ul").slideUp(250);
+		$(".gnbBG").slideUp(250);
+		//$("#gnb .gnb_bg").slideUp(250);
+	}
+}
+
+
+$(function(){
+	$('#gnb>ul>li').mouseover(function(){
+		setTimeout(chk, 100);
+		cc = 1;
+		$(this).addClass('active');
+	});
+	$('#gnb').mouseout(function(){
+		setTimeout(chk, 400);
+		cc = 0;
+		$('#gnb ul li').removeClass('active');
+	});
+	$('#gnb ul li a').focus(function(){
+		setTimeout(chk, 100);
+		cc = 1;
+		$(this).parent().addClass('active');
+	});
+	$('#gnb ul li a').blur(function(){
+		setTimeout(chk, 100);
+		cc = 0;
+		$('#gnb ul li').removeClass('active');
+	});
+});
+
+
+// 모바일 gnb
+(function(){
+    var burger = document.querySelector('.burger-container'),
+        header = document.querySelector('.header');
+    
+    burger.onclick = function() {
+        header.classList.toggle('menu-opened');
+    }
+}());
+</script>
+</header>
+</html>

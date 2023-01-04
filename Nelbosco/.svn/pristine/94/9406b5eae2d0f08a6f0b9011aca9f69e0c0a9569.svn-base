@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<title>넬보스코 이탈리안 레스토랑 아티스트 소개</title>
+    <head th:replace="fragments/head :: headFragment"></head>
+</head>
+ <body>
+<div id="wrap">
+<!-- ====================== * HEADER *========================== -->
+<header th:replace="fragments/b_mainHeader :: bHeaderFragment"></header>
+<!-- ======================* //HEADER *========================== -->
+<!-- ======================
+	 * contant *
+========================== -->
+<div id="contant2">
+	<!-- subBigBanner -->
+	<div class="container100">
+		<div class="row">
+		  <div class="col-md-12 bg_b_artist subTop">
+			<div class="coffeType">
+				<p class="f45_4w mt20 f_mo">Nel Bosco Artist</p>
+			</div>
+		  </div>
+		</div>
+	</div><!-- // container100 -->
+	<!-- //subBigBanner -->
+
+
+	<!--// Portfolio Cobbles Start //-->
+	<section class="section matychale-gallery-cobbles">
+	    <div>
+               <div class="container">
+                   <div class="row">
+                       <div class="menu_cate2">
+                           <a href="/music/music"><p>음악 이야기</p></a>
+                           <a href="/music/artist" class="current"><p>아티스트 소개</p></a>
+                           <a href="/music/artist_contact"><p>출연 문의</p></a>
+                       </div>
+                   </div>
+               </div>
+		</div>
+		
+		<div class="container">
+			<div class="location">
+				<span><a href="">HOME</a></span><img th:src="@{/img/location_arrow.gif}">
+				<span><a href="">Music</a></span><img th:src="@{/img/location_arrow.gif}">
+				<span>아티스트 소개</span>
+			</div>
+		</div>
+		<!--// .container100_15 //-->
+         
+		</div><!-- // container -->
+           <div class="container1400 mt200">
+			<div class="row" >
+			    <div class="col-lg-6 col-md-12 col-sm-12">
+                       <p class="mt30m img100"><img th:src="@{/img/brunch/b_artist01.jpg}" alt="함께하는 공간" /></p>
+				</div>		
+				<div class="col-lg-6 col-md-12 col-sm-12 introBox pb200 mt50m">
+                       <p class="f40_7">
+					넬보스코 이탈리안 레스토랑에서<br>
+                       아름다운 선율을 선사하는<br>
+                       재즈 피아니스트 OOO
+					</p>
+					<p class="f30_4 mt60">
+						매주 수요일 저녁 7시부터 OOO 피아니스트가<br class="none">
+                           선사하는  아름다운 이야기<br class="none">
+                           넬보스코에서 함께 하세요. 
+					</p>
+					<p class="f28_6 mt150 f_mo red">Pianist</p>
+					<p class="f36_4"><b>홍길동</b> 피아니스트 <span class="f28_4">Lee Chung-hee</span></p>
+					<ul class="chef">
+						<li class="f20_4">OO 대학교 음악대학원 실용음악학 재즈피아노전공</li>
+						<li class="f20_4">밴드 OOO 건반</li>
+						<li class="f20_4">연극 “가나다라마바사” 건반 세션</li>
+					</ul>
+				</div>
+				
+			</div>
+			<!-- row -->
+			
+		</div><!-- // container -->
+
+	</section>
+	<!--// Portfolio Cobbles End //-->
+	
+</div>
+<!-- ======================
+	 * //contant *
+========================== -->
+<!-- ====================== * FOOTER *========================== -->
+<footer class="container100 bg_black"th:replace="fragments/b_mainFooter :: bFooterFragment"></footer>
+<!-- ======================* //FOOTER *========================== -->
+<div th:replace="fragments/footerScript :: footerScriptFragment"></div>
+</div><!-- // wrap -->
+</body>
+</html>

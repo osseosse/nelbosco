@@ -1,0 +1,117 @@
+﻿<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+ 	<title>넬보스코 오시는길</title>
+    <head th:replace="fragments/head :: headFragment"></head>
+</head>
+<body>
+<div id="wrap">
+<header th:replace="fragments/mainHeader :: headerFragment"></header>
+<div id="contant">
+	<!-- subBigBanner -->
+	<div class="container100">
+		<div class="row">
+		  <div class="col-md-12 bg_map subTop">
+			<div class="coffeType">
+				<p class="f45_4w">넬보스코 찾아 오시는길</p>
+			</div>
+		  </div>
+		</div>
+	</div><!-- // container100 -->
+	<!-- //subBigBanner -->
+	<!--// Portfolio Cobbles Start //-->
+	<section class="section matychale-gallery-cobbles">
+		<div>
+			<div class="container">
+				<div class="row">
+					<div class="menu_cate">
+						<a href="/contact/map" class="current"><p>오시는길</p></a>
+						<a href="/contact/contact"><p>고객상담</p></a>
+						<a href="/contact/faq"><p>자주묻는질문</p></a>
+						<a href="/contact/booking"><p>예약문의</p></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="location">
+				<span><a href="">HOME</a></span><img th:src="@{/img/location_arrow.gif}">
+				<span><a href="">Community</a></span><img th:src="@{/img/location_arrow.gif}">
+				<span>오시는길</span>
+			</div>
+			<div class="row">
+				  <div class="col-md-12 subTop mt100">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d664.9048648150015!2d126.97912862718361!3d37.55887132315206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2f5ca147db7%3A0x2a2994f9560bbdb2!2z7Jqw7KCV67mM65Sp!5e0!3m2!1sko!2skr!4v1612484807356!5m2!1sko!2skr" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+				  </div>
+				</div>
+				<div class="row mapBox">
+					<div class="col-lg-6 col-sm-6 col-md-6">
+						<ul class="mapUL">
+							<li><p class="f32_7">Address</p></li><br>
+							<li class="mt10"><p class="f20_4">서울 중구퇴계로8길 16 (우)04634</p></li>
+
+						</ul>
+					</div>
+					<div class="col-lg-6 col-sm-6 col-md-6">
+						<ul class="mapUL3">
+							<li><p class="f32_7">Opening Hours</p></li>
+							<li><p class="f20_4 mt20">(연중무휴)</p></li>
+							<li><p class="f20_4">평일: 7:00AM ~ 9:00PM </p></li>
+							<li><p class="f20_4 ">주말&middot;공휴일: 9:00AM ~ 7:00PM</p></li>
+							<!--
+							<li><p class="f20_4 mt10">1층 : 오전 7시 ~ 저녁 9시 (연중무휴)</p></li>
+							<li><p class="f20_4">2층 : 오전 11시 ~ 저녁 10시 (Break time : 오후 3시 ~ 5시) (연중무휴)</p></li>
+							-->
+						</ul>
+					</div>
+				</div>
+				<div class="row mapBox2">
+					<div class="col-lg-6 col-sm-6 col-md-6">
+						<ul class="mapUL3">
+							<li><p class="f32_7">Connect us</p></li>
+							<li>
+								<p class="f20_4 mt20">1층 대표 전화번호 : 02-3484-9581</p>
+								<p class="f20_4">2층 대표 전화번호 : 02-3484-9580</p>
+								<p class="f20_4">e-mail : cih337@vegemil.co.kr</p>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-6 col-sm-6 col-md-6"></div>
+				</div>
+				<div class="row mapBox2">
+					<div class="col-lg-12 col-sm-12 col-md-12">
+						<ul class="mapUL2">
+							<li><img th:src="@{/img/ico_map01.png}" /></li>
+							<li class="f28_6">자가용을 이용할 경우</li>
+							<li class="f20_4">지도 참조. 지하 주차장 이용(1시간 무료), 발렛 주차(1,000원)</li>
+						</ul>
+						<ul class="mapUL2">
+							<li><img th:src="@{/img/ico_map02.png}" /></li>
+							<li class="f28_6">지하철을 이용할 경우</li>
+							<li class="f20_4">4호선 회현역1번출구로 나와 오른쪽 골목으로 90m 직진 우정빌딩 1,2층</li>
+						</ul>
+						<ul class="mapUL2">
+							<li><img th:src="@{/img/ico_map03.png}" /></li>
+							<li class="f28_6">버스를 이용할 경우</li>
+							<li class="f20_4">남대문 시장방면 버스 승차 후 남대문시장, 회현역 하차. 도보로 180m 직진 후 우회전 </li>
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+			<!--// .container100_15 //-->
+		</section>
+		<!--// Portfolio Cobbles End //-->
+</div>
+<!-- ======================
+	 * //contant *
+========================== -->
+
+<!-- ====================== * FOOTER * ========================== -->
+<footer class="container100" th:replace="fragments/mainFooter :: footerFragment"></footer>
+<!-- ====================== * //FOOTER * ========================== -->
+<div th:replace="fragments/footerScript :: footerScriptFragment"></div> 
+</div><!-- // wrap -->
+</body>
+</html>

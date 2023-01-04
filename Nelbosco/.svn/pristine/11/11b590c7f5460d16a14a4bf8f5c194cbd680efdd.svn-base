@@ -1,0 +1,28 @@
+package com.nelbosco.mapper;
+
+import java.util.List;
+
+import org.apache.ibatis.annotations.Mapper;
+
+import com.nelbosco.domain.NewsDTO;
+
+@Mapper
+public interface NewsMapper {
+
+	public int insertNews(NewsDTO params);
+
+	public NewsDTO selectNewsDetail(Long idx);
+
+	public int updateNews(NewsDTO params);
+
+	public int deleteNews(Long idx);
+
+	public List<NewsDTO> selectNewsList(NewsDTO params);
+
+	public int selectNewsTotalCount(NewsDTO params);
+
+	
+	public List<NewsDTO> selectBNewsList(NewsDTO params);
+	
+	public int selectBNewsTotalCount(NewsDTO params);
+}

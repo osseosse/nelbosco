@@ -1,0 +1,168 @@
+﻿<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+ <head>
+    <head th:replace="fragments/head :: headFragment"></head>
+ </head>
+  <body>
+	<div id="wrap">
+	<!-- ====================== * HEADER *========================== -->
+	<header th:replace="fragments/mainHeader :: headerFragment"></header>
+	<!-- ======================* //HEADER *========================== -->
+
+	<!-- ======================
+		 * contant *
+	========================== -->
+	<div id="contant">
+		<!-- subBigBanner -->
+		<div class="container100">
+			<div class="row">
+			  <div class="col-md-12 bg_menu2 subTop">
+				<div class="coffeType">
+					<p class="f45_4w mt20 ">에스프레소 음료</p>
+				</div>
+			  </div>
+			</div>
+		</div><!-- // container100 -->
+		<!-- //subBigBanner -->
+
+
+		<!--// Portfolio Cobbles Start //-->
+		<section class="section matychale-gallery-cobbles">
+		    <div>
+                <div class="container">
+                    <!-- AJAX로 각메뉴 불러오기 -->
+                    <div class="row">
+                        <!--<div class="gallery-filter-btn-wrapper">-->
+                            <div class="menu_cate">
+                                <a href="/menu/espresso" ><p>에스프레소음료</p></a>
+                                <a href="/menu/tea" class="current"><p>Tea</p></a>
+                                <a href="/menu/soymilk"><p>Special Soy Milk</p></a>
+                                <a href="/menu/ade"><p>에이드</p></a>
+                                <a href="/menu/smoothie"><p>스무디</p></a>
+                                <a href="/menu/bread"><p>Bread</p></a>
+                                <a href="/menu/cake"><p>Cake &amp; Dessert</p></a>
+                                <a href="/menu/gift"><p>Gift</p></a>
+                            </div>
+                        <!--</div>-->
+                    </div>
+                    <!-- // AJAX로 각메뉴 불러오기  -->
+                </div>
+			</div>
+			<!-- 이벤트 배너 코드 시작 -->
+			<div class="container100">
+                <div class="row">
+                    <div class="col-md-12 eventBimg">
+                        <a href="#" class="pcBanner">
+                            <img src="img/eventBimg.jpg" alt="이벤트배너">
+                        </a>
+                        <a href="#" class="moBanner">
+                            <img src="#" alt="모바일이벤트배너">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- //이벤트 배너 코드 끝 -->
+
+			<div class="container1640">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12  mt90"  >
+						<div class="products">
+								
+								<div class="portfolio-gallery row clear">
+									<div class="portfolio-cobbles-item glry-item col-md-3 col-sm-6 col-6">
+										<div class="thumbnail2">
+											<div class="bg01">
+												<img src="./img/product/co02.png" onmouseover="javascript:this.src='./img/product/co01_on.png'" onmouseout="javascript:this.src='./img/product/co01.png'" alt="#" >
+											</div>
+										</div>
+										<div class="portfolio-buttons mb70m">
+											<p class="f26_4 pdTitle">아메리카노</p>
+											<p class="mt10 f16_3g">에스프레소 샷에 뜨거운 물을 첨가한 커피로 부드럽고 밸런스가 좋은 커피음료</p>
+											<div class="alleg">알레르기 유발요인: 없음</div>
+										</div>
+									</div>
+								
+									<div class="portfolio-cobbles-item glry-item col-md-3 col-sm-6 col-6">
+										<div class="thumbnail2">
+											<div class="bg01">
+												<img src="./img/product/co03.png" onmouseover="javascript:this.src='./img/product/co01_on.png'" onmouseout="javascript:this.src='./img/product/co03.png'" alt="#" >
+											</div>
+										</div>
+										<div class="portfolio-buttons mb70m">
+											<p class="f26_4 pdTitle">아메리카노</p>
+											<p class="mt10 f16_3g">에스프레소 샷에 뜨거운 물을 첨가한 커피로 부드럽고 밸런스가 좋은 커피음료</p>
+											<div class="alleg">알레르기 유발요인: 없음</div>
+										</div>
+									</div>
+
+									<div class="portfolio-cobbles-item glry-item col-md-3 col-sm-6 col-6 c4">
+										<div class="thumbnail2">
+											<div class="bg01">
+												<img src="./img/product/co04.png" onmouseover="javascript:this.src='./img/product/co01_on.png'" onmouseout="javascript:this.src='./img/product/co04.png'" alt="#" >
+											</div>
+										</div>
+										<div class="portfolio-buttons mb70m">
+											<p class="f26_4 pdTitle">아메리카노</p>
+											<p class="mt10 f16_3g">에스프레소 샷에 뜨거운 물을 첨가한 커피로 부드럽고 밸런스가 좋은 커피음료</p>
+											<div class="alleg">알레르기 유발요인: 없음</div>
+										</div>
+									</div>
+
+								
+									
+								</div><!--// .row //-->
+
+								
+
+								<!-- // PC DISCOVER MENU -->
+							
+						</div><!-- products -->
+					</div>
+					 
+				</div>
+				<!-- row -->
+			</div><!-- // container -->
+
+
+		</section>
+		<!--// Portfolio Cobbles End //-->
+		
+		
+
+		
+		
+
+		
+		
+	</div>
+	<!-- ======================
+		 * //contant *
+	========================== -->
+
+	<!-- ======================
+		 * FOOTER *
+	========================== -->
+	<footer class="container100">
+		
+	</footer>
+	<script>
+		/* 로드방식 local 크롬에서 노출되지 않음. */
+	  $( document ).ready( function() {
+		$( 'footer' ).load( './mainFooter.html' );
+	  } );
+	</script>
+	<!-- ======================
+		 * //FOOTER *
+	========================== -->
+	<!-- 모바일 메뉴 -->
+	<script src="./common/js/jquery.collapse.js"></script>
+	<script src="./common/js/script.js"></script> 
+	<!-- 엔바토 : matychale-masonry & grid gallery -->
+	<script src="./common/js/main.js"></script>
+	<script src="./common/js/plugins.js"></script>
+	<!-- prrple 모바일용 슬라이드 -->
+	<script src="./common/js/prrple.slider.js"></script>
+	<script src="./common/js/jquery.touchSwipe.1.6.min.js"></script>
+	</div><!-- // wrap -->
+	</body>
+</html>

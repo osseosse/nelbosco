@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+ 	<title>에러페이지</title>
+    <head th:replace="fragments/head :: headFragment"></head>
+    <style>
+		.layer {position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%); width:95%}
+		@media (max-width: 3000px) {
+		.bg_404 {background: url('./img/bg_404.jpg')  no-repeat; width:100%; height:100%;-webkit-background-size: cover;background-size: cover;  text-align:center; background-position:center;}
+		.main_404 {height:1000px }
+		body {margin:0; padding:0}
+		div {margin:0; padding:0}
+		
+		.f90_6w {font-size:90px; font-weight:600; color:#fff}
+		.f32_5w {font-size:32px; font-weight:500; color:#fff}
+		.f22_4w {font-size:22px; font-weight:400; color:#fff}
+		ul.ul404 {position:relative}
+		ul.ul404 li {border:2px solid #fff; padding:15px 20px; display:inline-block;  color:#fff; font-size:20px; width:170px; margin:0 10px; margin-top:50px;}
+		ul.ul404 a {color:#fff}
+		}
+		@media (max-width: 1200px) {
+			.bg_404 {background: url('./img/bg_404.jpg')  no-repeat; width:100%; height:100%;-webkit-background-size: cover;background-size: cover;  text-align:center; background-position:center;}
+			.main_404 {height:1000px }
+			body {margin:0; padding:0}
+			div {margin:0; padding:0}
+			.f90_6w {font-size:30px; font-weight:600; color:#fff}
+			.f32_5w {font-size:20px; font-weight:500; color:#fff}
+			.f22_4w {font-size:15px; font-weight:400; color:#fff}
+			ul.ul404 {position:relative; width:100%; }
+			ul.ul404 li {border:2px solid #fff; padding:10px 10px; display:inline-block;  color:#fff; font-size:15px; width:120px; margin:0 5px; margin-top:30px;}
+			ul.ul404 a {color:#fff}
+		}
+	</style>
+</head>
+<body>
+	<div class="main_404 bg_404">
+		<div class="layer">
+			<p class="f90_6w">404 Page</p>
+			<p class="f32_5w mt100">죄송합니다. 찾을 수 없는 페이지입니다. </p>
+			<p class="f22_4w mt50">존재하지 않는 주소를 입력하셨거나,<br>
+			요청하신 페이지의 주소가 변경, 삭제되어 찾을 수 없습니다.<br>
+			궁금한 점이 있으시면 언제든 고객센터를 통해 문의해 주시기 바랍니다.
+			감사합니다.</p> 
+			<ul class="ul404">
+				<a href="/main"><li>메인으로</li></a>
+				<a href="javascript:window.history.back();"><li>이전 페이지</li></a>
+			</ul>
+			</div>
+		</div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+package com.nelbosco.controller;
+
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.nelbosco.constant.Method;
+import com.nelbosco.domain.GoodsDTO;
+import com.nelbosco.service.GoodsService;
+import com.nelbosco.util.UiUtils;
+
+@Controller
+public class GoodsController extends UiUtils {
+
+	@Autowired
+	private GoodsService goodsService;
+
+	@GetMapping(value = "/menu/{mGroup}")
+	public String openGoodsList(@ModelAttribute("params") GoodsDTO params, @PathVariable(value = "mGroup", required = false) String mGroup, Model model) {
+		params.setMGroup(mGroup);
+		List<GoodsDTO> goodsList = goodsService.getGoodsList(params);
+		model.addAttribute("goodsList", goodsList);
+
+		return "menu/list";
+	}
+
+	@GetMapping(value = "/menu/new")
+	public String openGoodsDetail(@ModelAttribute("params") GoodsDTO params, @RequestParam(value = "goodsCode", required = false) Long goodsCode, Model model) {
+		if (goodsCode == null) {
+			return showMessageWithRedirect("올바르지 않은 접근입니다.", "/goods/list.do", Method.GET, null, model);
+		}
+
+		GoodsDTO board = goodsService.getGoodsDetail(goodsCode);
+		if (board == null || "Y".equals(board.getDeleteYn())) {
+			return showMessageWithRedirect("풀절된 상품입니다.", "/goods/list.do", Method.GET, null, model);
+		}
+		model.addAttribute("board", board);
+
+		return "menu/view";
+	}
+
+
+}

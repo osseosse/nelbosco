@@ -1,0 +1,41 @@
+﻿<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+	
+  <body>
+	<div id="wrap">
+
+
+	<!-- ======================
+		 * contant *
+	========================== -->
+		<img th:src="@{/img/brunch/popup_20210824.jpg}">
+		<div class="btnBox">
+				<a href="javascript:PopupCookieSave(); " style="text-decoration:none"><span style="font-size:12px;">오늘 하루동안 열지 않음</span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+				<a href="javascript:PopupSelfClose(); " style="text-decoration:none"><span style="font-size:12px;">창닫기</span></a>&nbsp;&nbsp;
+			</div> 
+	
+		</div>
+	<!-- ======================
+		 * //contant *
+	========================== -->
+		<script type="text/javascript">
+			function PopupCookieSave(){
+				CookieSave("b_popup", "1" , 1);
+				window.close();
+			}
+			// 쿠키 저장(X) 닫기
+			function PopupSelfClose(){
+				window.close();
+			}
+			// 쿠키 저장
+			function CookieSave(name, value, expiredays){ 
+				var todayDate = new Date(); 
+				todayDate.setDate( todayDate.getDate() + expiredays ); 
+				document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";" ;
+			}
+		</script>
+
+	</div><!-- // wrap -->
+	</body>
+</html>

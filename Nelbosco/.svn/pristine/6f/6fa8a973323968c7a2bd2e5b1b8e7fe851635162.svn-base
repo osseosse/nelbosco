@@ -1,0 +1,206 @@
+﻿<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+	<meta name="author" content="osse">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<meta name="description" content="넬보스코 이탈리안 레스토랑 사이트에 오신것을 환영합니다."/> 
+	<meta name="Keywords" content="넬보스코, 이탈리안 레스토랑, 남촌, 다이닝, 디너, 콘서트,  와인, 정식품, 베지밀, 음악 " />
+	<meta property="og:title" content="넬보스코 이탈리안 레스토랑"> 
+	<meta property="og:url" content="https://nelbosco.co.kr/b_index"> 
+	<meta property="og:image" content="https://nelbosco.co.kr/img/brunch/ogImg.jpg" /> 
+	<meta property="og:description" content="넬보스코 이탈리안 레스토랑은 경쾌하게 재해석한 이탈리안 캐주얼 브런치 & 다이닝입니다."/> 
+    <title>넬보스코 이탈리안 레스토랑 오시는길</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script type="text/javascript" src="./common/js/common.js"></script><!-- GNB PC웹접근성 메뉴 -->
+	<script src="./common/js/jquery.collapse.js"></script><!-- FAQ vertical -->
+	<link href="./common/css/reset.css" rel="stylesheet">
+	<link href="./common/css/bootstrap.css" rel="stylesheet">
+    <link href="./common/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+	<div id="wrap">
+	<!-- ======================
+		 * HEADER *
+	========================== -->
+    <header>
+	
+	</header>
+	<script>
+		/* 로드방식 local 크롬에서 노출되지 않음. */
+	  $( document ).ready( function() {
+		$( 'header' ).load( './b_mainHeader.html' );
+	  } );
+	</script>
+	<!-- ======================
+		 * //HEADER *
+	========================== -->
+
+	<!-- ======================
+		 * contant *
+	========================== -->
+	
+    
+	<div id="contant">
+		<!-- subBigBanner -->
+		<div class="container100">
+			<div class="row">
+			  <div class="col-md-12 bg_map subTop">
+				<div class="coffeType">
+					<p class="f45_4w f_mo mt20">Access</p>
+				</div>
+			  </div>
+			</div>
+		</div><!-- // container100 -->
+		<!-- //subBigBanner -->
+
+
+		<!--// Portfolio Cobbles Start //-->
+		<section class="section matychale-gallery-cobbles">
+			<div>
+				<div class="container">
+					<div class="row">
+						<div class="menu_cate2">
+							<a href="b_notice.html"><p>공지사항</p></a>
+							<a href="b_contact.html"><p>고객상담</p></a>
+							<a href="b_event.html"><p>이벤트</p></a>
+							<a href="b_map.html" class="current"><p>오시는길</p></a>
+							<a href="b_faq.html"><p>자주묻는질문</p></a>
+							<a href="#"><p>예약하기</p></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="location">
+					<span><a href="">HOME</a></span><img src="./img/location_arrow.gif">
+					<span><a href="">Contact</a></span><img src="./img/location_arrow.gif">
+					<span>오시는길</span>
+				</div>
+				<div class="row">
+					<!-- 2021-07-19 -->
+				  <div class="col-md-12 subTop mt100">
+					<p><img src="./img/brunch/b_map.jpg" alt="남촌관광지도"/></p>
+					<div class="map-btn-box mt50"><a href="http://naver.me/FWJSVORG" target="_blank"><p class="btn-map f22_4">네이버 지도 바로가기</p></a></div>
+
+				  </div>
+				  <!-- //2021-07-19 -->
+				</div>
+				<div class="row mapBox">
+					<div class="col-lg-6 col-sm-6 col-md-6">
+						<ul class="mapUL">
+							<li><p class="f32_7">Address</p></li><br>
+							<li class="mt10"><p class="f20_4">서울특별시 중구 퇴계로 8길 16 (우)04634</p></li><!-- 2021-07-01 -->
+
+						</ul>
+					</div>
+					<div class="col-lg-6 col-sm-6 col-md-6">
+						<ul class="mapUL3">
+							<li><p class="f32_7">Opening Hours</p></li>
+							<li><p class="f20_4 mt20">(연중무휴)</p></li>
+							<li><p class="f20_4">평일: am10:00 ~ pm05:00 </p></li>
+							<li><p class="f20_4 ">주말&middot;공휴일: am10:00 ~ pm05:00</p></li>
+							<!--
+							<li><p class="f20_4 mt10">1층 : 오전 7시 ~ 저녁 9시 (연중무휴)</p></li>
+							<li><p class="f20_4">2층 : 오전 11시 ~ 저녁 10시 (Break time : 오후 3시 ~ 5시) (연중무휴)</p></li>
+							-->
+						</ul>
+					</div>
+				</div>
+				<div class="row mapBox2">
+					<div class="col-lg-6 col-sm-6 col-md-6">
+						<ul class="mapUL3">
+							<li><p class="f32_7">Connect us</p></li>
+							<li>
+								<p class="f20_4 mt20">1층 대표 전화번호 : 02-3484-9581</p>
+								<p class="f20_4">2층 대표 전화번호 : 02-3484-9580</p>
+								<p class="f20_4">e-mail : cih337@vegemil.co.kr</p>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-6 col-sm-6 col-md-6"></div>
+				</div>
+				<div class="row mapBox2">
+					<div class="col-lg-12 col-sm-12 col-md-12">
+						<ul class="mapUL2">
+							<li><img src="./img/ico_map01.png" /></li>
+							<li class="f28_6">자가용을 이용할 경우</li>
+							<!--
+							<li class="f20_4">지도 참조. 지하 주차장 이용(1시간 무료), 발렛 주차(1,000원)</li>
+							-->
+							<li class="f20_4">지도 참고. 2시간 무료 이후 10분당 1,000원  </li>
+							
+						</ul>
+						<ul class="mapUL2">
+							<li><img src="./img/ico_map02.png" /></li>
+							<li class="f28_6">지하철을 이용할 경우</li>
+							<li class="f20_4">4호선 회현역 1번 출구로 나와 오른쪽 골목으로 90m 직진 우정빌딩 1,2층</li><!-- 2021-07-01 -->
+						</ul>
+						<ul class="mapUL2">
+							<li><img src="./img/ico_map03.png" /></li>
+							<li class="f28_6">버스를 이용할 경우</li>
+							<li class="f20_4">남대문 시장방면 버스 승차 후 남대문시장, 회현역 하차. 도보로 180m 직진 후 우회전 </li>
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+			<!--// .container100_15 //-->
+
+			<!--
+			<div class="container mt100">
+				<div class="row" >
+					<div class="col-lg-6 col-md-6 col-sm-6  mt70 mb70" >
+						<p class="mt40"><img src="./img/about_02.jpg" alt="제품사진"/></p>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6  mt70"  >
+						<p class="mt40"><img src="./img/about_03.jpg" alt="제품사진"/></p>
+					</div>
+				</div>
+				
+			</div>-->
+
+
+		</section>
+		<!--// Portfolio Cobbles End //-->
+		
+		
+
+		
+		
+
+		
+		
+	</div>
+	<!-- ======================
+		 * //contant *
+	========================== -->
+	<!-- ======================
+		 * FOOTER *
+	========================== -->
+	<footer class="container100 bg_black">
+		
+	</footer>
+	<script>
+		/* 로드방식 local 크롬에서 노출되지 않음. */
+	  $( document ).ready( function() {
+		$( 'footer' ).load( './mainFooter.html' );
+	  } );
+	</script>
+	<!-- ======================
+		 * //FOOTER *
+	========================== -->
+	<!-- 모바일 메뉴 -->
+	<script src="./common/js/jquery.collapse.js"></script>
+	<script src="./common/js/script.js"></script> 
+	<!-- 엔바토 : matychale-masonry & grid gallery -->
+	<script src="./common/js/main.js"></script>
+	<script src="./common/js/plugins.js"></script>
+	<!-- prrple 모바일용 슬라이드 -->
+	<script src="./common/js/prrple.slider.js"></script>
+	<script src="./common/js/jquery.touchSwipe.1.6.min.js"></script>
+	</div><!-- // wrap -->
+	</body>
+</html>

@@ -1,0 +1,78 @@
+﻿<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head th:replace="fragments/head :: headFragment"></head>
+<body>
+<div id="wrap">
+<!-- ====================== * HEADER *========================== -->
+<header th:replace="fragments/mainHeader :: headerFragment"></header>
+<!-- ======================* //HEADER *========================== -->
+
+	<!-- ====================== * contant * ========================== -->
+	<div id="contant">
+		<!-- subBigBanner -->
+		<div class="container100">
+			<div class="row">
+			  <div class="col-md-12 bg_store subTop">
+				<div class="coffeType">
+					<p class="f20_7w f_mw">Place</p>
+					<p class="f45_4w mt20">함께하는 공간</p>
+				</div>
+			  </div>
+			</div>
+		</div><!-- // container100 -->
+		<!-- //subBigBanner -->
+
+
+		<!--// Portfolio Cobbles Start //-->
+		<section class="section">
+			<div class="container">
+				<div class="row">
+				  <div class="col-md-12 bg_about2 mt100">
+					<div class="coffeType">
+						<p class="f26_4w">도심 속 한적한 정원과 따뜻하고 안락한 느낌의 실내 공간은 단순한 장소가 아닌 바쁜 일상과 스트레스로부터 현대인들에게 쉼과 여유를 주는 힐링 공간입니다.</p>
+					</div>
+				  </div>
+				</div>
+			</div>
+			<!--// .container100_15 //-->
+
+
+			<div class="container mt100">
+				<div class="row" >
+					<div class="col-lg-6 col-md-6 col-sm-6  mt30" >
+						<p class="mt40"><img th:src="@{/img/place01.jpg}" alt="제품사진"/></p>
+						<p class="f20_4 mt10">정원이 있는 테라스</p>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6  mt30"  >
+						<p class="mt40"><img th:src="@{/img/place02.jpg}" alt="제품사진"/></p>
+						<p class="f20_4 mt10">심플하고 고급스러운 인테리어</p>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6  mt30" >
+						<p class="mt40"><img th:src="@{/img/place03.jpg}" alt="제품사진"/></p>
+						<p class="f20_4 mt10">넓은 실내 공간과 여유 있는 좌석</p>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6  mt30"  >
+						<p class="mt40"><img th:src="@{/img/place04.jpg}" alt="제품사진"/></p>
+						<p class="f20_4 mt10">음악 공연이 가능한 별도의 무대 공간</p>
+					</div>
+				</div>
+				<!-- row -->
+			</div><!-- // container -->
+
+
+		</section>
+		<!--// Portfolio Cobbles End //-->
+		
+	</div>
+	<!-- ======================
+		 * //contant *
+	========================== -->
+
+	<!-- ====================== * FOOTER * ========================== -->
+	<footer class="container100" th:replace="fragments/mainFooter :: footerFragment"></footer>
+	<!-- ====================== * //FOOTER * ========================== -->
+	<div th:replace="fragments/footerScript :: footerScriptFragment"></div> 
+	
+</div><!-- // wrap -->
+</body>
+</html>

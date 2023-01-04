@@ -1,0 +1,56 @@
+package com.nelbosco.domain;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class GoodsDTO extends CommonDTO {
+
+	/** 상품코드 */
+	private Long goodsCode;
+
+	/** 상품명 */
+	private String goodsName;
+
+	/** 대분류 */
+	private String lGroup;
+
+	/** 중분류 */
+	private String mGroup;
+	
+	/** 소분류 */
+	private String sGroup;
+
+	/** 판매구분 */
+	private String saleGb;
+
+	/** 검색어 */
+	private String keyword;
+	
+	/** 매입가 */
+	private int originPrice;
+
+	/** 판매가 */
+	private int salePrice;
+	
+	/** 할인가 */
+	private int dcPrice;
+	
+	/** 브랜드코드 */
+	private String brandCode;
+	
+	/** 등록자ID */
+	private String insertId;
+	
+	/** 수정자ID */
+	private String modifyId;
+	
+	/** 등록일 */
+	private String insertDate;
+	
+	/** 수정일 */
+	private String modifyDate;
+
+
+}

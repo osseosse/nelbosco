@@ -1,0 +1,294 @@
+/*
+Author : 이민주
+Contact Us : jade@vegemil.co.kr
+Version : 1.0
+*/
+
+body {margin: 0; padding: 0;}
+
+table {border-collapse:collapse; empty-cells:show;}
+th, 
+td {background:#fff;}
+form {margin:0; padding:0;}
+textarea {	
+	border-left:1px solid #90ABBB;
+	border-top:1px solid #90ABBB;
+	border-right:1px solid #CFDDE6;
+	border-bottom:1px solid #CFDDE6;
+	background:#FAFAFA;
+	overflow:auto;
+}
+
+input {margin:0; padding:0; vertical-align:middle;}
+
+
+h1 {margin: 0 0 0 0; line-height:1em;}
+
+h2 {margin:0 0 1em 0; line-height:1em;}
+h3, h4, h5, h6 {margin: 0 0 0 0;}
+
+div {margin:0; padding:0;}
+
+ul, ol {margin-top:5px; margin-left:0; padding-left:10px;}
+
+ul li {
+	list-style:none;
+	margin-left:0;
+	padding-left:15px;
+	background:url('../temp/bullet_white.gif') no-repeat left top;
+	}
+	ul li.on {background:url('../temp/bullet_green.gif') no-repeat left top;} /* 작업완료 표시 */
+
+	ul li ul {padding-left:0; margin-bottom:0;}
+	ul li ol {margin-bottom:0;}
+
+	ul li ul li {background:url('../temp/bullet_white.gif') no-repeat left top;}
+	ul li ul li.on {background:url('../temp/bullet_blue.gif') no-repeat left top;} /* 작업완료 표시 */
+
+	ul li ul li ul li {background:url('../temp/bullet_white.gif') no-repeat left top;}
+	ul li ul li ul li.on {background:url('../temp/bullet_orange.gif') no-repeat left top;} /* 작업완료 표시 */
+
+	ul li ul li ul li ul li {font-size:11px; background:url('../temp/bullet_white.gif') no-repeat left top;}
+	ul li ul li ul li ul li.on {font-size:11px; background:url('../temp/bullet_yellow.gif') no-repeat left top;} /* 작업완료 표시 */
+
+ol li {
+	list-style-type:decimal;
+	background:none;
+	padding-left:0;
+	margin-left:15px;
+	}
+
+hr {border:1px dotted #ccc;}
+
+
+fieldset {margin: 0; padding: 0; border: none;}
+
+textarea {
+	padding: 0 0 0 0;
+}
+
+img {vertical-align: top;}
+
+a img {border: none;}
+
+.none {display: none;}
+
+u {color:#cc0000;}
+strike {color:#C3C3C3;}
+
+
+body {
+	font-size:12px;
+	line-height:1.5em; 
+	font-family:"AppleGothic", "맑은 고딕", "Malgun Gothic", "돋움", Dotum, Arial, AppleGothic, "애플고딕", sans-serif; 
+	color:#333;
+	}
+
+input,
+textarea,
+select {
+	font-size:12px;
+	line-height:1.5em; 
+	font-family:"AppleGothic", "맑은 고딕", "Malgun Gothic", "돋움", Dotum, Arial, AppleGothic, "애플고딕", sans-serif; 
+	color:#000;
+	}
+
+th {
+	font-size:12px;
+	font-weight:bold;
+	line-height:1.5em; 
+	font-family:"AppleGothic", "맑은 고딕", "Malgun Gothic", "돋움", Dotum, Arial, AppleGothic, "애플고딕", sans-serif; 
+	color:#000;
+	}
+td {
+	font-size:12px;
+	font-weight:normal;
+	line-height:1.5em; 
+	font-family:"AppleGothic", "맑은 고딕", "Malgun Gothic", "돋움", Dotum, Arial, AppleGothic, "애플고딕", sans-serif; 
+	color:#333;
+	}
+
+a:link,
+a:visited {color:#333; text-decoration:none;}
+a:hover {color:#007acc; text-decoration:underline; font-weight:bold}
+a:active {color:#007acc; text-decoration:none;} 
+
+
+
+.floatL {float:left;} /* 요소의 좌측정렬 */
+.floatR {float:right;} /* 요소의 우측정렬 */
+.floatC {margin:0 auto;} /* 요소의 가운데정렬 */
+
+.alignL {text-align:left !important;} /* 요소내부의 좌측정렬 */
+.alignC {text-align:center !important;} /* 요소내부의 중앙정렬 */
+.alignR {text-align:right !important;} /* 요소내부의 우측정렬 */
+
+.verT {vertical-align:top;}
+.verM {vertical-align:middle;}
+.verB {vertical-align:bottom;}
+
+.vspace5 {margin-top:5px !important;}
+.vspace10 {margin-top:10px !important;}
+.vspace15 {margin-top:15px !important;}
+.vspace20 {margin-top:20px !important;}
+.vspace25 {margin-top:25px !important;}
+.vspace30 {margin-top:30px !important;}
+.vspace35 {margin-top:35px !important;}
+.vspace40 {margin-top:40px !important;}
+.vspace45 {margin-top:45px !important;}
+
+.inline {display:inline;}
+
+.txtP1 {color:#FF0000;}
+
+h1 {
+	margin-top:0;
+	color:#fff;
+	padding-top:15px;
+	position: relative;
+	z-index: 0;
+	}
+	.h1Desc {
+		font-family:"Trebuchet MS",sans-serif;
+		font-size:16px;
+		color:#D4E7EE;
+		}
+	.lastUpdate {
+		position:absolute; top:1%; left:1%; 
+		font-family:"Trebuchet MS",sans-serif; 
+		color:#fff;
+		padding-left:18px;
+		background:url('../temp/ico_callenda.gif') no-repeat left 50%;
+		}
+	.today {
+		position:absolute; top:1%; right:1%;
+		font-family:'Trebuchet MS',sans-serif;
+		color:#fff;
+		font-size:24px;
+		}
+
+	h2 {
+		clear:both; 
+		width:100%; 
+		margin:0;
+		padding-top:15px;
+		font-size:24px;
+		}	
+	
+	.naviArea {
+		overflow:hidden;
+		width:97%;
+		margin:0 0 30px 3%;
+		}
+		.naviArea ul {
+			float:left;
+			width:190px;
+			padding-bottom:10px;
+			padding-top:15px;
+			border-bottom:2px dotted #ccc;
+			border-right:2px dotted #ccc;
+			}
+			.naviArea ul.depth1 {
+				min-height: 250px;
+				padding-bottom:20px;
+				} /* 1depth 박스 사이즈 조절  */
+			.naviArea ul.depth2 {
+				height: 500px;
+				padding-bottom:20px;
+				}  /* 1depth 박스 사이즈 조절  */
+			.naviArea ul.depth3 {
+				height: 130px;
+				padding-bottom:20px;
+				}  /* 1depth 박스 사이즈 조절  */
+
+
+			.naviArea ul:hover {
+				background:#EDF5F8;
+				border-right:1px solid #D4E7EE;
+				border-bottom:1px solid #D4E7EE;
+				}
+			.naviArea ul li ul {float:none; width:100%; padding-top:0; border-bottom:none; border-right:none;}
+			.naviArea ul li ul:hover {border-bottom:none; border-right:none; background:none;}
+			.naviArea ul li ol {float:none; width:100%; padding-top:0; border-bottom:none; border-right:none;}
+
+.tipInfo {
+	height:36px;
+	padding:10px 10px 0 10px;
+	background:url('../temp/bg_tip.gif') repeat-x left top;
+	}
+	ul.tip li {
+		padding-left:19px;
+		background:url('../temp/tip.gif') no-repeat left 50%;
+		}
+
+
+ul.tempList {
+	width:99%;
+	margin:10px 0 10px 0;
+	padding:0;
+	border:none;
+	}
+ul.tempList:hover {background:none; border:none;}
+ul.tempList li {
+	display:inline;
+	letter-spacing:-1px;
+	background:url('../temp/bullet_go.gif') no-repeat left 50%;
+	padding-right:10px;
+	}
+
+ul.quickLink {
+	width: 300px;
+	border:1px dotted #ccc;
+	padding:10px;
+	background:#DAF1FF;
+	}
+	ul.quickLink:hover {
+		background:#DAF1FF;
+		border-right:1px dotted #ccc;
+		border-bottom:1px dotted #ccc;
+		}
+	ul.quickLink li {
+		background:url('../temp/arrow_right.gif') no-repeat 0 0;
+		}
+
+
+html, 
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+ul.depth1 > li strong {font-size:16px; margin-bottom:20px; display:inline-block}
+li {line-height:20px}
+
+
+#head {
+	height: 107px;
+	background:url('../temp/bg_h1_type1.gif') repeat-x left top;
+}
+
+#body {
+	min-height: 100%;
+	margin: -107px 0 -51px;
+}
+
+
+* html #body {
+	height: 100%;
+}
+
+#content-area {
+	padding: 117px 0 51px;
+}
+
+#foot {
+	height: 50px;
+	background: #ddd;
+	width:100%; height:35px;
+	padding-top:15px;
+	border-top:1px solid #ccc;
+	background:#f1f1f1;
+	text-align:center;
+	font-family:'Trebuchet MS',sans-serif;
+}

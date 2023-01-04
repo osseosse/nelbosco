@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<footer id="footer" th:fragment="footerFragment">
+<div class="container">
+	<div class="row">
+		<div class="col-lg-6 col-sm-12 col-md-6 ">
+			<ul class="foot_ins">
+				<li><p class="f15_5w"><a href="/community/ins" >개인정보처리방침</a></li>
+				<li><p class="f15_4w"><a href="/contact/contact" >고객상담</a></p></li>
+				<li><p class="f15_4w"><a href="/contact/map">오시는길</a></p></li>
+				<li><span><a href="https://www.instagram.com/nelbosco.official" target="_blank"><img th:src="@{/img/ico_insta.png}" alt=""/></a></span></li>
+			</ul>
+			<p class="f15_4 foo_add mt10">서울특별시 중구 퇴계로 8길 16
+			정식품 B&C사업부 &nbsp;&nbsp;TEL : 02-3484-9581</p>
+		</div>
+		<div class="col-lg-6 col-sm-12 col-md-6 ">
+			<p class="f15_4 foot_copy">2021 © Nel Bosco. All Rights Reserved. </p><!-- 2021-06-10 -->
+		</div>
+	</div>
+</div>
+</footer>
+</html>

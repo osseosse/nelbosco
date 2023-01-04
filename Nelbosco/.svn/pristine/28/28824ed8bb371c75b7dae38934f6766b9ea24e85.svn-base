@@ -1,0 +1,36 @@
+﻿<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<title>넬보스코</title>
+    <head th:replace="fragments/head :: headFragment"></head>
+</head>
+<body>
+<div class="index_b">
+    <ul>
+        <li class="indexCafe">
+                  <div class="bg_imgWarp">
+                      <div class="bg_img"></div>
+                  </div>
+                  <div class="textWrap">
+                      <img th:src="@{/img/index_cafe.png}" alt="넬보스코 브런치레스토랑">
+                      <div class="indexBtn mt30">
+                          <a href="/main">사이트 바로가기</a>
+                      </div>
+                  </div>
+        </li>
+        <li class="indexBrunch">
+                  <div class="bg_imgWarp">
+                      <div class="bg_img"></div>
+                  </div>
+                  <div class="textWrap">
+                      <img th:src="@{img/index_brunch.png}" alt="넬보스코 브런치레스토랑">
+                      <div class="indexBtn mt30">
+                          <a href="#">7월 중 Coming soon</a>
+                      </div>
+                  </div>
+        </li>
+    </ul>
+    
+</div>
+</body>
+</html>

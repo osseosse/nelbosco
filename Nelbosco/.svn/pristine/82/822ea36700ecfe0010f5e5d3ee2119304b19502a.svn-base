@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nelbosco.mapper.ReservationMapper">
+
+	<sql id="reservationColumns">
+		  idx
+		, title
+		, password
+		, email
+		, hp
+		, type
+		, content
+		, writer
+		, secret_yn
+		, delete_yn
+		, insert_time
+		, update_time
+		, delete_time
+	</sql>
+
+	<insert id="insertReservation" parameterType="com.nelbosco.domain.ReservationDTO" useGeneratedKeys="true" keyProperty="idx">
+		INSERT INTO tb_reservation (
+			<include refid="reservationColumns" />
+		) VALUES (
+			  #{title}
+			, #{password}
+			, #{email}
+			, #{hp}
+			, #{type}
+			, #{content}
+			, #{writer}
+			, 'Y' 
+			, 'N'
+			, NOW()
+			, NULL
+			, NULL
+		)
+	</insert>
+
+	<select id="selectReservationDetail" parameterType="long" resultType="com.nelbosco.domain.ReservationDTO">
+		SELECT
+			<include refid="reservationColumns" />
+		FROM
+			tb_reservation
+		WHERE
+			delete_yn = 'N'
+		AND
+			idx = #{idx}
+	</select>
+
+	<update id="updateReservation" parameterType="com.nelbosco.domain.ReservationDTO">
+		UPDATE tb_reservation
+		SET
+			  update_time = NOW()
+			, title = #{title}
+			, hp = #{hp}
+			, content = #{content}
+			, type = #{type}
+		WHERE
+			password = #{password}
+		AND
+			writer = #{writer}
+	</update>
+
+	<update id="deleteReservation" parameterType="long">
+		UPDATE tb_reservation
+		SET
+			  delete_yn = 'Y'
+			, delete_time = NOW()
+		WHERE
+			idx = #{idx}
+	</update>
+
+	<select id="selectReservationList" parameterType="com.nelbosco.domain.ReservationDTO" resultType="com.nelbosco.domain.ReservationDTO">
+		SELECT
+			<include refid="reservationColumns" />
+		FROM
+			tb_reservation
+		WHERE
+			delete_yn = 'N'
+		<include refid="CommonMapper.search" />
+		ORDER BY
+			idx DESC,
+			insert_time DESC
+		<include refid="CommonMapper.paging" />
+	</select>
+	
+	<select id="selectReservCountByPass" parameterType="com.nelbosco.domain.ReservationDTO" resultType="int">
+		SELECT
+			COUNT(*)
+		FROM
+			tb_reservation
+		WHERE
+			delete_yn = 'N'
+		AND
+			password = #{password}
+		AND
+			idx = #{idx}
+		<include refid="CommonMapper.search" />
+	</select>
+
+	<select id="selectReservationTotalCount" parameterType="com.nelbosco.domain.ReservationDTO" resultType="int">
+		SELECT
+			COUNT(*)
+		FROM
+			tb_reservation
+		WHERE
+			delete_yn = 'N'
+		<include refid="CommonMapper.search" />
+	</select>
+
+</mapper>

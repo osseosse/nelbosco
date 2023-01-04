@@ -1,0 +1,131 @@
+package com.nelbosco.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+
+import com.nelbosco.domain.MailDTO;
+import com.nelbosco.service.MailService;
+import com.nelbosco.util.UiUtils;
+
+
+@Controller
+public class MainController extends UiUtils {
+	
+	@Autowired
+	MailService mailService;
+	
+	@GetMapping(value = "/")
+	public String moveHome(Model model) {
+
+		return "index";
+	}
+	
+	@GetMapping(value = "/main")
+	public String moveMain(Model model) {
+
+		return "/main";
+	}
+	
+	@GetMapping(value = "/brandstory/about")
+	public String moveBrandStoryAbout(Model model) {
+
+		return "/brandstory/about";
+	}
+	
+	@GetMapping(value = "/brandstory/bi")
+	public String moveBrandStoryBi(Model model) {
+
+		return "/brandstory/bi";
+	}
+	
+	@GetMapping(value = "/brandstory/place")
+	public String moveBrandStoryPlace(Model model) {
+
+		return "/brandstory/place";
+	}
+	
+	@GetMapping(value = "/brandstory/lab")
+	public String moveBrandStoryLab(Model model) {
+
+		return "/brandstory/lab";
+	}
+	
+	@GetMapping(value = "/story/coffeeStory")
+	public String moveStoryCoffeeStory(Model model) {
+
+		return "/story/coffeeStory";
+	}
+	
+	@GetMapping(value = "/story/drink")
+	public String moveStoryDrink(Model model) {
+
+		return "/story/drink";
+	}
+	
+	@GetMapping(value = "/story/bakery")
+	public String moveStoryBakery(Model model) {
+
+		return "/story/bakery";
+	}
+	
+	@GetMapping(value = "/story/music")
+	public String moveStoryMusic(Model model) {
+
+		return "/story/music";
+	}
+	
+	@GetMapping(value = "/community/sns")
+	public String moveCommunitySns(Model model) {
+
+		return "/community/sns";
+	}
+	
+	@GetMapping(value = "/community/recipe")
+	public String moveCommunityRecipe(Model model) {
+
+		return "/community/recipe";
+	}
+	
+	@GetMapping(value = "/community/ins")
+	public String moveCommunityIns(Model model) {
+
+		return "/community/ins";
+	}
+	
+	@GetMapping(value = "/community/uselaw")
+	public String moveCommunityUselaw(Model model) {
+
+		return "/community/uselaw";
+	}
+	
+	@GetMapping(value = "/contact/map")
+	public String moveContactMap(Model model) {
+
+		return "/contact/map";
+	}
+	
+	@GetMapping(value = "/contact/contact")
+	public String moveContactContact(Model model) {
+
+		return "/contact/contact";
+	}
+	
+	@GetMapping(value = "/contact/faq")
+	public String moveContactFaq(Model model) {
+
+		return "/contact/faq";
+	}
+	
+	@GetMapping("/mail")
+    public String dispMail() {
+        return "/utils/mail";
+    }
+	
+	@PostMapping("/mail")
+	public void execMail(MailDTO mailDto) {
+        mailService.mailSend(mailDto);
+    }
+}

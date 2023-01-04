@@ -1,0 +1,117 @@
+﻿<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head th:replace="fragments/head :: headFragment"></head>
+<body>
+<div id="wrap">
+<!-- ====================== * HEADER *========================== -->
+<header th:replace="fragments/mainHeader :: headerFragment"></header>
+<!-- ======================* //HEADER *========================== -->
+
+	<!-- ====================== * contant * ========================== -->
+	<div id="contant">
+		<!-- subBigBanner -->
+		<div class="container100">
+			<div class="row">
+			  <div class="col-md-12 bg_about subTop">
+				<div class="coffeType">
+					<p class="f45_4w">오시는길</p>
+				</div>
+			  </div>
+			</div>
+		</div><!-- // container100 -->
+		<!-- //subBigBanner -->
+
+
+		<!--// Portfolio Cobbles Start //-->
+		<section class="section">
+			<div class="container">
+				<div class="row">
+				  <div class="col-md-12 subTop mt100">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d664.9048648150015!2d126.97912862718361!3d37.55887132315206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2f5ca147db7%3A0x2a2994f9560bbdb2!2z7Jqw7KCV67mM65Sp!5e0!3m2!1sko!2skr!4v1612484807356!5m2!1sko!2skr" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+					<!--
+					<p class="f32_7 mt70 center">nelBosco는 이탈리아어로 ‘숲속에서’라는 의미입니다.</p>
+					<p class="f20_4 mt30 center">
+					심볼은 매장 이름과 같이 음악이 있는 숲속의 평온함을 형상화한 이미지입니다.<br>
+					넬보스코는 아름다운 공간과 음악 그리고 건강한 먹거리 어우러져 있는 힐링 공간을 추구합니다. 
+					</p>
+					<p class="img100"><img src="./img/bi.jpg" alt="bi" /></p>
+					-->
+				  </div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-sm-4 col-md-4 mt70">
+						<div class="clearfix">
+							<p class="f20_4 line2 f_mw">Address</p>
+							<p class="f18_4 mt30">서울 중구퇴계로8길 16 (우)04634</p>
+						</div>
+					</div>
+					 <div class="col-lg-5 col-sm-5 col-md-5 mt70">
+						<div class="clearfix">
+							<p class="f20_4 line2 f_mw">OPENING HOURS</p>
+							<dl class="work mt30">
+								<dd><p class="f18_4 mt30">Monday - Friday</p><dd>
+								<dd><p class="f18_4 mt30">8:00 am - 10:00 pm</p><dd>
+							</dl>
+							<dl class="work ">
+								<dd><p class="f18_4 f_mw">Saturday - Sunday</p><dd>
+								<dd><p class="f18_4">11:00 am - 10:00 pm</p><dd>
+							</dl>
+						
+							<dl class="work">
+								<dd class="mt30 f_mw"><p class="f18_4">Closed</p><dd>
+								<dd><p class="f18_4">설, 추석 당일</p><dd>
+							</dl>
+								
+						</div>
+					</div>
+					 <div class="col-lg-3 col-sm-3 col-md-3 mt70">
+						<div class="section-title style2 clearfix f_mw">
+							<div class="title-header">
+								<p class="f20_4 line2">CONNECT WITH US</p>
+								<p class="f18_4 mt30">Store (02) 123 - 4567</p>
+								<p class="f18_4">Store (02) 123 - 4567</p>
+								<p class="f18_4">nelbosco@vegemil.co.kr</p>
+							</div>                               
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--// .container100_15 //-->
+
+			<!--
+			<div class="container mt100">
+				<div class="row" >
+					<div class="col-lg-6 col-md-6 col-sm-6  mt70 mb70" >
+						<p class="mt40"><img src="./img/about_02.jpg" alt="제품사진"/></p>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6  mt70"  >
+						<p class="mt40"><img src="./img/about_03.jpg" alt="제품사진"/></p>
+					</div>
+				</div>
+				
+			</div>-->
+
+
+		</section>
+		<!--// Portfolio Cobbles End //-->
+		
+		
+
+		
+		
+
+		
+		
+	</div>
+	<!-- ======================
+		 * //contant *
+	========================== -->
+
+	<!-- ====================== * FOOTER * ========================== -->
+	<footer class="container100" th:replace="fragments/mainFooter :: footerFragment"></footer>
+	<!-- ====================== * //FOOTER * ========================== -->
+	<div th:replace="fragments/footerScript :: footerScriptFragment"></div> 
+</div><!-- // wrap -->
+</body>
+</html>

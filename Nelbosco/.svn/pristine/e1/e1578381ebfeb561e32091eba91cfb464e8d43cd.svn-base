@@ -1,0 +1,11 @@
+<div class="portfolio-item-img">
+	<img src="./img/menu05.jpg" alt="Portfolio Img" class="img-fluid portfolio-img">
+	<h5 class="portfolio-detail-title">BAKERY</h5>
+</div>
+<div class="portfolio-buttons">
+	<a href="./menu_beverage.html">
+		<p class="f32_4 mt30">브라운슈가 라떼</p>
+		<p class="f24_4 mt20 line">5,200원</p>
+		<p class="f20_4 mt30 g_type">넬보스코 에스프레소에 로우슈가 흑당을 더해, 더욱 깊어진 풍미를 즐길 수 있는 음료</p>
+	</a>
+</div>

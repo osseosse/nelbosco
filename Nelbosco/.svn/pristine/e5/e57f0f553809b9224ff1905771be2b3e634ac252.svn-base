@@ -1,0 +1,415 @@
+﻿<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<title>넬보스코 루프탑</title>
+    <head th:replace="fragments/r_head :: headFragment"></head>
+</head>
+ <body>
+<div id="wrap">
+<!-- ====================== * HEADER *========================== -->
+<header th:replace="fragments/r_mainHeader :: headerFragment"></header>
+<!-- ======================* //HEADER *========================== -->
+<!-- ======================
+		 * contant *
+	========================== -->
+	<!-- 
+	<div id="popup_350570" style="position:absolute; top:110px; left:20px; z-index:10001; height:628px; display:none;">
+		<iframe th:src="@{/fragments/b_popup_350}" marginwidth="0" marginheight="0" width="400px" height="638px" frameborder="0" scrolling="no"></iframe>
+	</div>
+	<!-- 
+	<div id="popup" style="position:absolute; top:110px; left:20px; z-index:10001; height:380px; display:none;">
+		<iframe th:src="@{/fragments/b_popup}" marginwidth="0" marginheight="0" width="430" height="460" frameborder="0" scrolling="no"></iframe>
+	</div>
+	 -->
+	<!-- popup 
+	<div id="rightPopup" style="position:absolute; top:110px; right:20px; z-index:1000; height:608px; display:none;">
+		<iframe th:src="@{/fragments/b_rightPopup}" marginwidth="0" marginheight="0" width="400px" height="641px" frameborder="0" scrolling="no"></iframe>
+	</div>
+	-->
+	<div id="contant2">
+		<!-- REVOLUTION SLIDER -->
+		<div id="rev_slider_5_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container slide-overlay" data-alias="classic4export" data-source="gallery">
+			<!-- START REVOLUTION SLIDER 5.4.8 auto mode -->
+			<div id="rev_slider_5_1" class="rev_slider fullwidthabanner rev_slider_5_1_height" data-version="5.4.8.1">
+				<ul>
+					<li  data-index="rs-1" data-transition="curtain-3" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="./img/rooftop/mainBig_r01.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+						
+						<img th:src="@{/img/rooftop/mainBig_r01.jpg}" alt="" title="Home 1" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+
+						<div class="f_mo tp-caption tp-resizeme slide-main-text" id="slide-1-layer-2" data-x="['center','center','center','center']" data-hoffset="['0','0','0','-1']" data-y="['middle','middle','middle','middle']" data-voffset="['-70','-70','-85','-23']"
+					   
+						data-fontsize="['70','50','50','32']"
+						data-lineheight="['100','100','70','60']"
+						data-fontweight="['400','400','400','400']"
+						data-color="['rgb(240, 244, 247)','rgb(240, 244, 247)','rgb(240, 244, 247)','rgb(240, 244, 247)']"
+						data-width="none"
+						data-height="none"
+						data-whitespace="nowrap"
+						data-type="text"
+						data-responsive_offset="on"
+						data-frames='[{"delay":90,"split":"chars","splitdelay":0.05000000000000000277555756156289135105907917022705078125,"speed":500,"split_direction":"forward","frame":"0","from":"y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power0.easeIn"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+						data-textAlign="['inherit','inherit','inherit','inherit']"
+						data-paddingtop="[0,0,0,0]"
+						data-paddingright="[0,0,0,0]"
+						data-paddingbottom="[0,0,0,0]"
+						data-paddingleft="[0,0,0,0]"
+						
+						 >Your perfect Healing</div>
+
+					  
+						
+						<div class="tp-caption tp-resizeme" id="slide-1-layer-6" data-x="['center','center','center','center']" data-hoffset="['0','0','1','-432']" data-y="['middle','middle','middle','middle']" data-voffset="['25','25','-17','-67']"
+						
+						data-fontsize="['25','25','17','17']"
+						data-lineheight="['40','40','27','27']"
+						data-fontweight="['400','400','400','400']"
+						data-color="['rgb(255, 255, 255)','rgb(255, 255, 255)','rgb(255, 255, 255)','rgb(255, 255, 255)']"
+						data-width="none"
+						data-height="none"
+						data-whitespace="nowrap"
+						data-visibility="['on','on','on','off']"
+						data-type="text"
+						data-responsive_offset="on"
+						data-frames='[{"delay":580,"speed":500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power0.easeIn"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+						data-textAlign="['center','center','center','center']"
+						data-paddingtop="[0,0,0,0]"
+						data-paddingright="[0,0,0,0]"
+						data-paddingbottom="[0,0,0,0]"
+						data-paddingleft="[0,0,0,0]"
+						><p class="mt40">와인, 칵테일, 맥주까지 도심 속 야경의 낭만과 함께 즐거움을 만끽하세요.</p></div>
+					</li>
+					
+
+					<li  data-index="rs-3" data-transition="curtain-3" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="./img/rooftop/mainBig_r02.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+									
+									<img th:src="@{/img/rooftop/mainBig_r02.jpg}" alt="" title="Home 1" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+
+									<div class="f_mo tp-caption tp-resizeme slide-main-text" id="slide-1-layer-2" data-x="['center','center','center','center']" data-hoffset="['0','0','0','-1']" data-y="['middle','middle','middle','middle']" data-voffset="['-70','-70','-85','-23']"
+								   
+									data-fontsize="['70','50','50','32']"
+									data-lineheight="['100','100','70','60']"
+									data-fontweight="['400','400','400','400']"
+									data-color="['rgb(240, 244, 247)','rgb(240, 244, 247)','rgb(240, 244, 247)','rgb(240, 244, 247)']"
+									data-width="none"
+									data-height="none"
+									data-whitespace="nowrap"
+									data-type="text"
+									data-responsive_offset="on"
+									data-frames='[{"delay":90,"split":"chars","splitdelay":0.05000000000000000277555756156289135105907917022705078125,"speed":500,"split_direction":"forward","frame":"0","from":"y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power0.easeIn"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+									data-textAlign="['inherit','inherit','inherit','inherit']"
+									data-paddingtop="[0,0,0,0]"
+									data-paddingright="[0,0,0,0]"
+									data-paddingbottom="[0,0,0,0]"
+									data-paddingleft="[0,0,0,0]"
+									
+									 >Your perfect Healing</div>
+
+								  
+									
+									<div class="tp-caption tp-resizeme" id="slide-1-layer-6" data-x="['center','center','center','center']" data-hoffset="['0','0','1','-432']" data-y="['middle','middle','middle','middle']" data-voffset="['25','25','-17','-67']"
+									
+									data-fontsize="['25','25','17','17']"
+									data-lineheight="['40','40','27','27']"
+									data-fontweight="['400','400','400','400']"
+									data-color="['rgb(255, 255, 255)','rgb(255, 255, 255)','rgb(255, 255, 255)','rgb(255, 255, 255)']"
+									data-width="none"
+									data-height="none"
+									data-whitespace="nowrap"
+									data-visibility="['on','on','on','off']"
+									data-type="text"
+									data-responsive_offset="on"
+									data-frames='[{"delay":580,"speed":500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power0.easeIn"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+									data-textAlign="['center','center','center','center']"
+									data-paddingtop="[0,0,0,0]"
+									data-paddingright="[0,0,0,0]"
+									data-paddingbottom="[0,0,0,0]"
+									data-paddingleft="[0,0,0,0]"
+									><p class="mt40">와인, 칵테일, 맥주까지 도심 속 야경의 낭만과 함께 즐거움을 만끽하세요.</p></div>
+					</li>
+
+					
+
+
+
+					
+				</ul>
+			</div>
+		</div>
+		<!-- 제스터 : Revolution Slider -->
+		<script th:src="@{/js/jquery.themepunch.tools.min.js}"></script>
+		<script th:src="@{/js/jquery.themepunch.revolution.min.js}"></script>
+		<script th:src="@{/js/slider.js}"></script>
+		<script th:src="@{/js/extensions/revolution.extension.slideanims.min.js}"></script>
+		<script th:src="@{/js/extensions/revolution.extension.navigation.min.js}"></script>
+		<script th:src="@{/js/extensions/revolution.extension.parallax.min.js}"></script>
+		<script th:src="@{/js/extensions/revolution.extension.layeranimation.min.js}"></script>
+		<!-- END REVOLUTION SLIDER -->
+
+
+		<div class="container1400 mt150">
+			<div class="row dv6">
+				<div class="col-md-12 ">
+					<p class="f20_4">Nel Bosco rooftop Lounge & Bar</p>
+				</div>
+				<div class="col-md-6 ">
+					<p class="f48_4 f_mo">rooftop Garden</p>
+					<!-- <p class="section_logo"><img src="./img/brunch/section_logo.png" alt="넬보스코로고"/></p> -->
+					<p class="f18_4 mt30">
+					도심의 불빛이 제공하는 다양한 볼거리와 아름다운 남대문의 풍경이<br>
+					한눈에 보이는 야외테라스를 갖춘 이색적인 분위기의 루프탑 가든입니다.
+					</p>
+					<p class="btn_about mt70"><a href="/rooftop/about/brand">View more</a></p>
+					<p class="r_imxBox w570 img100 mt170 ">
+						<img th:src="@{/img/rooftop/r_main01.jpg}" alt="다양한 음식&안주"/>
+						<span class="f16 white bg_r_01">오픈형&야외 테라스</span>
+					</p>
+				</div>
+				<div class="col-md-6 mt30m">
+					<p class="r_imxBox w570 img100 ">
+						<img th:src="@{/img/rooftop/r_main02.jpg}" alt="시그니처 칵테일"/>
+						<span class="f16 white bg_r_01">시그니처 칵테일 '서울의밤 하이볼 자몽'</span>
+					</p>			
+					<p class="r_imxBox w570 img100 mt90">
+						<img th:src="@{/img/rooftop/r_main03.jpg}" alt="가리비관자와 멘보샤"/>
+						<span class="f16 white bg_r_01">와인과 어울리는 멘보샤와 가리비관자</span>
+					</p>
+				</div>
+			</div> 
+		</div><!-- // container100 -->
+
+		<div class="bg_r_02 mt100 mt50m">
+			<div class="container1400  ">
+				<div class="row ">
+					<div class="col-md-6 ">
+						
+					</div>
+							  
+				</div> 
+			</div>
+		</div><!-- // container100 -->
+
+		<div class="container100">
+			
+			<div class="row">
+				<div class="col-lg-12 center mt200m r_bg_gray">
+					<!-- pp slide -->
+					<div  id="slider3">
+						<div class="slider">
+							<div class="slider_area">
+								<div class="slides">
+									<div class="slide">										
+										<ul class="r_ul">
+											<li><div class="r_bg_01 h600 "></div></li>
+											<li>
+												<div class="r_intBox">
+													<p class="f18_4w  f_mo">Nel Bosco rooftop Lounge & Bar <br> Signature</p>
+													<p class="f48_5w mt50 f_mo">Menu</p>
+													<p class="f22_4w mt30">칠리앤샤워 치킨과 버팔로윙</p>
+													<p class="f18_4w mt20">
+													넬보스코 루프탑 가든에서 시원한 맥주와<br>
+													칠리앤샤워 치킨, 버팔로윙을 준비했습니다.<br>
+													셰프의 특별한 조리법으로 여려분께 추천합니다.</p>
+													<p class="b_btn_about_w  mt40"><a href="/rooftop/menu/food">View more</a></p>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="slide">
+										<ul class="r_ul">
+											<li><div class="r_bg_02 h600 "></div></li>
+											<li>
+												<div class="r_intBox">
+													<p class="f18_4w  f_mo">Nel Bosco rooftop Lounge & Bar <br> Signature</p>
+													<p class="f48_5w mt50 f_mo">Menu</p>
+													<p class="f22_4w mt30">피나콜라다 & 모히또</p>
+													<p class="f18_4w mt20">
+													넬보스코 루프탑 가든의 시그니처 메뉴인<br>
+													피나콜라다 & 모히또를 루프탑에서 만나보세요.<br>
+													밤이 시작될때 더욱 아름답게 느껴집니다.</p>
+													<p class="b_btn_about_w  mt40"><a href="/rooftop/menu/drink">View more</a></p>
+												</div>
+											</li>
+										</ul>										
+									</div>
+								</div>
+							</div>
+							
+							<div class="row" >
+								<div class="col-lg-7"></div>
+								<div class="col-lg-5">
+									<div class="slider_PNbox ">
+										<a class="slider_left"><img th:src="@{/img/rooftop/btn_prev.jpg}" alt="이전" /></a>
+										<a class="slider_right"><img th:src="@{/img/rooftop/btn_next.jpg}" alt="다음" /></a>
+									</div>
+								</div>
+							</div>
+
+
+
+
+						</div>
+					</div>
+					<p class="r_menuPDF"><a href="/img/rooftop/menu_rooftopLounge&bar.pdf">Menu PDF Down <img th:src="@{/img/rooftop/btn_arrow.png}" /></a></p>
+				</div>
+			</div><!-- /.row -->
+		</div><!-- /.container100 -->
+
+
+		<div class="container1400">
+			<div class="row">
+				<div class="col-lg-12 center mt150 ">
+					<!-- pp slide -->
+					<div  id="slider4">
+						<div class="slider h360" >
+							<div class="slider_area ">
+								<div class="slides ">
+									<div class="slide r_bg_banner01">
+										<div class="r_banner_text ">
+											<p class="f48_5w">대관 문의</p>
+											<p class="f18_4w mt40">강연 세미나 등 각종 행사 주최단체 및 개인등 대관 문의가<br>있으신 경우 02-3484-9403 로 연락 부탁드립니다.</p>
+											<p class="b_btn_about_w  mt40"><a href="/rooftop/contact/contact">View more</a></p>
+										</div>
+									</div>
+									<div class="slide r_bg_banner02">
+										<div class="r_banner_text ">
+											<p class="f48_5">넬보스코 루프탑 라운지&바</p>
+											<p class="f18_4 mt40">남산아래에서 선보이는 넬보스코 루프탑 라운지&바 GRAND OPEN <br>루프탑에서 와인과 칵테일을 즐겨보세요</p>
+											<p class="b_btn_about_k  mt40"><a href="/rooftop/menu/drink">View more</a></p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="">
+								<a class="slider_left"><img th:src="@{/img/rooftop/btn_prev_darkGray.jpg}" alt="이전" /></a>
+								<a class="slider_right"><img th:src="@{/img/rooftop/btn_next_darkGray.jpg}" alt="다음" /></a>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div><!-- /.row -->
+			<div class="row">
+				<div class="col-lg-12 mt150 ml100">
+					<p class="f62_4 mt20 f_mo ">Contact us</p>
+					<p class="f18_4 mt20">서울특별시 중구 퇴계로 8길 16 (우)04634</p>
+				</div>
+				<div class="col-lg-7 center mt50 ">
+					<p class="cnbox img100">
+						<img th:src="@{/img/rooftop/r_contact.jpg}" alt="루프탑 사진" />
+						<span class="contact_call"><img th:src="@{/img/rooftop/ico_call.jpg}" /></span>
+					</p>
+				</div>
+				<div class="col-lg-5 mt50 ">
+					<div class="ml50 cnbox2">
+						<p class="f18_4">넬보스코 대표전화</p>
+						<p class="f48_4 f_mo">02-3484-9403</p>
+						<p class="f18_4">통화량이 많을때는 1:1 문의 이용 부탁드립니다.</p>
+						<ul class="con_ul mt50">
+							<li>
+								<dl>
+									<dd>영업</dd>
+									<dd>11:30 ~ 23:00</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dd>좌석</dd>
+									<dd>78석</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dd>위치</dd>
+									<dd>넬보스코 루프탑층</dd>
+								</dl>
+							</li>
+						</ul>
+						<p class="btn_about  mt60"><a href="/rooftop/contact/map">View more</a></p>
+					</div>
+				</div>
+			</div><!-- /.row -->
+		</div><!-- /.container1400 -->
+
+
+		<div class="container100 mt130" >
+			<div class="row r-foot-banner">
+				<div class="col-md-6 r_bg_gray2">
+					<div class="r_foot_txt">
+						<p class="f18_4">Special</p>
+						<p class="f62_4 mt20">Event</p>
+						<p class="f18_4 mt50">넬보스코 루프탑 가든에선<br>다양한 이벤트를 선보입니다.<br>이벤트 페이지를 확인해보세요.</p>
+						<p class=" mt40 btn_about"><a href="/rooftop/community/event">View more</a></p>
+					</div>
+					<p class="nel-img"><img th:src="@{/img/rooftop/r_main08.jpg}" alt="" /></p>
+				</div>
+				<div class="col-md-6">
+					<div class="r_bg_banner04 h360">
+						<div class="h-center">
+							<p class="f32_4w">FAQ</p>
+							<p class="f18_4w mt30">고객님들께서 자주 묻는 질문을 모았습니다.</p>
+							<p class="f15_4w d-link mt30"><a href="/rooftop/contact/faq">바로가기</a></p>
+						</div>
+					</div>
+					<div class="r_bg_banner05 h360">
+						<div class="h-center">
+							<p class="f32_4w">1:1문의</p>
+							<p class="f18_4w mt30">원하시는 질문을 친절하고 빠르게 답변해드립니다.</p>
+							<p class="f15_4w d-link mt30"><a href="/rooftop/contact/contact">바로가기</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<!-- ======================
+		 * //contant *
+	========================== -->
+<!-- ====================== * FOOTER *========================== -->
+<footer th:replace="fragments/r_mainFooter :: footerFragment"></footer>
+<!-- 2021-06-03 -->
+<script type="text/javascript">
+	function getCookie(name) {
+	    var cookie = document.cookie;
+	
+	    if (document.cookie != "") {
+	         var cookieArray = cookie.split("; ");
+	         for ( var index in cookieArray) {
+	             var cookieName = cookieArray[index].split("=");
+	             if (cookieName[0] == name) {
+	                  return cookieName[1];
+	             }
+	         }
+	    }
+	    return ;    
+	}
+	
+	$(document).ready(function(){
+		//var popup = document.getElementById("popup");
+		var rightPopup = document.getElementById("rightPopup");
+		var popup_350570 = document.getElementById("popup_350570");
+		/*
+		var cookieCheck = getCookie("b_popup");
+		if (cookieCheck != "done"){
+			popup.style.display = 'block';
+		}
+		*/
+		var cookieCheck = getCookie("b_rightPopup");
+		if (cookieCheck != "done"){
+			rightPopup.style.display = 'block';
+		}
+		
+		var cookieCheck = getCookie("b_popup_350570");
+		if (cookieCheck != "done"){
+			popup_350570.style.display = 'block';
+		}
+		
+		$('#tabwrap2').basicTabs2();/* basicTabs2 변경 */
+	});
+</script>
+<!-- ======================* //FOOTER *========================== -->
+<div th:replace="fragments/footerScript :: footerScriptFragment"></div>
+</div><!-- // wrap -->
+</body>
+</html>

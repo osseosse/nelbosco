@@ -1,0 +1,156 @@
+﻿<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head th:replace="fragments/head :: headFragment"></head>
+<body>
+<div id="wrap">
+<!-- ====================== * HEADER *========================== -->
+<header th:replace="fragments/mainHeader :: headerFragment"></header>
+<!-- ======================* //HEADER *========================== -->
+
+	<!-- ====================== * contant * ========================== -->
+	<div id="contant">
+		<!-- subBigBanner -->
+		<div class="container100">
+			<div class="row">
+			  <div class="col-md-12 bg_event subTop">
+				<div class="coffeType">
+					<p class="f45_4w mt20">이벤트</p>
+				</div>
+			  </div>
+			</div>
+		</div><!-- // container100 -->
+		<!-- //subBigBanner -->
+
+<!--// Portfolio Cobbles Start //-->
+		<section class="section matychale-gallery-cobbles" >
+			<div>
+				<div class="container">
+					<div class="row">
+						<div class="menu_cate">
+							<a href="/community/notice" ><p>공지사항</p></a>
+							<a href="/community/event" class="active"><p>이벤트</p></a>
+							<a href="/community/recipe"><p>넬보스코 맛있는 레시피</p></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="location">
+					<span><a href="">HOME</a></span><img th:src="@{/img/location_arrow.gif}">
+					<span><a href="">Community</a></span><img th:src="@{/img/location_arrow.gif}">
+					<span>이벤트</span>
+				</div>
+				<div class="row clearboth mt100">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						
+						<!-- Vetical -->
+						<div id="css3-animated-example3" class="mt50m">
+
+							<div class="cae">
+								<ul>
+									<li>2</li>
+									<li>
+										<div class="thumbnail-wrapper">
+											<div class="thumbnail">
+												<div class="centered">
+													<img th:src="@{/img/event_sample.jpg}" alt="제품사진"/>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>무서더운 여름! 넬보스코 새로운 스무디출시!</li>
+									<li>2021.06.01</li>
+								</ul>
+							</div>
+							<div>
+								<div class="v_content">
+									========================
+									공지사항글 작성한 이미지가 리스트썸네일로 노출되게 개발해주세요.
+									========================
+									<p><img th:src="@{/img/event_sample.jpg}" alt="제품사진"/></p>
+									========================
+									공지사항글 작성에 필요한 에디터를 넣어주세요
+									========================
+								</div>
+							</div>
+							<div class="cae">
+								<ul>
+									<li>1</li>
+									<li>
+										<div class="thumbnail-wrapper">
+											<div class="thumbnail">
+												<div class="centered">
+													<img th:src="@{/img/event_sample.jpg}" alt="제품사진"/>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>넬보스코 오픈기념 이벤트를 확인하세요</li>
+									<li>2021.06.01</li>
+								</ul>
+							</div>
+							<div>
+								<div class="v_content">
+									========================
+									공지사항글 작성한 이미지가 리스트썸네일로 노출되게 개발해주세요.
+									========================
+									<p><img th:src="@{/img/bg_wall.jpg}" alt="제품사진"/></p>
+									========================
+									공지사항글 작성에 필요한 에디터를 넣어주세요
+									========================
+								</div>
+							</div>
+
+							
+						</div>
+						<script>
+						$("#css3-animated-example3").collapse({
+						  accordion: true,
+						  open: function() {
+							this.addClass("open");
+							this.css({ height: this.children().outerHeight() });
+						  },
+						  close: function() {
+							this.css({ height: "0px" });
+							this.removeClass("open");
+						  }
+						});
+						</script>
+						<!-- // Vetical -->
+					</div>
+				</div>
+				<!-- //row -->
+
+				<!-- paging -->
+				<div class="paging3">
+					<ol>
+						<li class="preEnd"><img src="@{/img/btn_preEnd.gif}" alt="처음" /></li>
+						<li class="pre"><img src="@{/img/btn_pre.gif}" alt="이전" /></li>
+						<li><a href="#">1</a></li>
+						<li><strong>2</strong></li><!-- 현재페이지 -->
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li class="next"><img src="@{/img/btn_next.gif}" alt="다음" /></li>
+						<li class="nextEnd"><img src="@{/img/btn_nextEnd.gif}" alt="끝" /></li>
+					</ol>
+				</div>
+				<!-- paging //-->
+			</div><!-- // container -->
+
+
+		</section>
+		<!--// Portfolio Cobbles End //-->
+		
+	</div>
+	<!-- ======================
+		 * //contant *
+	========================== -->
+
+	<!-- ====================== * FOOTER * ========================== -->
+	<footer class="container100" th:replace="fragments/mainFooter :: footerFragment"></footer>
+	<!-- ====================== * //FOOTER * ========================== -->
+	<div th:replace="fragments/footerScript :: footerScriptFragment"></div>
+</div><!-- // wrap -->
+</body>
+</html>

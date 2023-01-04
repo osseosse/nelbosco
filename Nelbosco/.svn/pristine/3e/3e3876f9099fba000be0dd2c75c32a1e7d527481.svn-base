@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<div id="menuScript" th:fragment="menuScriptFragment">
+<script th:inline="javascript">
+	/*<![CDATA[*/
+	function getGoodsList(category) {
+		if(category == 'bread') {
+        	location.href="/menu/bread";
+        }
+		
+		 $.ajax({
+		    url: '/getGoodsList/'+category,
+		    contentType: "application/json; charset=utf-8",
+		    dataType:'json',
+		    success:function(response){
+		      	if(response != null){
+		            var goodsList = response.goodsList;
+		            var timehtml = "";
+		            var size = goodsList.length;
+		            if($("#mgroupDiv").val() == '') {	// bread에서 클릭시 mgroup메뉴 삭제
+		            	$("#mgroupDiv").remove();
+		    		}
+		            
+		            for(var i=0;i<size; i++){
+		                  timehtml+='<div class="portfolio-cobbles-item glry-item col-md-3 col-sm-6 col-6">';
+		                  timehtml+='<div class="thumbnail2">';
+		                  if(goodsList[i].imageOver == null || goodsList[i].imageOver == '') {
+		                	  timehtml+='<div class="bg01">';
+		                  } else {
+		                	  timehtml+='<div class="bg02">';
+		                  }
+		                  timehtml+='<img src=../img/product/'+goodsList[i].imageThum+' alt="#" >';
+		                  timehtml+='</div>';
+		                  timehtml+='</div>';
+		                  timehtml+='<div class="portfolio-buttons mb70m">';
+		                  timehtml+='<p class="f26_4 pdTitle">'+goodsList[i].goodsName+'</p>';
+		                  timehtml+='<p class="mt10 f16_3g">'+goodsList[i].goodsExplan+'</p>';
+		                  timehtml+='<div class="alleg">알레르기 유발요인: '+goodsList[i].allergIngr+'</div>';
+		                  timehtml+='</div>';
+		                  timehtml+='</div>';
+		            }//for
+		            $("#resultDiv").html(timehtml);
+		        }else{
+		          alert("품절입니다.");
+		        }
+		    },error:function(request,status,error){
+		      alert("다시시도해주세요");
+		      //alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+		      //winddow.href="/";
+		    }
+		  });
+	}
+	/*]]>*/
+</script>
+<script th:inline="javascript">
+/*<![CDATA[*/
+var header = document.getElementById("menuDiv");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+/*]]>*/
+</script>
+<script th:inline="javascript">
+/*<![CDATA[*/
+$(document).ready(function () {
+	$(".bg02").each(function() {
+	
+	  var nowImg = $(this).find('img');
+	  var srcName = nowImg.attr('src');
+	  var newSrc = srcName.substring(0, srcName.lastIndexOf('.'));
+	
+	 //호버이벤트
+	  $(this).hover(function() { 
+	    $(this).find('img').attr('src', newSrc+ '_on.' + /[^.]+$/.exec(srcName)); //hover시 _on붙이기
+	  }, function() {
+	    $(this).find('img').attr('src', newSrc + '.' + /[^.]+$/.exec(srcName)); //hover시 _on 때기
+	  });
+	 
+	});
+});
+/*]]>*/
+</script>
+</div>
+</html>

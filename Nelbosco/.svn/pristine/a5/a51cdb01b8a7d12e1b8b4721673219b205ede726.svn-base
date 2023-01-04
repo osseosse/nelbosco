@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<header id="header" th:fragment="headerFragment">
+<div class="spot">
+     <div class="spot_pc">
+        <div class="spot_btn">
+            <!-- <a href="#" id="spotToggle" ><img src="../img/btn_spot_close.gif" alt="" /></a> -->
+        </div>
+        <a href="/community/event"><img src="../img/top_spotbanner.jpg" alt="" /></a>
+    </div>
+</div>
+<!-- 모바일 메뉴 -->
+<div class="window" id="fx">
+  <div class="header" >
+	<div class="burger-container">
+	  <div id="burger">
+		<div class="bar topBar"></div>
+		<div class="bar btmBar"></div>
+	  </div>
+	</div>
+	<div class="icon icon-apple"><div class="logo"><a href="/main"><img th:src="@{/img/logo2.png}" alt="로고"></a></div></div>
+	<!-- Vetical -->
+	<div id="css3-animated-example">
+		<h3 class="cae ">Brand Story</p></h3>
+		<div>
+			<div class="v_content">
+				<ul>
+					<li><a href="/brandstory/about">브랜드 스토리</a></li>
+					<li><a href="/brandstory/bi">브랜드 아이덴티티</a></li>
+					<li><a href="/brandstory/place">공간 이야기</a></li>
+					<li><a href="/brandstory/lab">연구소</a></li>
+				</ul>
+			</div>
+		</div>
+		<h3 class="cae ">Story</p></h3>
+		<div>
+			<div class="v_content">
+				<ul>
+					<li><a href="/story/coffeeStory">커피 이야기</a></li>
+					<li><a href="/story/drink">음료 이야기</a></li>
+					<li><a href="/story/bakery">베이커리 이야기</a></li>
+					<!-- <li><a href="/story/music">음악 공연 이야기</a></li> -->
+				</ul>
+			</div>
+		</div>
+		<h3 class="cae">Menu</p></h3>
+		<div>
+			<div class="v_content">
+				 <ul>
+					<!-- <li><a href="/menu/new">New</a></li> -->
+					<li><a href="/menu/espresso">Espresso</a></li>
+					<li><a href="/menu/tea">Tea</a></li>
+					<li><a href="/menu/soymilk">Special Drink</a></li>
+					<li><a href="/menu/ade">Ade</a></li>
+					<li><a href="/menu/smoothie">Smoothie</a></li>
+					<li><a href="/menu/bread">Bread</a></li>
+					<li><a href="/menu/cake">Cake&amp;Dessert</a></li>
+					<li><a href="/menu/etc">Ice Dessert</a></li>
+					<li><a href="/menu/gift">GIFT</a></li>
+				</ul> 
+			</div>
+		</div>
+		<h3 class="cae">Community</p></h3>
+		<div>
+			<div class="v_content">
+				 <ul>
+					<li><a href="/community/notice">공지사항</a></li>
+					<li><a href="/community/event">이벤트</a></li>
+					<!-- <li><a href="/community/sns" onClick="alert('준비중입니다.')">SNS</a></li> -->
+					<li><a href="/community/recipe">넬보스코 맛있는 레시피</a></li>
+				</ul> 
+			</div>
+		</div>
+		<h3 class="cae">Contact</p></h3>
+		<div>
+			<div class="v_content">
+				 <ul>
+					<li><a href="/contact/map">오시는길</a></li>
+					<li><a href="/contact/contact">고객상담</a></li>
+					<li><a href="/contact/faq">자주 묻는 질문</a></li>
+					<li><a href="/contact/booking">예약문의</a></li>
+				</ul> 
+			</div>
+		</div>
+	</div>
+	<script>
+	$("#css3-animated-example").collapse({
+	  accordion: true,
+	  open: function() {
+		this.addClass("open");
+		this.css({ height: this.children().outerHeight() });
+	  },
+	  close: function() {
+		this.css({ height: "0px" });
+		this.removeClass("open");
+	  }
+	});
+	</script>
+	<!-- // Vetical -->
+	
+  </div>
+</div>
+<!-- //모바일 메뉴 -->
+
+<div id="gnb">
+	<div class="gnbBG"></div>
+	<div class="logo"><a href="/main"><img th:src="@{/img/logo2.png}" alt="로고"></a></div>
+	<ul>
+		<li class="first"><a href="/brandstory/about" class="dep01">Brand Story</a>
+			<ul>
+				<li><a href="/brandstory/about">브랜드 스토리</a></li>
+				<li><a href="/brandstory/bi">브랜드 아이덴티티</a></li>
+				<li><a href="/brandstory/place">공간 이야기</a></li>
+				<li><a href="/brandstory/lab">연구소</a></li>
+				<li><a href="/story/coffeeStory">커피 이야기</a></li>
+				<li><a href="/story/drink">음료 이야기</a></li>
+				<li><a href="/story/bakery">베이커리 이야기</a></li>
+				<!-- <li><a href="/story/music">음악 공연 이야기</a></li> -->
+			</ul>
+		</li>
+		<li><a href="#" class="dep01">Menu</a>
+			<ul>
+				<!-- <li><a href="/menu/new">New</a></li> -->
+				<li><a href="/menu/espresso">Espresso</a></li>
+				<li><a href="/menu/tea">Tea</a></li>
+				<li><a href="/menu/soymilk">Special Drink</a></li>
+				<li><a href="/menu/ade">Ade</a></li>
+				<li><a href="/menu/smoothie">Smoothie</a></li>
+				<li><a href="/menu/bread">Bread</a></li>
+				<li><a href="/menu/cake">Cake&amp;Dessert</a></li>
+				<li><a href="/menu/etc">Ice Dessert</a></li>
+				<li><a href="/menu/gift">GIFT</a></li>
+			</ul>
+		</li>
+		<li><a href="#" class="dep01">Community</a>
+			<ul>
+				<li><a href="/community/notice">공지사항</a></li>
+				<li><a href="/community/event">이벤트</a></li>
+				<!-- <li><a  href="/community/sns" onClick="alert('준비중입니다.')">SNS</a></li> -->
+				<li><a href="/community/recipe">넬보스코 맛있는 레시피</a></li>
+			</ul>
+		</li>
+		<li><a href="#" class="dep01">Contact</a>
+			<ul>
+				<li><a href="/contact/map">오시는길</a></li>
+				<li><a href="/contact/contact">고객상담</a></li>
+				<li><a href="/contact/faq">자주 묻는 질문</a></li>
+				<li><a href="/contact/booking">예약문의</a></li>
+			</ul>
+		</li>
+	</ul>
+ </div>
+<script>
+
+function setCookie( name, value, expiredays ) {
+    var todayDate = new Date();
+    todayDate.setDate( todayDate.getDate() + expiredays );
+    document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+ }
+ 
+jQuery(function($){
+	cookiedata = document.cookie;
+    if ( cookiedata.indexOf("spot=done") < 0 ){
+		$("#spot").show();
+    }
+    else {
+		$("#spot").hide();
+    }
+})
+ 
+jQuery('#spotToggle').click(function () {  
+	$('.spot').slideUp("slow"); 
+	setCookie("spot", "done" , 1);
+});
+</script>
+<script>
+// gnb
+function chk(){
+		if(cc == 1){
+		$("#gnb ul li ul").slideDown(200);
+		$(".gnbBG").slideDown(200);
+		//$("#gnb .gnb_bg").slideDown(100);
+	}else{
+		$("#gnb ul li ul").slideUp(250);
+		$(".gnbBG").slideUp(250);
+		//$("#gnb .gnb_bg").slideUp(250);
+	}
+}
+
+
+$(function(){
+	$('#gnb>ul>li').mouseover(function(){
+		setTimeout(chk, 100);
+		cc = 1;
+		$(this).addClass('active');
+	});
+	$('#gnb').mouseout(function(){
+		setTimeout(chk, 400);
+		cc = 0;
+		$('#gnb ul li').removeClass('active');
+	});
+	$('#gnb ul li a').focus(function(){
+		setTimeout(chk, 100);
+		cc = 1;
+		$(this).parent().addClass('active');
+	});
+	$('#gnb ul li a').blur(function(){
+		setTimeout(chk, 100);
+		cc = 0;
+		$('#gnb ul li').removeClass('active');
+	});
+});
+
+// 모바일 gnb
+(function(){
+    var burger = document.querySelector('.burger-container'),
+        header = document.querySelector('.header');
+    
+    burger.onclick = function() {
+        header.classList.toggle('menu-opened');
+    }
+}());
+</script>
+</header>
+</html>

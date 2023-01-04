@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<footer id="footer" th:fragment="footerFragment">
+<div class="container">
+	<div class="row">
+		<div class="col-lg-6 col-sm-4 col-md-4 ">
+			<p class="f15_4g foo_add">서울 특별시 중구 퇴계로 8길 16<br>
+			TEL 000-0000-0000  대표자 000 사업자번호   000-00-0000</p>
+		</div>
+		<div class="col-lg-3 col-sm-4 col-md-4 ">
+			<p class="foot_sns">
+				<span><a href="#" target="_blank"><img th:src="@{/img/ico_insta.png}" alt=""/></a></span>
+				<span><a href="#" target="_blank"><img th:src="@{/img/ico_blog.png}" alt=""/></a></span>
+			</p>
+		</div>
+		<div class="col-lg-3 col-sm-4 col-md-4 ">
+			<p class="f15_4g foot_copy">2020 © nelBosco. All Rights Reserved. </p>
+		</div>
+	</div>
+</div>
+</footer>
+</html>

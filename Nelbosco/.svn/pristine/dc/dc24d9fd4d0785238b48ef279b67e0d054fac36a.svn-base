@@ -1,0 +1,106 @@
+package com.nelbosco.controller;
+
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
+import com.nelbosco.constant.Method;
+import com.nelbosco.domain.AdminDTO;
+import com.nelbosco.domain.ReservationDTO;
+import com.nelbosco.service.AdminService;
+import com.nelbosco.service.ReservationService;
+import com.nelbosco.util.UiUtils;
+
+@Controller
+public class AdminController extends UiUtils {
+
+	@Autowired
+	private ReservationService reservationService;
+	
+	@Autowired
+	private AdminService adminService;
+	
+	@GetMapping("admin/login")
+    public String openLogin() {
+        return "admin/login";
+    }
+	
+	@GetMapping("admin/logout")
+    public String openLogout(HttpServletRequest req, Model model) {
+		HttpSession session = req.getSession();
+		session.setAttribute("administrator", null);
+		return showMessageWithRedirect("로그아웃 되었습니다.", "/admin/login", Method.GET, null, model);
+    }
+	
+	@GetMapping("admin/adminList")
+    public String openAdminList(HttpServletRequest req, Model model) {
+		
+		HttpSession session = req.getSession();
+		if(session.getAttribute("administrator") == null) {
+			return showMessageWithRedirect("관리자 로그인 하십시오.", "/admin/login", Method.GET, null, model);
+		}
+		
+        return "admin/adminList";
+    }
+	
+	@PostMapping("/admin/login" )
+	public String execMail(AdminDTO dto, Model model , HttpServletRequest req, RedirectAttributes rttr) {
+		int result = 0;
+		HttpSession session = req.getSession();
+		result = adminService.login(dto);
+		
+		if(result == 1) {
+			session.setAttribute("administrator", dto.getId());
+			return showMessageWithRedirect("관리자로 로그인 합니다.", "/admin/adminList", Method.GET, null, model);
+		} else {
+			session.setAttribute("administrator", null);
+			return showMessageWithRedirect("올바르지 않은 접근입니다.", "/", Method.GET, null, model);
+		}
+    }
+
+	@GetMapping(value = "/admin/adminBookingList")
+	public String openReservationListAdmin(@ModelAttribute("params") ReservationDTO params, Model model , HttpServletRequest req) {
+		
+		HttpSession session = req.getSession();
+		if(session.getAttribute("administrator") == null) {
+			return showMessageWithRedirect("관리자 로그인 하십시오.", "/admin/login", Method.GET, null, model);
+		}
+		
+		List<ReservationDTO> reservationList = reservationService.getReservationList(params);
+		model.addAttribute("reservationList", reservationList);
+
+		return "admin/adminBookingList";
+	}
+	
+	@GetMapping(value = "/admin/adminBookingDetail")
+	public String openReservationDetailAdmin(@ModelAttribute("params") ReservationDTO params, @RequestParam(value = "idx", required = false) Long idx, Model model , HttpServletRequest req) {
+		
+		HttpSession session = req.getSession();
+		if(session.getAttribute("administrator") == null) {
+			return showMessageWithRedirect("관리자 로그인 하십시오.", "/admin/login", Method.GET, null, model);
+		}
+		
+		if (idx == null) {
+			return showMessageWithRedirect("올바르지 않은 접근입니다.", "/admin/adminBookingList", Method.GET, null, model);
+		}
+
+		ReservationDTO reservation = reservationService.getReservationDetail(idx);
+		if (reservation == null || "Y".equals(reservation.getDeleteYn())) {
+			return showMessageWithRedirect("없는 게시글이거나 이미 삭제된 게시글입니다.", "/admin/adminBookingList", Method.GET, null, model);
+		}
+		model.addAttribute("reservation", reservation);
+		return "admin/adminBookingDetail";
+	}
+	
+
+}

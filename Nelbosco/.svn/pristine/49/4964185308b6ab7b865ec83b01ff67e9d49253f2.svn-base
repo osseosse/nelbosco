@@ -1,0 +1,839 @@
+﻿<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title>넬보스코</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+	<script src="http://code.jquery.com/jquery-1.11.2.js"></script>
+
+	
+	<script type="text/javascript" src="js/common.js"></script><!-- GNB PC웹접근성 메뉴 -->
+	<script src="js/jquery.collapse.js"></script><!-- 모바일 메뉴 -->
+
+
+
+	<link href="css/reset.css" rel="stylesheet">
+	<link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	<!-- 제스터 : REVOLUTION LAYERS STYLES (메인슬라이드) -->
+	<link rel="stylesheet" type="text/css" href="css/layers.css">
+	<link rel="stylesheet" type="text/css" href="css/settings.css">
+  </head>
+  <body>
+	<div id="wrap">
+	<!-- ======================
+		 * HEADER *
+	========================== -->
+	<header>
+	
+	</header>
+	<script>
+		/* 로드방식 local 크롬에서 노출되지 않음. */
+	  $( document ).ready( function() {
+		$( 'header' ).load( './mainHeader.html?' );
+	  } );
+	</script>
+	<!-- ======================
+		 * //HEADER *
+	========================== -->
+
+	<!-- ======================
+		 * contant *
+	========================== -->
+	<div id="contant">
+		<!-- REVOLUTION SLIDER -->
+		<div id="rev_slider_5_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container slide-overlay" data-alias="classic4export" data-source="gallery">
+			<!-- START REVOLUTION SLIDER 5.4.8 auto mode -->
+			<div id="rev_slider_5_1" class="rev_slider fullwidthabanner rev_slider_5_1_height" data-version="5.4.8.1">
+				<ul>
+					<li data-index="rs-1" data-transition="curtain-3" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="./img/mainVisual01.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+						
+						<img src="./img/mainVisual01.jpg" alt="" title="Home 1" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+
+						<div class="tp-caption tp-resizeme slide-main-text f_mw" id="slide-1-layer-2" data-x="['center','center','center','center']" data-hoffset="['0','0','0','-1']" data-y="['middle','middle','middle','middle']" data-voffset="['-70','-70','-85','-23']"
+					   
+						data-fontsize="['76','76','60','42']"
+						data-lineheight="['100','100','70','60']"
+						data-fontweight="['400','400','400','400']"
+						data-color="['rgb(240, 244, 247)','rgb(240, 244, 247)','rgb(240, 244, 247)','rgb(240, 244, 247)']"
+						data-width="none"
+						data-height="none"
+						data-whitespace="nowrap"
+						data-type="text"
+						data-responsive_offset="on"
+						data-frames='[{"delay":90,"split":"chars","splitdelay":0.05000000000000000277555756156289135105907917022705078125,"speed":500,"split_direction":"forward","frame":"0","from":"y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power0.easeIn"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+						data-textAlign="['inherit','inherit','inherit','inherit']"
+						data-paddingtop="[0,0,0,0]"
+						data-paddingright="[0,0,0,0]"
+						data-paddingbottom="[0,0,0,0]"
+						data-paddingleft="[0,0,0,0]"
+						 >The Brilliant Moment</div>
+
+					   
+						
+
+						<div class="tp-caption tp-resizeme" id="slide-1-layer-6" data-x="['center','center','center','center']" data-hoffset="['0','0','1','-432']" data-y="['middle','middle','middle','middle']" data-voffset="['25','25','-17','-67']"
+						
+						data-fontsize="['40','40','27','27']"
+						data-lineheight="['40','40','27','27']"
+						data-fontweight="['500','500','500','500']"
+						data-color="['rgb(255, 255, 255)','rgb(255, 255, 255)','rgb(255, 255, 255)','rgb(255, 255, 255)']"
+						data-width="none"
+						data-height="none"
+						data-whitespace="nowrap"
+						data-visibility="['on','on','on','off']"
+						data-type="text"
+						data-responsive_offset="on"
+						data-frames='[{"delay":580,"speed":500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power0.easeIn"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+						data-textAlign="['inherit','inherit','inherit','inherit']"
+						data-paddingtop="[0,0,0,0]"
+						data-paddingright="[0,0,0,0]"
+						data-paddingbottom="[0,0,0,0]"
+						data-paddingleft="[0,0,0,0]"
+						>넬보스코는 아름다운 공간과 음악</div>
+					</li>
+
+
+					<li data-index="rs-2" data-transition="curtain-3" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="./img/mainVisual02.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+
+						<img src="./img/mainVisual02.jpg" alt="" title="Home 1" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+
+						<div class="tp-caption tp-resizeme slide-main-text f_mw" id="slide-1-layer-2" data-x="['center','center','center','center']" data-hoffset="['0','0','0','-1']" data-y="['middle','middle','middle','middle']" data-voffset="['-70','-70','-85','-23']"
+					   
+						data-fontsize="['76','76','60','42']"
+						data-lineheight="['100','100','70','60']"
+						data-fontweight="['400','400','400','400']"
+						data-color="['rgb(240, 244, 247)','rgb(240, 244, 247)','rgb(240, 244, 247)','rgb(240, 244, 247)']"
+						data-width="none"
+						data-height="none"
+						data-whitespace="nowrap"
+						data-type="text"
+						data-responsive_offset="on"
+						data-frames='[{"delay":90,"split":"chars","splitdelay":0.05000000000000000277555756156289135105907917022705078125,"speed":500,"split_direction":"forward","frame":"0","from":"y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power0.easeIn"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+						data-textAlign="['inherit','inherit','inherit','inherit']"
+						data-paddingtop="[0,0,0,0]"
+						data-paddingright="[0,0,0,0]"
+						data-paddingbottom="[0,0,0,0]"
+						data-paddingleft="[0,0,0,0]"
+						>The Brilliant Moment</div>
+
+					   
+						<div class="tp-caption tp-resizeme" id="slide-1-layer-6" data-x="['center','center','center','center']" data-hoffset="['0','0','1','-432']" data-y="['middle','middle','middle','middle']" data-voffset="['25','25','-17','-67']"
+						
+						data-fontsize="['40','40','27','27']"
+						data-lineheight="['40','40','27','27']"
+						data-fontweight="['500','500','500','500']"
+						data-color="['rgb(255, 255, 255)','rgb(255, 255, 255)','rgb(255, 255, 255)','rgb(255, 255, 255)']"
+						data-width="none"
+						data-height="none"
+						data-whitespace="nowrap"
+						data-visibility="['on','on','on','off']"
+						data-type="text"
+						data-responsive_offset="on"
+						data-frames='[{"delay":580,"speed":500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power0.easeIn"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+						data-textAlign="['inherit','inherit','inherit','inherit']"
+						data-paddingtop="[0,0,0,0]"
+						data-paddingright="[0,0,0,0]"
+						data-paddingbottom="[0,0,0,0]"
+						data-paddingleft="[0,0,0,0]"
+						>건강한 먹거리 어우러져 있는 힐링 공간을 추구합니다</div>
+					</li>
+
+
+					<li data-index="rs-3" data-transition="curtain-3" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="./img/bg_menu.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+
+						<img src="./img/bg_menu.jpg" alt="" title="Home 1" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+
+						<div class="tp-caption tp-resizeme slide-main-text f_mw" id="slide-1-layer-2" data-x="['center','center','center','center']" data-hoffset="['0','0','0','-1']" data-y="['middle','middle','middle','middle']" data-voffset="['-70','-70','-85','-23']"
+					   
+						data-fontsize="['76','76','60','42']"
+						data-lineheight="['100','100','70','60']"
+						data-fontweight="['400','400','400','400']"
+						data-color="['rgb(240, 244, 247)','rgb(240, 244, 247)','rgb(240, 244, 247)','rgb(240, 244, 247)']"
+						data-width="none"
+						data-height="none"
+						data-whitespace="nowrap"
+						data-type="text"
+						data-responsive_offset="on"
+						data-frames='[{"delay":90,"split":"chars","splitdelay":0.05000000000000000277555756156289135105907917022705078125,"speed":500,"split_direction":"forward","frame":"0","from":"y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power0.easeIn"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+						data-textAlign="['inherit','inherit','inherit','inherit']"
+						data-paddingtop="[0,0,0,0]"
+						data-paddingright="[0,0,0,0]"
+						data-paddingbottom="[0,0,0,0]"
+						data-paddingleft="[0,0,0,0]"
+						>Low temperature ripening</div>
+
+					   
+						<div class="tp-caption tp-resizeme" id="slide-1-layer-6" data-x="['center','center','center','center']" data-hoffset="['0','0','1','-432']" data-y="['middle','middle','middle','middle']" data-voffset="['25','25','-17','-67']"
+						
+						data-fontsize="['40','40','27','27']"
+						data-lineheight="['40','40','27','27']"
+						data-fontweight="['500','500','500','500']"
+						data-color="['rgb(255, 255, 255)','rgb(255, 255, 255)','rgb(255, 255, 255)','rgb(255, 255, 255)']"
+						data-width="none"
+						data-height="none"
+						data-whitespace="nowrap"
+						data-visibility="['on','on','on','off']"
+						data-type="text"
+						data-responsive_offset="on"
+						data-frames='[{"delay":580,"speed":500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power0.easeIn"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+						data-textAlign="['inherit','inherit','inherit','inherit']"
+						data-paddingtop="[0,0,0,0]"
+						data-paddingright="[0,0,0,0]"
+						data-paddingbottom="[0,0,0,0]"
+						data-paddingleft="[0,0,0,0]"
+						>저온숙성법 </div>
+					</li>
+					<li data-index="rs-4" data-transition="curtain-3" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="./img/coffeestory_11.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+
+						<img src="./img/coffeestory_11.jpg" alt="" title="Home 1" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+
+						<div class="tp-caption tp-resizeme slide-main-text f_mw" id="slide-1-layer-2" data-x="['center','center','center','center']" data-hoffset="['0','0','0','-1']" data-y="['middle','middle','middle','middle']" data-voffset="['-70','-70','-85','-23']"
+					   
+						data-fontsize="['76','76','60','42']"
+						data-lineheight="['100','100','70','60']"
+						data-fontweight="['400','400','400','400']"
+						data-color="['rgb(240, 244, 247)','rgb(240, 244, 247)','rgb(240, 244, 247)','rgb(240, 244, 247)']"
+						data-width="none"
+						data-height="none"
+						data-whitespace="nowrap"
+						data-type="text"
+						data-responsive_offset="on"
+						data-frames='[{"delay":90,"split":"chars","splitdelay":0.05000000000000000277555756156289135105907917022705078125,"speed":500,"split_direction":"forward","frame":"0","from":"y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power0.easeIn"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+						data-textAlign="['inherit','inherit','inherit','inherit']"
+						data-paddingtop="[0,0,0,0]"
+						data-paddingright="[0,0,0,0]"
+						data-paddingbottom="[0,0,0,0]"
+						data-paddingleft="[0,0,0,0]"
+						>The Brilliant Moment</div>
+
+					   
+						<div class="tp-caption tp-resizeme" id="slide-1-layer-6" data-x="['center','center','center','center']" data-hoffset="['0','0','1','-432']" data-y="['middle','middle','middle','middle']" data-voffset="['25','25','-17','-67']"
+						
+						data-fontsize="['40','40','27','27']"
+						data-lineheight="['40','40','27','27']"
+						data-fontweight="['500','500','500','500']"
+						data-color="['rgb(255, 255, 255)','rgb(255, 255, 255)','rgb(255, 255, 255)','rgb(255, 255, 255)']"
+						data-width="none"
+						data-height="none"
+						data-whitespace="nowrap"
+						data-visibility="['on','on','on','off']"
+						data-type="text"
+						data-responsive_offset="on"
+						data-frames='[{"delay":580,"speed":500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power0.easeIn"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+						data-textAlign="['inherit','inherit','inherit','inherit']"
+						data-paddingtop="[0,0,0,0]"
+						data-paddingright="[0,0,0,0]"
+						data-paddingbottom="[0,0,0,0]"
+						data-paddingleft="[0,0,0,0]"
+						>끝없는 블렌딩 연구</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- END REVOLUTION SLIDER -->
+
+
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 center">
+					<p class="mt120 f20_7 f_mw ">OUR STORY</p>
+					<p class="mt30 f45_7 f_mw">ABOUT NelBosco</p>
+				</div>
+			</div><!-- /.row -->
+			<div class="row mt90 flex">
+				<div class="col-lg-6">
+					<p class="f20_4 mt50m">우리는 늘 건강하고 행복한 공간을<br>만들기 위해 고민했습니다. </p>
+					<p class="f20_4 mt30">신선한 커피와 갓 구운 빵이 함께 하는 곳,<br>건강한 음식과 좋은 사람들이 함께하는 곳,<br>잠깐의 휴식과 일상 속의 특별함이 함께하는 곳,  </p>
+					<p class="f32_4 mt30">넬 보스코 입니다. </p>
+					<p class="f20_7 mt120 about f_mw"><a href="./about.html">ABOUT US</a></p>
+				</div>
+				<div class="col-lg-6">
+					<p><img src="./img/cup.png" alt="넬보스코테이트아웃잔" /></p>
+				</div>
+			</div><!-- /.row -->
+			<!-- START THE FEATURETTES -->
+		</div><!-- /.container -->
+		<div class="container100 mt100">
+			<div class="row">
+			  <div class="col-md-12">
+
+				<div class="count">
+					<div class="count_type">
+						<div class="middle">
+							<p class="f73_7 f_mw count_p01">Upcoming Bread!</p>
+							<p class="f20_4w mt20 count_p02">곧 빵이 나올 시간을 확인하시고, 갓 나온 빵이 주는 행복을 만끽해보세요. </p>
+							<hr>
+							<ul class="count_box mt40">
+								<!-- <li><span id="days"></span>days</li> -->
+								<li><span id="hours" class="f90_7 f_mw"></span><p class="f22_4w f_mw">Hours</p></li>
+								<li><span id="minutes" class="f90_7 f_mw"></span><p class="f22_4w f_mw">Minutes</p></li>
+								<li><span id="seconds" class="f90_7 f_mw"></span><p class="f22_4w f_mw">Seconds</p></li>
+							</ul>
+						</div>
+					</div>
+					 
+					<!-- -------------------------------
+					// 코드팬 countdown-timer / Day정보는 히든처리함 / 공통스크립트에 적용시 에러발생
+					//--------------------------------- -->
+					<script>
+					const second = 1000,
+						  minute = second * 60,
+						  hour = minute * 60,
+						  day = hour * 24;
+
+					let countDown = new Date('Sep 30, 2020 00:00:00').getTime(),
+						x = setInterval(function() {    
+
+						  let now = new Date().getTime(),
+							  distance = countDown - now;
+
+						 /*  document.getElementById('days').innerText = Math.floor(distance / (day)), */
+							document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+							document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+							document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+
+						  //do something later when date is reached
+						  //if (distance < 0) {
+						  //  clearInterval(x);
+						  //  'IT'S MY BIRTHDAY!;
+						  //}
+
+						}, second)
+					</script>
+					<!-- -------------------------------
+					// // 코드팬 countdown-timer / Day정보는 히든처리함 / 공통스크립트에 적용시 에러발생
+					//--------------------------------- -->
+					
+					<video autoplay loop muted class="bread">
+						<source src="./img/bread_720x404.mp4" type="video/mp4">
+					</video>
+					<!-- //VIDEO -->
+				</div><!-- //count -->
+			  </div>
+			</div>
+		</div><!-- // container100 -->
+		<div class="container100 mt100">
+			<div class="row">
+			  <div class="col-md-12 bg_coffee">
+				<div class="coffeType">
+					<p class="f20_7w f_mw">Bosco LAB.</p>
+					<p class="f45_4w mt20">건강한 식음료의 전통성을 그대로</p>
+					<p class="f20_4w mt20">최고의 품질과 맛을 위한 연구는 지금도 계속됩니다.</p>
+					<p class="f20_7 lab f_mw"><a href="./lab.html">Bosco Lab. NOW</a></p>
+				</div>
+			  </div>
+			</div>
+		</div><!-- // container100 -->
+
+		
+
+
+		<!--// Portfolio Cobbles Start //-->
+		<section class="section matychale-gallery-cobbles">
+			<div class="container100_15">
+				<div class="row">
+					<div class="col-lg-12 center">
+						<p class="mt120 f20_7 f_mw">WHAT WE OFFER</p>
+						<p class="mt30 f45_7 f_mw">DISCOVER MENU</p>
+					</div>
+					<!--// .col //-->
+				</div>
+				<!--// .row //-->
+
+				<!-- 모바일 DISCOVER MENU 
+				<div class="m_dim mt50" id="sliderh3">
+				  <div class="slider">
+					<div class="slider_area">
+					  <div class="slides ">
+						<div class="slide">
+							<div class="co01">
+								
+							</div>
+						</div>
+						<div class="slide">
+							<div class="co01">
+							
+							</div>
+	
+						</div>
+						<div class="slide">
+							<div class="co01">
+								
+							</div>
+						</div>
+
+					  </div>
+					</div>
+					<a class="slider_left">Left</a>
+					<a class="slider_right">Right</a>
+				  </div>
+				</div>
+				<!-- //모바일 DISCOVER MENU -->
+
+				<!-- PC DISCOVER MENU -->
+				<div class="gallery-filter-btn-wrapper mt80 "><!-- 클래스 pc_dim -->
+					<div class="portfolio-filter">
+						<a href="#" data-gallery-filter="*" class="current"><img src="./img/btn_menu01.png" alt="#"><p>ALL</p></a>
+						<a href="#" data-gallery-filter=".ba"><img src="./img/btn_menu04.png" alt="#"><p>BAKERY</p></a><!-- ba 베이커리 -->
+						<a href="#" data-gallery-filter=".ca"><img src="./img/btn_menu05.png" alt="#"><p>CAKE</p></a><!-- ca 케이크-->
+						<a href="#" data-gallery-filter=".co"><img src="./img/btn_menu02.png" alt="#"><p>COFFEE</p></a><!-- co 커피-->
+						<a href="#" data-gallery-filter=".br"><img src="./img/btn_menu03.png" alt="#"><p>Brunch</p></a><!-- br 브런치-->
+						<a href="#" data-gallery-filter=".be"><img src="./img/btn_menu03.png" alt="#"><p>BEVERAGE</p></a><!-- be 비버리지-->
+						<a href="#" data-gallery-filter=".de"><img src="./img/btn_menu01.png" alt="#"><p>DESSERT</p></a><!-- de 디저트 -->
+					</div>
+				</div>
+				<div class="portfolio-gallery row "><!-- 클래스 pc_dim -->
+					<div class="col-md-6 col-lg-3 portfolio-cobbles-item glry-item col-sm-6 ba">
+						<div class="ba01">
+							<!-- 제품 -->
+							<div class="thumbnail2">
+								<div class="portfolio-item-img centered2">
+									<img src="./img/product/ck01.jpg" alt="Portfolio Img" class="img-fluid portfolio-img">
+									<h5 class="portfolio-detail-title">BAKERY</h5>
+								</div>
+							</div>
+							<div class="portfolio-buttons">
+								<a href="./menu_brunch.html">
+									<p class="f32_4 pdTitle">브라운슈가 라떼</p>
+									<p class="mt10 g_type">넬보스코 에스프레소에 로우슈가 흑당을 더해! 넬보스코 에스프레소에 로우슈가 흑당을 더해!넬보스코 에스프레소에 로우슈가 흑당을 더해!</p>
+									<p class="f24_4 mt30">
+										<div class="infoBox">
+											<dl>
+												<dt>칼로리</dt>
+												<dd>(276Kcal)</dd>
+											</dl>
+											<dl>
+												<dt>당류</dt>
+												<dd>(41Kcal)</dd>
+											</dl>
+											<dl>
+												<dt>단백질</dt>
+												<dd>(6g)</dd>
+											</dl>
+											<dl>
+												<dt>포화지방</dt>
+												<dd>(4.3g)</dd>
+											</dl>
+											<dl>
+												<dt>카페인</dt>
+												<dd>(10mg)</dd>
+											</dl>
+											
+										</div>
+									</p>
+									<p class="alleg">알래르기 유발요인: 우유</p>
+								</a>
+							</div>
+							<div class="subType">
+								<p class="f20_4 mt30">브라운슈가 라떼</p>
+								<p class="f18_4 mt10">Cheese In Cheese Cake</p>
+							</div>
+							<!-- //제품 -->
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3 glry-item portfolio-cobbles-item col-sm-6 ca">
+						<div class="ca01">
+							<!-- 제품 -->
+							<div class="thumbnail2">
+								<div class="portfolio-item-img centered2">
+									<img src="./img/product/ck02.jpg" alt="Portfolio Img" class="img-fluid portfolio-img">
+									<h5 class="portfolio-detail-title">CAKE</h5>
+								</div>
+							</div>
+							<div class="portfolio-buttons">
+								<a href="./menu_brunch.html">
+									<p class="f32_4 pdTitle">브라운슈가 라떼</p>
+									<p class="mt10 g_type">넬보스코 에스프레소에 로우슈가 흑당을 더해, 더욱 깊어진 풍미를 즐길 수 있는 음료, 부드러운 목넘김의 나이트로 커피와 바닐라 크림의 매력을 한번에 느껴보세요!</p>
+									<p class="f24_4 mt30">
+										<div class="infoBox">
+											<dl>
+												<dt>칼로리</dt>
+												<dd>(276Kcal)</dd>
+											</dl>
+											<dl>
+												<dt>당류</dt>
+												<dd>(41Kcal)</dd>
+											</dl>
+											<dl>
+												<dt>단백질</dt>
+												<dd>(6g)</dd>
+											</dl>
+											<dl>
+												<dt>포화지방</dt>
+												<dd>(4.3g)</dd>
+											</dl>
+											<dl>
+												<dt>카페인</dt>
+												<dd>(10mg)</dd>
+											</dl>
+											
+										</div>
+									</p>
+									<p class="alleg">알래르기 유발요인: 우유</p>
+								</a>
+							</div>
+							<div class="subType">
+								<p class="f20_4 mt30">브라운슈가 라떼</p>
+								<p class="f18_4 mt10">Cheese In Cheese Cake</p>
+							</div>
+							<!-- //제품 -->
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3 glry-item portfolio-cobbles-item col-sm-6 co">
+						<div class="co01">
+							<!-- 제품 -->
+							<div class="thumbnail2">
+								<div class="portfolio-item-img centered2">
+									<img src="./img/product/menu01.jpg" alt="Portfolio Img" class="img-fluid portfolio-img">
+									<h5 class="portfolio-detail-title">COFFEE</h5>
+								</div>
+							</div>
+							<div class="portfolio-buttons">
+								<a href="./menu_brunch.html">
+									<p class="f32_4 pdTitle">브라운슈가 라떼</p>
+									<p class="mt10 g_type">넬보스코 에스프레소에 로우슈가 흑당을 더해, 더욱 깊어진 풍미를 즐길 수 있는 음료, 부드러운 목넘김의 나이트로 커피와 바닐라 크림의 매력을 한번에 느껴보세요!</p>
+									<p class="f24_4 mt30">
+										<div class="infoBox">
+											<dl>
+												<dt>칼로리</dt>
+												<dd>(276Kcal)</dd>
+											</dl>
+											<dl>
+												<dt>당류</dt>
+												<dd>(41Kcal)</dd>
+											</dl>
+											<dl>
+												<dt>단백질</dt>
+												<dd>(6g)</dd>
+											</dl>
+											<dl>
+												<dt>포화지방</dt>
+												<dd>(4.3g)</dd>
+											</dl>
+											<dl>
+												<dt>카페인</dt>
+												<dd>(10mg)</dd>
+											</dl>
+											
+										</div>
+									</p>
+									<p class="alleg">알래르기 유발요인: 우유</p>
+								</a>
+							</div>
+							<div class="subType">
+								<p class="f20_4 mt30">브라운슈가 라떼</p>
+								<p class="f18_4 mt10">Cheese In Cheese Cake</p>
+							</div>
+							<!-- //제품 -->
+						</div>
+						
+					</div>
+					<div class="col-md-6 col-lg-3 glry-item portfolio-cobbles-item col-sm-6 br">
+						<div class="co01">
+							<!-- 제품 -->
+							<div class="thumbnail2">
+								<div class="portfolio-item-img centered2">
+									<img src="./img/product/sns_sample.jpg" alt="Portfolio Img" class="img-fluid portfolio-img">
+									<h5 class="portfolio-detail-title">BRUNCH</h5>
+								</div>
+							</div>
+							<div class="portfolio-buttons">
+								<a href="./menu_brunch.html">
+									<p class="f32_4 pdTitle">브라운슈가 라떼</p>
+									<p class="mt10 g_type">넬보스코 에스프레소에 로우슈가 흑당을 더해, 더욱 깊어진 풍미를 즐길 수 있는 음료, 부드러운 목넘김의 나이트로 커피와 바닐라 크림의 매력을 한번에 느껴보세요!</p>
+									<p class="f24_4 mt30">
+										<div class="infoBox">
+											<dl>
+												<dt>칼로리</dt>
+												<dd>(276Kcal)</dd>
+											</dl>
+											<dl>
+												<dt>당류</dt>
+												<dd>(41Kcal)</dd>
+											</dl>
+											<dl>
+												<dt>단백질</dt>
+												<dd>(6g)</dd>
+											</dl>
+											<dl>
+												<dt>포화지방</dt>
+												<dd>(4.3g)</dd>
+											</dl>
+											<dl>
+												<dt>카페인</dt>
+												<dd>(10mg)</dd>
+											</dl>
+											
+										</div>
+									</p>
+									<p class="alleg">알래르기 유발요인: 우유</p>
+								</a>
+							</div>
+							<div class="subType">
+								<p class="f20_4 mt30">브라운슈가 라떼</p>
+								<p class="f18_4 mt10">Cheese In Cheese Cake</p>
+							</div>
+							<!-- //제품 -->
+						</div>
+						
+					</div>
+					<div class="col-md-6 col-lg-3 glry-item portfolio-cobbles-item col-sm-6 de">
+						<div class="br01">
+							<!-- 제품 -->
+							<div class="thumbnail2">
+								<div class="portfolio-item-img centered2">
+									<img src="./img/product/sns_sample2.jpg" alt="Portfolio Img" class="img-fluid portfolio-img">
+									<h5 class="portfolio-detail-title">DESSERT</h5>
+								</div>
+							</div>
+							<div class="portfolio-buttons">
+								<a href="./menu_brunch.html">
+									<p class="f32_4 pdTitle">브라운슈가 라떼</p>
+									<p class="mt10 g_type">넬보스코 에스프레소에 로우슈가 흑당을 더해, 더욱 깊어진 풍미를 즐길 수 있는 음료, 부드러운 목넘김의 나이트로 커피와 바닐라 크림의 매력을 한번에 느껴보세요!</p>
+									<p class="f24_4 mt30">
+										<div class="infoBox">
+											<dl>
+												<dt>칼로리</dt>
+												<dd>(276Kcal)</dd>
+											</dl>
+											<dl>
+												<dt>당류</dt>
+												<dd>(41Kcal)</dd>
+											</dl>
+											<dl>
+												<dt>단백질</dt>
+												<dd>(6g)</dd>
+											</dl>
+											<dl>
+												<dt>포화지방</dt>
+												<dd>(4.3g)</dd>
+											</dl>
+											<dl>
+												<dt>카페인</dt>
+												<dd>(10mg)</dd>
+											</dl>
+											
+										</div>
+									</p>
+									<p class="alleg">알래르기 유발요인: 우유</p>
+								</a>
+							</div>
+							<div class="subType">
+								<p class="f20_4 mt30">브라운슈가 라떼</p>
+								<p class="f18_4 mt10">Cheese In Cheese Cake</p>
+							</div>
+							<!-- //제품 -->
+						</div>
+						
+					</div>
+					<div class="col-md-6 col-lg-3 glry-item portfolio-cobbles-item col-sm-6 be">
+						<div class="be01">
+							<!-- 제품 -->
+							<div class="thumbnail2">
+								<div class="portfolio-item-img centered2">
+									<img src="./img/product/ck01.jpg" alt="Portfolio Img" class="img-fluid portfolio-img">
+									<h5 class="portfolio-detail-title">BEVERAGE</h5>
+								</div>
+							</div>
+							<div class="portfolio-buttons">
+								<a href="./menu_brunch.html">
+									<p class="f32_4 pdTitle">브라운슈가 라떼</p>
+									<p class="mt10 g_type">넬보스코 에스프레소에 로우슈가 흑당을 더해, 더욱 깊어진 풍미를 즐길 수 있는 음료, 부드러운 목넘김의 나이트로 커피와 바닐라 크림의 매력을 한번에 느껴보세요!</p>
+									<p class="f24_4 mt30">
+										<div class="infoBox">
+											<dl>
+												<dt>칼로리</dt>
+												<dd>(276Kcal)</dd>
+											</dl>
+											<dl>
+												<dt>당류</dt>
+												<dd>(41Kcal)</dd>
+											</dl>
+											<dl>
+												<dt>단백질</dt>
+												<dd>(6g)</dd>
+											</dl>
+											<dl>
+												<dt>포화지방</dt>
+												<dd>(4.3g)</dd>
+											</dl>
+											<dl>
+												<dt>카페인</dt>
+												<dd>(10mg)</dd>
+											</dl>
+											
+										</div>
+									</p>
+									<p class="alleg">알래르기 유발요인: 우유</p>
+								</a>
+							</div>
+							<div class="subType">
+								<p class="f20_4 mt30">브라운슈가 라떼</p>
+								<p class="f18_4 mt10">Cheese In Cheese Cake</p>
+							</div>
+							<!-- //제품 -->
+						</div>
+					</div>
+					
+					
+					
+					
+					
+					
+				</div><!--// .row //-->
+
+				<!-- 
+				<script>
+				  $( document ).ready( function() {
+					$( '.ba01' ).load( './contents/ba01.html' );
+					$( '.ca01' ).load( './contents/ca01.html' );
+					$( '.co01' ).load( './contents/co01.html' );
+					$( '.br01' ).load( './contents/br01.html' );
+					$( '.be01' ).load( './contents/be01.html' );
+					$( '.ds01' ).load( './contents/ds01.html' );
+				  } );
+				</script>
+				-->
+				
+
+
+
+			
+				
+
+				<!-- // PC DISCOVER MENU -->
+
+
+
+				<div class="full">
+					<p class="f20_4 fullmenu f_mw"><a href="./menu_bakery.html">VIEW THE FULL MENU</a></p>
+				</div>
+			</div>
+			<!--// .container100_15 //-->
+		</section>
+		<!--// Portfolio Cobbles End //-->
+
+		<div class="container100">
+			<div class="row">
+			  <div class="col-md-12 bg_wall">
+				<div class="coffeType">
+					<p class="f45_7w mt20 f_mw">Good Food <br>And Good Mood</p>
+					<p class="f20_7w mt20 f_mw">nelBosco is a great place<br>for the people who need a rest.</p>
+				</div>
+			  </div>
+			</div>
+		</div><!-- // container100 -->
+		
+
+		<div class="container100">
+			<div class="row">
+				<div class="col-lg-12 center">
+					<p class="mt120 f45_7 f_mw">LOCATION</p>
+				</div>
+			</div>
+			<div class="row mt100">
+			  <div class="col-md-12">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d525.271164032109!2d126.97941087043438!3d37.558627128561525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2a2994f9560bbdb2!2z7Jqw7KCV67mM65Sp!5e0!3m2!1sko!2skr!4v1592460365386!5m2!1sko!2skr" width="100%" height="670" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			  </div>
+			</div>
+		</div><!-- // container100 -->
+		<div class="container ">
+			<div class="row">
+				<div class="col-lg-4 col-sm-4 col-md-4 mt70">
+					<div class="clearfix">
+						<p class="f20_4 line2 f_mw">Address</p>
+						<p class="f18_4 mt30">서울 중구퇴계로8길 16 (우)04634</p>
+					</div>
+				</div>
+				 <div class="col-lg-5 col-sm-5 col-md-5 mt70">
+					<div class="clearfix">
+						<p class="f20_4 line2 f_mw">OPENING HOURS</p>
+						<dl class="work mt30">
+							<dd><p class="f18_4 mt30">Monday - Friday</p><dd>
+							<dd><p class="f18_4 mt30">8:00 am - 10:00 pm</p><dd>
+						</dl>
+						<dl class="work ">
+							<dd><p class="f18_4 f_mw">Saturday - Sunday</p><dd>
+							<dd><p class="f18_4">11:00 am - 10:00 pm</p><dd>
+						</dl>
+					
+						<dl class="work">
+							<dd class="mt30 f_mw"><p class="f18_4">Closed</p><dd>
+							<dd><p class="f18_4">설, 추석 당일</p><dd>
+						</dl>
+							
+					</div>
+				</div>
+				 <div class="col-lg-3 col-sm-3 col-md-3 mt70">
+					<div class="section-title style2 clearfix f_mw">
+						<div class="title-header">
+							<p class="f20_4 line2">CONNECT WITH US</p>
+							<p class="f18_4 mt30">Store (02) 123 - 4567</p>
+							<p class="f18_4">Store (02) 123 - 4567</p>
+							<p class="f18_4">nelbosco@vegemil.co.kr</p>
+						</div>                               
+					</div>
+				</div>
+			</div>
+			<!-- row -->
+		</div><!-- // container -->
+	</div>
+	<!-- ======================
+		 * //contant *
+	========================== -->
+
+	<!-- ======================
+		 * FOOTER *
+	========================== -->
+	<footer class="container100">
+	</footer>
+	<script>
+	$.ajax("./mainFooter.html", {
+		cache: false,
+		success: function(data, textStatus, jqXHR) {
+			$("footer").html(data);
+		},
+		dataType:"html"
+	});
+	</script>
+	<!-- ======================
+		 * //FOOTER *
+	========================== -->
+
+	<script src="js/bootstrap.bundle.js"></script><!-- 부트스트랩 슬라이드 -->
+	<!-- 제스터 : Revolution Slider -->
+    <script src="js/jquery.themepunch.tools.min.js"></script>
+    <script src="js/jquery.themepunch.revolution.min.js"></script>
+    <script src="js/slider.js"></script>
+
+
+	<script src="js/extensions/revolution.extension.slideanims.min.js"></script>
+	<script src="js/extensions/revolution.extension.navigation.min.js"></script>
+	<script src="js/extensions/revolution.extension.parallax.min.js"></script>
+	<script src="js/extensions/revolution.extension.layeranimation.min.js"></script>
+	
+	<script src="js/script.js"></script> <!-- 모바일 메뉴 -->
+	<!-- 엔바토 : matychale-masonry & grid gallery -->
+	<script src="js/main.js"></script>
+	<script src="js/plugins.js"></script>
+
+	<!-- prrple 모바일용 슬라이드 -->
+	<script src="js/prrple.slider.js"></script>
+	<script src="js/jquery.touchSwipe.1.6.min.js"></script>
+
+	</div><!-- // wrap -->
+
+
+
+
+	
+
+	
+	</body>
+</html>

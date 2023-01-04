@@ -1,0 +1,210 @@
+﻿<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+	<meta name="author" content="osse">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<meta name="description" content="넬보스코 이탈리안 레스토랑 사이트에 오신것을 환영합니다."/> 
+	<meta name="Keywords" content="넬보스코, 이탈리안 레스토랑, 남촌, 다이닝, 디너, 콘서트,  와인, 정식품, 베지밀, 음악 " />
+	<meta property="og:title" content="넬보스코 이탈리안 레스토랑"> 
+	<meta property="og:url" content="https://nelbosco.co.kr/b_index"> 
+	<meta property="og:image" content="https://nelbosco.co.kr/img/brunch/ogImg.jpg" /> 
+	<meta property="og:description" content="넬보스코 이탈리안 레스토랑은 경쾌하게 재해석한 이탈리안 캐주얼 브런치 & 다이닝입니다."/> 
+    <title>넬보스코 이탈리안 레스토랑 소개</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script type="text/javascript" src="./common/js/common.js"></script><!-- GNB PC웹접근성 메뉴 -->
+	<link href="./common/css/reset.css" rel="stylesheet">
+	<link href="./common/css/bootstrap.css" rel="stylesheet">
+    <link href="./common/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+	<div id="wrap">
+	<!-- ======================
+		 * HEADER *
+	========================== -->
+   <header>
+	
+	</header>
+	<script>
+		/* 로드방식 local 크롬에서 노출되지 않음. */
+	  $( document ).ready( function() {
+		$( 'header' ).load( './b_mainHeader.html' );
+	  } );
+	</script>
+	<!-- ======================
+		 * //HEADER *
+	========================== -->
+
+	<!-- ======================
+		 * contant *
+	========================== -->
+	<div id="contant2">
+		<!-- subBigBanner -->
+		<div class="container100">
+			<div class="row">
+			  <div class="col-md-12 bg_b_about2 subTop">
+				<div class="coffeType">
+					<p class="f45_4w mt20 f_mo">Brunch and Dining</p>
+				</div>
+			  </div>
+			</div>
+		</div><!-- // container100 -->
+		<!-- //subBigBanner -->
+
+
+		<!--// Portfolio Cobbles Start //-->
+		<section class="section matychale-gallery-cobbles">
+		    <div>
+                <div class="container">
+                    <div class="row">
+						<div class="menu_cate2 divide2">
+							 <a href="b_about.html" class="current"><p>레스토랑 소개</p></a>
+							<a href="b_bi.html"><p>브랜드 아이덴티티</p></a>
+							<a href="b_chef.html"><p>셰프 소개</p></a>
+							<a href="b_tour.html"><p>남촌 둘러보기</p></a>
+						</div>
+                    </div>
+                </div>
+			</div>
+			
+			<div class="container">
+				<div class="location">
+						<span><a href="">HOME</a></span><img src="./img/location_arrow.gif">
+						<span><a href="">About</a></span><img src="./img/location_arrow.gif">
+						<span>레스토랑 소개</span>
+					</div>
+				<div class="wBox aboutBox">
+					
+					<p class="f40_7">
+						넬보스코 이탈리안 레스토랑은<br>
+						경쾌하게 재해석한<br>
+						이탈리안 캐주얼 브런치 & 다이닝입니다.
+					</p>
+					<p class="f24_4 mt60m">
+						바쁘게 돌아가는 일상 속,<br class="none">  
+						정성을 담은 음식과 와인 그리고 음악과 쉼이 있는 특별한 시간을 제공합니다.
+					</p>
+					<p class="f24_4 mt60m">
+						넬보스코에서 직접 뽑은 수제 파스타와 저온숙성 반죽으로 만든 정통 피자, 수비드(저온조리) 조리법으로<br class="none">  
+						만들어 보다 부드럽고 육즙 가득한 스테이크를 맛볼 수 있는 것은 물론<br class="none">  
+						신선한 재료 본연의 특징을 살린 감각적인 메뉴들을 선보입니다.
+					</p>
+                </div>
+			</div>
+			<!--// .container100_15 //-->
+            
+            <div class="container">
+                <img src="img/brunch/b_about01.jpg" alt="넬보스코 인테리어 이미지">
+            </div>
+            
+            <div class="container mt120m">
+				<div class="wBox center">
+					<p class="f30_4 mt70m">
+					    우리는 늘 건강하고 행복한 공간을 만들기 위해 고민했습니다.<br class="none">
+                        우리가 오랫동안 추구한 건강함과 정직함의 가치,<br class="none">
+                        그리고 그 가치를 건강한 먹거리로 만들기 위한 오랜 노력.<br class="none">
+                        넬보스코는 이 특별한 가치를 편안한 공간에서 만날 수 있도록 실현된 공간입니다.
+					</p>
+                </div>
+			</div>
+
+			<div class="container100 center mt100 bg_b_about h600">
+                <div>
+                    <p class="f48_5w mt40 f_mo">
+                       Good Place <br>And Healthy Food
+                    </p>
+                </div>
+            </div>
+
+			<div class="container1400 mt50 ">
+				<div class="row flex" >
+					<div class="col-lg-8 col-md-12 col-sm-12">
+                        <img src="./img/brunch/b_about03.jpg" alt="함께하는 공간" class="mt40"/>
+					</div>
+					<div class="col-lg-4 col-md-12 col-sm-12 b_brand_title mt100">
+                        <p class="f32_7">위치 및 좌석수</p>
+						<p class="f20_4_2 mt30">
+							넬보스코 이탈리안 레스토랑은  회현역1번 출구<br class="none">
+							골목에 자리잡고 있으며, 넬보스코 2층에 <br class="none">
+							위치하고 있습니다. 총 좌석수는 100좌석 입니다.
+						</p>
+					</div>
+				</div>
+				<!-- row -->
+				<div class="row" >					
+					<div class="col-lg-4 col-md-12 col-sm-12 b_brand_title mt100">
+                        <p class="f32_7">라이브 공연</p>
+						<p class="f20_4_2 mt30">
+							근사한 미식의 경험과 함께 <br class="none">
+							아티스트가 연주하는 음악을  감상해보세요.<br class="none">
+							최상급 육류, 저온 숙성 반죽으로 만든<br class="none">
+							메뉴들과 잊지 못할 경험을 드립니다.
+						</p>
+					</div>
+					<div class="col-lg-8 col-md-12 col-sm-12">
+                        <img src="./img/brunch/b_about04.jpg" alt="함께하는 공간" class="mt40"/>
+					</div>
+				</div>
+				<!-- row -->
+				<div class="row pb180 flex" >
+					<div class="col-lg-8 col-md-12 col-sm-12">
+                        <img src="./img/brunch/b_about05.jpg" alt="함께하는 공간" class="mt40"/>
+					</div>
+					<div class="col-lg-4 col-md-12 col-sm-12 b_brand_title mt100">
+                        <p class="f32_7">별도의 주차 공간</p>
+						<p class="f20_4_2 mt30">
+							소중한 분과 함께하는 귀중한 시간<br class="none">
+							편하게 방문하여 모임을 가지기에 적합합니다.<br class="none">
+							자세한 사항은 02-3484-9400 또는<br class="none">
+							02-3484-9402로 문의주시기 바랍니다.
+						</p>
+					</div>
+				</div>
+			</div><!-- // container -->
+            
+
+
+		</section>
+		<!--// Portfolio Cobbles End //-->
+		
+		
+
+		
+		
+
+		
+		
+	</div>
+	<!-- ======================
+		 * //contant *
+	========================== -->
+
+	<!-- ======================
+		 * FOOTER *
+	========================== -->
+	<footer class="container100 bg_black ">
+		
+	</footer>
+	<script>
+		/* 로드방식 local 크롬에서 노출되지 않음. */
+	  $( document ).ready( function() {
+		$( 'footer' ).load( './mainFooter.html' );
+	  } );
+	</script>
+	<!-- ======================
+		 * //FOOTER *
+	========================== -->
+	<!-- 모바일 메뉴 -->
+	<script src="./common/js/jquery.collapse.js"></script>
+	<script src="./common/js/script.js"></script> 
+	<!-- 엔바토 : matychale-masonry & grid gallery -->
+	<script src="./common/js/main.js"></script>
+	<script src="./common/js/plugins.js"></script>
+	<!-- prrple 모바일용 슬라이드 -->
+	<script src="./common/js/prrple.slider.js"></script>
+	<script src="./common/js/jquery.touchSwipe.1.6.min.js"></script>
+	</div><!-- // wrap -->
+	</body>
+</html>

@@ -1,0 +1,155 @@
+﻿<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+ <head>
+    <head th:replace="fragments/head :: headFragment"></head>
+</head>
+ <body>
+<div id="wrap">
+<!-- ====================== * HEADER *========================== -->
+<header th:replace="fragments/mainHeader :: headerFragment"></header>
+<!-- ======================* //HEADER *========================== -->
+
+<!-- ======================
+	 * contant *
+========================== -->
+<div id="contant">
+	<!-- subBigBanner -->
+	<div class="container100">
+		<div class="row">
+		  <div class="col-md-12 bg_ade subTop">
+			<div class="coffeType">
+				<p class="f45_4w mt20 ">에이드</p>
+			</div>
+		  </div>
+		</div>
+	</div><!-- // container100 -->
+	<!-- //subBigBanner -->
+
+
+	<!--// Portfolio Cobbles Start //-->
+	<section class="section matychale-gallery-cobbles">
+	    <div>
+               <div class="container">
+                   <!-- AJAX로 각메뉴 불러오기 -->
+                   <div class="row">
+                       <!--<div class="gallery-filter-btn-wrapper">-->
+                           <div class="menu_cate">
+                               <a href="javascript:void(0);" onclick="getGoodsList('espresso')"><p>Espresso</p></a>
+                               <a href="javascript:void(0);" onclick="getGoodsList('tea')"><p>Tea</p></a>
+                               <a href="javascript:void(0);" onclick="getGoodsList('soymilk')"><p>Special Soy Milk</p></a>
+                               <a href="javascript:void(0);" class="active" ><p>Ade</p></a>
+                               <a href="javascript:void(0);" onclick="getGoodsList('smoothie')"><p>Smoothie</p></a>
+                               <a href="javascript:void(0);" onclick="getGoodsList('bread')"><p>Bread</p></a>
+                               <a href="javascript:void(0);" onclick="getGoodsList('cake')"><p>Cake &amp; Dessert</p></a>
+                               <a href="javascript:void(0);" onclick="getGoodsList('gift')"><p>Gift</p></a>
+                           </div>
+                       <!--</div>-->
+                   </div>
+                   <!-- // AJAX로 각메뉴 불러오기  -->
+               </div>
+		</div>
+		<!-- 이벤트 배너 코드 시작 -->
+		<div class="container100">
+               <div class="row">
+                   <div class="col-md-12 eventBimg">
+                       <a href="#" class="pcBanner">
+                           <img th:src="@{/img/eventBimg.jpg}" alt="이벤트배너">
+                       </a>
+                       <a href="#" class="moBanner">
+                           <img src="#" alt="모바일이벤트배너">
+                       </a>
+                   </div>
+               </div>
+           </div>
+           <!-- //이벤트 배너 코드 끝 -->
+
+		<div class="container1640">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12  mt90"  >
+					<div class="products">
+						<div id="resultDiv" class="portfolio-gallery row clear">
+							<th:block th:if="${goodsList !=null}">
+					    	<div th:each="goods : ${goodsList}">
+								<div class="portfolio-cobbles-item glry-item col-md-3 col-sm-6 col-6">
+									<div class="thumbnail2">
+										<div th:class="bg01">
+											<img th:src="@{'/img/product/'+ ${goods.imageThum}}" alt="#" >
+										</div>
+									</div>
+									<div class="portfolio-buttons mb70m">
+										<p class="f26_4 pdTitle" th:text="${goods.goodsName}"></p>
+										<p class="mt10 f16_3g" th:text="${goods.goodsExplan}"></p>
+										<div class="alleg" th:text="${goods.allergIngr}"></div>
+									</div>
+								</div>
+							</div>
+							</th:block>
+						</div><!--// .row //-->
+					</div><!-- products -->
+				</div>
+				 
+			</div>
+			<!-- row -->
+		</div><!-- // container -->
+
+
+	</section>
+	<!--// Portfolio Cobbles End //-->
+	
+</div>
+<!-- ======================
+	 * //contant *
+========================== -->
+<!-- ====================== * FOOTER * ========================== -->
+<footer class="container100" th:replace="fragments/mainFooter :: footerFragment"></footer>
+<!-- ====================== * //FOOTER * ========================== -->
+<div th:replace="fragments/footerScript :: footerScriptFragment"></div> 
+</div><!-- // wrap -->
+</body>
+<th:block layout:fragment="script">
+<script th:inline="javascript">
+	/*<![CDATA[*/
+	function getGoodsList(category) {
+		
+        if(category == 'bread') {
+        	location.href="/menu/bread";
+        }
+		
+		 $.ajax({
+		    url: '/getGoodsList/'+category,
+		    contentType: "application/json; charset=utf-8",
+		    dataType:'json',
+		    success:function(response){
+		      	if(response != null){
+		            var goodsList = response.goodsList;
+		            var timehtml = "";
+		            var size = goodsList.length;
+		            for(var i=0;i<size; i++){
+		                  timehtml+='<div class="portfolio-cobbles-item glry-item col-md-3 col-sm-6 col-6">';
+		                  timehtml+='<div class="thumbnail2">';
+		                  timehtml+='<div class="bg01">';
+		                  timehtml+='<img src=../img/product/'+goodsList[i].imageThum+' alt="#" >';
+		                  timehtml+='</div>';
+		                  timehtml+='</div>';
+		                  timehtml+='<div class="portfolio-buttons mb70m">';
+		                  timehtml+='<p class="f26_4 pdTitle">'+goodsList[i].goodsName+'</p>';
+		                  timehtml+='<p class="mt10 f16_3g">'+goodsList[i].goodsExplan+'</p>';
+		                  timehtml+='<div class="alleg">'+goodsList[i].allergIngr+'</div>';
+		                  timehtml+='</div>';
+		                  timehtml+='</div>';
+		            }//for
+		            $("#resultDiv").html(timehtml);
+		        }else{
+		          alert("품절입니다.");
+		        }
+		    },error:function(request,status,error){
+		      alert("다시시도해주세요");
+		      //alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+		      //winddow.href="/";
+		    }
+		  });
+	}
+	/*]]>*/
+</script>
+</th:block>
+</html>

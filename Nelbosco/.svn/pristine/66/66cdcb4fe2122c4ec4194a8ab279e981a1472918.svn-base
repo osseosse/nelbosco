@@ -1,0 +1,117 @@
+﻿<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+ <head>
+ 	<title>넬보스코 이탈리안 레스토랑 공지사항</title>
+    <head th:replace="fragments/head :: headFragment"></head>
+</head>
+ <body>
+<div id="wrap">
+<!-- ====================== * HEADER *========================== -->
+<header th:replace="fragments/b_mainHeader :: headerFragment"></header>
+<!-- ======================* //HEADER *========================== -->
+
+	<!-- ======================
+		 * contant *
+	========================== -->
+	<div id="contant">
+		<!-- subBigBanner -->
+		<div class="container100">
+			<div class="row">
+			  <div class="col-md-12 bg_b_notice subTop">
+				<div class="coffeType">
+					<p class="f45_4w mt20 f_mo">Notice</p>
+				</div>
+			  </div>
+			</div>
+		</div><!-- // container100 -->
+		<!-- //subBigBanner -->
+
+
+		<!--// Portfolio Cobbles Start //-->
+		<section class="section matychale-gallery-cobbles">
+			<div>
+				<div class="container">
+					<div class="row">
+						<div class="menu_cate2">
+							<a href="/restaurant/bcontact/notice" class="current"><p>공지사항</p></a>
+							<a href="/restaurant/bcontact/contact"><p>고객상담</p></a>
+							<a href="/restaurant/bcontact/event"><p>이벤트</p></a>
+							<a href="/restaurant/bcontact/map"><p>오시는길</p></a>
+							<a href="/restaurant/bcontact/faq"><p>자주묻는질문</p></a>
+							<a href="https://app.catchtable.co.kr/ct/shop/nelbosco" target="_blank"><p>예약문의</p></a>
+						</div>
+					</div>
+				</div>
+			</div>
+  			<div class="container">
+				<div class="location">
+					<span><a href="">HOME</a></span><img th:src="@{/img/location_arrow.gif}">
+					<span><a href="">Contact</a></span><img th:src="@{/img/location_arrow.gif}">
+					<span>공지사항</span>
+				</div>
+				<div class="row clearboth mt100">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						<div class="wView img100"><img th:src="@{/img/brunch/notice_01.jpg}" alt="웹이미지" /></div> 
+						<div class="mView img100"><img th:src="@{/img/brunch/notice_MO.jpg}" alt="모바일이미지" /></div> 
+						<!-- Vetical 
+						<p class="f36_4 center">준비중입니다.</p>
+						<div id="css3-animated-example2">
+							<th:block th:if="${bnewsList !=null}" th:each="bnews : ${bnewsList}">
+							<div class="cae">
+								<ul>
+									<li th:text="${bnews.idx}"></li>
+									<li th:text="${bnews.title}"></li>
+									<li th:text="${#temporals.format(bnews.insertTime, 'yyyy-MM-dd')}"></li>
+									
+								</ul>
+							</div>
+							<div>
+								<div class="v_content">
+									<p><img th:src="@{'/img/'+ ${bnews.imgPath}}" alt="#" ></p>
+								</div>
+							</div>
+							</th:block>
+
+						</div>
+						<script>
+						$("#css3-animated-example2").collapse({
+						  accordion: true,
+						  open: function() {
+							this.addClass("open");
+							this.css({ height: this.children().outerHeight() });
+						  },
+						  close: function() {
+							this.css({ height: "0px" });
+							this.removeClass("open");
+						  }
+						});
+						</script>
+						<!-- // Vetical -->
+					</div>
+				</div>
+				<!-- //row -->
+
+				<!-- paging 
+				<th:block layout:fragment="paging">
+					<nav th:replace="fragments/common :: pagination"></nav>
+				</th:block>
+				<!-- paging //-->
+			</div><!-- // container -->
+
+
+		</section>
+		<!--// Portfolio Cobbles End //-->
+		
+	</div>
+	<!-- ======================
+		 * //contant *
+	========================== -->
+
+	<!-- ====================== * FOOTER * ========================== -->
+	<footer th:replace="fragments/b_mainFooter :: footerFragment"></footer>
+	<!-- ====================== * //FOOTER * ========================== -->
+	<div th:replace="fragments/menuScript :: menuScriptFragment"></div>
+	<div th:replace="fragments/footerScript :: footerScriptFragment"></div> 
+	</div><!-- // wrap -->
+	</body>
+</html>

@@ -1,0 +1,418 @@
+﻿<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+	<meta name="author" content="osse">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<meta name="description" content="넬보스코 이탈리안 레스토랑 사이트에 오신것을 환영합니다."/> 
+	<meta name="Keywords" content="넬보스코, 이탈리안 레스토랑, 남촌, 다이닝, 디너, 콘서트,  와인, 정식품, 베지밀, 음악 " />
+	<meta property="og:title" content="넬보스코 이탈리안 레스토랑"> 
+	<meta property="og:url" content="https://nelbosco.co.kr/b_index"> 
+	<meta property="og:image" content="https://nelbosco.co.kr/img/brunch/ogImg.jpg" /> 
+	<meta property="og:description" content="넬보스코 이탈리안 레스토랑은 경쾌하게 재해석한 이탈리안 캐주얼 브런치 & 다이닝입니다."/> 
+    <title>넬보스코 이탈리안 레스토랑</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script type="text/javascript" src="./common/js/common.js"></script><!-- GNB PC웹접근성 메뉴 -->
+	<link href="./common/css/reset.css" rel="stylesheet">
+	<link href="./common/css/bootstrap.css" rel="stylesheet">
+    <link href="./common/css/style.css" rel="stylesheet">
+	<!-- 제스터 : REVOLUTION LAYERS STYLES (메인슬라이드) -->
+	<link rel="stylesheet" type="text/css" href="./common/css/layers.css">
+	<link rel="stylesheet" type="text/css" href="./common/css/settings.css">
+	
+  </head>
+  <body>
+	<div id="wrap">
+	<!-- ======================
+		 * HEADER *
+	========================== -->
+	<header>
+	
+	</header>
+	<script>
+		/* 로드방식 local 크롬에서 노출되지 않음. */
+	  $( document ).ready( function() {
+		$( 'header' ).load( './b_mainHeader.html?' );
+	  } );
+	</script>
+	<!-- ======================
+		 * //HEADER *
+	========================== -->
+
+	<!-- ======================
+		 * contant *
+	========================== -->
+	<div id="contant">
+		<!-- REVOLUTION SLIDER -->
+		<div id="rev_slider_5_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container slide-overlay" data-alias="classic4export" data-source="gallery">
+			<!-- START REVOLUTION SLIDER 5.4.8 auto mode -->
+			<div id="rev_slider_5_1" class="rev_slider fullwidthabanner rev_slider_5_1_height" data-version="5.4.8.1">
+				<ul>
+					<li  data-index="rs-1" data-transition="curtain-3" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="./img/mainBig01.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+						
+						<img src="./img/brunch/mainBig01.jpg" alt="" title="Home 1" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+
+						<div class="f_mo tp-caption tp-resizeme slide-main-text" id="slide-1-layer-2" data-x="['center','center','center','center']" data-hoffset="['0','0','0','-1']" data-y="['middle','middle','middle','middle']" data-voffset="['-70','-70','-85','-23']"
+					   
+						data-fontsize="['70','50','50','32']"
+						data-lineheight="['100','100','70','60']"
+						data-fontweight="['400','400','400','400']"
+						data-color="['rgb(240, 244, 247)','rgb(240, 244, 247)','rgb(240, 244, 247)','rgb(240, 244, 247)']"
+						data-width="none"
+						data-height="none"
+						data-whitespace="nowrap"
+						data-type="text"
+						data-responsive_offset="on"
+						data-frames='[{"delay":90,"split":"chars","splitdelay":0.05000000000000000277555756156289135105907917022705078125,"speed":500,"split_direction":"forward","frame":"0","from":"y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power0.easeIn"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+						data-textAlign="['inherit','inherit','inherit','inherit']"
+						data-paddingtop="[0,0,0,0]"
+						data-paddingright="[0,0,0,0]"
+						data-paddingbottom="[0,0,0,0]"
+						data-paddingleft="[0,0,0,0]"
+						
+						 >Journey To Delightful Moments</div>
+
+					  
+						
+						<div class="tp-caption tp-resizeme" id="slide-1-layer-6" data-x="['center','center','center','center']" data-hoffset="['0','0','1','-432']" data-y="['middle','middle','middle','middle']" data-voffset="['25','25','-17','-67']"
+						
+						data-fontsize="['25','25','17','17']"
+						data-lineheight="['40','40','27','27']"
+						data-fontweight="['400','400','400','400']"
+						data-color="['rgb(255, 255, 255)','rgb(255, 255, 255)','rgb(255, 255, 255)','rgb(255, 255, 255)']"
+						data-width="none"
+						data-height="none"
+						data-whitespace="nowrap"
+						data-visibility="['on','on','on','off']"
+						data-type="text"
+						data-responsive_offset="on"
+						data-frames='[{"delay":580,"speed":500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power0.easeIn"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+						data-textAlign="['center','center','center','center']"
+						data-paddingtop="[0,0,0,0]"
+						data-paddingright="[0,0,0,0]"
+						data-paddingbottom="[0,0,0,0]"
+						data-paddingleft="[0,0,0,0]"
+						><p class="mt40">남촌의 중심 넬보스코 이탈리안 레스토랑에서,<br>경쾌하게 재해석한 이탈리안 캐주얼 브런치&다이닝 메뉴와<br>세계 각국의 와인을 즐겨보세요.</p></div>
+					</li>
+
+
+					
+				</ul>
+			</div>
+		</div>
+		<!-- 제스터 : Revolution Slider -->
+		<script src="./common/js/jquery.themepunch.tools.min.js"></script>
+		<script src="./common/js/jquery.themepunch.revolution.min.js"></script>
+		<script src="./common/js/slider.js"></script>
+		<script src="./common/js/extensions/revolution.extension.slideanims.min.js"></script>
+		<script src="./common/js/extensions/revolution.extension.navigation.min.js"></script>
+		<script src="./common/js/extensions/revolution.extension.parallax.min.js"></script>
+		<script src="./common/js/extensions/revolution.extension.layeranimation.min.js"></script>
+		<!-- END REVOLUTION SLIDER -->
+
+
+		<div class="container1400 mt100">
+			<div class="row ">
+			  <div class="col-md-6 mt120">
+				<p class="f20_4">Our story No.1</p>
+				<p class="f48_4 mt50 f_mo">A Special Space<br>For Everyone.</p>
+				<p class="section_logo"><img src="./img/brunch/section_logo.png" alt="넬보스코로고"/></p>
+				<p class="f18_4 mt30">
+					넬보스코 이탈리안 레스토랑은<br>아늑하지만 넓은 공간에서 특별한 미식의 즐거움을 선사합니다.<br>
+					브런치부터 다이닝 그리고 와인까지 넬보스코에서 즐기는 <br>세련된 품격과 세심한 서비스를 만나보세요.
+				</p>
+				<p class="btn_about mt70"><a href="./lab.html">ABOUT</a></p>
+			  </div>
+			  <div class="col-md-6 mt30m">
+				<p class=""><img src="./img/brunch/section_01.jpg" alt="대표메뉴사진"/></p>
+			  </div>
+			</div> 
+		</div><!-- // container100 -->
+
+
+		<div class="container1400 mt100 mt50m">
+			<div class="row b_main_menu">
+				<div class="col-md-3 mt50m hvr-float-shadow">
+					<a href="./b_menu_brunch.html">
+						<div class="b_menubg01 h410 b_menu">					
+							<div class="b_menu_top">
+								<p>BRUNCH <span><img src="./img/brunch/plusBtn.png" alt="버튼"/></span></p>
+							</div>
+							<ul class="b_menu_bottom">
+								<li>넬보스코 <br>이탈리안 가정식 브런치</li>
+								<li>22,000 KRW</li>
+							</ul>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 mt40 mt50m hvr-float-shadow">
+					<a href="./b_menu_brunch.html">
+						<div class="b_menubg02 h410 b_menu">
+							<div class="b_menu_top">
+								<p>PASTA <span><img src="./img/brunch/plusBtn.png" alt="버튼"/></span></p>
+							</div>
+							<ul class="b_menu_bottom">
+								<li>새우와 잣, 루꼴라를 곁들인<br>생면 딸리올리니</li>
+								<li>23,000 KRW</li>
+							</ul>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 mt50m hvr-float-shadow">
+					<a href="./b_menu_dinner.html">
+						<div class="b_menubg03 h410 b_menu">
+							<div class="b_menu_top">
+								<p>DINING <span><img src="./img/brunch/plusBtn.png" alt="버튼"/></span></p>
+							</div>
+							<ul class="b_menu_bottom">
+								<li>프라임 안심 스테이크 </li>
+								<li>60,000 KRW</li>
+							</ul>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 mt40 mt50m hvr-float-shadow">
+					<a href="./b_menu_dinner.html">
+						<div class="b_menubg04 h410 b_menu">
+							<div class="b_menu_top">
+								<p>WINE <span><img src="./img/brunch/plusBtn.png" alt="버튼"/></span></p>
+							</div>
+							<ul class="b_menu_bottom">
+								<li>델리카토,<br>까베르네 소비뇽</li>
+								<li>84,000 KRW</li>
+							</ul>
+						</div>
+					</a>
+				</div>
+			  
+			</div> 
+		</div><!-- // container100 -->
+
+
+		<div class="container100 mt120 bg_black">
+			<div class="row">
+				<div class="col-lg-12 center">
+					<p><img src="./img/brunch/nelbosco_info.jpg" alt="넬보스코 전경사진" /></p>
+				</div>
+			</div><!-- /.row -->
+			<div class="container1400 ">
+				<div class="row b_main_info">
+					<div class="col-md-4 mt50m info-r-line">
+						<p class="BIU-type03">NEL BOSCO BRUNCH RESTAURANT</p>
+						<p class="BIU-type04 f_mo">INFORMATION</p>
+						<p class="btn_b_01 mt70"><a href="./lab.html">레스토랑 예약하기</a></p>
+						<p class="btn_b_01_w mt20"><a href="./lab.html">MENU PDF 다운로드</a></p>	
+					</div>
+					<div class="col-md-8 mt50m">
+						<ul class="b_info_ul">
+							<li>
+								<p class="BIU-type01">Restaurant</p>
+								<dl>
+									<dt>위치</dt>
+									<dd>2F</dd>
+								</dl>
+								<dl>
+									<dt>좌석</dt>
+									<dd>100석</dd>
+								</dl>
+							</li>
+							<li>
+								<p class="BIU-type01">Operation Time</p>
+								<dl>
+									<dt>Open ~ Close</dt>
+									<dd>10:00 ~ 17:00<br>[Last Order 16:00]</dd>
+								</dl>
+								<dl>
+									<dt>Break Time</dt>
+									<dd>15:00 ~ 17:00</dd>
+								</dl>
+								<dl>
+									<dt>연중무휴</dt>
+									<dd></dd>
+								</dl>
+							</li>
+							<li>
+								<p class="BIU-type01">Make A Reservation</p>
+								<dl>
+									<dt>TEL.</dt>
+									<dd>02-3484-9400 <br>02-3484-9400</dd>
+								</dl>
+								<p class="BIU-type02">* 사회적 거리두기 정보 지침에 따라<br>운영시간은 변경 될 수 있습니다.</p>
+								
+							</li>
+						</ul>
+						<!--
+						<table cellspacing="0" border="0" class="info_t">
+							<colgroup>
+								<col width="20%">
+								<col width="30%">
+								<col width="20%">
+								<col width="30%">
+							</colgroup>
+							<tr>
+								<th colspan="2">Restaurant</th>
+								<th colspan="2">Operating Time</th>
+							</tr>
+							<tr>
+								<td>위치</td>
+								<td>2F</td>
+								<td>Lunch</td>
+								<td>11:00 ~ 15:00<br>[Last Order 14:00]</td>
+							</tr>
+							<tr>
+								<td>좌석</td>
+								<td>104석</td>
+								<td>Lunch</td>
+								<td>11:00 ~ 15:00<br>[Last Order 14:00]</td>
+							</tr>
+						</table>
+						-->
+					</div>
+				</div><!-- /.row -->
+			</div><!-- /.container1400 -->
+		</div><!-- /.container100 -->
+		
+
+
+
+
+		
+
+
+		<div class="container100">
+			<div class="row">
+				<div class="col-lg-12 center">
+					<p class="mt150 f20_4 ">WHAT WE OFFER</p>
+					<p class="mt10 f48_4 f_mo">SPECIAL OFFERS</p><!-- 2021-06-10 -->
+				</div>
+			</div><!-- /.row -->
+			<div class="row">
+				<div class="col-lg-12 center mt70">
+					<!-- pp slide -->
+					<div  id="slider1">
+						<div class="slider">
+							<div class="slider_area">
+								<div class="slides">
+									<div class="slide">
+										<div class="b_bg_music h800">
+											<div class="b_intBox">
+												<p class="b_day">2021.08.18 ~ 09.30 매주 수요일</p>
+												<p class="b_offer_logo"><img src="./img/brunch/offer_s_logo.png" alt="넬보스코 로고" /></p>
+												<p class="f22_4w mt50">넬보스코만의 아름다운 선율과 함께<br>소중한 분과 잊지 못할 추억을 만드세요.</p>
+												<p class="f48_5w mt30 f_mo">DINING WITH CONCERT</p>
+												<p class="f18_4w mt40">떠오르는 남촌 그 중심에 있는 넬보스코 레스토랑에서<br class="none"> 환상적인 음악과 함께 고품격, 로맨틱한 코스요리를<br class="none"> 만나 볼 수 있습니다.</p>
+												<p class="b_btn_about_w mt40 "><a href="./b_misic.html">자세히 보기</a></p>
+												
+											</div>
+										</div>
+									</div>
+									<div class="slide">
+										<div class="b_bg_music h800">
+											<div class="b_intBox">
+												<p class="b_day">2021.08.18 ~ 09.30 매주 월요일</p>
+												<p class="b_offer_logo"><img src="./img/brunch/offer_s_logo.png" alt="넬보스코 로고" /></p>
+												<p class="f22_4w mt50">넬보스코만의 아름다운 선율과 함께<br>소중한 분과 잊지 못할 추억을 만드세요.</p>
+												<p class="f48_5w mt30 f_mo">DINING WITH CONCERT</p>
+												<p class="f18_4w mt40">떠오르는 남촌 그 중심에 있는 넬보스코 레스토랑에서<br>환상적인 음악과 함께 고품격, 로맨틱한 코스요리를<br>만나 볼 수 있습니다.</p>
+												<p class="b_btn_about_w mt40 "><a href="./b_misic.html">자세히 보기</a></p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slider_PNbox">
+							<a class="slider_left"><img src="./img/btn_pre2.gif" alt="이전" /></a>
+							<a class="slider_right"><img src="./img/btn_next2.gif" alt="다음" /></a>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div><!-- /.row -->
+		</div><!-- /.container100 -->
+
+
+
+
+		<div class="container100 mt130w" >
+			<div class="row ">
+				<div class="col-md-7">
+					<p class="b_map mt50m img100"><img src="./img/brunch/b_main_map.jpg" alt="지도" /></p>
+				</div>
+				<div class="col-md-5 mt50m">		
+					<div class="ncBox2">
+						<div class="mCenter">
+							<p class="f22_4">넬보스코 이탈리안 레스토랑 오시는 길</p>
+							<p class="f48_4 mt20 f_mo">CONTACT</p>
+						</div>
+						<ul class="b_con mt70">
+							<li class="b_con_01">
+								<p class="f20_7">Address.</p>
+								<p class="f18_4 mt20">서울 중구퇴계로8길 16 (우)04634</p>
+								<p class="f18_4">16, Toegye-ro 8-gil, Jung-gu, Seoul, Republic of Korea</p>
+							</li>
+							<li class="b_con_02">
+								<p class="f20_7">Connect us.</p>
+								<p class="f18_4 mt20">02-3484-9400 / 02-3484-9402</p>
+							</li>
+							<li class="b_con_03">
+								<p class="f20_7">Parking</p>
+								<p class="f18_4 mt20">지도 참고.</p>
+								<p class="f18_4 ">2시간 무료 이후 10분 1,000원</p>
+							</li> 
+						</ul>
+						<p class="btn_b_01 mt20 mt50m"><a href="./b_map.html">자세히 보기</a></p>	
+					</div><!-- //ncBox -->
+				</div><!-- //col-md-5-->
+			</div><!-- //row -->
+		</div><!-- // container100 -->
+		
+
+		
+
+	
+		
+	</div>
+	<!-- ======================
+		 * //contant *
+	========================== -->
+
+	<!-- ======================
+		 * FOOTER *
+	========================== -->
+	<footer class="container100 bg_black">
+	</footer>
+	<script>
+	$.ajax("./b_mainFooter.html", {
+		cache: false,
+		success: function(data, textStatus, jqXHR) {
+			$("footer").html(data);
+		},
+		dataType:"html"
+	});
+	</script>
+
+
+	<!-- 2021-06-03 -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#tabwrap2').basicTabs2();/* basicTabs2 변경 */
+		});
+	</script>
+	<!-- ======================
+		 * //FOOTER *
+	========================== -->
+	<!-- 모바일 메뉴 -->
+	<script src="./common/js/jquery.collapse.js"></script>
+	<script src="./common/js/script.js"></script> 
+	<!-- 엔바토 : matychale-masonry & grid gallery -->
+	<script src="./common/js/main.js"></script>
+	<script src="./common/js/plugins.js"></script>
+	<!-- prrple 모바일용 슬라이드 -->
+	<script src="./common/js/prrple.slider.js"></script>
+	<script src="./common/js/jquery.touchSwipe.1.6.min.js"></script>
+	</div><!-- // wrap -->
+	</body>
+</html>

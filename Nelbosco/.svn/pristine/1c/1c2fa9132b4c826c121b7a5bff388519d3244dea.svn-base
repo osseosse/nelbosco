@@ -1,0 +1,355 @@
+﻿<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<title>넬보스코 관리자</title>
+	<head th:replace="admin/adminHead :: headFragment"></head>
+    <head th:replace="fragments/head :: headFragment"></head>
+    
+    <th:block layout:fragment="add-script">
+    	<script th:src="@{/js/fullcalendar.js}"></script>
+    	<script th:src="@{/js/moment.js}"></script>
+    </th:block>
+    
+    <th:block layout:fragment="add-css">
+    	<link rel="stylesheet" type="text/css" th:href="@{/css/fullcalendar.css}">
+    </th:block>
+    
+    <style>
+
+		  body {
+		    margin: 40px 10px;
+		    padding: 0;
+		    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+		    font-size: 14px;
+		  }
+		
+		  #calendar {
+		    max-width: 1100px;
+		    margin: 0 auto;
+		  }
+
+	</style>
+    
+</head>
+<body>
+	<div id="wrap">
+		<div id="contant">
+		
+			<div id='calendar'></div>
+			
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				<form class="form-horizontal form-view" id="musicRegister" th:object="${MusicDTO}" th:action="@{/admin/music/register}" method="post" enctype="multipart/form-data"  onsubmit="return musicInsert()">
+				  <div class="modal-header2">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+					<h4 class="pop_title center" id="myModalLabel">공연 일정 입력</h4>
+				  </div>
+				  <div class="modal-body2">
+				  	<label>타이틀&nbsp;&nbsp;</label>
+					<input type="text" id="tmpTitle" value=""><br><br><br>
+					<label>시작시간&nbsp;&nbsp;</label>
+					<select id="s_meridiem">	
+						<option value="PM">PM</option>
+						<option value="AM">AM</option>
+					</select>
+					&nbsp;&nbsp;
+					<select id="s_hour">
+						<option value="01">01</option>
+						<option value="02">02</option>
+						<option value="03">03</option>
+						<option value="04">04</option>
+						<option value="05">05</option>
+						<option value="06">06</option>
+						<option value="07">07</option>
+						<option value="08">08</option>
+						<option value="09">09</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+					</select>
+					&nbsp; : &nbsp;
+					<select id="s_minutes">
+						<option value="00">00</option>
+						<option value="10">10</option>
+						<option value="20">20</option>
+						<option value="30">30</option>
+						<option value="40">40</option>
+						<option value="50">50</option>
+						<option value="60">60</option>
+					</select><br><br><br>
+					
+					<label>종료시간&nbsp;&nbsp;</label>
+					<select id="e_meridiem">	
+						<option value="PM">PM</option>
+						<option value="AM">AM</option>
+					</select>
+					&nbsp;&nbsp;
+					<select id="e_hour">
+						<option value="01">01</option>
+						<option value="02">02</option>
+						<option value="03">03</option>
+						<option value="04">04</option>
+						<option value="05">05</option>
+						<option value="06">06</option>
+						<option value="07">07</option>
+						<option value="08">08</option>
+						<option value="09">09</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+					</select>
+					&nbsp; : &nbsp;
+					<select id="e_minutes">
+						<option value="00">00</option>
+						<option value="10">10</option>
+						<option value="20">20</option>
+						<option value="30">30</option>
+						<option value="40">40</option>
+						<option value="50">50</option>
+						<option value="60">60</option>
+					</select>
+					<input type="hidden" id="title" name="title" value=""/>
+					<input type="hidden" id="sTime" name="sTime" value=""/>
+					<input type="hidden" id="eTime" name="eTime" value=""/>
+					<input type="hidden" id="start" name="start" value=""/>
+					<input type="hidden" id="day" name="day" value=""/>
+				  </div>
+				  <div class="modal-footer2">
+					<button type="button" id="closeModalBtn" class="btn_pop_close" data-dismiss="modal">닫기</button>
+					<button type="submit" class="btn_popOK">확인</button>
+				  </div>
+			  	</form>
+				</div>
+			  </div>
+			</div>
+			
+			<!-- editModal -->
+			<div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				<form class="form-horizontal form-view" id="musicDelete" th:object="${MusicDTO}" th:action="@{/admin/music/register}" method="post" enctype="multipart/form-data"  onsubmit="return musicInsert()">
+				  <div class="modal-header2">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+					<h4 class="pop_title center" id="myEditModalLabel">공연 일정 수정</h4>
+				  </div>
+				  <div class="modal-body2">
+				  	<label>타이틀&nbsp;&nbsp;</label>
+					<input type="text" id="tmpTitle_e" value="" readonly><br><br><br>
+					<label>시작시간&nbsp;&nbsp;</label>
+					<select id="s_meridiem_e">	
+						<option value="PM">PM</option>
+						<option value="AM">AM</option>
+					</select>
+					&nbsp;&nbsp;
+					<select id="s_hour_e">
+						<option value="01">01</option>
+						<option value="02">02</option>
+						<option value="03">03</option>
+						<option value="04">04</option>
+						<option value="05">05</option>
+						<option value="06">06</option>
+						<option value="07">07</option>
+						<option value="08">08</option>
+						<option value="09">09</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+					</select>
+					&nbsp; : &nbsp;
+					<select id="s_minutes_e">
+						<option value="00">00</option>
+						<option value="10">10</option>
+						<option value="20">20</option>
+						<option value="30">30</option>
+						<option value="40">40</option>
+						<option value="50">50</option>
+						<option value="60">60</option>
+					</select><br><br><br>
+					
+					<label>종료시간&nbsp;&nbsp;</label>
+					<select id="e_meridiem_e">	
+						<option value="PM">PM</option>
+						<option value="AM">AM</option>
+					</select>
+					&nbsp;&nbsp;
+					<select id="e_hour_e">
+						<option value="01">01</option>
+						<option value="02">02</option>
+						<option value="03">03</option>
+						<option value="04">04</option>
+						<option value="05">05</option>
+						<option value="06">06</option>
+						<option value="07">07</option>
+						<option value="08">08</option>
+						<option value="09">09</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+					</select>
+					&nbsp; : &nbsp;
+					<select id="e_minutes_e">
+						<option value="00">00</option>
+						<option value="10">10</option>
+						<option value="20">20</option>
+						<option value="30">30</option>
+						<option value="40">40</option>
+						<option value="50">50</option>
+						<option value="60">60</option>
+					</select>
+					<input type="hidden" id="originTitle" value=""/>
+					<input type="hidden" id="originStart" value=""/>
+					<input type="hidden" id="title" name="title" value=""/>
+					<input type="hidden" id="sTime" name="sTime" value=""/>
+					<input type="hidden" id="eTime" name="eTime" value=""/>
+					<input type="hidden" id="start" name="start" value=""/>
+					<input type="hidden" id="day" name="day" value=""/>
+				  </div>
+				  <div class="modal-footer2">
+					<button type="button" id="closeModalBtn_e" class="btn_pop_close" data-dismiss="modal">닫기</button>
+					<!-- <button type="button" class="btn_popOK">수정</button> -->
+					<button type="button" class="btn_popOK" onclick="musicDelete()">삭제</button>
+				  </div>
+			  	</form>
+				</div>
+			  </div>
+			</div>
+			
+		</div>
+		<!-- ======================
+			 * //contant *
+		========================== -->
+		<div th:replace="fragments/footerScript :: footerScriptFragment"></div> 
+	</div><!-- // wrap -->
+	
+	
+<th:block layout:fragment="script">
+<script th:inline="javascript">
+
+$('#closeModalBtn').on('click', function(){
+	$('#myModal').modal('hide');
+});
+
+$('#closeModalBtn_').on('click', function(){
+	$('#editModal').modal('hide');
+});
+
+function musicInsert() {
+	var tmpTitle = document.getElementById('tmpTitle');
+	var sTime = document.getElementById('sTime');
+	var eTime = document.getElementById('eTime');
+	
+	var s_meridiem = document.getElementById('s_meridiem');
+	var s_hour = document.getElementById('s_hour');
+	var s_minutes = document.getElementById('s_minutes');
+	
+	var e_meridiem = document.getElementById('e_meridiem');
+	var e_hour = document.getElementById('e_hour');
+	var e_minutes = document.getElementById('e_minutes');
+	
+	s_meridiem = s_meridiem.options[s_meridiem.selectedIndex].value;
+	s_hour = s_hour.options[s_hour.selectedIndex].value;
+	s_minutes = s_minutes.options[s_minutes.selectedIndex].value;
+	
+	e_meridiem = e_meridiem.options[e_meridiem.selectedIndex].value;
+	e_hour = e_hour.options[e_hour.selectedIndex].value;
+	e_minutes = e_minutes.options[e_minutes.selectedIndex].value;
+	
+	$('#sTime').val(s_meridiem + " " + s_hour + ":" + s_minutes);
+	$('#eTime').val(e_meridiem + " " + e_hour + ":" + e_minutes);
+	$('#title').val(tmpTitle.value + "<br>" + sTime.value + " ~ " + eTime.value);
+	$('#musicRegister').submit();
+	$('#myModal').modal('hide');
+}
+
+function musicDelete() {
+	var title = document.getElementById('originTitle').value;
+	var start = document.getElementById('originStart').value;
+	
+	if (!confirm('공연일정을 삭제할까요?')) {
+		return false;
+	}
+	
+	$.ajax({
+		url: '/admin/music/delete?title=' + title + "&start=" + start,
+		type: "GET",
+		dataType: "json",
+		success: function(response) {
+			
+		}
+	});
+	$('#editModal').modal('hide');
+	alert('공연일정이 삭제되었습니다.');
+	location.reload();
+}
+	
+document.addEventListener('DOMContentLoaded', function() {
+	$.ajax({
+		url: '/admin/music/calendar',
+		type: 'POST',
+		dataType: 'json',
+		success: function(data){
+			var events = data;
+			var calendarEl = document.getElementById('calendar');
+			var calendar = new FullCalendar.Calendar(calendarEl, {
+				headerToolbar: {
+				  left: 'prev,next today',
+				  center: 'title',
+				  //right: 'dayGridMonth,timeGridWeek,timeGridDay'
+				},
+				navLinks: true, // can click day/week names to navigate views
+				selectable: true,
+				selectMirror: true,
+				select: function(arg) {
+					$('#myModal').modal('show');
+					$('#start').val(moment(arg.start).format('YYYY-MM-DD'));
+					$('#day').val(arg.start.getDay());
+					 /*
+					var title = prompt('Event Title:');
+					if (title) {
+					    calendar.addEvent({
+					      title: title,
+					      start: arg.start,
+					      end: arg.end,
+					      allDay: arg.allDay
+					    })
+					  }
+					*/
+					calendar.unselect()
+				},
+				eventClick: function(arg) {
+					var title = arg.event.title.split('<br>');
+					
+					$('#originTitle').val(arg.event.title);
+					$('#originStart').val(moment(arg.event.start).format('YYYY-MM-DD'));
+					$('#tmpTitle_e').val(title[0]);
+					$('#s_meridiem_e').val(title[1].substring(0,2));
+					$('#s_hour_e').val(title[1].substring(3,5));
+					$('#s_minutes_e').val(title[1].substring(6,8));
+					$('#e_meridiem_e').val(title[1].substring(11,13));
+					$('#e_hour_e').val(title[1].substring(14,16));
+					$('#e_minutes_e').val(title[1].substring(17,19));
+					$('#editModal').modal('show');
+			    	  
+			    	  /*
+			        if (confirm('일정을 삭제하시겠습니까?')) {
+			          arg.event.remove()
+			        }
+			    	  */
+				},
+					editable: true,
+					dayMaxEvents: true, // allow "more" link when too many events
+					events: events
+			});
+	
+			calendar.render();
+		}
+	});
+    
+});
+		
+</script>
+</th:block>
+</body>
+</html>

@@ -1,0 +1,239 @@
+﻿<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head th:replace="fragments/head :: headFragment"></head>
+<body>
+<div id="wrap">
+<!-- ====================== * HEADER *========================== -->
+<header th:replace="fragments/mainHeader :: headerFragment"></header>
+<!-- ======================* //HEADER *========================== -->
+
+	<!-- ====================== * contant * ========================== -->
+	<div id="contant">
+		<!-- subBigBanner -->
+		<div class="container100">
+			<div class="row">
+			  <div class="col-md-12 bg_news subTop">
+				<div class="coffeType">
+					<p class="f20_7w f_mw">Community</p>
+					<p class="f45_4w mt20">Event</p>
+				</div>
+			  </div>
+			</div>
+		</div><!-- // container100 -->
+		<!-- //subBigBanner -->
+
+
+		<!--// Portfolio Cobbles Start //-->
+		<section class="section" >
+			<div class="container">
+				<div class="wBox2 mt160" >
+				
+					<ul class="neTab">
+						<li><a href="/community/notice">News</a></li>
+						<li class="active"><a href="/community/event">Event</a></li>
+					</ul>
+				
+				</div>
+				<div class="row clearboth">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						
+						<!-- Vetical -->
+						<div id="css3-animated-example3" class="mt50m">
+
+							<div class="cae">
+								<ul>
+									<li>5</li>
+									<li>
+										<div class="thumbnail-wrapper">
+											<div class="thumbnail">
+												<div class="centered">
+													<img th:src="@{/img/event_sample.jpg}" alt="제품사진"/>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>2020년 크리스마스케이크 사전주문 event 2020.12.01.~2020.12.25일 까지</li>
+									<li>2020.12.30</li>
+								</ul>
+							</div>
+							<div>
+								<div class="v_content">
+									========================
+									공지사항글 작성한 이미지가 리스트썸네일로 노출되게 개발해주세요.
+									========================
+									<p><img th:src="@{/img/event_sample.jpg}" alt="제품사진"/></p>
+									========================
+									공지사항글 작성에 필요한 에디터를 넣어주세요
+									========================
+								</div>
+							</div>
+							<div class="cae">
+								<ul>
+									<li>4</li>
+									<li>
+										<div class="thumbnail-wrapper">
+											<div class="thumbnail">
+												<div class="centered">
+													<img th:src="@{/img/event_sample.jpg}" alt="제품사진"/>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>2020년 크리스마스케이크 사전주문 event 2020.12.01.~2020.12.25일 까지</li>
+									<li>2020.12.30</li>
+								</ul>
+							</div>
+							<div>
+								<div class="v_content">
+									========================
+									공지사항글 작성한 이미지가 리스트썸네일로 노출되게 개발해주세요.
+									========================
+									<p><img th:src="@{/img/bg_wall.jpg}" alt="제품사진"/></p>
+									========================
+									공지사항글 작성에 필요한 에디터를 넣어주세요
+									========================
+								</div>
+							</div>
+
+							<div class="cae">
+								<ul>
+									<li>3</li>
+									<li>
+										<div class="thumbnail-wrapper">
+											<div class="thumbnail">
+												<div class="centered">
+													<img th:src="@{/img/menu04.jpg}" alt="제품사진"/>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>2020년 크리스마스케이크 사전주문 event 2020.12.01.~2020.12.25일 까지</li>
+									<li>2020.12.30</li>
+								</ul>
+							</div>
+							<div>
+								<div class="v_content">
+									========================
+									공지사항글 작성한 이미지가 리스트썸네일로 노출되게 개발해주세요.
+									========================
+									<p><img th:src="@{/img/menu04.jpg}" alt="제품사진"/></p>
+									========================
+									공지사항글 작성에 필요한 에디터를 넣어주세요
+									========================
+								</div>
+							</div>
+
+							<div class="cae">
+								<ul>
+									<li>2</li>
+									<li>
+										<div class="thumbnail-wrapper">
+											<div class="thumbnail">
+												<div class="centered">
+													<img th:src="@{/img/sns_sample.jpg}" alt="제품사진"/>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>2020년 크리스마스케이크 사전주문 event 2020.12.01.~2020.12.25일 까지</li>
+									<li>2020.12.30</li>
+								</ul>
+							</div>
+							<div>
+								<div class="v_content">
+									========================
+									공지사항글 작성한 이미지가 리스트썸네일로 노출되게 개발해주세요.
+									========================
+									<p><img th:src="@{/img/sns_sample.jpg}" alt="제품사진"/></p>
+									========================
+									공지사항글 작성에 필요한 에디터를 넣어주세요
+									========================
+								</div>
+							</div>
+
+							<div class="cae">
+								<ul>
+									<li>1</li>
+									<li>
+										<div class="thumbnail-wrapper">
+											<div class="thumbnail">
+												<div class="centered">
+													<img th:src="@{/img/new_ck01.jpg}" alt="제품사진"/>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>2020년 크리스마스케이크 사전주문 event 2020.12.01.~2020.12.25일 까지</li>
+									<li>2020.12.30</li>
+								</ul>
+							</div>
+							<div>
+								<div class="v_content">
+									========================
+									공지사항글 작성한 이미지가 리스트썸네일로 노출되게 개발해주세요.
+									========================
+									<p><img th:src="@{/img/new_ck01.jpg}" alt="제품사진"/></p>
+									========================
+									공지사항글 작성에 필요한 에디터를 넣어주세요
+									========================
+								</div>
+							</div>
+						</div>
+						<script>
+						$("#css3-animated-example3").collapse({
+						  accordion: true,
+						  open: function() {
+							this.addClass("open");
+							this.css({ height: this.children().outerHeight() });
+						  },
+						  close: function() {
+							this.css({ height: "0px" });
+							this.removeClass("open");
+						  }
+						});
+						</script>
+						<!-- // Vetical -->
+					</div>
+				</div>
+				<!-- //row -->
+
+				<!-- paging -->
+				<div class="paging3">
+					<ol>
+						<li class="preEnd"><img th:src="@{/img/btn/btn_preEnd.gif}" alt="처음" /></li>
+						<li class="pre"><img th:src="@{/img/btn/btn_pre.gif}" alt="이전" /></li>
+						<li><a href="#">1</a></li>
+						<li><strong>2</strong></li><!-- 현재페이지 -->
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li class="next"><img th:src="@{/img/btn/btn_next.gif}" alt="다음" /></li>
+						<li class="nextEnd"><img th:src="@{/img/btn/btn_nextEnd.gif}" alt="끝" /></li>
+					</ol>
+				</div>
+				<!-- paging //-->
+			</div><!-- // container -->
+
+
+		</section>
+		<!--// Portfolio Cobbles End //-->
+		
+		
+
+		
+		
+
+		
+		
+	</div>
+	<!-- ======================
+		 * //contant *
+	========================== -->
+
+	<!-- ====================== * FOOTER * ========================== -->
+	<footer class="container100" th:replace="fragments/mainFooter :: footerFragment"></footer>
+	<!-- ====================== * //FOOTER * ========================== -->
+	<div th:replace="fragments/footerScript :: footerScriptFragment"></div>
+</div><!-- // wrap -->
+</body>
+</html>

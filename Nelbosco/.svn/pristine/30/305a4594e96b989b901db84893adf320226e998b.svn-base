@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head th:fragment="headFragment">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="넬보스코사이트에 오신것을 환영합니다."/>
+	<meta name="Keywords" content="넬보스코, 남촌빵집, 카페, 베이커리카페, 브런치레스토랑, 137고집, 원두, 정식품, 베지밀, 음악,  " />
+	<title>넬보스코</title>
+	<link rel="shortcut icon" href="#">
+	<!-- <link rel="stylesheet" type="text/css" th:href="@{/css/layers.css}"> -->
+	<!--<link rel="stylesheet" type="text/css" th:href="@{/css/settings.css}">-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.2.js"></script>
+	<script type="text/javascript" th:src="@{/js/common.js}"></script><!-- GNB PC웹접근성 메뉴 -->
+	<script th:src="@{/js/jquery.collapse.js}"></script><!-- 모바일 메뉴 -->
+	<link th:href="@{/css/reset.css}" rel="stylesheet">
+	<link th:href="@{/css/bootstrap.css}" rel="stylesheet">
+	<link th:href="@{/css/style.css}" rel="stylesheet">
+</head>
+</html>

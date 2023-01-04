@@ -1,0 +1,150 @@
+﻿<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<title>넬보스코 이탈리안 레스토랑 브랜드 남촌둘러보기</title>
+    <head th:replace="fragments/b_head :: headFragment"></head>
+<div id="wrap">
+<!-- ======================* HEADER *========================== -->
+<header th:replace="fragments/b_mainHeader :: headerFragment"></header>
+<!-- ======================* //HEADER *========================== -->
+<!-- ======================* contant *========================== -->
+<div id="contant2">
+	<!-- subBigBanner -->
+	<div class="container100">
+		<div class="row">
+		  <div class="col-md-12 bg_b_tour subTop">
+			<div class="coffeType">
+				<p class="f45_4w mt20 f_mo">Namchon Tour</p>
+			</div>
+		  </div>
+		</div>
+	</div><!-- // container100 -->
+	<!-- //subBigBanner -->
+
+
+	<!--// Portfolio Cobbles Start //-->
+	<section class="section matychale-gallery-cobbles">
+	    <div>
+               <div class="container">
+                   <div class="row">
+					<div class="menu_cate2 divide2">
+						 <a href="/about/about"><p>레스토랑 소개</p></a>
+						<a href="/about/bi"><p>브랜드 아이덴티티</p></a>
+						<a href="/about/chef"><p>셰프 소개</p></a>
+						<a href="/about/tour" class="current"><p>남촌 둘러보기</p></a>
+					</div>
+                   </div>
+               </div>
+		</div>
+		
+		<div class="container">
+			<div class="location">
+					<span><a href="">HOME</a></span><img th:src="@{/img/location_arrow.gif}">
+					<span><a href="">About</a></span><img th:src="@{/img/location_arrow.gif}">
+					<span>남촌 둘러보기</span>
+				</div>
+			<div class="wBox aboutBox">
+				
+				<p class="f40_7">
+					넬보스코 이탈리안 레스토랑은<br>
+					경쾌하게 재해석한<br>
+					이탈리안 캐주얼 브런치 & 다이닝입니다.
+				</p>
+				<p class="f24_4 mt60m">
+					바쁘게 돌아가는 일상 속,<br class="none">  
+					정성을 담은 음식과 와인 그리고 음악과 쉼이 있는 특별한 시간을 제공합니다.
+				</p>
+				<p class="f24_4 mt60m">
+					넬보스코에서 직접 뽑은 수제 파스타와 저온숙성 반죽으로 만든 정통 피자, 수비드(저온조리) 조리법으로<br class="none">  
+					만들어 보다 부드럽고 육즙 가득한 스테이크를 맛볼 수 있는 것은 물론<br class="none">  
+					신선한 재료 본연의 특징을 살린 감각적인 메뉴들을 선보입니다.
+				</p>
+               </div>
+		</div>
+		<!--// .container100_15 //-->
+           
+           <div class="container">
+               <img th:src="@{/img/brunch/b_about01.jpg}" alt="넬보스코 인테리어 이미지">
+           </div>
+           <div class="container mt120m">
+			<div class="wBox center">
+				<p class="f30_4 mt70m">
+				    우리는 늘 건강하고 행복한 공간을 만들기 위해 고민했습니다.<br class="none">
+                       우리가 오랫동안 추구한 건강함과 정직함의 가치,<br class="none">
+                       그리고 그 가치를 건강한 먹거리로 만들기 위한 오랜 노력.<br class="none">
+                       넬보스코는 이 특별한 가치를 편안한 공간에서 만날 수 있도록 실현된 공간입니다.
+				</p>
+               </div>
+		</div>
+
+		<div class="container100 center mt100 bg_b_about h600">
+               <div>
+                   <p class="f48_5w mt40 f_mo">
+                      Good Place <br>And Healthy Food
+                   </p>
+               </div>
+           </div>
+
+		<div class="container1400 mt50 ">
+			<div class="row flex" >
+				<div class="col-lg-8 col-md-12 col-sm-12">
+                       <img th:src="@{/img/brunch/b_about03.jpg}" alt="함께하는 공간" class="mt40"/>
+				</div>
+				<div class="col-lg-4 col-md-12 col-sm-12 b_brand_title mt100">
+                       <p class="f32_7">위치 및 좌석수</p>
+					<p class="f20_4_2 mt30">
+						넬보스코 이탈리안 레스토랑은  회현역1번 출구<br class="none">
+						골목에 자리잡고 있으며, 넬보스코 2층에 <br class="none">
+						위치하고 있습니다. 총 좌석수는 100좌석 입니다.
+					</p>
+				</div>
+			</div>
+			<!-- row -->
+			<div class="row" >					
+				<div class="col-lg-4 col-md-12 col-sm-12 b_brand_title mt100">
+                       <p class="f32_7">라이브 공연</p>
+					<p class="f20_4_2 mt30">
+						근사한 미식의 경험과 함께 <br class="none">
+						아티스트가 연주하는 음악을  감상해보세요.<br class="none">
+						최상급 육류, 저온 숙성 반죽으로 만든<br class="none">
+						메뉴들과 잊지 못할 경험을 드립니다.
+					</p>
+				</div>
+				<div class="col-lg-8 col-md-12 col-sm-12">
+                       <img th:src="@{/img/brunch/b_about04.jpg}" alt="함께하는 공간" class="mt40"/>
+				</div>
+			</div>
+			<!-- row -->
+			<div class="row pb180 flex" >
+				<div class="col-lg-8 col-md-12 col-sm-12">
+                       <img th:src="@{/img/brunch/b_about05.jpg}" alt="함께하는 공간" class="mt40"/>
+				</div>
+				<div class="col-lg-4 col-md-12 col-sm-12 b_brand_title mt100">
+                       <p class="f32_7">별도의 주차 공간</p>
+					<p class="f20_4_2 mt30">
+						소중한 분과 함께하는 귀중한 시간<br class="none">
+						편하게 방문하여 모임을 가지기에 적합합니다.<br class="none">
+						자세한 사항은 02-3484-9400 또는<br class="none">
+						02-3484-9402로 문의주시기 바랍니다.
+					</p>
+				</div>
+			</div>
+		</div><!-- // container -->
+           
+
+
+	</section>
+	<!--// Portfolio Cobbles End //-->
+	
+</div>
+<!-- ======================
+	 * //contant *
+========================== -->
+<!-- ======================* FOOTER *========================== -->
+<footer th:replace="fragments/b_mainFooter :: footerFragment"></footer>
+<!-- ======================* //FOOTER *========================== -->
+<!-- ====================== * //FOOTER * ========================== -->
+<div th:replace="fragments/footerScript :: footerScriptFragment"></div> 
+</div><!-- // wrap -->
+</body>
+</html>

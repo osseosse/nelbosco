@@ -1,0 +1,237 @@
+﻿<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+	<meta name="author" content="osse">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<meta name="description" content="넬보스코 이탈리안 레스토랑 사이트에 오신것을 환영합니다."/> 
+	<meta name="Keywords" content="넬보스코, 이탈리안 레스토랑, 남촌, 다이닝, 디너, 콘서트,  와인, 정식품, 베지밀, 음악 " />
+	<meta property="og:title" content="넬보스코 이탈리안 레스토랑"> 
+	<meta property="og:url" content="https://nelbosco.co.kr/b_index"> 
+	<meta property="og:image" content="https://nelbosco.co.kr/img/brunch/ogImg.jpg" /> 
+	<meta property="og:description" content="넬보스코 이탈리안 레스토랑은 경쾌하게 재해석한 이탈리안 캐주얼 브런치 & 다이닝입니다."/> 
+    <title>넬보스코 이탈리안 레스토랑 디너</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script type="text/javascript" src="./common/js/common.js"></script><!-- GNB PC웹접근성 메뉴 -->
+	<link href="./common/css/reset.css" rel="stylesheet">
+	<link href="./common/css/bootstrap.css" rel="stylesheet">
+    <link href="./common/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+	<div id="wrap">
+	<!-- ======================
+		 * HEADER *
+	========================== -->
+   <header>
+	
+	</header>
+	<script>
+		/* 로드방식 local 크롬에서 노출되지 않음. */
+	  $( document ).ready( function() {
+		$( 'header' ).load( './b_mainHeader.html' );
+	  } );
+	</script>
+	<!-- ======================
+		 * //HEADER *
+	========================== -->
+
+	<!-- ======================
+		 * contant *
+	========================== -->
+	<div id="contant2">
+		<!-- subBigBanner -->
+		<div class="container100">
+			<div class="row">
+			  <div class="col-md-12 bg_b_dinner subTop">
+				<div class="coffeType">
+					<p class="f45_4w mt20 f_mo">Dinner</p>
+				</div>
+			  </div>
+			</div>
+		</div><!-- // container100 -->
+		<!-- //subBigBanner -->
+
+
+		<!--// Portfolio Cobbles Start //-->
+		<section class="section matychale-gallery-cobbles">
+		    <div>
+                <div class="container">
+                    <div class="row">
+						<div class="menu_cate2">
+							<a href="b_menu_brunch.html" ><p>Brunch</p></a>
+							<a href="b_menu_dinner.html" class="current"><p>Dinner</p></a>
+							<!--<a href="b_menu_course.html"><p>Course</p></a>
+							<a href="b_menu_beverage.html"><p>Beverage</p></a>
+							<a href="b_menu_wine.html"><p>Wine</p></a>-->
+						</div>
+                    </div>
+                </div>
+			</div>
+			
+			<div class="container">
+				<div class="location">
+					<span><a href="">HOME</a></span><img src="./img/location_arrow.gif">
+					<span><a href="">Menu</a></span><img src="./img/location_arrow.gif">
+					<span>Dinner</span>
+				</div>
+			</div>
+			<!--// .container100_15 //-->
+          
+            
+            
+
+			<div class="container1400 mt120 ">
+				<div class="row" >					
+					<div class="col-lg-7 col-md-12 col-sm-12  ">
+						<!-- pp슬라이드 -->
+						<div id="slider2">							
+						  <div class="slider">
+							<p class="s-logo"><img src="./img/brunch/s-logo.gif" /></p>
+							<p class="s-type">ANTIPASTI <br>APPETIZER</p>
+							<div class="slider_area">
+							  <div class="slides">
+								<div class="slide">
+								  <div class="slidetitle"><a href="#"><img class="img100" src="./img/brunch/b_s_dinner01.jpg" /></a></div>
+								</div>
+								<div class="slide">
+								  <div class="slidetitle"><a href="#"><img class="img100" src="./img/brunch/b_s_dinner01.jpg" /></a></div>
+								</div>
+								<div class="slide">
+								  <div class="slidetitle"><a href="#"><img class="img100" src="./img/brunch/b_s_dinner01.jpg" /></a></div>
+								</div>
+								<div class="slide">
+								  <div class="slidetitle"><a href="#"><img class="img100" src="./img/brunch/b_s_dinner01.jpg" /></a></div>
+								</div>
+							  </div>
+							</div>							
+							<a class="slider_left"></a>
+							<a class="slider_right"></a>
+						  </div>
+						</div>						
+						<!-- //pp슬라이드 -->
+					</div>
+					<div class="col-lg-5 col-md-12 col-sm-12">
+						<div class="bmenu-pd">
+							<p class="f20_4">디너 메뉴</p>
+							<p class="f40_4 f_mo mt10 mt20m">Nel Bosco Dinner</p>
+							<p class="btn_down mt40 mt40m"><a href="#">VIEW ALL MENU</a></p>
+							<ul class="bmenu-left">
+								<li>
+									<p class="f20_4"><b>ANTIPASTI</b></p>
+									<p class="f18_4">18,000 KRW ~ 28,000 KRW</p>
+								</li>
+								<li>
+									<p class="f20_4"><b>ZUPPA</b></p>
+									<p class="f18_4">12,000 KRW ~ 18,000 KRW</p>
+								</li>
+								<li>
+									<p class="f20_4"><b>PASTA</b></p>
+									<p class="f18_4">20,000 KRW ~ 36,000 KRW</p>
+								</li>
+								<li>
+									<p class="f20_4"><b>RISOTTO</b></p>
+									<p class="f18_4">25,000 KRW</p>
+								</li>
+								<li>
+									<p class="f20_4"><b>PESCE</b></p>
+									<p class="f18_4">35,000 KRW ~ 80,000 KRW</p>
+								</li>
+								<li>
+									<p class="f20_4"><b>CARNE</b></p>
+									<p class="f18_4">30,000 KRW ~ 180,000 KRW</p>
+								</li>
+							</ul>
+							<ul class="bmenu-right">
+								<li>
+									<p class="f20_4"><b>SIDE DISH</b></p>
+									<p class="f18_4">12,000 KRW ~ 35,000 KRW</p>
+								</li>
+								<li>
+									<p class="f20_4"><b>DOLCE</b></p>
+									<p class="f18_4">7,000 KRW ~ 12,000 KRW</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- row -->
+				<div class="row">
+					<div class="col-lg-12 pb200 mt100">
+						<p class="f24_5">운영시간</p>
+						<table cellspacing="0" border="0" class="open-time mt20">
+							<caption>운영시간안내</caption>
+							<colgroup>
+								<col width="15%">
+								<col width="35%">
+								<col width="15%">
+								<col width="35%">
+							</colgroup>
+							<tr>
+								<td class="bg_gray" colspan="2">평일</td>
+								<td class="bg_gray" colspan="2">주말</td>
+							</tr>
+							<tr>
+								<td class="bg_gray">오픈시간</td>
+								<td>오후 17:00</td>
+								<td class="bg_gray">오픈시간</td>
+								<td>오후 17:00</td>
+							</tr>
+							<tr>
+								<td class="bg_gray">마감시간</td>
+								<td>오후 오후 22:00 ( Last Order  오후 21:00)</td>
+								<td class="bg_gray">마감시간</td>
+								<td>오후 오후 22:00 ( Last Order  오후 21:00)</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<!-- row -->
+				
+			</div><!-- // container -->
+            
+
+
+		</section>
+		<!--// Portfolio Cobbles End //-->
+		
+		
+
+		
+		
+
+		
+		
+	</div>
+	<!-- ======================
+		 * //contant *
+	========================== -->
+
+	<!-- ======================
+		 * FOOTER *
+	========================== -->
+	<footer class="container100 bg_black ">
+		
+	</footer>
+	<script>
+		/* 로드방식 local 크롬에서 노출되지 않음. */
+	  $( document ).ready( function() {
+		$( 'footer' ).load( './mainFooter.html' );
+	  } );
+	</script>
+	<!-- ======================
+		 * //FOOTER *
+	========================== -->
+	<!-- 모바일 메뉴 -->
+	<script src="./common/js/jquery.collapse.js"></script>
+	<script src="./common/js/script.js"></script> 
+	<!-- 엔바토 : matychale-masonry & grid gallery -->
+	<script src="./common/js/main.js"></script>
+	<script src="./common/js/plugins.js"></script>
+	<!-- prrple 모바일용 슬라이드 -->
+	<script src="./common/js/prrple.slider.js"></script>
+	<script src="./common/js/jquery.touchSwipe.1.6.min.js"></script>
+	</div><!-- // wrap -->
+	</body>
+</html>

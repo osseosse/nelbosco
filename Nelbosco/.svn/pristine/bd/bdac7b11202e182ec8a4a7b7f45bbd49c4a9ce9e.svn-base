@@ -1,0 +1,286 @@
+﻿<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<title>넬보스코 커피 이야기</title>
+    <head th:replace="fragments/head :: headFragment"></head>
+</head>
+<body>
+<div id="wrap">
+<!-- ====================== * HEADER *========================== -->
+<header th:replace="fragments/mainHeader :: headerFragment"></header>
+<!-- ======================* //HEADER *========================== -->
+
+	<!-- ======================
+		 * contant *
+	========================== -->
+	<div id="contant">
+		<!-- subBigBanner -->
+		<div class="container100">
+			<div class="row">
+			  <div class="col-md-12 bg_coffee subTop" >
+				<div class="coffeType">
+					<p class="f45_4w mt20">끝없는 블렌딩 연구</p>
+				</div>
+			  </div>
+			</div>
+		</div><!-- // container100 -->
+		<!-- //subBigBanner -->
+
+
+		
+		<section class="section matychale-gallery-cobbles">
+		    <div>
+                <div class="container">
+                    <div class="row">
+                            <div class="menu_cate">
+                            	<a href="/brandstory/about"><p>브랜드 스토리</p></a>
+                                <a href="/brandstory/bi"><p>브랜드 아이덴티티</p></a>
+                                <a href="/brandstory/place"><p>공간 이야기</p></a>
+                                <a href="/brandstory/lab"><p>연구소</p></a>
+                                <a href="/story/coffeeStory" class="active"><p>커피 이야기</p></a>
+                                <a href="/story/drink"><p>음료 이야기</p></a>
+                                <a href="/story/bakery"><p>베이커리 이야기</p></a>
+                                <!-- <a href="/story/music"><p>음악 공연 이야기</p></a> -->
+                            </div>
+                    </div>
+                </div>
+			</div>
+			<div class="container">
+				<div class="location">
+					<span><a href="">HOME</a></span><img th:src="@{/img/location_arrow.gif}">
+					<span><a href="">Brand Story</a></span><img th:src="@{/img/location_arrow.gif}">
+					<span>넬보스코 연구소</span>
+				</div>
+			</div>
+			<div class="container Box1130">
+				<div class="row mt150">
+				  <div class="col-lg-12 col-md-12 col-sm-12 mb70" >
+						<p class="f36_7">최고의 커피를 위한<br class="none"> 넬보스코의 137고집</p>
+				  </div>
+				  <div class="col-lg-4 col-md-4 col-sm-12 centerM mt30m" >
+						<img th:src="@{/img/coffeestory_01.png}" alt="일관성 있는 커피 품질 유지를 위해 직접 로스팅한 최고급 원두를 최첨단 설비로 관리하고 있습니다."/>
+				  </div>
+				  <div class="col-lg-4 col-md-4 col-sm-12 centerM mt30m" >
+						<img th:src="@{/img/coffeestory_02.png}" alt="3일간의 저온숙성과정을 거쳐"/>
+				  </div>
+				  <div class="col-lg-4 col-md-4 col-sm-12 centerM mt30m" >
+						<img th:src="@{/img/coffeestory_03.png}" alt="7일 이내의 원두만을 사용함으로써 최상의 맛을 제공하기 위해 노력하고 있습니다."/>
+				  </div>
+				</div>
+			</div>
+			<!--// .container100_15 //-->
+
+            <div class="container mt120">
+               <div class="row">
+                   <img th:src="@{/img/coffeestory_04.jpg}" alt="커피연출컷" class="img100">
+               </div>
+            </div>
+            
+            <div class="container mt150">
+				<div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 ">
+						<p class="f38_7 center">거듭된 연구를 통해 탄생한 넬보스코 커피 원두</p>
+					</div>
+                </div>
+            </div>
+            
+            <div class="container mt130">
+				<div class="row coffeeBox">
+                    <div class="col-lg-6 col-md-12 col-sm-12 mb70" >
+						<p class="f45_7">끝없는 블렌딩 연구</p>
+						<p class="f20_7 mt20">넬보스코 만의 차별화된 커피</p>
+						<p class="f20_4 mt50"> 
+							전세계에서 생산되는 커피는 지역의 기후, 온도, 습도 등 자연환경에 따라 서로 다른 맛과 향을 지니고 있습니다.<br class="none"> 이것들을 적절한 비율로 배합하여 조화로운 맛을 만들어 내는 것이 블렌딩 작업입니다. 넬보스코 매장에 오시는 모든 고객이 즐길 수 있는 맛의 조화를 찾아내기 위한 오랜 연구 끝에 넬보스코만의 블렌딩 레시피를 개발하였습니다.<br class="none"><br>
+
+                            지금도 넬보스코의 블렌딩 연구는 계속되고 있습니다.
+						</p>
+				    </div>
+				    <div class="col-lg-6 col-md-12 col-sm-12" >
+						<img th:src="@{/img/coffeestory_05.jpg}" alt="끝없는 블렌딩 연구"/>
+				    </div>
+                </div>
+                <div class="row coffeeBox2 mt120">
+                    <div class="col-lg-6 col-md-12 col-sm-12" >
+						<img th:src="@{/img/coffeestory_06.jpg}" alt="철학을 담은 로스팅"/>
+				    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 mb70 mt30m" >
+						<p class="f45_7">철학을 담는 로스팅</p>
+						<p class="f20_7 mt20">
+						    45년의 전통 두유 제조 노하우가<br class="none"> 만들어낸 전문성
+						</p>
+						<p class="f20_4 mt50"> 
+							아무리 좋은 커피 생두일지라도 로스팅 강도가 너무 약하거나 강하게 되면 커피 본연의 맛을 충분히 표현할 수 없고, 오히려 안좋은 맛이 나타나게 됩니다.<br class="none">
+                            넬보스코에서는 로스팅 전문가가 끊임없는 로스팅 연구를 통해 커피 본연의 맛과 향을 찾아 매장에 찾아오시는 고객 모두 드시는 커피에서 “마지막 한 모금의 그리움”을 느끼실 수 있도록 하는 것을 철학으로 삼고 있습니다.
+						</p>
+				    </div>
+                </div>
+                <div class="row coffeeBox mt120">
+                    <div class="col-lg-6 col-md-12 col-sm-12 mb70" >
+						<p class="f45_7">변함없는 맛의 추구</p>
+						<p class="f20_7 mt20">
+						   45년의 전통 두유 제조 노하우가<br class="none"> 만들어낸 전문성
+						</p>
+						<p class="f20_4 mt50"> 
+							넬보스코에서 사용되는 커피는 생두에서 한 잔의 커피가 나오기까지 모든 과정에서 철저한 품질 관리 시스템을 통해 일정한 맛과 품질을 유지하기 위해 노력하고 있습니다.
+						</p>
+				    </div>
+				    <div class="col-lg-6 col-md-12 col-sm-12" >
+						<img th:src="@{/img/coffeestory_07.jpg}" alt="변함없는 맛의 추구"/>
+				    </div>
+                </div>
+            </div>
+            
+            
+            <!--넬보스코 블렌드-->
+			<div class="container mt150">
+				<div class="row" >
+					<div class="col-lg-12 col-md-12 col-sm-12 ">
+						<p class="f38_7 center">넬보스코 블렌드</p>
+					</div>
+                </div>
+            </div>
+            <div class="container mt120 Box1130">
+				<div class="row" >
+					<div class="col-lg-12 col-md-12 col-sm-12 ">
+						<p class="f38_7">
+						    <b class="gray">#오리진 (Origin) </b>
+						    브라질 세하도, 에티오피아 예가체프
+						</p>
+						<div class="coffeeText mt60">
+                            <p class="f32_7">로스팅 포인트&ensp;</p>
+                            <p class="f24_4">Roasting Point</p>
+                        </div>
+					</div>
+                </div>
+            </div>
+            <div class="container mt100">
+				<div class="row" >
+					<div class="col-lg-12 col-md-12 col-sm-12 ">
+						<p class="img100">
+						    <img th:src="@{/img/coffeestory_08.png}" alt="오리진 브라질 세하도, 에디오피아 예가체프">
+						</p>
+					</div>
+                </div>
+            </div>
+            <div class="container mt60 Box1130">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="coffeeText">
+                            <p class="f32_7">커피노트&ensp;</p>
+                            <p class="f24_4">Coffee Note</p>
+                        </div>
+						<p class="f24_4 mt20">산미는 적고, 견과류의 고소함과 은은한 단맛의 밸런스가 좋은 커피</p>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 mt40 center mt40m">
+						<img th:src="@{/img/coffeestory_09.jpg}" alt="볶은 땅콩">
+						<p class="f32_7 mt30">볶은 땅콩</p>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 mt40 center">
+						<img th:src="@{/img/coffeestory_10.jpg}" alt="비스킷">
+						<p class="f32_7 mt30">비스킷</p>
+					</div>
+					
+					<div class="col-lg-4 col-md-4 col-sm-6 mt40 center">
+						<img th:src="@{/img/coffeestory_11.jpg}" alt="브라운 슈가">
+						<p class="f32_7 mt30">브라운 슈가</p>
+					</div>
+				</div>
+			</div>
+			<!--//넬보스코 블렌드-->
+           
+            <!--넬보스코 디카페인 싱글오리진-->
+			<div class="container mt170">
+				<div class="row" >
+					<div class="col-lg-12 col-md-12 col-sm-12 ">
+						<p class="f38_7 center">넬보스코 디카페인 싱글오리진</p>
+					</div>
+                </div>
+            </div>
+            <div class="container mt120 Box1130">
+				<div class="row" >
+					<div class="col-lg-12 col-md-12 col-sm-12 ">
+						<p class="f38_7">
+						    <b class="gray">#오리진 (Origin) </b>
+						    에티오피아 시다모 G2 시다모 스위스워터
+						</p>
+						<div class="coffeeText mt60">
+                            <p class="f32_7">로스팅 포인트&ensp;</p>
+                            <p class="f24_4">Roasting Point</p>
+                        </div>
+					</div>
+                </div>
+            </div>
+            <div class="container mt100">
+				<div class="row" >
+					<div class="col-lg-12 col-md-12 col-sm-12 ">
+						<p class="img100">
+						    <img th:src="@{/img/coffeestory_12.png}" alt="오리진 에티오피아 시다모 G2 시다모 스위스워터">
+						</p>
+					</div>
+                </div>
+            </div>
+            <div class="container mt60 Box1130">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="coffeeText">
+                            <p class="f32_7">커피노트&ensp;</p>
+                            <p class="f24_4">Coffee Note</p>
+                        </div>
+						<p class="f24_4 mt20">커피 본연의 풍부한 향과 고소한 맛이 좋은 커피</p>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 mt40 center mt40m">
+						<img th:src="@{/img/coffeestory_13.jpg}" alt="볶은 땅콩">
+						<p class="f32_7 mt30">볶은 땅콩</p>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 mt40 center">
+						<img th:src="@{/img/coffeestory_14.jpg}" alt="검은콩">
+						<p class="f32_7 mt30">검은콩</p>
+					</div>
+					
+					<div class="col-lg-4 col-md-4 col-sm-6 mt40 center">
+						<img th:src="@{/img/coffeestory_15.jpg}" alt="카카오닙스">
+						<p class="f32_7 mt30">카카오닙스</p>
+					</div>
+				</div>
+			</div>
+			<!--//넬보스코 디카페인 싱글오리진 -->
+        
+            <div class="container mt170">
+				<div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 ">
+						<p class="f38_7 center">넬보스코 디카페인 커피 이야기</p>
+					</div>
+                </div>
+            </div>
+            
+            <div class="container mt130 coffeeBox">
+				<div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12 mb70" >
+						<p class="f32_7">
+						    에티오피아산 고급 생두를<br class="none2">10시간에 걸쳐
+						    물과 활성탄 필터를 통해<br class="none2">카페인만 제거한
+						    친환경 디카페인 커피
+						</p>
+						<p class="f20_4 mt20"> 
+							카페인 부담 없이 디카페인 커피로 즐겨보세요.
+						</p>
+				    </div>
+				    <div class="col-lg-6 col-md-12 col-sm-12" >
+						<img th:src="@{/img/coffeestory_16.jpg}" alt="넬보스코 디카페인 커피 이야기"/>
+				    </div>
+                </div>
+            </div>
+		</section>
+		<!--// Portfolio Cobbles End //-->
+	</div>
+	<!-- ======================
+		 * //contant *
+	========================== -->
+
+	<!-- ====================== * FOOTER * ========================== -->
+	<footer class="container100" th:replace="fragments/mainFooter :: footerFragment"></footer>
+	<!-- ====================== * //FOOTER * ========================== -->
+	<div th:replace="fragments/footerScript :: footerScriptFragment"></div> 
+</div><!-- // wrap -->
+</body>
+</html>

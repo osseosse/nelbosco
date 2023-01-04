@@ -1,0 +1,156 @@
+﻿<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+	<meta name="author" content="osse">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<meta name="description" content="넬보스코 이탈리안 레스토랑 사이트에 오신것을 환영합니다."/> 
+	<meta name="Keywords" content="넬보스코, 이탈리안 레스토랑, 남촌, 다이닝, 디너, 콘서트,  와인, 정식품, 베지밀, 음악 " />
+	<meta property="og:title" content="넬보스코 이탈리안 레스토랑"> 
+	<meta property="og:url" content="https://nelbosco.co.kr/b_index"> 
+	<meta property="og:image" content="https://nelbosco.co.kr/img/brunch/ogImg.jpg" /> 
+	<meta property="og:description" content="넬보스코 이탈리안 레스토랑은 경쾌하게 재해석한 이탈리안 캐주얼 브런치 & 다이닝입니다."/> 
+    <title>넬보스코 이탈리안 레스토랑 브랜드 아이덴티티</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script type="text/javascript" src="./common/js/common.js"></script><!-- GNB PC웹접근성 메뉴 -->
+	<link href="./common/css/reset.css" rel="stylesheet">
+	<link href="./common/css/bootstrap.css" rel="stylesheet">
+    <link href="./common/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+	<div id="wrap">
+	<!-- ======================
+		 * HEADER *
+	========================== -->
+   <header>
+	
+	</header>
+	<script>
+		/* 로드방식 local 크롬에서 노출되지 않음. */
+	  $( document ).ready( function() {
+		$( 'header' ).load( './b_mainHeader.html' );
+	  } );
+	</script>
+	<!-- ======================
+		 * //HEADER *
+	========================== -->
+
+	<!-- ======================
+		 * contant *
+	========================== -->
+	<div id="contant">
+		<!-- subBigBanner -->
+		<div class="container100">
+			<div class="row">
+			  <div class="col-md-12 bg_b_bi subTop">
+				<div class="coffeType">
+					<p class="f45_4w f_mo mt20">Brand Identity</p>
+				</div>
+			  </div>
+			</div>
+		</div><!-- // container100 -->
+		<!-- //subBigBanner -->
+
+
+		<!--// Portfolio Cobbles Start //-->
+		<section class="section matychale-gallery-cobbles">
+		    <div>
+                <div class="container">
+                    <div class="row">
+						<div class="menu_cate2 divide2">
+							<a href="b_about.html"><p>레스토랑 소개</p></a>
+							<a href="b_bi.html" class="current"><p>브랜드 아이덴티티</p></a>
+							<a href="b_chef.html"><p>셰프 소개</p></a>
+							<a href="b_tour.html"><p>남촌 둘러보기</p></a>
+						</div>
+                    </div>
+                </div>
+			</div>
+			<div class="container">
+				<div class="location">
+						<span><a href="">HOME</a></span><img src="./img/location_arrow.gif">
+						<span><a href="">About</a></span><img src="./img/location_arrow.gif">
+						<span>브랜드 아이덴티티</span>
+					</div>
+				<div class="row">
+				  <div class="col-md-12 mt100">
+					<p class="f40_7 mt60 center">넬보스코는<br class="none2"> 이탈리아어로 ‘숲속에서’라는 의미입니다.</p>
+					<p class="f30_4 mt90 center">
+					심볼은 매장 이름과 같이<br> 음악이 있는 숲속의 평온함을 형상화한 이미지입니다.<br>
+					넬보스코는 아름다운 공간과 음악 그리고<br> 건강한 먹거리 어우러져 있는 힐링 공간을 추구합니다. 
+					</p>				
+				  </div>
+				</div>
+			</div>
+			<!--// .container100_15 //-->
+			
+			<div class="container mt120m">
+				<div class="row biBox">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                       <p class="f20_5">BI 기본형</p>
+                       <img src="img/brand_identity1.png" alt="기본형" class="mt50">
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <p class="f20_5">로고타입</p>
+                       <img src="img/brand_identity2.jpg" alt="로고타입" class="mt50">
+                    </div>
+				</div>
+				<!-- row -->
+			</div><!-- // container -->
+			<div class="container mt120m">
+				<div class="row">
+                   <p class="col-md-12 f30_4 center">넬보스코 컬러 시스템</p>
+                    <div class="col-lg-6 col-md-6 col-sm-12 mt70m">
+                       <img src="img/brand_identity3.jpg" alt="넬보스코그린">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 mt70m">
+                       <img src="img/brand_identity4.jpg" alt="넬보스코레드">
+                    </div>
+				</div>
+				<!-- row -->
+			</div><!-- // container -->
+			
+		</section>
+		<!--// Portfolio Cobbles End //-->
+		
+		
+
+		
+		
+
+		
+		
+	</div>
+	<!-- ======================
+		 * //contant *
+	========================== -->
+
+	<!-- ======================
+		 * FOOTER *
+	========================== -->
+	<footer class="container100 bg_black">
+		
+	</footer>
+	<script>
+		/* 로드방식 local 크롬에서 노출되지 않음. */
+	  $( document ).ready( function() {
+		$( 'footer' ).load( './mainFooter.html' );
+	  } );
+	</script>
+	<!-- ======================
+		 * //FOOTER *
+	========================== -->
+	<!-- 모바일 메뉴 -->
+	<script src="./common/js/jquery.collapse.js"></script>
+	<script src="./common/js/script.js"></script> 
+	<!-- 엔바토 : matychale-masonry & grid gallery -->
+	<script src="./common/js/main.js"></script>
+	<script src="./common/js/plugins.js"></script>
+	<!-- prrple 모바일용 슬라이드 -->
+	<script src="./common/js/prrple.slider.js"></script>
+	<script src="./common/js/jquery.touchSwipe.1.6.min.js"></script>
+	</div><!-- // wrap -->
+	</body>
+</html>

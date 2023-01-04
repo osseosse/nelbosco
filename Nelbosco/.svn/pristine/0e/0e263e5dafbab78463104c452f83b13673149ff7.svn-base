@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head th:fragment="headFragment">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="넬보스코사이트에 오신것을 환영합니다."/>
+	<meta name="Keywords" content="넬보스코, 남촌빵집, 카페, 베이커리카페, 브런치레스토랑, 137고집, 원두, 정식품, 베지밀, 음악,  " />
+	<link rel="shortcut icon" href="#">
+	<script th:src="@{https://jsgetip.appspot.com}"></script>
+	<script th:inline="javascript">
+	/*<![CDATA[*/
+		var check_ip = ip();
+		
+		if (document.location.protocol == "http:") {
+			if(document.location.hostname == 'nelbosco.co.kr') {
+		    	document.location.href = document.location.href.replace('http:', 'https:');
+			}
+		}
+		
+		if(check_ip == "211.204.41.41" || check_ip == "115.88.198.133"){
+		} else {
+			alert("정식품 서울사무소에서만 접속 가능합니다. \n문의: 오쎄 정보전산팀(070-5152-4926)");
+			document.location.href = "/";
+		}
+		
+	/*]]>*/
+	</script>
+</head>
+</html>

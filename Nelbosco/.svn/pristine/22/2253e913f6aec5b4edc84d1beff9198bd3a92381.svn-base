@@ -1,0 +1,61 @@
+package com.nelbosco.controller;
+
+import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.nelbosco.constant.Method;
+import com.nelbosco.domain.GoodsDTO;
+import com.nelbosco.service.GoodsService;
+import com.nelbosco.util.UiUtils;
+
+@Controller
+public class GoodsController extends UiUtils {
+
+	@Autowired
+	private GoodsService goodsService;
+
+	@GetMapping(value = "/menu/{categoryName}")
+	public String openGoodsList(@ModelAttribute("params") GoodsDTO goods, @PathVariable(value = "categoryName", required = false) String categoryName, Model model) {
+		goods.setCategoryName(categoryName);
+		List<GoodsDTO> goodsList = goodsService.getGoodsList(goods);
+		model.addAttribute("goodsList", goodsList);
+
+		return "menu/"+categoryName;
+	}
+	
+	 @RequestMapping(value = "/menu/getGoodsList",method = RequestMethod.POST)
+	    public String getGoodsList(Model model, GoodsDTO dto){
+			List<GoodsDTO> goodsList = goodsService.getGoodsList(dto);
+			if(goodsList != null) {
+				model.addAttribute("goodsList", goodsList);
+			} else {
+				model.addAttribute("goodsList", "");
+			}
+	        return "menu :: #resultDiv";
+	    }
+
+	@GetMapping(value = "/menu/detail")
+	public String openGoodsDetail(@ModelAttribute("params") GoodsDTO params, @RequestParam(value = "goodsCode", required = false) Long goodsCode, Model model) {
+		if (goodsCode == null) {
+			return showMessageWithRedirect("올바르지 않은 접근입니다.", "/goods/list.do", Method.GET, null, model);
+		}
+
+		GoodsDTO goods = goodsService.getGoodsDetail(goodsCode);
+		if (goods == null || "Y".equals(goods.getDeleteYn())) {
+			return showMessageWithRedirect("풀절된 상품입니다.", "/goods/list.do", Method.GET, null, model);
+		}
+		model.addAttribute("goods", goods);
+
+		return "menu/view";
+	}
+
+
+}

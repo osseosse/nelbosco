@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head th:fragment="headFragment">
+	<meta charset="utf-8">
+	<meta name="author" content="osse">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+	<meta name="description" content="넬보스코사이트에 오신것을 환영합니다."/> 
+	<meta name="Keywords" content="넬보스코, 남촌빵집, 카페, 베이커리카페, 브런치레스토랑, 137고집, 원두, 정식품, 베지밀, 음악 " />
+	<meta property="og:title" content="넬보스코"> 
+	<meta property="og:url" content="https://www.nelbosco.co.kr/"> 
+	<meta property="og:image" content="https://www.nelbosco.co.kr/img/main_dm01.jpg" /> 
+	<meta property="og:description" content="우리는 늘 건강하고 행복한 공간을 만들기 위해 고민했습니다.
+우리가 오랫동안 추구한 건강함과 정직함의 가치, 그리고 그 가치를 건강한 먹거리로 만들기 위한 오랜 노력. 넬보스코는 이 특별한 가치를 편안한 공간에서 만날 수 있도록 실현된 공간입니다."/>
+	<link rel="shortcut icon" type="image/x-icon" href="https://www.nelbosco.co.kr/img/favicon.ico"/>
+	<script th:inline="javascript">
+	/*<![CDATA[*/
+		if (document.location.protocol == "http:") {
+			if(document.location.hostname == 'nelbosco.co.kr') {
+		    	document.location.href = document.location.href.replace('http:', 'https:');
+			}
+		}
+	/*]]>*/
+	</script>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/layers.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/settings.css}">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+	<script type="text/javascript" th:src="@{/js/common.js}"></script><!-- GNB PC웹접근성 메뉴 -->
+	<script th:src="@{/js/jquery.collapse.js}"></script><!-- 모바일 메뉴 -->
+	<link th:href="@{/css/reset.css}" rel="stylesheet">
+	<link th:href="@{/css/bootstrap.css}" rel="stylesheet">
+	<link th:href="@{/css/style.css}" rel="stylesheet">
+</head>
+</html>

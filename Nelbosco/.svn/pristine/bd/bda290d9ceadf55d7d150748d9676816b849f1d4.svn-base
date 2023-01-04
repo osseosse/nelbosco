@@ -1,0 +1,14 @@
+package com.nelbosco.service;
+
+import java.util.List;
+import com.nelbosco.domain.MemberDTO;
+
+public interface MemberService {
+
+	public boolean registerMember(MemberDTO params);
+
+	public MemberDTO getMemberDetail(Long memNo);
+
+	public List<MemberDTO> getMemberList(MemberDTO params);
+
+}

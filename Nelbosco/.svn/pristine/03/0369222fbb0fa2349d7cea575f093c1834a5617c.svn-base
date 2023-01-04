@@ -1,0 +1,261 @@
+﻿<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+ 	<title>넬보스코 자주 묻는 질문</title>
+    <head th:replace="fragments/head :: headFragment"></head>
+</head>
+<body>
+<div id="wrap">
+<!-- ====================== * HEADER *========================== -->
+<header th:replace="fragments/mainHeader :: headerFragment"></header>
+<!-- ======================* //HEADER *========================== -->
+
+<!-- ======================
+	 * contant *
+========================== -->
+<div id="contant">
+	<!-- subBigBanner -->
+	<div class="container100">
+		<div class="row">
+		  <div class="col-md-12 bg_news subTop">
+			<div class="coffeType">
+				<p class="f45_4w mt20">FAQ</p>
+			</div>
+		  </div>
+		</div>
+	</div><!-- // container100 -->
+	<!-- //subBigBanner -->
+
+
+	<!--// Portfolio Cobbles Start //-->
+	<section class="section matychale-gallery-cobbles" >
+		<div>
+			<div class="container">
+				<div class="row">
+					<div class="menu_cate">
+						<a href="/contact/map" ><p>오시는길</p></a>
+						<a href="/contact/contact" ><p>고객상담</p></a>
+						<a href="/contact/faq" class="current"><p>자주 묻는 질문</p></a>
+						<!-- <a href="booking"><p>예약문의</p></a> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="location">
+				<span><a href="">HOME</a></span><img th:src="@{/img/location_arrow.gif}">
+				<span><a href="">Community</a></span><img th:src="@{/img/location_arrow.gif}">
+				<span>FAQ</span>
+			</div>
+			<div class="wBox2 mt100" >
+			</div>
+			<div class="row clearboth">
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					
+					<!-- Vetical -->
+					<div id="css3-animated-example2" class="mt50m">
+						<div class="cae">
+							<ul>
+								<li>10</li>
+								<li>공지사항은 최대 10개 노출</li>
+								<li>2020.12.30</li>
+							</ul>
+						</div>
+						<div>
+							<div class="v_content">
+								<p><img th:src="@{/img/newsSample.jpg}" alt=""/></p>
+								========================
+								공지사항글 작성에 필요한 에디터를 넣어주세요
+								========================
+							</div>
+						</div>
+						<div class="cae">
+							<ul>
+								<li>09</li>
+								<li>공지사항은 최대 10개 노출</li>
+								<li>2020.12.30</li>
+							</ul>
+						</div>
+						<div>
+							<div class="v_content">
+								========================
+								공지사항글 작성에 필요한 에디터를 넣어주세요
+								========================
+							</div>
+						</div>
+						<div class="cae">
+							<ul>
+								<li>08</li>
+								<li>공지사항은 최대 10개 노출</li>
+								<li>2020.12.30</li>
+							</ul>
+						</div>
+						<div>
+							<div class="v_content">
+								========================
+								공지사항글 작성에 필요한 에디터를 넣어주세요
+								========================
+							</div>
+						</div>
+						<div class="cae">
+							<ul>
+								<li>07</li>
+								<li>공지사항은 최대 10개 노출</li>
+								<li>2020.12.30</li>
+							</ul>
+						</div>
+						<div>
+							<div class="v_content">
+								========================
+								공지사항글 작성에 필요한 에디터를 넣어주세요
+								========================
+							</div>
+						</div>
+						<div class="cae">
+							<ul>
+								<li>06</li>
+								<li>공지사항은 최대 10개 노출</li>
+								<li>2020.12.30</li>
+							</ul>
+						</div>
+						<div>
+							<div class="v_content">
+								========================
+								공지사항글 작성에 필요한 에디터를 넣어주세요
+								========================
+							</div>
+						</div>
+						<div class="cae">
+							<ul>
+								<li>05</li>
+								<li>공지사항은 최대 10개 노출</li>
+								<li>2020.12.30</li>
+							</ul>
+						</div>
+						<div>
+							<div class="v_content">
+								========================
+								공지사항글 작성에 필요한 에디터를 넣어주세요
+								========================
+							</div>
+						</div>
+						<div class="cae">
+							<ul>
+								<li>04</li>
+								<li>넬보스코 공지사항 입니다 넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다</li>
+								<li>2020.12.30</li>
+							</ul>
+						</div>
+						<div>
+							<div class="v_content">
+								========================
+								공지사항글 작성에 필요한 에디터를 넣어주세요
+								========================
+								<br>
+								========================
+								공지사항글 작성에 필요한 에디터를 넣어주세요
+								========================
+								<p><img th:src="@{/img/ck01.jpg}" alt=""/></p>
+								넬보스코 공지사항 입니다 넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다
+								넬보스코 공지사항 입니다 넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다
+								넬보스코 공지사항 입니다 넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다
+								넬보스코 공지사항 입니다 넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다
+								넬보스코 공지사항 입니다 넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다 넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다
+								넬보스코 공지사항 입니다 넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다
+								넬보스코 공지사항 입니다 넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다
+								넬보스코 공지사항 입니다 넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다 넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다
+							</div>
+						</div>
+						<div class="cae">
+							<ul>
+								<li>03</li>
+								<li>넬보스코 공지사항 입니다 넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다</li>
+								<li>2020.12.30</li>
+							</ul>
+						</div>
+						<div>
+							<div class="v_content">
+								========================
+								공지사항글 작성에 필요한 에디터를 넣어주세요
+								========================
+							</div>
+						</div>
+						<div class="cae">
+							<ul>
+								<li>02</li>
+								<li>넬보스코 공지사항 입니다 넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다</li>
+								<li>2020.12.30</li>
+							</ul>
+						</div>
+						<div>
+							<div class="v_content">
+								========================
+								공지사항글 작성에 필요한 에디터를 넣어주세요
+								========================
+							</div>
+						</div>
+						<div class="cae">
+							<ul>
+								<li>01</li>
+								<li>넬보스코 공지사항 입니다 넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다넬보스코 공지사항 입니다</li>
+								<li>2020.12.30</li>
+							</ul>
+						</div>
+						<div>
+							<div class="v_content">
+								========================
+								공지사항글 작성에 필요한 에디터를 넣어주세요
+								========================
+							</div>
+						</div>
+					</div>
+					<script>
+					$("#css3-animated-example2").collapse({
+					  accordion: true,
+					  open: function() {
+						this.addClass("open");
+						this.css({ height: this.children().outerHeight() });
+					  },
+					  close: function() {
+						this.css({ height: "0px" });
+						this.removeClass("open");
+					  }
+					});
+					</script>
+					<!-- // Vetical -->
+				</div>
+			</div>
+			<!-- //row -->
+
+			<!-- paging -->
+			<div class="paging3">
+				<ol>
+					<li class="preEnd"><img th:src="@{/img/btn_preEnd.gif}" alt="처음" /></li>
+					<li class="pre"><img th:src="@{/img/btn_pre.gif}" alt="이전" /></li>
+					<li><a href="#">1</a></li>
+					<li><strong>2</strong></li><!-- 현재페이지 -->
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li class="next"><img th:src="@{/img/btn_next.gif}" alt="다음" /></li>
+					<li class="nextEnd"><img th:src="@{/img/btn_nextEnd.gif}" alt="끝" /></li>
+				</ol>
+			</div>
+			<!-- paging //-->
+		</div><!-- // container -->
+
+
+	</section>
+	<!--// Portfolio Cobbles End //-->
+</div>
+<!-- ======================
+	 * //contant *
+========================== -->
+
+<!-- ====================== * FOOTER * ========================== -->
+<footer class="container100" th:replace="fragments/mainFooter :: footerFragment"></footer>
+<!-- ====================== * //FOOTER * ========================== -->
+<div th:replace="fragments/footerScript :: footerScriptFragment"></div> 
+</div><!-- // wrap -->
+</body>
+</html>

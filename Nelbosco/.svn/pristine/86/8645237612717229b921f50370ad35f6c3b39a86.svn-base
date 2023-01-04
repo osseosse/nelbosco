@@ -1,0 +1,224 @@
+﻿<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<title>넬보스코 이탈리안 레스토랑 브런치</title>
+    <head th:replace="fragments/b_head :: headFragment"></head>
+</head>
+ <body>
+<div id="wrap">
+<!-- ====================== * HEADER *========================== -->
+<header th:replace="fragments/b_mainHeader :: headerFragment"></header>
+<!-- ======================* //HEADER *========================== -->
+<!-- ======================
+	 * contant *
+========================== -->
+<div id="contant2">
+	<!-- subBigBanner -->
+	<div class="container100">
+		<div class="row">
+		  <div class="col-md-12 bg_b_brunch subTop">
+			<div class="coffeType">
+				<p class="f45_4w mt20 f_mo">Brunch</p>
+			</div>
+		  </div>
+		</div>
+	</div><!-- // container100 -->
+	<!-- //subBigBanner -->
+
+
+	<!--// Portfolio Cobbles Start //-->
+	<section class="section matychale-gallery-cobbles">
+	    <div>
+               <div class="container">
+                   <div class="row">
+					<div class="menu_cate2">
+						<a href="/restaurant/menu/brunch" class="current"><p>Brunch</p></a>
+						<a href="/restaurant/menu/dinner"><p>Dinner</p></a>
+						<!--<a href="b_menu_course.html"><p>Course</p></a>
+						<a href="b_menu_beverage.html"><p>Beverage</p></a>
+						<a href="b_menu_wine.html"><p>Wine</p></a>-->
+					</div>
+                   </div>
+               </div>
+		</div>
+		
+		<div class="container">
+			<div class="location">
+				<span><a href="">HOME</a></span><img th:src="@{/img/location_arrow.gif}">
+				<span><a href="">Menu</a></span><img th:src="@{/img/location_arrow.gif}">
+				<span>Brunch</span>
+			</div>
+		</div>
+		<!--// .container100_15 //-->
+         
+           
+           
+
+		<div class="container1400 mt120 ">
+				<div class="row" >					
+					<div class="col-lg-7 col-md-12 col-sm-12  ">
+						<!-- pp슬라이드 -->
+						<div id="slider2">							
+						  <div class="slider">
+							<p class="s-logo"><img th:src="@{/img/brunch/s-logo.gif}" /></p>
+							<div class="slider_area">
+							  <div class="slides">
+								<div class="slide">
+                                  <p class="s-type">NEL BOSCO STYLE<br>FRENCH TOAST</p>
+								  <div class="slidetitle"><img class="img100" th:src="@{/img/brunch/b_s_brunch01.jpg}" /></div>
+								</div>
+								<div class="slide">
+                                  <p class="s-type">HAWAIIAN<br>LOCO MOCO</p>
+								  <div class="slidetitle"><img class="img100" th:src="@{/img/brunch/b_s_brunch02.jpg}" /></div>
+								</div>
+								<div class="slide">
+                                  <p class="s-type">ITALIAN<br>HOMEMADE BRUNCH</p>
+								  <div class="slidetitle"><img class="img100" th:src="@{/img/brunch/b_s_brunch03.jpg}" /></div>
+								</div>
+							  </div>
+							</div>							
+							<a class="slider_left"></a>
+							<a class="slider_right"></a>
+						  </div>
+						</div>						
+						<!-- //pp슬라이드 -->
+					</div>
+
+					
+					<div class="col-lg-5 col-md-12 col-sm-12">
+						<div class="bmenu-pd">
+							<p class="f20_4">브런치 메뉴</p>
+							<p class="f40_4 f_mo mt10 mt20m">Nel Bosco Brunch</p>
+							<p class="btn_down mt40 mt40m">
+								<a href="/upload/menu/nelbosco-menu.pdf" target="_blank">VIEW ALL MENU</a>
+								<!-- <a href="#" target="_blank" onClick="alert('메뉴 준비중입니다.')">VIEW ALL MENU</a> -->
+							</p>
+							<!-- 2021-09-24 -->
+							<ul class="bmenu-left">
+								<li>
+									<p class="f20_4"><b>WEEKDAY SET</b></p>
+									<p class="f18_4">16,000 KRW</p>
+								</li>
+								<li>
+									<p class="f20_4"><b>BRUNCH SET</b></p>
+									<p class="f18_4">40,000 KRW ~ 55,000 KRW</p>
+								</li>
+								<li>
+									<p class="f20_4"><b>LUNCH COURSE</b></p>
+									<p class="f18_4">45,000 KRW</p>
+								</li>
+								<li>
+									<p class="f20_4"><b>BRUNCH</b></p>
+									<p class="f18_4">9,900 KRW ~ 18,000 KRW</p>
+								</li>
+								<li>
+									<p class="f20_4"><b>RICE</b></p>
+									<p class="f18_4">12,000 KRW ~ 15,000 KRW</p>
+								</li>
+								<li>
+									<p class="f20_4"><b>MEAT</b></p>
+									<p class="f18_4">20,000 KRW ~ 45,000 KRW</p>
+								</li>
+							</ul>
+							<ul class="bmenu-right">
+								<li>
+									<p class="f20_4"><b>PASTA</b></p>
+									<p class="f18_4">12,000 KRW ~ 28,000 KRW</p>
+								</li>
+							</ul>
+							<ul class="bmenu-right">
+								<li>
+									<p class="f20_4"><b>RISOTTO</b></p>
+									<p class="f18_4">12,000 KRW ~ 20,000 KRW</p>
+								</li>
+								<li>
+									<p class="f20_4"><b>PIZZA</b></p>
+									<p class="f18_4">12,000 KRW ~ 22,000 KRW</p>
+								</li>
+								<li>
+									<p class="f20_4"><b>INSALATE E ZUPPE</b></p>
+									<p class="f18_4">9,000 KRW ~ 16,000 KRW</p>
+								</li>
+								<li>
+									<p class="f20_4"><b>DOLCE</b></p>
+									<p class="f18_4">5,000 KRW ~ 9,000 KRW</p>
+								</li>
+							</ul>
+							<!-- //2021-09-24 -->
+						</div>
+					</div>
+					
+				</div>
+				<!-- row -->
+				<div class="row">
+					<div class="col-lg-6 col-md-12 col-sm-12  mt100">
+						<p class="f24_5">RISOTTO ALL'ERBE AROMATICHE CON GAMBERI</p>
+						<p class="f20_4">허브향의 새우리조또</p>
+						<p class="mt20"><img class="img100" th:src="@{/img/brunch/b_s_brunch04.jpg}" /></p>
+					</div>
+					<div class="col-lg-6 col-md-12 col-sm-12  mt100">
+						<p class="f24_5">TAGLIATELLE FRESCHE CON CODA DI BUE</p>
+						<p class="f20_4">소꼬리라구 딸리아뗄레</p>
+						<p class="mt20"><img class="img100" th:src="@{/img/brunch/b_s_brunch05.jpg}" /></p>
+					</div>
+				</div>
+				<!-- 2021-11-10 -->
+				<div class="row">
+					<div class="col-lg-12 mt100">
+						<p class="f24_5">운영시간</p>
+						<table cellspacing="0" border="0" class="open-time mt20">
+							<caption>운영시간안내</caption>
+							<colgroup>
+								<col width="15%">
+								<col width="35%">
+								<col width="15%">
+								<col width="35%">
+							</colgroup>
+							<tr>
+								<td class="bg_gray" colspan="2">평일</td>
+								<td class="bg_gray" colspan="2">주말</td>
+							</tr>
+							<tr>
+								<td class="bg_gray">오픈시간</td>
+								<td>AM10:30</td>
+								<td class="bg_gray">오픈시간</td>
+								<td>AM10:30</td>
+							</tr>
+							<tr>
+								<td class="bg_gray">마감시간</td>
+								<td>PM3:00 ( Last Order  PM2:00)</td>
+								<td class="bg_gray">마감시간</td>
+								<td>PM3:00 ( Last Order  PM2:00)</td>
+							</tr>
+						</table>
+					</div>
+					<!-- //2021-11-10 -->
+				</div>
+				<!-- row -->
+				<div class="row">
+				    <div class="col-lg-12 pb200 mt50">
+						<!--
+                        <p class="f24_5">관련 이벤트</p>
+                        <a href="#">
+                            <img src="img/brunch/brunch_banner.jpg" alt="이벤트 배너" class="mt20">
+                        </a>
+						-->
+				    </div>
+				</div>
+				
+			</div><!-- // container -->
+
+	</section>
+	<!--// Portfolio Cobbles End //-->
+	
+</div>
+<!-- ======================
+	 * //contant *
+========================== -->
+<!-- ====================== * FOOTER *========================== -->
+<footer th:replace="fragments/b_mainFooter :: footerFragment"></footer>
+<!-- ======================* //FOOTER *========================== -->
+<div th:replace="fragments/footerScript :: footerScriptFragment"></div>
+</div><!-- // wrap -->
+</body>
+</html>

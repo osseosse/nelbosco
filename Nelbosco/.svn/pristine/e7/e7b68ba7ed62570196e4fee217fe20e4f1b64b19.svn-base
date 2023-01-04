@@ -1,0 +1,18 @@
+
+
+
+// -------------------------------
+//  prrple.slider 
+//---------------------------------
+
+$(document).ready(function(){
+ 
+  /********** EXAMPLE #5 - H3 - HORIZONTAL SLIDE + LOOP + SEAMLESS **********/
+  $('#sliderh3 .slider').prrpleSlider({
+    csstransforms:			false,
+    richSwiping:			false
+  });
+  
+});
+
+

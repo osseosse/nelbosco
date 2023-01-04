@@ -1,0 +1,130 @@
+﻿<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<title>넬보스코 연구소</title>
+    <head th:replace="fragments/head :: headFragment"></head>
+</head>
+<div id="wrap">
+<header th:replace="fragments/mainHeader :: headerFragment"></header>
+<div id="contant">
+	<!-- subBigBanner -->
+	<div class="container100">
+		<div class="row">
+		  <div class="col-md-12 bg_lab subTop">
+		    <div style="background:black; height:100%; opacity:0.2"></div>
+			<div class="coffeType">
+				<p class="f45_4w mt20">넬보스코 연구소</p>
+			</div>
+		  </div>
+		</div>
+	</div><!-- // container100 -->
+	<!-- //subBigBanner -->
+
+
+	<!--// Portfolio Cobbles Start //-->
+	<section class="section matychale-gallery-cobbles">
+	    <div>
+               <div class="container">
+                   <div class="row">
+					<div class="menu_cate">
+							<a href="/brandstory/about"><p>브랜드 스토리</p></a>
+                               <a href="/brandstory/bi"><p>브랜드 아이덴티티</p></a>
+                               <a href="/brandstory/place"><p>공간 이야기</p></a>
+                               <a href="/brandstory/lab" class="active"><p>연구소</p></a>
+                               <a href="/story/coffeeStory"><p>커피 이야기</p></a>
+                               <a href="/story/drink"><p>음료 이야기</p></a>
+                               <a href="/story/bakery"><p>베이커리 이야기</p></a>
+                               <!-- <a href="/story/music"><p>음악 공연 이야기</p></a> -->
+					</div>
+                   </div>
+               </div>
+           </div>
+		<div class="container">
+			<div class="location">
+				<span><a href="">HOME</a></span><img th:src="@{/img/location_arrow.gif}">
+				<span><a href="">Brand Story</a></span><img th:src="@{/img/location_arrow.gif}">
+				<span>넬보스코 연구소</span>
+			</div>
+			<div class="row mt120">
+		    <div class="col-lg-6 col-md-12 col-sm-12 mt50m">
+		        <p class="f40_7">
+                          가장 건강하고 맛있는<br class="none"><br class="none2">
+                          커피 &amp; 베이커리를 위한<br class="none">
+                          넬보스코 연구소
+                      </p>
+                      <p class="f24_4 mt50">
+					믿고 먹을 수 있는 먹거리 개발을 위해<br class="none">
+					넬보스코의 연구는 지금도 계속됩니다.
+                         
+                      </p>
+		    </div>
+			<div class="col-lg-6 col-md-12 col-sm-12 mt60 center">
+                     <img th:src="@{/img/lab_01.png}" alt="전문성,차별화,특별함">
+                  </div>
+              </div>
+		</div>
+		<!--// .container100_15 //-->
+		<div class="container">
+			<div class="row labBox  mt120">
+				<div class="col-lg-8 col-md-12 col-sm-12 lab_bg01">
+					<p class="f32_6w">건강한 식음료를 위한 <br>차별화된 접근</p>
+				</div>
+				<div class="col-lg-4 col-md-12 col-sm-12 mt40m">
+					<p class="f32_7">Different</p>
+					<p class="f20_4_2 mt50">
+					    최고급 원두, 유기농 재료와 제철 과일,<br class="none">
+                           하나 하나 엄선된 원재료를 사용하며<br class="none">
+                           매장에서 직접 로스팅한 신선한 원두를<br class="none">
+                           사용하여 최고의 서비스를 제공하고자 합니다. 
+					</p>
+				</div>
+               </div>
+			<!-- row -->
+			<div class="row labBox  mt80">
+				<div class="col-lg-8 col-md-12 col-sm-12 lab_bg02">
+					<p class="f32_6w">넬보스코만의 전문성</p>
+				</div>
+				<div class="col-lg-4 col-md-12 col-sm-12 mt40m">
+					<p class="f32_7">Speciality</p>
+					<p class="f20_4_2 mt50">
+                           전문화된 관리.<br class="none">
+                           엄격한 원료 선정과 체계적인 원두 관리<br class="none">
+                           시스템, 철저한 위생 관리로<br class="none">
+                           모두가 안심하고 즐길 수 있는<br class="none">
+                           건강한 메뉴를 제공합니다.
+					</p>
+				</div>
+               </div>
+			<!-- row -->
+			<div class="row labBox  mt80">
+				<div class="col-lg-8 col-md-12 col-sm-12 lab_bg03">
+					<p class="f32_6w">넬 보스코 만이 선보일 수 있는<br> 특별한 메뉴</p>
+				</div>
+				<div class="col-lg-4 col-md-12 col-sm-12 mt40m">
+					<p class="f32_7">Signature</p>
+					<p class="f20_4_2 mt50">
+					    시그니처 두유를 이용한 건강하고 맛있는<br class="none">
+                           소이 음료와 디저트.<br> 
+						채식주의자를 위한 비건 음료 등 <br class="none"> 넬보스코에서만 경험할 수 있는 <br class="none"> 
+                           메뉴들을 제공합니다. 
+					</p>
+				</div>
+               </div>
+			<!-- row -->
+		</div><!-- // container -->
+
+	</section>
+	<!--// Portfolio Cobbles End //-->
+	
+</div>
+<!-- ======================
+	 * //contant *
+========================== -->
+	
+<!-- ====================== * FOOTER * ========================== -->
+<footer class="container100" th:replace="fragments/mainFooter :: footerFragment"></footer>
+<!-- ====================== * //FOOTER * ========================== -->
+<div th:replace="fragments/footerScript :: footerScriptFragment"></div> 
+</div><!-- // wrap -->
+</body>
+</html>

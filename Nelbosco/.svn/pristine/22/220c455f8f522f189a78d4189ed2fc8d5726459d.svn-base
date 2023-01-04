@@ -1,0 +1,44 @@
+﻿<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+</head>
+
+<script type="text/javascript">
+	function PopupCookieSave(){
+		setCookie("b_popup", "done" , 1);
+		parent.popup.style.display = "none";
+		//window.close();
+	}
+	// 쿠키 저장(X) 닫기
+	function PopupSelfClose(){
+		parent.popup.style.display = "none";
+		//window.close();
+	}
+	// 쿠키 저장
+	function setCookie( name, value, expiredays ){
+	    var todayDate = new Date();
+	    todayDate.setDate( todayDate.getDate() + expiredays );
+	    todayDate.setHours(0, 0, -1); // 오늘의 바로 전날 23:59:59로 설정함.
+	    document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";";
+	}
+</script>
+
+<body id="mainPop">
+<div class="popBox"><!-- 400px * 570px -->
+	<!-- img -->
+	<div class="img">
+		<a href="/restaurant/bcontact/notice" target="_blank"><img th:src="@{/img/brunch/popup_20210824.jpg}" alt="공지사항" border="0"/></a>
+	</div>
+	<!-- img //-->
+
+	<!-- action -->
+	<div class="action">
+		<div class="pop_close"><a href="javascript:PopupSelfClose();"><img th:src="@{/img/pop_notice_btn_close.gif}" alt="닫기" /></a></div>
+		<span class="txt"><label ><input type="checkbox" id="todayChk" onclick="javascript:PopupCookieSave();">오늘 하루 열지 않음</label></span>
+	</div>
+	<!-- action //-->
+</div>
+</body>
+</html>

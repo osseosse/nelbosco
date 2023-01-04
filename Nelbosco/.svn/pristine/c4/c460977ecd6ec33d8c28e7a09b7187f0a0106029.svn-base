@@ -1,0 +1,47 @@
+﻿<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<title>넬보스코</title>
+    <head th:replace="fragments/head :: headFragment"></head>
+</head>
+<body>
+<div class="index_b">
+    <ul>
+        <li class="indexCafe">
+                  <div class="bg_imgWarp">
+                      <div class="bg_img"></div>
+                  </div>
+                  <div class="textWrap">
+                      <img th:src="@{/img/index_cafe.png}" alt="넬보스코 브런치레스토랑">
+                      <div class="indexBtn mt30">
+                          <a href="/main">사이트 바로가기</a>
+                      </div>
+                  </div>
+        </li>
+        <li class="indexBrunch">
+                  <div class="bg_imgWarp">
+                      <div class="bg_img"></div>
+                  </div>
+                  <div class="textWrap">
+                      <img th:src="@{img/index_brunch.png}" alt="넬보스코 브런치레스토랑">
+                      <div class="indexBtn mt30">
+                          <a href="#">8월 중 Coming soon</a>
+                      </div>
+                  </div>
+        </li>
+    </ul>
+    
+</div>
+<script type="text/x-javascript">
+(function(w, d, a){
+    w.__beusablerumclient__ = {
+        load : function(src){
+            var b = d.createElement("script");
+            b.src = src; b.async=true; b.type = "text/x-javascript";
+            d.getElementsByTagName("head")[0].appendChild(b);
+        }
+    };w.__beusablerumclient__.load(a);
+})(window, document, "//rum.beusable.net/script/b161207e112311u833/1a01da0ba9");
+</script>
+</body>
+</html>

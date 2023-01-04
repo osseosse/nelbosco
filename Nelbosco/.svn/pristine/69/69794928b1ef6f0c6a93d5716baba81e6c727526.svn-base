@@ -1,0 +1,172 @@
+﻿<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+	<head>
+	 	<title>넬보스코 이탈리안 레스토랑 오시는길</title>
+	    <head th:replace="fragments/head :: headFragment"></head>
+	</head>
+
+  <body>
+	<div id="wrap">
+	<!-- ======================
+		 * HEADER *
+	========================== -->
+    <header th:replace="fragments/b_mainHeader :: headerFragment"></header>
+	<!-- ======================
+		 * //HEADER *
+	========================== -->
+
+	<!-- ======================
+		 * contant *
+	========================== -->
+	
+    
+	<div id="contant">
+		<!-- subBigBanner -->
+		<div class="container100">
+			<div class="row">
+			  <div class="col-md-12 bg_map subTop">
+				<div class="coffeType">
+					<p class="f45_4w f_mo mt20">Access</p>
+				</div>
+			  </div>
+			</div>
+		</div><!-- // container100 -->
+		<!-- //subBigBanner -->
+
+
+		<!--// Portfolio Cobbles Start //-->
+		<section class="section matychale-gallery-cobbles">
+			<div>
+				<div class="container">
+					<div class="row">
+						<div class="menu_cate2">
+							<a href="/restaurant/bcontact/notice"><p>공지사항</p></a>
+							<a href="/restaurant/bcontact/contact"><p>고객상담</p></a>
+							<a href="/restaurant/bcontact/event"><p>이벤트</p></a>
+							<a href="/restaurant/bcontact/map" class="current"><p>오시는길</p></a>
+							<a href="/restaurant/bcontact/faq"><p>자주묻는질문</p></a>
+							<a href="#"><p>예약하기</p></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="location">
+					<span><a href="">HOME</a></span><img th:src="@{/img/location_arrow.gif}">
+					<span><a href="">Contact</a></span><img th:src="@{/img/location_arrow.gif}">
+					<span>오시는길</span>
+				</div>
+				<div class="row">
+					<!-- 2021-07-19 -->
+				  <div class="col-md-12 subTop mt100">
+					<p><img th:src="@{/img/brunch/b_map.jpg}" alt="남촌관광지도"/></p>
+					<div class="map-btn-box mt50"><a href="http://naver.me/FWJSVORG" target="_blank"><p class="btn-map f22_4">네이버 지도 바로가기</p></a></div>
+
+				  </div>
+				  <!-- //2021-07-19 -->
+				</div>
+				<div class="row mapBox">
+					<div class="col-lg-6 col-sm-6 col-md-6">
+						<ul class="mapUL">
+							<li><p class="f32_7">Address</p></li><br>
+							<li class="mt10"><p class="f20_4">서울특별시 중구 퇴계로 8길 16 (우)04634</p></li><!-- 2021-07-01 -->
+
+						</ul>
+					</div>
+					<div class="col-lg-6 col-sm-6 col-md-6">
+						<ul class="mapUL3">
+							<li><p class="f32_7">Opening Hours</p></li>
+							<li><p class="f20_4 mt20">(연중무휴)</p></li>
+							<li><p class="f20_4">평일: am10:00 ~ pm05:00 </p></li>
+							<li><p class="f20_4 ">주말&middot;공휴일: am10:00 ~ pm05:00</p></li>
+							<!--
+							<li><p class="f20_4 mt10">1층 : 오전 7시 ~ 저녁 9시 (연중무휴)</p></li>
+							<li><p class="f20_4">2층 : 오전 11시 ~ 저녁 10시 (Break time : 오후 3시 ~ 5시) (연중무휴)</p></li>
+							-->
+						</ul>
+					</div>
+				</div>
+				<div class="row mapBox2">
+					<div class="col-lg-6 col-sm-6 col-md-6">
+						<ul class="mapUL3">
+							<li><p class="f32_7">Connect us</p></li>
+							<li>
+								<p class="f20_4 mt20">1층 넬보스코 남촌빵집 대표 전화번호 : 02-3484-9581</p>
+								<p class="f20_4">2층 넬보스코 이탈리안 레스토랑 대표 전화번호 : 02-3484-9580</p>
+								<p class="f20_4">e-mail : cih337@vegemil.co.kr</p>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-6 col-sm-6 col-md-6"></div>
+				</div>
+				<div class="row mapBox2">
+					<div class="col-lg-12 col-sm-12 col-md-12">
+						<ul class="mapUL2">
+							<li><img th:src="@{/img/ico_map01.png}" /></li>
+							<li class="f28_6">자가용을 이용할 경우</li>
+							<!--
+							<li class="f20_4">지도 참조. 지하 주차장 이용(1시간 무료), 발렛 주차(1,000원)</li>
+							-->
+							<li class="f20_4">지도 참고<br>2시간 무료 이후 10분당 1,000원  </li>
+							
+						</ul>
+						<ul class="mapUL2 mt40">
+							<li><img th:src="@{/img/ico_map02.png}" /></li>
+							<li class="f28_6">지하철을 이용할 경우</li>
+							<li class="f20_4">4호선 회현역 1번 출구로 나와 오른쪽 골목으로 90m 직진<br>1층 넬보스코 남촌빵집 / 2층 넬보스코 이탈리안 레스토랑</li><!-- 2021-07-01 -->
+						</ul>
+						<ul class="mapUL2 mt40">
+							<li><img src="./img/ico_map03.png" /></li>
+							<li class="f28_6">버스를 이용할 경우</li>
+							<li class="f20_4">
+                                <p class="bus">명동 방면</p><br>
+							    숭례문 -> 남대문시장. 회현역(02146)<br>
+							    회현역 1번 출구까지 도보로 이동 후 오른쪽 골목으로 90m 직진<br>
+							    <span class="bBus">104, 421, 463, 505, 507, 604, N16</span><br>
+							    <span class="gBus">7011, 7013A, 7013B</span><br><br>
+							     <p class="bus">숭례문 방면</p><br>
+							    명동 -> 남대문시장. 회현역(02145)<br>
+							    회현역 1번 출구까지 도보로 이동 후 오른쪽 골목으로 90m 직진<br>
+							    <span class="bBus">104, 105, 463, 604, 705, N16</span><br>
+							    <span class="gBus">7011, 7013A, 7013B</span><br>
+							    <span class="rBus">9701</span>
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+			<!--// .container100_15 //-->
+
+			<!--
+			<div class="container mt100">
+				<div class="row" >
+					<div class="col-lg-6 col-md-6 col-sm-6  mt70 mb70" >
+						<p class="mt40"><img src="./img/about_02.jpg" alt="제품사진"/></p>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6  mt70"  >
+						<p class="mt40"><img src="./img/about_03.jpg" alt="제품사진"/></p>
+					</div>
+				</div>
+				
+			</div>-->
+
+
+		</section>
+		<!--// Portfolio Cobbles End //-->
+		
+	</div>
+	<!-- ======================
+		 * //contant *
+	========================== -->
+	<!-- ======================
+		 * FOOTER *
+	========================== -->
+	<footer th:replace="fragments/b_mainFooter :: footerFragment"></footer>
+	<!-- ======================
+		 * //FOOTER *
+	========================== -->
+	<div th:replace="fragments/footerScript :: footerScriptFragment"></div> 
+	</div><!-- // wrap -->
+	</body>
+</html>

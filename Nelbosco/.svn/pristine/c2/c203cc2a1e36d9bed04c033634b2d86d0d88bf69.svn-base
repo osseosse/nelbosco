@@ -1,0 +1,81 @@
+﻿<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<title>넬보스코 관리자</title>
+	<head th:replace="admin/adminHead :: headFragment"></head>
+    <head th:replace="fragments/head :: headFragment"></head>
+</head>
+<body>
+<div id="wrap">
+<!-- ====================== * HEADER *========================== -->
+<header th:replace="fragments/mainHeader :: headerFragment"></header>
+<!-- ======================* //HEADER *========================== -->
+
+<!-- ======================
+	 * contant *
+========================== -->
+<div id="contant">
+<!--// Portfolio Cobbles Start //-->
+<section class="section matychale-gallery-cobbles">
+   	<div>
+        <div class="container">
+            <div class="row">
+			<div class="menu_cate">
+			<br><br>
+			</div>
+            </div>
+        </div>
+     </div>
+	<div class="container">
+		<div class="location">
+			<span><a href="/admin/adminList">관리자 메인</a></span><img th:src="@{/img/location_arrow.gif}">
+			<span><a href="/admin/adminBookingList">예약문의 리스트</a></span><img th:src="@{/img/location_arrow.gif}">
+			<span>예약문의 리스트</span>
+		</div>
+		<h1>예약 문의 리스트(관리자)</h1>
+		<div class="row clearboth mt100">
+			<div class="col-lg-12 col-md-12 col-sm-12">
+				<table cellspacing="0" border="0" class="board">
+					<caption>예약문의</caption>
+					<tr>
+						<th>번호</th>
+						<th>제목</th>
+						<th>작성자</th>
+						<th>날짜</th>
+					</tr>
+					<tr th:if="${not #lists.isEmpty( reservationList )}" th:each="row : ${reservationList}">
+						<td th:text="${row.idx}" ></td>
+						<td>
+							<a th:href="|@{/admin/adminBookingDetail}${params.makeQueryString(params.currentPageNo)}&idx=${row.idx}|" th:text="${row.title}"></a>
+						</td>
+						<td th:text="${row.writer}"></td>
+						<td th:text="${#temporals.format( row.insertTime, 'yyyy-MM-dd' )}"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<!-- //row -->
+
+		<!-- paging -->
+		<th:block layout:fragment="paging">
+			<nav th:replace="fragments/common :: pagination"></nav>
+		</th:block>
+		<!-- paging //-->
+		
+		
+	</div><!-- // container -->
+</section>
+<!--// Portfolio Cobbles End //-->
+	
+</div>
+<!-- ======================
+	 * //contant *
+========================== -->
+
+<!-- ====================== * FOOTER * ========================== -->
+<footer class="container100" th:replace="fragments/mainFooter :: footerFragment"></footer>
+<!-- ====================== * //FOOTER * ========================== -->
+<div th:replace="fragments/footerScript :: footerScriptFragment"></div> 
+</div><!-- // wrap -->
+</body>
+</html>

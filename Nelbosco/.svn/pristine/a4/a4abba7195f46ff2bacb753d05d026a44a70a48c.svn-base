@@ -1,0 +1,137 @@
+﻿<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<title>넬보스코 루프탑 라이브콘서트</title>
+    <head th:replace="fragments/r_head :: headFragment"></head>
+</head>
+<body>
+<div id="wrap">
+<!-- ======================* HEADER *========================== -->
+<header th:replace="fragments/r_mainHeader :: headerFragment"></header>
+<!-- ======================* //HEADER *========================== -->
+<!-- ======================* contant *========================== -->
+<div id="contant">
+	<!-- subBigBanner -->
+	<div class="container100">
+		<div class="row">
+		  <div class="col-md-12 bg_r_12 subTop">
+			<div class="coffeType">
+				<p class="f45_4w mt20 f_mo">rooftop Live Concert</p>
+			</div>
+		  </div>
+		</div>
+	</div><!-- // container100 -->
+	<!-- //subBigBanner -->
+
+
+	<!--// Portfolio Cobbles Start //-->
+	<section class="section matychale-gallery-cobbles">
+	    <div>
+			<div class="container">
+				<div class="row">
+					<div class="menu_cate3">
+						<a href="/rooftop/community/concert" class="current"><p>Live Concert</p></a>
+						<a href="/rooftop/community/notice" ><p>공지사항</p></a>
+						<a href="/rooftop/community/event" ><p>이벤트</p></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="location">
+				<span><a href="">HOME</a></span><img th:src="@{/img/location_arrow.gif}">
+				<span><a href="">Community</a></span><img th:src="@{/img/location_arrow.gif}">
+				<span>Live Concert</span>
+			</div>
+		</div>
+		<!--// .container100_15 //-->
+         
+         
+		<div class="container1400 mt120 ">
+			<div class="row" >
+				
+				<div class="col-lg-6 col-md-12 col-sm-12 ">
+					<p class="img100 "><img th:src="@{/img/rooftop/r_concert_01.jpg}" alt="" /></p>
+				</div>
+				<div class="col-lg-6 col-md-12 col-sm-12 mt30 ">
+					<p class="f18_5 f_mo gold">Nel Bosco rooftop Lounge & Bar</p>
+					<p class="f62_4 f_mo mt20">rooftop Live Concert</p>
+					<p class="mt40 f18_4">
+						도심속 불빛 아래에 풍성한 사운드, 생생한 라이브를 들을 수 있는<br>
+						넬보스코  루프탑 공연입니다.<br>
+					</p>
+					<p class="mt30 f18_4">남산을 풍경으로 들려오는 노래 소리에 분위기에 취해보세요  </p>
+					<p class="mt10 f18_4">*공연일정 : 매일 19:30 ~ 21:30</p>
+				</div>
+			</div>
+			<div class="row mt100" >
+				<!-- 
+				<div class="col-lg-12 center" >
+					<p class="f18_5 f_mo gold">Nel Bosco rooftop Lounge & Bar</p>
+					<p class="f62_4 mt20 f_mo">The show is every day</p>
+				</div>
+				 -->
+				<div class="col-lg-4 col-md-4 col-sm-12  mt80">
+					<p class="img100"><img th:src="@{/img/rooftop/r_concert_05.jpg}" alt="넬보스코 루프타 온전한 휴식" /></p>
+					<div class="r_value_text">
+						<p class="f16_4">Value 01</p>
+						<p class="f30_4 f_mo mt30">Every day</p>
+						<p class="f18_4 mt20">
+							매일 만나는 라이브공연으로 초대합니다.<br><br>
+							1부 19:30 ~ 20:30분 <br>
+							2부 20:30 ~ 21:30분 <br><sub>(* 기상악화시 변동될 수 있습니다.)</sub>
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-12 mt80 ">
+					<p class="img100"><img th:src="@{/img/rooftop/r_concert_07.jpg}" alt="넬보스코 루프타 온전한 휴식" /></p>
+					<div class="r_value_text">
+						<p class="f16_4">Value 02</p>
+						<p class="f30_4 f_mo mt30">Concert in the city</p>
+						<p class="f18_4 mt20">
+							매일바뀌는 뮤지션들은 고객과 소통하면서 다양한 음악을 선사해 드립니다.<br>
+							도심속에서 즐기는 라이브콘서트를 가장 빠르게 만날 수 있습니다. 
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-12 mt80">
+					<p class="img100"><img th:src="@{/img/rooftop/r_concert_06.jpg}" alt="넬보스코 루프타 온전한 휴식" /></p>
+					<div class="r_value_text">
+						<p class="f16_4">Value 03</p>
+						<p class="f30_4 f_mo mt30">Experience</p>
+						<p class="f18_4 mt20">
+							남산아래에 위치한 넬보스코 루프탑에서 라이브 콘서트와 칵테일을 만나보세요. <br>
+							경험하지 못한 휴식과 힐링공간을 제공해 드립니다.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div><!-- // container1400 -->
+
+		<div class="container100 mt120 ">
+			<div class="row" >
+				<div class="col-lg-12 col-md-12 col-sm-12 h600 bg_r_13">
+					<div class="h-center">
+						<p class="f62_4w f_mo">We provide space for musicians.</p>
+						<div class="center inline mt40">
+							<p class="b_btn_about_w  "><a href="/rooftop/contact/contact">문의하기</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- // container100 -->
+	</section>
+	<!--// Portfolio Cobbles End //-->
+</div>
+<!-- ======================
+	 * //contant *
+========================== -->
+
+<!-- ======================* FOOTER *========================== -->
+<footer th:replace="fragments/r_mainFooter :: footerFragment"></footer>
+<!-- ======================* //FOOTER *========================== -->
+<!-- ====================== * //FOOTER * ========================== -->
+<div th:replace="fragments/footerScript :: footerScriptFragment"></div> 
+</div><!-- // wrap -->
+</body>
+</html>

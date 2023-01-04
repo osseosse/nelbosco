@@ -1,0 +1,17 @@
+#HikariCP 데이터 소스(DataSource)
+spring.datasource.hikari.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.datasource.hikari.jdbc-url=jdbc:mysql://localhost:3306/nelbosco?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8&useSSL=false
+spring.datasource.hikari.username=root
+spring.datasource.hikari.password=osse@0723
+spring.datasource.hikari.connection-test-query=SELECT NOW() FROM dual
+#spring.datasource.hikari.connection-init-sql=SELECT NOW() FROM dual
+#spring.datasource.hikari.connection-test-query=SELECT 1
+#spring.datasource.hikari.connection-timeout=600000
+
+#MyBatis
+mybatis.configuration.map-underscore-to-camel-case=true
+
+#Gson HTTP Message Converter 설정
+spring.http.converters.preferred-json-mapper=gson
+
+#정적 메서드 경로 설정

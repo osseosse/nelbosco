@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nelbosco.mapper.AdminMusicMapper">
+
+	<sql id="musicColumns">
+		  title
+		, start
+		, s_time
+		, e_time
+		, day
+	</sql>
+
+	<insert id="insertAdminMusic" parameterType="com.nelbosco.domain.MusicDTO" useGeneratedKeys="true" keyProperty="idx">
+		INSERT INTO tb_music (
+			<include refid="musicColumns" />
+		) VALUES (
+			  #{title}
+			, #{start}
+			, #{sTime}
+			, #{eTime}
+			, #{day}
+		)
+	</insert>
+
+	<select id="selectAdminMusicDetail" parameterType="long" resultType="com.nelbosco.domain.MusicDTO">
+		SELECT
+			<include refid="musicColumns" />
+		FROM
+			tb_music
+		WHERE
+			idx = #{idx}
+	</select>
+
+	<update id="updateAdminMusic" parameterType="com.nelbosco.domain.MusicDTO">
+		UPDATE tb_music
+		SET
+			  title = #{title}
+			, start = #{start}
+			, s_time = #{sTime}
+			, e_time = #{eTime}
+			, day = #{day}
+		WHERE
+			idx = #{idx}
+	</update>
+
+	<delete id="deleteAdminMusic" parameterType="com.nelbosco.domain.MusicDTO">
+		DELETE FROM tb_music
+		WHERE
+			title = #{title}
+		AND start = #{start}
+	</delete>
+
+	<select id="selectAdminMusicList" parameterType="com.nelbosco.domain.MusicDTO" resultType="com.nelbosco.domain.MusicDTO">
+		SELECT
+			title, start
+		FROM
+			tb_music
+		ORDER BY
+			start DESC, s_time
+	</select>
+
+	<select id="selectAdminMusicTotalCount" parameterType="com.nelbosco.domain.MusicDTO" resultType="int">
+		SELECT
+			COUNT(*)
+		FROM
+			tb_music
+	</select>
+	
+	
+	<select id="selectConcertList" parameterType="String" resultType="com.nelbosco.domain.MusicDTO">
+		SELECT
+			title, start, day
+		FROM
+			tb_music
+		WHERE
+			start between #{startDay} and #{endDay}
+		ORDER BY
+			start DESC, s_time
+	</select>
+	
+</mapper>

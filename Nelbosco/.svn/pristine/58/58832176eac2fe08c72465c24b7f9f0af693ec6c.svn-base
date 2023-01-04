@@ -1,0 +1,131 @@
+﻿<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<title>넬보스코 루프탑 이벤트</title>
+    <head th:replace="fragments/r_head :: headFragment"></head>
+</head>
+
+  <body>
+	<div id="wrap">
+	<!-- ======================
+		 * HEADER *
+	========================== -->
+	<header th:replace="fragments/r_mainHeader :: headerFragment"></header>
+	<!-- ======================
+		 * //HEADER *
+	========================== -->
+
+	<!-- ======================
+		 * contant *
+	========================== -->
+	<div id="contant">
+		<!-- subBigBanner -->
+		<div class="container100">
+			<div class="row">
+			  <div class="col-md-12 bg_r_11 subTop">
+				<div class="coffeType">
+					<p class="f45_4w mt20 f_mo">Event</p>
+				</div>
+			  </div>
+			</div>
+		</div><!-- // container100 -->
+		<!-- //subBigBanner -->
+
+
+		<!--// Portfolio Cobbles Start //-->
+		<section class="section matychale-gallery-cobbles" >
+			<div>
+				<div class="container">
+					<div class="row">
+						<div class="menu_cate3">
+							<a href="/rooftop/community/concert"><p>Live Concert</p></a>
+							<a href="/rooftop/community/notice"><p>공지사항</p></a>
+							<a href="/rooftop/community/event" class="current"><p>이벤트</p></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="location">
+					<span><a href="">HOME</a></span><img th:src="@{/img/location_arrow.gif}">
+					<span><a href="">Contact</a></span><img th:src="@{/img/location_arrow.gif}">
+					<span>이벤트</span>
+				</div>
+				<div class="row clearboth mt100">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						<p class="f36_4 center">준비중입니다.</p>
+						<!-- Vetical 
+						<div id="css3-animated-example3" class="mt50m">
+							<th:block th:if="${eventList !=null}" th:each="event : ${eventList}">
+								<div class="cae">
+									<ul>
+										<li th:text="${event.idx}"></li>
+										<li>
+											<div class="thumbnail-wrapper">
+												<div class="thumbnail">
+													<div class="centered">
+														<img th:src="@{'/img/rooftop/'+ ${event.imgThumPath}}" alt="제품사진"/>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li th:text="${event.title}"></li>
+										<li th:text="${#temporals.format(event.insertTime, 'yyyy-MM-dd')}"></li>
+									</ul>
+								</div>
+								<div>
+									<div class="v_content">
+										<p><img th:src="@{'/img/'+ ${event.imgPath}}" alt="제품사진"/></p>
+									</div>
+								</div>
+							</th:block>
+						</div> -->
+						<script>
+						$("#css3-animated-example3").collapse({
+						  accordion: true,
+						  open: function() {
+							this.addClass("open");
+							this.css({ height: this.children().outerHeight() });
+						  },
+						  close: function() {
+							this.css({ height: "0px" });
+							this.removeClass("open");
+						  }
+						});
+						</script>
+						<!-- // Vetical -->
+					</div>
+				</div>
+				<!-- //row -->
+
+				<!-- paging 
+				<th:block layout:fragment="paging">
+					<nav th:replace="fragments/common :: pagination"></nav>
+				</th:block>
+				<!-- paging //-->
+			</div><!-- // container -->
+
+
+		</section>
+		<!--// Portfolio Cobbles End //-->
+
+	</div>
+	<!-- ======================
+		 * //contant *
+	========================== -->
+
+	<!-- ====================== * FOOTER * ========================== -->
+	<footer th:replace="fragments/r_mainFooter :: footerFragment"></footer>
+	<!-- ====================== * //FOOTER * ========================== -->
+	<div th:replace="fragments/footerScript :: footerScriptFragment"></div>
+	</div><!-- // wrap -->
+	<th:block layout:fragment="script">
+	<script th:inline="javascript">
+		/*<![CDATA[*/
+		function movePage(uri, queryString) {
+			location.href = uri + queryString;
+		}
+	</script>
+	</th:block>					
+	</body>
+</html>

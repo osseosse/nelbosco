@@ -1,0 +1,130 @@
+﻿<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<title>넬보스코 이탈리안 레스토랑 브랜드 쉐프소개</title>
+    <head th:replace="fragments/head :: headFragment"></head>
+<div id="wrap">
+<!-- ======================* HEADER *========================== -->
+<header th:replace="fragments/b_mainHeader :: bHeaderFragment"></header>
+<!-- ======================* //HEADER *========================== -->
+<!-- ======================* contant *========================== -->
+<div id="contant2">
+	<!-- subBigBanner -->
+	<div class="container100">
+		<div class="row">
+		  <div class="col-md-12 bg_b_chef subTop">
+			<div class="coffeType">
+				<p class="f45_4w mt20 f_mo">NelBosco Chef</p>
+			</div>
+		  </div>
+		</div>
+	</div><!-- // container100 -->
+	<!-- //subBigBanner -->
+
+	<!--// Portfolio Cobbles Start //-->
+	<section class="section matychale-gallery-cobbles">
+	    <div>
+               <div class="container">
+                   <div class="row">
+					<div class="menu_cate2 divide2">
+						<a href="/about/about" ><p>레스토랑 소개</p></a>
+						<a href="/about/bi"><p>브랜드 아이덴티티</p></a>
+						<a href="/about/chef" class="current"><p>셰프 소개</p></a>
+						<a href="/about/tour"><p>남촌 둘러보기</p></a>
+					</div>
+                   </div>
+               </div>
+		</div>
+		
+		<div class="container">
+			<div class="location">
+				<span><a href="">HOME</a></span><img th:src="@{/img/location_arrow.gif}">
+				<span><a href="">About</a></span><img th:src="@{/img/location_arrow.gif}">
+				<span>셰프 소개</span>
+			</div>
+		</div>
+		<!--// .container100_15 //-->
+         
+           
+           
+
+		<div class="container1400 mt120 ">
+			<div class="row orderFlex">					
+				<div class="col-lg-6 col-md-6 col-sm-12  ">
+                       <p class="f40_7 mt50m">
+					넬보스코 이탈리안 레스토랑의<br>
+					주방을 책임지고 있는<br>
+					이탈리아 유학파 출신의 강주형 셰프
+					</p>
+					<p class="f30_4 mt60">
+						“ 넬보스코 이탈리안 레스토랑은 <br class="none">  
+						엄선한 식자재 본연의 본질에 더욱 충실하며<br class="none">  
+						경쾌하게 재해석한 음식을 선보이려 합니다. ”
+					</p>
+					<p class="f28_6 mt150 f_mo red">Head Chef</p>
+					<p class="f36_4"><b>강주형</b> 셰프 <span class="f28_4">Kang Joo-hyung</span></p>
+					<ul class="chef">
+						<li class="f20_4">넬보스코 이탈리안 레스토랑 現 총괄 셰프</li>
+						<li class="f20_4">A 호텔 R&D 센터 Sous Chef</li>
+						<li class="f20_4">HAPPY&FC재단 식문화 사업본부 고문</li>
+					</ul>
+					<!--
+					<p class="f24_4 mt200">
+						넬보스코에서 직접 뽑은 수제 파스타와 저온숙성 반죽으로 만든 정통 피자, 수비드(저온조리) 조리법으로<br class="none">  
+						만들어 보다 부드럽고 육즙 가득한 스테이크를 맛볼 수 있는 것은 물론<br class="none">  
+						신선한 재료 본연의 특징을 살린 감각적인 메뉴들을 선보입니다.
+					</p>
+					-->
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12">
+                       <p class="mt30m img100"><img th:src="@{/img/brunch/b_chef01.jpg}" alt="강주형 셰프" /></p>
+				</div>
+			</div>
+			<!-- row -->
+			
+		</div><!-- // container -->
+           <div class="container1400 mt200">
+			<div class="row" >
+			    <div class="col-lg-6 col-md-6 col-sm-12">
+                       <p class="mt30m img100"><img th:src="@{/img/brunch/b_chef01.jpg}" alt="이충희 파티쉐" /></p>
+				</div>		
+				<div class="col-lg-6 col-md-6 col-sm-12 introBox pb200 mt50m">
+                       <p class="f40_7">
+					넬보스코 남촌빵집<br>
+					베이커리를 책임지고 있는<br>
+					oo출신의 이충희 파티쉐
+					</p>
+					<p class="f30_4 mt60">
+						“ 넬보스코 이탈리안 레스토랑은 <br class="none">  
+						엄선한 식자재 본연의 본질에 더욱 충실하며<br class="none">  
+						경쾌하게 재해석한 음식을 선보이려 합니다. ”
+					</p>
+					<p class="f28_6 mt150 f_mo red">Patisserie</p>
+					<p class="f36_4"><b>이충희</b> 파티쉐 <span class="f28_4">Lee Chung-hee</span></p>
+					<ul class="chef">
+						<li class="f20_4">넬보스코 이탈리안 레스토랑 現 총괄 셰프</li>
+						<li class="f20_4">A 호텔 R&D 센터 Sous Chef</li>
+						<li class="f20_4">HAPPY&FC재단 식문화 사업본부 고문</li>
+					</ul>
+				</div>
+				
+			</div>
+			<!-- row -->
+			
+		</div><!-- // container -->
+	</section>
+	<!--// Portfolio Cobbles End //-->
+	
+	
+</div>
+<!-- ======================
+	 * //contant *
+========================== -->
+<!-- ======================* FOOTER *========================== -->
+<footer class="container100 bg_black " th:replace="fragments/b_mainFooter :: bFooterFragment"></footer>
+<!-- ======================* //FOOTER *========================== -->
+<!-- ====================== * //FOOTER * ========================== -->
+<div th:replace="fragments/footerScript :: footerScriptFragment"></div> 
+</div><!-- // wrap -->
+</body>
+</html>

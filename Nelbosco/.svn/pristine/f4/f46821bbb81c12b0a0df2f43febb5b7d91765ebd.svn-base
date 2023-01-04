@@ -1,0 +1,131 @@
+﻿<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head th:replace="fragments/head :: headFragment"></head>
+<body>
+<div id="wrap">
+<!-- ====================== * HEADER *========================== -->
+<header th:replace="fragments/mainHeader :: headerFragment"></header>
+<!-- ======================* //HEADER *========================== -->
+
+	<!-- ====================== * contant * ========================== -->
+	<div id="contant">
+		<!-- subBigBanner -->
+		<div class="container100">
+			<div class="row">
+			  <div class="col-md-12 bg_news subTop">
+				<div class="coffeType">
+					<p class="f20_7w f_mw">Community</p>
+					<p class="f45_4w mt20">예약문의</p>
+				</div>
+			  </div>
+			</div>
+		</div><!-- // container100 -->
+		<!-- //subBigBanner -->
+
+
+		<!--// Portfolio Cobbles Start //-->
+		<section class="section" >
+			<div class="container">
+				<!-- 
+				<div class="wBox2 mt160" >
+				
+					<ul class="neTab">
+						<li class="active"><a href="#">News</a></li>
+						<li><a href="#">Event</a></li>
+					</ul>
+				
+				</div>
+
+				-->
+				<div class="row mt160">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						<div class="ins">
+							<table cellspacing="0" summary="이용약관" class="insTable">
+								<colgroup>
+									<col width="15%">
+									<col width="85%">
+								</colgroup>
+								<tr>
+									<th colspan="2" class="brandLinkBox"><a href="#"><input type="checkbox" id="c1" name="cc1" /><label for="c1"><span></span></label></a> 개인정보 수집 및 이용에 대한 동의 (필수)</th>
+								</tr>
+								<tr>
+									<td colspan="2">수집하는 개인정보는 문의내용 처리 및 고객불만의 해결 등을 위해 사용되며, 관련 법령에 따라 3년간 보관 후 삭제됩니다. 문의접수, 처리 및 회신을 위한 필요 최소한의 개인정보이므로 동의를 해주셔야 해당 서비스를 이용하실 수 있습니다.<br><br>
+									</td>
+								</tr>
+								
+							</table>
+
+							<table cellspacing="0" summary="이용약관" class="insTable2 mt50">
+								<colgroup>
+									<col width="*">
+									<col width="*">
+								</colgroup>
+								<tr>
+									<th><img th:src="@{/img/ico_point.gif}" /> 방문일자</th>
+									<td><input type="text" class="inType01"></td>
+								</tr>
+								<tr>
+									<th><img th:src="@{/img/ico_point.gif}" /> 성명</th>
+									<td><input type="text" class="inType01"></td>
+								</tr>
+								<tr>
+									<th><img th:src="@{/img/ico_point.gif}" /> 이메일</th>
+									<td><input type="text" class="inType01"></td>
+								</tr>
+								<tr>
+									<th><img th:src="@{/img/ico_point.gif}" /> 전화번호</th>
+									<td><input type="text" class="inType01"></td>
+								</tr>
+								<tr>
+									<th><img th:src="@{/img/ico_point.gif}" /> 제목</th>
+									<td><input type="text" class="inType01"></td>
+								</tr>
+								<tr>
+									<th><img th:src="@{/img/ico_point.gif}" /> 내용</th>
+									<td><textarea type="text" class="textarea01"></textarea></td>
+								</tr>
+								
+							</table>
+
+							<div class="btnCenter">
+								<ul>
+									<li><a href="#"><img th:src="@{/img/btn_c_ok.gif}" alt="확인"/></a></li>
+									<li><a href="#"><img th:src="@{/img/btn_c_cancle.gif}" alt="취소"/></a></li>
+								</ul>
+							</div>
+
+							<div class="mt30 f15_4g">
+								<p>고객님께서 동의한 개인정보처리방침에 따라 불만처리를 위해 본 양식에 기재한 개인정보를 활용할 수 있습니다.</p>
+								<p>답변은 직접 기재하여 주신 메일주소로 발송되며, 기재 오류 및 계정문제가 발생할 경우 답변이 불가할 수 있으므로 메일주소를 꼭 확인해주시기 바랍니다.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //row -->
+
+				
+			</div><!-- // container -->
+
+
+		</section>
+		<!--// Portfolio Cobbles End //-->
+		
+		
+
+		
+		
+
+		
+		
+	</div>
+	<!-- ======================
+		 * //contant *
+	========================== -->
+
+	<!-- ====================== * FOOTER * ========================== -->
+	<footer class="container100" th:replace="fragments/mainFooter :: footerFragment"></footer>
+	<!-- ====================== * //FOOTER * ========================== -->
+	<div th:replace="fragments/footerScript :: footerScriptFragment"></div> 
+</div><!-- // wrap -->
+</body>
+</html>

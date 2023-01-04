@@ -1,0 +1,331 @@
+﻿<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<title>넬보스코 루프탑 Food</title>
+    <head th:replace="fragments/r_head :: headFragment"></head>
+</head>
+<body>
+<div id="wrap">
+<!-- ======================* HEADER *========================== -->
+<header th:replace="fragments/r_mainHeader :: headerFragment"></header>
+<!-- ======================* //HEADER *========================== -->
+<!-- ======================* contant *========================== -->
+<div id="contant">
+	<!-- subBigBanner -->
+	<div class="container100">
+		<div class="row">
+		  <div class="col-md-12 bg_r_05 subTop">
+			<div class="coffeType">
+				<p class="f45_4w mt20 f_mo">Food</p>
+			</div>
+		  </div>
+		</div>
+	</div><!-- // container100 -->
+	<!-- //subBigBanner -->
+
+
+	<!--// Portfolio Cobbles Start //-->
+	<section class="section matychale-gallery-cobbles">
+	    <div>
+			<div class="container">
+			   <div class="row">
+				<div class="menu_cate3">
+					<a href="#food_01"><p>Brunch & Rice & Salad</p></a>
+					<a href="#food_02"><p>Pasta</p></a>
+					<a href="#food_03"><p>Pizza</p></a>
+					<a href="#food_04"><p>Simple Dish</p></a>
+				</div>
+			   </div>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="location">
+				<span><a href="">HOME</a></span><img th:src="@{/img/location_arrow.gif}">
+				<span><a href="">Menu</a></span>
+			</div>
+		</div>
+		<!--// .container100_15 //-->
+         
+         
+		<div class="container1400 mt120 ">
+			<div class="row" >
+				<div class="col-lg-12 col-md-12 col-sm-12 center ">
+					<p class="f18_5 f_mo gold">Nel Bosco rooftop Lounge & Bar</p>
+					<p class="f62_4 f_mo mt20">Food Menu</p>
+					<p class="mt40 f18_4">
+						야외에서 즐기기는 이색적인 분위기의 루프탑에서 <br>
+						넬보스코 셰프가 준비한 루프탑과 어울리는 음식을 제공해 드립니다.<br>
+						맛있는 음식과 와인, 칵테일이 함께 루프탑에서 힐링해보세요.
+					</p>
+				
+					<div class="btn_type03 mt30 inlineB"><a href="/upload/menu/menu_rooftopLounge&bar.pdf" target="_blank">View All Menu <img th:src="@{/img/rooftop/ico_arrow_down.png}" alt="다운로드" /></a></div>
+					
+					
+				</div>
+				<!--
+				<div class="col-lg-6 col-md-12 col-sm-12  mt50">
+					<p class="img100 "><img src="./img/rooftop/r_brand_01.jpg" alt="" /></p>
+				</div>
+				-->
+			</div>
+			<div class="row mt100" id="food_01">
+				<div class="col-lg-12" >
+					<p class="f39_4 mt20 f_mo">Brunch & Rice & Salad</p>
+					<p class="img100 mt30 r_menuBox"><img th:src="@{/img/rooftop/r_food_02.jpg}" alt="Brunch & Rice & Salad" /><span class="f30_4w f_mo ">French Toast</span><b><img th:src="@{/img/rooftop/r_food_bi.jpg}" alt="넬보스코 BI" /></b></p>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+					<ul class="menu_half">
+						<li>
+							<p class="f20_4">프렌치 토스트</p>
+							<p class="f16_4 mt10 gold">French Toast</p>
+						</li>
+						<li>
+							<p class="f18_4 mt5 right">14.0</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+					<ul class="menu_half">
+						<li>
+							<p class="f20_4">카레 미트 그라탱</p>
+							<p class="f16_4 mt10 gold">Curry Meat Gratin</p>
+						</li>
+						<li>
+							<p class="f18_4 mt5 right">14.0</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+					<ul class="menu_half">
+						<li>
+							<p class="f20_4">리코타치즈 샐러드</p>
+							<p class="f16_4 mt10 gold">Ricotta Cheese Salad</p>
+						</li>
+						<li>
+							<p class="f18_4 mt5 right">13.0</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row mt100" id="food_02">
+				<div class="col-lg-12" >
+					<p class="f39_4 mt20 f_mo">Pasta</p>
+					<p class="img100 mt30 r_menuBox"><img th:src="@{/img/rooftop/r_food_03.jpg}" alt="Brunch & Rice & Salad" /><span class="f30_4 f_mo left ">Seafood Oil Spaghetti</span><b class="left"><img th:src="@{/img/rooftop/r_food_bi.jpg}" alt="넬보스코 BI" /></b></p>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+					<ul class="menu_half">
+						<li>
+							<p class="f20_4">봉골레 화이트 라구 스파게티</p>
+							<p class="f16_4 mt10 gold">Vongole White Ragu Spaghetti</p>
+						</li>
+						<li>
+							<p class="f18_4 mt5 right">17.0</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+					<ul class="menu_half">
+						<li>
+							<p class="f20_4">로제 크림 스파게티</p>
+							<p class="f16_4 mt10 gold">Rose Cream Spaghetti</p>
+						</li>
+						<li>
+							<p class="f18_4 mt5 right">18.5</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+					<ul class="menu_half">
+						<li>
+							<p class="f20_4">바질 페스토 크림 스파게티</p>
+							<p class="f16_4 mt10 gold">Basil Pesto Cream Spaghetti</p>
+						</li>
+						<li>
+							<p class="f18_4 mt5 right">21.0</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+					<ul class="menu_half">
+						<li>
+							<p class="f20_4">클래식 라자냐</p>
+							<p class="f16_4 mt10 gold">Classic Lasagna</p>
+						</li>
+						<li>
+							<p class="f18_4 mt5 right">21.0</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+					<ul class="menu_half">
+						<li>
+							<p class="f20_4">해산물 오일 스파게티</p>
+							<p class="f16_4 mt10 gold">Seafood Oil Spaghetti</p>
+						</li>
+						<li>
+							<p class="f18_4 mt5 right">25.0</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row mt100" id="food_03">
+				<div class="col-lg-12" >
+					<p class="f39_4 mt20 f_mo">Pizza</p>
+					<p class="img100 mt30 r_menuBox"><img th:src="@{/img/rooftop/r_food_04.jpg}" alt="Brunch & Rice & Salad" /><span class="f30_4w f_mo  ">Proscuiutto E Rucola</span><b><img th:src="@{/img/rooftop/r_food_bi.jpg}" alt="넬보스코 BI" /></b></p>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+					<ul class="menu_half">
+						<li>
+							<p class="f20_4">마르게리따</p>
+							<p class="f16_4 mt10 gold">Margherita</p>
+						</li>
+						<li>
+							<p class="f18_4 mt5 right">16.0</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+					<ul class="menu_half">
+						<li>
+							<p class="f20_4">페파로니</p>
+							<p class="f16_4 mt10 gold">Prperoni</p>
+						</li>
+						<li>
+							<p class="f18_4 mt5 right">17.5</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+					<ul class="menu_half">
+						<li>
+							<p class="f20_4">꽈뜨로 스타지오니</p>
+							<p class="f16_4 mt10 gold">Quattro Stagioni</p>
+						</li>
+						<li>
+							<p class="f18_4 mt5 right">21.5</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+					<ul class="menu_half">
+						<li>
+							<p class="f20_4">프로쉬또 루꼴라</p>
+							<p class="f16_4 mt10 gold">Prosciutto E Rucola</p>
+						</li>
+						<li>
+							<p class="f18_4 mt5 right">23.5</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row mt100" id="food_04">
+				<div class="col-lg-12" >
+					<p class="f39_4 mt20 f_mo">Simple Dish</p>
+					<p class="img100 mt30 r_menuBox"><img th:src="@{/img/rooftop/r_food_05.jpg}" alt="Brunch & Rice & Salad" /><span class="f30_4 f_mo  left">Sweet Chilli & Sour Chicken</span><b class="left"><img th:src="@{/img/rooftop/r_food_bi.jpg}" alt="넬보스코 BI" /></b></p>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+					<ul class="menu_half">
+						<li>
+							<p class="f20_4">트러플향의 가지튀김</p>
+							<p class="f16_4 mt10 gold">Truffle Flavor French Fries</p>
+						</li>
+						<li>
+							<p class="f18_4 mt5 right">9.0</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+					<ul class="menu_half">
+						<li>
+							<p class="f20_4">시칠리아식 가지롤 그라탕</p>
+							<p class="f16_4 mt10 gold">Sicilia style Gratin Eggplant Roll</p>
+						</li>
+						<li>
+							<p class="f18_4 mt5 right">15.0</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+					<ul class="menu_half">
+						<li>
+							<p class="f20_4">프로쉬또와 멜론</p>
+							<p class="f16_4 mt10 gold">Prosciutto & Melone</p>
+						</li>
+						<li>
+							<p class="f18_4 mt5 right">16.0</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+					<ul class="menu_half">
+						<li>
+							<p class="f20_4">버펄로 윙</p>
+							<p class="f16_4 mt10 gold">Buffalo Wings</p>
+						</li>
+						<li>
+							<p class="f18_4 mt5 right">18.0</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+					<ul class="menu_half">
+						<li>
+							<p class="f20_4">칠리 앤 샤워 치킨</p>
+							<p class="f16_4 mt10 gold">Sweet Chilli & Sour Chicken</p>
+						</li>
+						<li>
+							<p class="f18_4 mt5 right">(S) 12.0 / (L) 22.0</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+					<ul class="menu_half">
+						<li>
+							<p class="f20_4">깔라마리(한치) 튀김</p>
+							<p class="f16_4 mt10 gold">Calamari Fried</p>
+						</li>
+						<li>
+							<p class="f18_4 mt5 right">20.0</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+					<ul class="menu_half">
+						<li>
+							<p class="f20_4">마티니크림소스의 가리비관자</p>
+							<p class="f16_4 mt10 gold">Scallop With Matini Sauce</p>
+						</li>
+						<li>
+							<p class="f18_4 mt5 right">22.0</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+					<ul class="menu_half">
+						<li>
+							<p class="f20_4">멘보샤</p>
+							<p class="f16_4 mt10 gold">Shrimp Toast</p>
+						</li>
+						<li>
+							<p class="f18_4 mt5 right">22.0</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div><!-- // container1400 -->
+	</section>
+	<!--// Portfolio Cobbles End //-->
+</div>
+<!-- ======================
+	 * //contant *
+========================== -->
+
+<!-- ======================* FOOTER *========================== -->
+<footer th:replace="fragments/r_mainFooter :: footerFragment"></footer>
+<!-- ======================* //FOOTER *========================== -->
+<!-- ====================== * //FOOTER * ========================== -->
+<div th:replace="fragments/footerScript :: footerScriptFragment"></div> 
+</div><!-- // wrap -->
+</body>
+</html>

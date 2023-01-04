@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nelbosco.mapper.NewsMapper">
+
+	<sql id="newsColumns">
+		  LPAD(idx, '2' , '0') as idx
+		, title
+		, content
+		, img_path
+		, view_cnt
+		, notice_yn
+		, secret_yn
+		, delete_yn
+		, DATE_FORMAT(insert_time, '%Y-%m-%d') as insert_time
+		, insert_id
+		, DATE_FORMAT(update_time, '%Y-%m-%d') as update_time
+		, update_id
+	</sql>
+
+	<insert id="insertNews" parameterType="com.nelbosco.domain.NewsDTO" useGeneratedKeys="true" keyProperty="idx">
+		INSERT INTO tb_news (
+			<include refid="newsColumns" />
+		) VALUES (
+			  #{idx}
+			, #{title}
+			, #{content}
+			, #{imgPath}
+			, 0
+			, IFNULL(#{noticeYn}, 'N')
+			, IFNULL(#{secretYn}, 'N')
+			, 'N'
+			, NOW()
+			, #{insertId}
+			, NULL
+			, NULL
+		)
+	</insert>
+
+	<select id="selectNewsDetail" parameterType="long" resultType="com.nelbosco.domain.NewsDTO">
+		SELECT
+			<include refid="newsColumns" />
+		FROM
+			tb_news
+		WHERE
+			delete_yn = 'N'
+		AND
+			idx = #{idx}
+	</select>
+
+	<update id="updateNews" parameterType="com.nelbosco.domain.NewsDTO">
+		UPDATE tb_news
+		SET
+			  update_time = NOW()
+			, title = #{title}
+			, content = #{content}
+			, update_id = #{updateId}
+			, notice_yn = IFNULL(#{noticeYn}, 'N')
+			, secret_yn = IFNULL(#{secretYn}, 'N')
+		WHERE
+			idx = #{idx}
+	</update>
+
+	<update id="deleteNews" parameterType="long">
+		UPDATE tb_news
+		SET
+			  delete_yn = 'Y'
+			, delete_time = NOW()
+		WHERE
+			idx = #{idx}
+	</update>
+
+	<select id="selectNewsList" parameterType="com.nelbosco.domain.NewsDTO" resultType="com.nelbosco.domain.NewsDTO">
+		SELECT
+			<include refid="newsColumns" />
+		FROM
+			tb_news
+		WHERE
+			delete_yn = 'N'
+		<include refid="CommonMapper.search" />
+		ORDER BY
+			idx DESC,
+			insert_time DESC
+		<include refid="CommonMapper.paging" />
+	</select>
+
+	<select id="selectNewsTotalCount" parameterType="com.nelbosco.domain.NewsDTO" resultType="int">
+		SELECT
+			COUNT(*)
+		FROM
+			tb_news
+		WHERE
+			delete_yn = 'N'
+		<include refid="CommonMapper.search" />
+	</select>
+	
+	
+	<select id="selectBNewsList" parameterType="com.nelbosco.domain.NewsDTO" resultType="com.nelbosco.domain.NewsDTO">
+		SELECT
+			<include refid="newsColumns" />
+		FROM
+			tb_bnews
+		WHERE
+			delete_yn = 'N'
+		<include refid="CommonMapper.search" />
+		ORDER BY
+			idx DESC,
+			insert_time DESC
+		<include refid="CommonMapper.paging" />
+	</select>
+
+	<select id="selectBNewsTotalCount" parameterType="com.nelbosco.domain.NewsDTO" resultType="int">
+		SELECT
+			COUNT(*)
+		FROM
+			tb_bnews
+		WHERE
+			delete_yn = 'N'
+		<include refid="CommonMapper.search" />
+	</select>
+
+</mapper>

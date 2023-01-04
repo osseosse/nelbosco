@@ -1,0 +1,81 @@
+package com.nelbosco.domain;
+
+import java.sql.Timestamp;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class MemberDTO extends CommonDTO {
+
+	/** 번호 (PK) */
+	private Long memNo;
+
+	/** 고객명 */
+	private String memName;
+
+	/** 성별 */
+	private String sex;
+
+	/** 생일 */
+	private String birthday;
+
+	/** 사원여부 */
+	private String empYn;
+
+	/** 사원번호 */
+	private String empNo;
+
+	/** 고객ID */
+	private String memId;
+
+	/** 비밀번호 */
+	private String password;
+	
+	/** 주민번호 */
+	private String regidentNo;
+
+	/** 회사명 */
+	private String compName;
+	
+	/** 부서명 */
+	private String compDeptName;
+
+	/** 국적 */
+	private String country;
+	
+	/** Email 주소 */
+	private String emailAddr;
+
+	/** Email 수신여부 */
+	private String emailYn;
+	
+	/** SMS수신여부 */
+	private String smsYn;
+
+	/** 핸드폰번호 */
+	private String phoneNo;
+	
+	/** 탈퇴여부 */
+	private String withdrawalYn;
+
+	/** 중복가입키 */
+	private String diKey;
+	
+	/** 휴면여부 */
+	private String sleepYn;
+	
+	/** 비밀번호 변경일 */
+	private Timestamp pwdModifyDate;
+	
+	/** 마지막 로그인날짜 */
+	private Timestamp lastLoginDate;
+	
+	/** 휴면처리날짜 */
+	private Timestamp sleepDate;
+	
+	/** 마케팅 수신동의 날짜 */
+	private Timestamp adAgreeDate;
+
+}

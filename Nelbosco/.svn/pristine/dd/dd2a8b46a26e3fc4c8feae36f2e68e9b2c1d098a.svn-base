@@ -1,0 +1,81 @@
+package com.nelbosco.controller;
+
+import java.util.List;
+import java.util.Map;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataAccessException;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.nelbosco.constant.Method;
+import com.nelbosco.domain.MemberDTO;
+import com.nelbosco.service.MemberService;
+import com.nelbosco.util.UiUtils;
+
+@Controller
+public class MemberController extends UiUtils {
+
+	@Autowired
+	private MemberService memberService;
+
+	@GetMapping(value = "/member/write.do")
+	public String openMemberWrite(@ModelAttribute("params") MemberDTO params, @RequestParam(value = "memNo", required = false) Long idx, Model model) {
+		if (idx == null) {
+			model.addAttribute("member", new MemberDTO());
+		} else {
+			MemberDTO member = memberService.getMemberDetail(idx);
+			if (member == null || "Y".equals(member.getDeleteYn())) {
+				return showMessageWithRedirect("없는 게시글이거나 이미 삭제된 게시글입니다.", "/board/list.do", Method.GET, null, model);
+			}
+			model.addAttribute("member", member);
+		}
+
+		return "member/write";
+	}
+
+	@PostMapping(value = "/member/register.do")
+	public String registerMember(final MemberDTO params, Model model) {
+		Map<String, Object> pagingParams = getPagingParams(params);
+		try {
+			boolean isRegistered = memberService.registerMember(params);
+			if (isRegistered == false) {
+				return showMessageWithRedirect("게시글 등록에 실패하였습니다.", "/member/list.do", Method.GET, pagingParams, model);
+			}
+		} catch (DataAccessException e) {
+			return showMessageWithRedirect("데이터베이스 처리 과정에 문제가 발생하였습니다.", "/member/list.do", Method.GET, pagingParams, model);
+
+		} catch (Exception e) {
+			return showMessageWithRedirect("시스템에 문제가 발생하였습니다.", "/member/list.do", Method.GET, pagingParams, model);
+		}
+
+		return showMessageWithRedirect("게시글 등록이 완료되었습니다.", "/member/list.do", Method.GET, pagingParams, model);
+	}
+
+	@GetMapping(value = "/member/list.do")
+	public String openMemberList(@ModelAttribute("params") MemberDTO params, Model model) {
+		List<MemberDTO> boardList = memberService.getMemberList(params);
+		model.addAttribute("boardList", boardList);
+
+		return "member/list";
+	}
+
+	@GetMapping(value = "/member/view.do")
+	public String openMemberDetail(@ModelAttribute("params") MemberDTO params, @RequestParam(value = "memNo", required = false) Long idx, Model model) {
+		if (idx == null) {
+			return showMessageWithRedirect("올바르지 않은 접근입니다.", "/member/list.do", Method.GET, null, model);
+		}
+
+		MemberDTO member = memberService.getMemberDetail(idx);
+		if (member == null || "Y".equals(member.getDeleteYn())) {
+			return showMessageWithRedirect("없는 게시글이거나 이미 삭제된 게시글입니다.", "/member/list.do", Method.GET, null, model);
+		}
+		model.addAttribute("board", member);
+
+		return "member/view";
+	}
+
+}

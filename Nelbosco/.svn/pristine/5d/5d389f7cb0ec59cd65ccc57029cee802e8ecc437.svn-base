@@ -1,0 +1,203 @@
+﻿<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head th:replace="fragments/head :: headFragment"></head>
+<body>
+<div id="wrap">
+<!-- ====================== * HEADER *========================== -->
+<header th:replace="fragments/mainHeader :: headerFragment"></header>
+<!-- ======================* //HEADER *========================== -->
+
+	<!-- ====================== * contant * ========================== -->
+	<div id="contant">
+		<!-- subBigBanner -->
+		<div class="container100">
+			<div class="row">
+			  <div class="col-md-12 bg_menu subTop">
+				<div class="coffeType">
+					<p class="f20_7w f_mw">Menu</p>
+					<p class="f45_4w mt20">넬보스코의 특별한 메뉴</p>
+				</div>
+			  </div>
+			</div>
+		</div><!-- // container100 -->
+		<!-- //subBigBanner -->
+
+
+		<!--// Portfolio Cobbles Start //-->
+		<section class="section matychale-gallery-cobbles">
+			<div class="container100 mt100">
+				<!-- AJAX로 각메뉴 불러오기 -->
+				<div class="gallery-filter-btn-wrapper">
+					<div class="menu_cate">
+						<a href="#" class="current"><img th:src="@{/img/btn_menu01.png" alt="#"><p>DESSERT</p></a>
+						<a href="#"><img th:src="@{/img/btn_menu04.png" alt="#"><p>NEW</p></a>
+						<a href="#"><img th:src="@{/img/btn_menu04.png" alt="#"><p>BAKERY</p></a>
+						<a href="#"><img th:src="@{/img/btn_menu05.png" alt="#"><p>CAKE</p></a>
+						<a href="#"><img th:src="@{/img/btn_menu02.png" alt="#"><p>COFFFEE</p></a>
+						<a href="#"><img th:src="@{/img/btn_menu03.png" alt="#"><p>BEVERAGE</p></a>
+					</div>
+				</div>
+				<!-- // AJAX로 각메뉴 불러오기  -->
+			</div>
+			<!--// .container100_15 //-->
+
+
+			<div class="container100">
+				<div class="row" >
+					<div class="col-lg-4 col-md-4 col-sm-4  mt70" >
+						<div class="menu_new">
+							<p class="nRound">new</p>
+							<p class="f38_7 center mt20">모카 쉬폰 케이크</p>
+							<p class="f20_4 center mt10">mocha Chiffon Cake</p>
+							<p class="center mt40"><img th:src="@{/img/new_ck01.jpg" alt="" /></p>
+							<p class="f20_4 mt60 newType">촉촉한 시트 사이로 느껴지는 생크림과 커피향의 은은한 조화가 어울리는 케이크 </p>
+						</div><!-- //new -->
+					</div>
+					<div class="col-lg-8 col-md-8 col-sm-8  mt70"  >
+						<div class="products">
+								<!-- PC DISCOVER MENU -->
+								<div class="menu_cate_de">
+									<p class="menu_title f19_4">분류</p>
+									<div class="portfolio-filter">
+										<a href="#" data-gallery-filter="*" class="current"><p>ALL</p></a>
+										<a href="#" data-gallery-filter=".new"><p>단과자빵</p></a>
+										<a href="#" data-gallery-filter=".bakery"><p>페스츄리&브리오슈</p></a>
+										<a href="#" data-gallery-filter=".cake"><p>조리빵</p></a>
+										<a href="#" data-gallery-filter=".coffee"><p>건강빵&식빵</p></a>
+										<a href="#" data-gallery-filter=".beverage"><p>쿠키&구움과자</p></a>
+									</div>
+								</div>
+								<div class="portfolio-gallery row">
+									<div class="cf01">
+										<div class="col-md-6 col-lg-4 portfolio-cobbles-item glry-item-menu col-sm-6 new"><!-- glry-item 부분을 수정할것 --> 
+											<div class="portfolio-item-img">
+												<img th:src="@{/img/ck01.jpg" alt="Portfolio Img" class="img-fluid portfolio-img">
+											</div>
+											<div class="portfolio-buttons">
+												<a href="#">
+													<p class="f20_4w w_type">넬보스코 에스프레소에 로우슈가 흑당을 더해</p>
+												</a>
+											</div>
+											<div class="subType">
+												<p class="f20_4 mt30">치즈 인 치즈 케이크</p>
+												<p class="f18_4 mt10">Cheese In Cheese Cake</p>
+											</div>
+										</div>
+									</div>
+									<div class="cf02">
+										<div class="col-md-6 col-lg-4 portfolio-cobbles-item glry-item-menu col-sm-6 new"><!-- glry-item 부분을 수정할것 --> 
+											<div class="portfolio-item-img">
+												<img th:src="@{/img/ck01.jpg" alt="Portfolio Img" class="img-fluid portfolio-img">
+											</div>
+											<div class="portfolio-buttons">
+												<a href="#">
+													<p class="f20_4w w_type">넬보스코 에스프레소에 로우슈가 흑당을 더해</p>
+												</a>
+											</div>
+											<div class="subType">
+												<p class="f20_4 mt30">치즈 인 치즈 케이크</p>
+												<p class="f18_4 mt10">Cheese In Cheese Cake</p>
+											</div>
+										</div>
+									</div>
+									<div class="cf03">
+										<div class="col-md-6 col-lg-4 portfolio-cobbles-item glry-item-menu col-sm-6 new"><!-- glry-item 부분을 수정할것 --> 
+											<div class="portfolio-item-img">
+												<img th:src="@{/img/ck01.jpg" alt="Portfolio Img" class="img-fluid portfolio-img">
+											</div>
+											<div class="portfolio-buttons">
+												<a href="#">
+													<p class="f20_4w w_type">넬보스코 에스프레소에 로우슈가 흑당을 더해</p>
+												</a>
+											</div>
+											<div class="subType">
+												<p class="f20_4 mt30">치즈 인 치즈 케이크</p>
+												<p class="f18_4 mt10">Cheese In Cheese Cake</p>
+											</div>
+										</div>
+									</div>
+									<div class="cf04">
+										<div class="col-md-6 col-lg-4 portfolio-cobbles-item glry-item-menu col-sm-6 new"><!-- glry-item 부분을 수정할것 --> 
+											<div class="portfolio-item-img">
+												<img th:src="@{/img/ck01.jpg" alt="Portfolio Img" class="img-fluid portfolio-img">
+											</div>
+											<div class="portfolio-buttons">
+												<a href="#">
+													<p class="f20_4w w_type">넬보스코 에스프레소에 로우슈가 흑당을 더해</p>
+												</a>
+											</div>
+											<div class="subType">
+												<p class="f20_4 mt30">치즈 인 치즈 케이크</p>
+												<p class="f18_4 mt10">Cheese In Cheese Cake</p>
+											</div>
+										</div>
+									</div>
+									<div class="cf05">
+										<div class="col-md-6 col-lg-4 portfolio-cobbles-item glry-item-menu col-sm-6 new"><!-- glry-item 부분을 수정할것 --> 
+											<div class="portfolio-item-img">
+												<img th:src="@{/img/ck01.jpg" alt="Portfolio Img" class="img-fluid portfolio-img">
+											</div>
+											<div class="portfolio-buttons">
+												<a href="#">
+													<p class="f20_4w w_type">넬보스코 에스프레소에 로우슈가 흑당을 더해</p>
+												</a>
+											</div>
+											<div class="subType">
+												<p class="f20_4 mt30">치즈 인 치즈 케이크</p>
+												<p class="f18_4 mt10">Cheese In Cheese Cake</p>
+											</div>
+										</div>
+									</div>
+									<div class="cf06"></div>
+									<div class="cf07"></div>
+									<div class="cf08"></div>
+								</div><!--// .row //-->
+
+								<!--
+								<script>
+									
+								  $( document ).ready( function() {
+									$( '.cf01' ).load( 'http://image.edaymall.com/images/mail/news/dcf/test/cf01.html' );
+									$( '.cf02' ).load( 'http://image.edaymall.com/images/mail/news/dcf/test/cf02.html' );
+									$( '.cf03' ).load( 'http://image.edaymall.com/images/mail/news/dcf/test/cf03.html' );
+									$( '.cf04' ).load( 'http://image.edaymall.com/images/mail/news/dcf/test/cf04.html' );
+									$( '.cf05' ).load( 'http://image.edaymall.com/images/mail/news/dcf/test/cf05.html' );
+									$( '.cf06' ).load( 'http://image.edaymall.com/images/mail/news/dcf/test/cf01.html' );
+									$( '.cf07' ).load( 'http://image.edaymall.com/images/mail/news/dcf/test/cf02.html' );
+									$( '.cf08' ).load( 'http://image.edaymall.com/images/mail/news/dcf/test/cf03.html' );
+								  } );
+								</script>
+								-->
+
+								<!-- // PC DISCOVER MENU -->
+							
+						</div><!-- products -->
+					</div>
+					 
+				</div>
+				<!-- row -->
+			</div><!-- // container -->
+
+
+		</section>
+		<!--// Portfolio Cobbles End //-->
+		
+		
+
+		
+		
+
+		
+		
+	</div>
+	<!-- ======================
+		 * //contant *
+	========================== -->
+
+	<!-- ====================== * FOOTER * ========================== -->
+	<footer class="container100" th:replace="fragments/mainFooter :: footerFragment"></footer>
+	<!-- ====================== * //FOOTER * ========================== -->
+	<div th:replace="fragments/footerScript :: footerScriptFragment"></div> 
+</div><!-- // wrap -->
+</body>
+</html>

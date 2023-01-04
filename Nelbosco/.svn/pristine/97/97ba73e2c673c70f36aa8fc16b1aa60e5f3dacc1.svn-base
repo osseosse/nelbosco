@@ -1,0 +1,179 @@
+﻿<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<title>넬보스코예약문의</title>
+    <head th:replace="fragments/head :: headFragment"></head>
+</head>
+<body>
+<div id="wrap">
+<!-- ====================== * HEADER *========================== -->
+<header th:replace="fragments/mainHeader :: headerFragment"></header>
+<!-- ======================* //HEADER *========================== -->
+<!-- ======================
+	 * contant *
+========================== -->
+<div id="contant">
+	<!-- subBigBanner -->
+	<div class="container100">
+		<div class="row">
+		  <div class="col-md-12 bg_news  subTop">
+			<div class="coffeType">
+				<p class="f45_4w mt20 ">예약 문의</p>
+			</div>
+		  </div>
+		</div>
+	</div><!-- // container100 -->
+	<!-- //subBigBanner -->
+	
+	<!--// Portfolio Cobbles Start //-->
+	<section class="section matychale-gallery-cobbles">
+	    <div>
+               <div class="container">
+                   <div class="row">
+					<div class="menu_cate">
+						<a href="/cafe/contact/map"><p>오시는길</p></a>
+						<a href="/cafe/contact/contact"><p>고객상담</p></a>
+						<a href="/cafe/contact/faq"><p>자주묻는질문</p></a>
+						<a href="/cafe/contact/booking" class="current"><p>예약문의</p></a>
+					</div>
+                   </div>
+               </div>
+           </div>
+		<div class="container">
+			<div class="location">
+				<span><a href="">HOME</a></span><img th:src="@{/img/location_arrow.gif}">
+				<span><a href="">Community</a></span><img th:src="@{/img/location_arrow.gif}">
+				<span>예약문의</span>
+			</div>
+			<div class="row clearboth mt100">
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<table cellspacing="0" border="0" class="board">
+						<caption>예약문의</caption>
+						<tr>
+							<th>번호</th>
+							<th>제목</th>
+							<th>작성자</th>
+							<th>날짜</th>
+						</tr>
+						<tr th:if="${not #lists.isEmpty( reservationList )}" th:each="row : ${reservationList}">
+							<td th:text="${row.idx}" ></td>
+							<td>
+								<a href="javascript:void(0);" th:onclick="setIdx([[ ${row.idx} ]])" th:text="${row.title}"></a>
+								<!-- <a href="#" th:onclick="'javascript:setIdx('+ ${row.idx} + ');'" th:text="${row.title}"><p class="list_title"></p><span class="ico_answer">답변완료</span></a> -->
+							</td>
+							<td th:text="${row.writer}"></td>
+							<td th:text="${#temporals.format( row.insertTime, 'yyyy-MM-dd' )}"></td>
+						</tr>
+					</table>
+					<ul class="board_btnBox">
+						<li><a href="/cafe/reservation/write"><p class="btn_type01">예약문의</p></a></li>
+					</ul>
+					
+				</div>
+			</div>
+			<!-- //row -->
+
+			<!-- paging -->
+			<th:block layout:fragment="paging">
+				<nav th:replace="fragments/common :: pagination"></nav>
+			</th:block>
+			<!-- paging //-->
+			
+			
+		</div><!-- // container -->
+	</section>
+	<!--// Portfolio Cobbles End //-->
+	
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		<form class="form-horizontal form-view">
+		  <div class="modal-header2">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+			<h4 class="pop_title center" id="myModalLabel">비밀번호</h4>
+		  </div>
+		  <div class="modal-body2">
+			<input type="password" id="password" name="password" value="" maxlength="4">
+			<input type="hidden" id="idx" name="idx" value="">
+		  </div>
+		  <div class="modal-footer2">
+			<button type="button" id="closeModalBtn" class="btn_pop_close" data-dismiss="modal">닫기</button>
+			<button type="button" th:onclick="passCheck()" class="btn_popOK">확인</button>
+		  </div>
+	  	</form>
+		</div>
+	  </div>
+	</div>
+	<!-- // 원문보기 팝업 -->
+	
+</div>
+<!-- ======================
+	 * //contant *
+========================== -->
+
+<!-- ====================== * FOOTER * ========================== -->
+<footer class="container100" th:replace="fragments/mainFooter :: footerFragment"></footer>
+<!-- ====================== * //FOOTER * ========================== -->
+<div th:replace="fragments/footerScript :: footerScriptFragment"></div> 
+</div><!-- // wrap -->
+<script th:inline="javascript">
+/*<![CDATA[*/
+	
+$('#closeModalBtn').on('click', function(){
+	$('#myModal').modal('hide');
+});
+
+function setIdx(idx) {
+	$('#myModal').modal('show');
+	$('#idx').val(idx);
+	
+}
+
+function passCheck() {
+	
+	var idx = document.getElementById("idx");
+	var password = document.getElementById("password");
+	
+	if (isEmpty(password.value) == true) {
+		password.setAttribute("placeholder", "비밀번호를 입력해 주세요.");
+		password.focus();
+		return false;
+	}
+
+	var uri = '/cafe/reservation/passCheck';
+	var headers = {"Content-Type": "application/json", "X-HTTP-Method-Override": "POST"};
+	var params = {"idx": idx.value, "password": password.value};
+	
+	$.ajax({
+		url: uri,
+		type: "POST",
+		headers: headers,
+		dataType: "json",
+		data: JSON.stringify(params),
+		success: function(response) {
+			if (response.result == false) {
+				password.value = "";
+				password.focus();
+				alert("비밀번호가 틀렸습니다.");
+				return false;
+			}
+			$('#myModal').modal('hide');
+			var queryString = [[ ${params.makeQueryString(params.currentPageNo)} ]];
+			uri = [[ @{/cafe/reservation/view}]];
+			location.href = uri + queryString + '&idx=' +idx.value;
+		},
+		error: function(xhr, status, error) {
+			alert("code:"+xhr.status+"\n"+"message:"+xhr.responseText+"\n"+"error:"+error);
+			//alert("에러가 발생하였습니다.");
+			return false;
+		}
+	});
+}
+/*[- end of function -]*/
+
+/*]]>*/
+</script>
+<script th:src="@{/js/bootstrap.min.js}"></script>
+</body>
+</html>

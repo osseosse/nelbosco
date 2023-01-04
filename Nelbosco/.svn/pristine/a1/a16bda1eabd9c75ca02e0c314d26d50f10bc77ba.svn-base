@@ -1,0 +1,110 @@
+﻿<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+ <head>
+    <head th:replace="fragments/head :: headFragment"></head>
+</head>
+ <body>
+<div id="wrap">
+<!-- ====================== * HEADER *========================== -->
+<header th:replace="fragments/mainHeader :: headerFragment"></header>
+<!-- ======================* //HEADER *========================== -->
+
+<!-- ======================
+	 * contant *
+========================== -->
+<div id="contant">
+	<!-- subBigBanner -->
+	<div class="container100">
+		<div class="row">
+		  <div class="col-md-12 bg_gift subTop">
+			<div class="coffeType">
+				<p class="f45_4w mt20 ">GIFT</p>
+			</div>
+		  </div>
+		</div>
+	</div><!-- // container100 -->
+	<!-- //subBigBanner -->
+
+
+	<!--// Portfolio Cobbles Start //-->
+	<section class="section matychale-gallery-cobbles">
+	    <div>
+               <div class="container">
+                   <!-- AJAX로 각메뉴 불러오기 -->
+                   <div class="row">
+                       <!--<div class="gallery-filter-btn-wrapper">-->
+                           <div class="menu_cate">
+                               <a href="javascript:void(0);" class="btn" onclick="getGoodsList('espresso')"><p>Espresso</p></a>
+                               <a href="javascript:void(0);" class="btn" onclick="getGoodsList('tea')"><p>Tea</p></a>
+                               <a href="javascript:void(0);" class="btn" onclick="getGoodsList('soymilk')"><p>Special Soy Milk</p></a>
+                               <a href="javascript:void(0);" class="btn" onclick="getGoodsList('ade')"><p>Ade</p></a>
+                               <a href="javascript:void(0);" class="btn" onclick="getGoodsList('smoothie')"><p>Smoothie</p></a>
+                               <a href="javascript:void(0);" class="btn" onclick="getGoodsList('bread')"><p>Bread</p></a>
+                               <a href="javascript:void(0);" class="btn" onclick="getGoodsList('cake')"><p>Cake &amp; Dessert</p></a>
+                               <a href="javascript:void(0);" class="btn active"><p>Gift</p></a>
+                           </div>
+                       <!--</div>-->
+                   </div>
+                   <!-- // AJAX로 각메뉴 불러오기  -->
+               </div>
+		</div>
+		<!-- 이벤트 배너 코드 시작 -->
+		<div class="container100">
+               <div class="row">
+                   <div class="col-md-12 eventBimg">
+                       <a href="#" class="pcBanner">
+                           <img th:src="@{/img/eventBimg.jpg}" alt="이벤트배너">
+                       </a>
+                       <a href="#" class="moBanner">
+                           <img src="#" alt="모바일이벤트배너">
+                       </a>
+                   </div>
+               </div>
+           </div>
+           <!-- //이벤트 배너 코드 끝 -->
+
+		<div class="container1640">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12  mt90"  >
+					<div class="products">
+						<div id="resultDiv" class="portfolio-gallery row clear">
+							<th:block th:if="${goodsList !=null}">
+					    	<div th:each="goods : ${goodsList}">
+								<div class="portfolio-cobbles-item glry-item col-md-3 col-sm-6 col-6">
+									<div class="thumbnail2">
+										<div th:class="bg01">
+											<img th:src="@{'/img/product/'+ ${goods.imageThum}}" alt="#" >
+										</div>
+									</div>
+									<div class="portfolio-buttons mb70m">
+										<p class="f26_4 pdTitle" th:text="${goods.goodsName}"></p>
+										<p class="mt10 f16_3g" th:text="${goods.goodsExplan}"></p>
+										<div class="alleg" th:text="${goods.allergIngr}"></div>
+									</div>
+								</div>
+							</div>
+							</th:block>
+						</div><!--// .row //-->
+					</div><!-- products -->
+				</div>
+				 
+			</div>
+			<!-- row -->
+		</div><!-- // container -->
+
+
+	</section>
+	<!--// Portfolio Cobbles End //-->
+	
+</div>
+<!-- ======================
+	 * //contant *
+========================== -->
+<!-- ====================== * FOOTER * ========================== -->
+<footer class="container100" th:replace="fragments/mainFooter :: footerFragment"></footer>
+<!-- ====================== * //FOOTER * ========================== -->
+<div th:replace="fragments/menuScript :: menuScriptFragment"></div>
+<div th:replace="fragments/footerScript :: footerScriptFragment"></div> 
+</div><!-- // wrap -->
+</body>
+</html>

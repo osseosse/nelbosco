@@ -1,0 +1,20 @@
+#HikariCP 데이터 소스(DataSource)
+spring.datasource.hikari.driver-class-name=net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+spring.datasource.hikari.jdbc-url=jdbc:log4jdbc:mysql://211.47.74.38:3306/dbnelbosco?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8&allowPublicKeyRetrieval=true&useSSL=false&autoReconnection=true
+spring.datasource.hikari.username=nelbosco
+spring.datasource.hikari.password=nelbosco@pass
+spring.datasource.hikari.connection-test-query=SELECT NOW() FROM dual
+#spring.datasource.hikari.connection-init-sql=SELECT NOW() FROM dual
+#spring.datasource.hikari.connection-test-query=SELECT 1
+spring.datasource.hikari.connection-timeout=600000
+
+#MyBatis
+mybatis.configuration.map-underscore-to-camel-case=true
+
+#Gson HTTP Message Converter 설정
+spring.http.converters.preferred-json-mapper=gson
+
+#정적 메서드 자동 반영
+spring.devtools.livereload.enabled=true
+spring.freemarker.cache=false
+spring.thymeleaf.cache=false

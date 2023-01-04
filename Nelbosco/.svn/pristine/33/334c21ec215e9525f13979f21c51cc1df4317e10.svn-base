@@ -1,0 +1,71 @@
+﻿<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head th:replace="fragments/head :: headFragment"></head>
+<body>
+<div id="wrap">
+<!-- ====================== * HEADER *========================== -->
+<header th:replace="fragments/mainHeader :: headerFragment"></header>
+<!-- ======================* //HEADER *========================== -->
+
+	<!-- ====================== * contant * ========================== -->
+	<div id="contant">
+		<!-- subBigBanner -->
+		<div class="container100">
+			<div class="row">
+			  <div class="col-md-12 bg_music4 subTop" >
+				<div class="coffeType">
+					<p class="f20_7w f_mw">Music Story</p>
+					<p class="f45_4w mt20">음악 공연 이야기</p>
+				</div>
+			  </div>
+			</div>
+		</div><!-- // container100 -->
+		<!-- //subBigBanner -->
+
+
+		<!--// Portfolio Cobbles Start //-->
+		<section class="section">
+			
+
+
+			<div class="container mt150">
+				<div class="row grayline" >
+					<div class="col-lg-12 col-md-12 col-sm-12 ">
+						<p class="f38_5 center">음악과 와인이 있는 이탈리안 레스토랑</p>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 mt100">
+						<ul class="about_ul">
+							<li class="f32_5">음악과 품격있는 식사</li><br>
+						</ul>
+						<p class="mt40"><img th:src="@{/img/bg_music2.jpg}" alt="베이커리사진01"/ ></p>
+						<p class="mt40 f20_4">
+							넬보스코는 무대와 대형 스크린, 음향 및 영상 시설이 완비되어 있어 행사와 품격 있는 식사를 한공간에서 즐기실 수 있습니다.<br>
+							클래식 공연뿐만 아니라 다양한 장르의 라이브 공연이 준비되어 있습니다.
+						</p>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 mt100">
+						<ul class="about_ul">
+							<li class="f32_5">공연일정</li><br>
+						</ul>
+						<p class="mt40 img100"><img th:src="@{/img/concert.jpg}" alt="베이커리사진02"/></p>
+						<p class="mt40 f20_4">
+							매주 (   )요일 PM 07:30~9:00<br>
+						</p>
+						<p class="btntype01 mt20"><a href="#" class="f20_4w">공연문의하기</a></p>
+					</div>
+				</div>
+			</div><!-- // container -->
+		</section>
+		<!--// Portfolio Cobbles End //-->
+	</div>
+	<!-- ======================
+		 * //contant *
+	========================== -->
+
+	<!-- ====================== * FOOTER * ========================== -->
+	<footer class="container100" th:replace="fragments/mainFooter :: footerFragment"></footer>
+	<!-- ====================== * //FOOTER * ========================== -->
+	<div th:replace="fragments/footerScript :: footerScriptFragment"></div> 
+</div><!-- // wrap -->
+</body>
+</html>

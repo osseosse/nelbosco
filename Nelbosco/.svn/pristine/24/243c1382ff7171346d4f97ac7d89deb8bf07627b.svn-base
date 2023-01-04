@@ -1,0 +1,42 @@
+<div class="thumbnail2">
+	<div class="portfolio-item-img centered2">
+		<img src="./img/ck01.jpg" alt="Portfolio Img" class="img-fluid portfolio-img">
+		<h5 class="portfolio-detail-title">BAKERY</h5>
+	</div>
+</div>
+<div class="portfolio-buttons">
+	<a href="./menu_brunch.html">
+		<p class="f32_4 pdTitle">브라운슈가 라떼</p>
+		<p class="f18_4 mt10 g_type">넬보스코 에스프레소에 로우슈가 흑당을 더해, 더욱 깊어진 풍미를 즐길 수 있는 음료, 부드러운 목넘김의 나이트로 커피와 바닐라 크림의 매력을 한번에 느껴보세요!</p>
+		<p class="f24_4 mt30">
+			<div class="infoBox">
+				<dl>
+					<dt>칼로리</dt>
+					<dd>(276Kcal)</dd>
+				</dl>
+				<dl>
+					<dt>당류</dt>
+					<dd>(41Kcal)</dd>
+				</dl>
+				<dl>
+					<dt>단백질</dt>
+					<dd>(6g)</dd>
+				</dl>
+				<dl>
+					<dt>포화지방</dt>
+					<dd>(4.3g)</dd>
+				</dl>
+				<dl>
+					<dt>카페인</dt>
+					<dd>(10mg)</dd>
+				</dl>
+				
+			</div>
+		</p>
+		<p class="alleg">알래르기 유발요인: 우유</p>
+	</a>
+</div>
+<div class="subType">
+	<p class="f20_4 mt30">브라운슈가 라떼</p>
+	<p class="f18_4 mt10">Cheese In Cheese Cake</p>
+</div>

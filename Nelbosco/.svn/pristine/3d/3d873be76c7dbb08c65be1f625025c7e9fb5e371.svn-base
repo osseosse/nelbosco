@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<meta http-equiv="X-UA-Compatible" 		content="IE=Edge" />
+<title>넬보스코 웹사이트 개발</title>
+<link rel="stylesheet" type="text/css" href="./temp/temp.css" />
+<script type="text/javascript">
+function printDate() {
+        var date = new Date();
+        var day  = date.getDate();
+        var month = date.getMonth() + 1;
+        var year = date.getYear();
+        year = (year < 1000) ? year + 1900 : year;
+
+        document.write(year + "."+ month + "." + day + "")
+}
+</script>
+</head>
+
+<body>
+<div id="head">
+	<h1 class="alignC">넬보스코 Project<br /></h1>
+	<p class="lastUpdate">Last Update : 2020-08-03</p>
+	<p class="today"><script type="text/javascript">printDate();</script></p>
+</div>
+
+<div class="tipInfo">
+	<ul class="tip">
+		<li>링크클릭시 <u>'Shift + 클릭'</u> 은 새창, <u>'Ctrl + 클릭'</u>은 새탭 으로 열립니다.</li>
+	</ul>
+</div>
+
+<div id="body">
+	<div  id="content-area" class="naviArea">
+		<!--
+		<p><img src="./temp/bullet_white.gif" alt="작업중" />작업중&nbsp;&nbsp;|&nbsp;
+		<img src="./temp/bullet_green.gif" alt="작업중" />
+		<img src="./temp/bullet_blue.gif" alt="작업중" />
+		<img src="./temp/bullet_orange.gif" alt="작업중" />
+		<img src="./temp/bullet_yellow.gif" alt="작업중" />작업완료</p>
+		-->
+
+
+	
+	
+
+		<!----------------------------------
+			***** KR *****
+		------------------------------------>
+		<h2>넬보스코</h2>
+		<br>
+	
+		<ul class="depth1">
+			<li class="on"><strong>메인</strong>
+				<ul>
+					<li class="on"><a href="./index.html" title="내용">메인</a></li>
+				</ul>
+			</li>
+		</ul>
+		<ul class="depth1">
+			<li class="on"><strong>About</strong>
+				<ul>
+					<li class="on"><a href="./about.html" title="내용">barand</a></li>
+					<li class="on"><a href="./lab.html" title="내용">넬보스코 연구소</a></li>
+				</ul>
+			</li>
+		</ul>
+		<ul class="depth1">
+			<li class="on"><strong>메뉴</strong>
+				<ul>
+					<li class="on"><a href="./menu_bakery.html" title="내용">bakery</a></li>
+					<li class="on"><a href="./menu_cake.html" title="내용">cake</a></li>
+					<li class="on"><a href="./menu_coffee.html" title="내용">coffee</a></li>
+					<li class="on"><a href="./menu_beverage.html" title="내용">beverage</a></li>
+					<li class="on"><a href="./menu_brunch.html" title="내용">brunch</a></li>
+					<li class="on"><a href="./menu_dessert.html" title="내용">dessert</a></li>
+				</ul>
+			</li>
+		</ul>
+		<ul class="depth1">
+			<li class="on"><strong>SNS</strong>
+				<ul>
+					<li class="on"><a href="./sns.html" title="내용">SNS</a></li>
+				</ul>
+			</li>
+		</ul>
+		<ul class="depth1">
+			<li class="on"><strong>contact</strong>
+				<ul>
+					<li class="on"><a href="./contact.html" title="내용">contact</a></li>
+					<li class="on"><a href="./news.html" title="내용">news</a></li>
+					<li class="on"><a href="./event.html" title="내용">event</a></li>
+				</ul>
+			</li>
+		</ul>
+		
+		<!----------------------------------
+			***** 오픈소스 *****
+		------------------------------------>
+		
+	</div>
+</div>
+
+<div id="foot">
+copyright&copy;
+</div>
+
+</body>
+</html>

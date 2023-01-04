@@ -1,0 +1,98 @@
+﻿<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<title>넬보스코 파티셰</title>
+    <head th:replace="fragments/head :: headFragment"></head>
+</head>
+<body>
+<div id="wrap">
+<header th:replace="fragments/mainHeader :: headerFragment"></header>
+<!-- ======================
+		 * contant *
+	========================== -->
+	<div id="contant">
+		<!-- subBigBanner -->
+		<div class="container100">
+			<div class="row">
+			  <div class="col-md-12 bg_bakery subTop">
+				<div class="coffeType">
+					<p class="f45_4w mt20 f_mo">NelBosco Patissier</p>
+				</div>
+			  </div>
+			</div>
+		</div><!-- // container100 -->
+		<!-- //subBigBanner -->
+		<!--// Portfolio Cobbles Start //-->
+		<section class="section matychale-gallery-cobbles">
+		    <div>
+               <div class="container">
+                   <div class="row">
+						<div class="menu_cate">
+						    <a href="/cafe/brandstory/about"><p>브랜드 스토리</p></a>
+						    <a href="/cafe/brandstory/bi"><p>브랜드 아이덴티티</p></a>
+						    <a href="/cafe/brandstory/place"><p>공간 이야기</p></a>
+						    <a href="/cafe/brandstory/lab"><p>연구소</p></a>
+						    <a href="/cafe/brandstory/patissier" class="current" ><p>파티셰</p></a>
+						    <a href="/cafe/story/coffeeStory"><p>커피 이야기</p></a>
+						    <a href="/cafe/story/drink"><p>음료 이야기</p></a>
+						    <a href="/cafe/story/bakery"><p>베이커리 이야기</p></a>
+						    <a href="/cafe/brandstory/tour"><p>남촌 투어</p></a>
+						    <!-- <a href="/story/music"><p>음악 공연 이야기</p></a> -->
+						</div>
+                   </div>
+               </div>
+			</div>
+		
+			<div class="container">
+				<div class="location">
+					<span><a href="">HOME</a></span><img th:src="@{/img/location_arrow.gif}">
+					<span><a href="">Brand Story</a></span><img th:src="@{/img/location_arrow.gif}">
+					<span>파티셰</span>
+				</div>
+				<div class="container1400 mt120">
+					<div class="row" >
+					    <div class="col-lg-6 col-md-6 col-sm-12">
+	                        <p class="mt30m img100"><img th:src="@{/img/brunch/chef01.jpg}" alt="이충희 파티쉐" /></p>
+						</div>		
+						<div class="col-lg-6 col-md-6 col-sm-12 introBox pb200 mt50m">
+	                        <p class="f40_7">
+							넬보스코 남촌빵집<br>
+							베이커리를 책임지고 있는 <br>
+							이충희 파티셰
+							</p>
+							<p class="f30_4 mt60">
+								“ 넬보스코는 건강함이 가득한<br class="none">  
+								 신선한 베이커리를 제공합니다 "
+								
+							</p>
+							<p class="f28_6 mt90 f_mo red">Patisserie</p>
+							<p class="f36_4"><b>이충희</b> 파티셰 <span class="f28_4">Lee Chung-hee</span></p>
+							<ul class="chef mt40">
+								<li class="f20_4 mt40">ECOLE DE PATISSERIE DE TOKIO 동경제과학교 양과자학부 졸업</li>
+								<li class="f20_4">대전 성심당 근무</li>
+								<li class="f20_4">LE PATISSIER TAKAGI 파트장</li>
+								<li class="f20_4">EATALY DAIKANYAMA 제과장</li>
+								<li class="f20_4">FBI 제과제빵학원 강사</li>
+								<li class="f20_4">Boulanger Raffine 오너셰프</li>
+								<!-- <li class="f20_4">現 넬보스코 입사</li> -->
+							</ul>
+						</div>		
+					</div>
+					<!-- row -->
+				</div>
+			</div><!-- // container -->
+		</section>
+		<!--// Portfolio Cobbles End //-->
+	</div>
+	<!-- ======================
+		 * //contant *
+	========================== -->
+	
+
+	<!-- ====================== * FOOTER * ========================== -->
+	<footer class="container100" th:replace="fragments/mainFooter :: footerFragment"></footer>
+	<!-- ====================== * //FOOTER * ========================== -->
+	<div th:replace="fragments/footerScript :: footerScriptFragment"></div> 
+</div><!-- // wrap -->
+</body>
+</html>

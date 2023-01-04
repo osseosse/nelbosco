@@ -1,0 +1,171 @@
+﻿<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+	<head>
+	 	<title>넬보스코 이탈리안 레스토랑 자주묻는질문</title>
+	    <head th:replace="fragments/head :: headFragment"></head>
+	</head>
+
+  <body>
+	<div id="wrap">
+	<!-- ======================
+		 * HEADER *
+	========================== -->
+    <header th:replace="fragments/b_mainHeader :: headerFragment"></header>
+	<!-- ======================
+		 * //HEADER *
+	========================== -->
+
+	<!-- ======================
+		 * contant *
+	========================== -->
+	<div id="contant">
+		<!-- subBigBanner -->
+		<div class="container100">
+			<div class="row">
+			  <div class="col-md-12 bg_b_faq subTop">
+				<div class="coffeType">
+					<p class="f45_4w mt20 f_mo">FAQ</p>
+				</div>
+			  </div>
+			</div>
+		</div><!-- // container100 -->
+		<!-- //subBigBanner -->
+
+
+		<!--// Portfolio Cobbles Start //-->
+		<section class="section matychale-gallery-cobbles" >
+			<div>
+				<div class="container">
+					<div class="row">
+						<div class="menu_cate2">
+							<a href="/restaurant/bcontact/notice"><p>공지사항</p></a>
+							<a href="/restaurant/bcontact/contact"><p>고객상담</p></a>
+							<a href="/restaurant/bcontact/event"><p>이벤트</p></a>
+							<a href="/restaurant/bcontact/map"><p>오시는길</p></a>
+							<a href="/restaurant/bcontact/faq" class="current"><p>자주묻는질문</p></a>
+							<a href="https://app.catchtable.co.kr/ct/shop/nelbosco" target="_blank"><p>예약문의</p></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="location">
+					<span><a href="">HOME</a></span><img th:src="@{/img/location_arrow.gif}">
+					<span><a href="">Contact</a></span><img th:src="@{/img/location_arrow.gif}">
+					<span>FAQ</span>
+				</div>
+				<div class="wBox2 mt100" >
+				</div>
+				<div class="row clearboth">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						
+						<!-- Vetical -->
+						<div id="css3-animated-example2" class="mt50m">
+							<div class="cae">
+								<ul>
+									<li>05</li>
+									<li>노키즈존인가요?</li>
+									<li>관리자</li>
+								</ul>
+							</div>
+							<div>
+								<div class="v_content">
+									브런치 타임은 어린이 동반 입장이 가능하며, 디너 타임에 한하여 노키즈존으로 운영하고 있습니다.<br>만 13세 미만의 경우 방문이 어려운 점 양해 부탁드립니다.
+								</div>
+							</div>
+							<div class="cae">
+								<ul>
+									<li>04</li>
+									<li>매장에 흡연실이 있나요?</li>
+									<li>관리자</li>
+								</ul>
+							</div>
+							<div>
+								<div class="v_content">
+									넬보스코는 금연빌딩으로 지정되어 있어, 별도의 흡연공간을 제공하지 않습니다.
+								</div>
+							</div>
+							<div class="cae">
+								<ul>
+									<li>03</li>
+									<li>애견동반 입장 가능한가요?</li>
+									<li>관리자</li>
+								</ul>
+							</div>
+							<div>
+								<div class="v_content">
+									애견동반 입장은 불가합니다. 단 시각장애 안내견은 입장가능합니다. 
+								</div>
+							</div>
+							<div class="cae">
+								<ul>
+									<li>02</li>
+									<li>매장 전화번호를 알 수 있을까요?</li>
+									<li>관리자</li>
+								</ul>
+							</div>
+							<div>
+								<div class="v_content">
+						1층 대표 전화번호 : 02-3484-9401<br>
+						2층 대표 전화번호 : 02-3484-9400<br>
+						5층 대표 전화번호 : 02-3484-9403
+								</div>
+							</div>
+
+							<div class="cae">
+								<ul>
+									<li>01</li>
+									<li>주차는 가능한가요?</li>
+									<li>관리자</li>
+								</ul>
+							</div>
+							<div>
+								<div class="v_content">
+									주차공간이 협소하여 대중교통 이용을 권해드립니다.
+								</div>
+							</div>
+						</div>
+						<script>
+						$("#css3-animated-example2").collapse({
+						  accordion: true,
+						  open: function() {
+							this.addClass("open");
+							this.css({ height: this.children().outerHeight() });
+						  },
+						  close: function() {
+							this.css({ height: "0px" });
+							this.removeClass("open");
+						  }
+						});
+						</script>
+						<!-- // Vetical -->
+					</div>
+				</div>
+				<!-- //row -->
+
+				<!-- paging -->
+				<div class="paging3">
+					<ol>
+						<li class="active"><a href="#">1</a></li>
+					</ol>
+				</div>
+				<!-- paging //-->
+			</div><!-- // container -->
+		</section>
+		<!--// Portfolio Cobbles End //-->
+	</div>
+	<!-- ======================
+		 * //contant *
+	========================== -->
+
+	<!-- ======================
+		 * FOOTER *
+	========================== -->
+	<footer th:replace="fragments/b_mainFooter :: footerFragment"></footer>
+	<!-- ======================
+		 * //FOOTER *
+	========================== -->
+	<div th:replace="fragments/footerScript :: footerScriptFragment"></div> 
+	</div><!-- // wrap -->
+	</body>
+</html>

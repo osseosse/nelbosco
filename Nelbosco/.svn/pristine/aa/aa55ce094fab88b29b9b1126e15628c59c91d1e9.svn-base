@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<div id="menuScript" th:fragment="menuScriptFragment">
+<script th:inline="javascript">
+	/*<![CDATA[*/
+	function getGoodsList(category) {
+		
+		if(category == 'bread') {
+        	location.href="/menu/bread";
+        }
+		
+		 $.ajax({
+		    url: '/getGoodsList/'+category,
+		    contentType: "application/json; charset=utf-8",
+		    dataType:'json',
+		    success:function(response){
+		      	if(response != null){
+		            var goodsList = response.goodsList;
+		            var timehtml = "";
+		            var size = goodsList.length;
+		            
+		            for(var i=0;i<size; i++){
+		                  timehtml+='<div class="portfolio-cobbles-item glry-item col-md-3 col-sm-6 col-6">';
+		                  timehtml+='<div class="thumbnail2">';
+		                  timehtml+='<div class="bg01">';
+		                  timehtml+='<img src=../img/product/'+goodsList[i].imageThum+' alt="#" >';
+		                  timehtml+='</div>';
+		                  timehtml+='</div>';
+		                  timehtml+='<div class="portfolio-buttons mb70m">';
+		                  timehtml+='<p class="f26_4 pdTitle">'+goodsList[i].goodsName+'</p>';
+		                  timehtml+='<p class="mt10 f16_3g">'+goodsList[i].goodsExplan+'</p>';
+		                  timehtml+='<div class="alleg">'+goodsList[i].allergIngr+'</div>';
+		                  timehtml+='</div>';
+		                  timehtml+='</div>';
+		            }//for
+		            $("#resultDiv").html(timehtml);
+		        }else{
+		          alert("품절입니다.");
+		        }
+		    },error:function(request,status,error){
+		      alert("다시시도해주세요");
+		      //alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+		      //winddow.href="/";
+		    }
+		  });
+	}
+	/*]]>*/
+</script>
+<script th:inline="javascript">
+/*<![CDATA[*/
+var header = document.getElementById("menuDiv");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+/*]]>*/
+</script>
+</div>
+</html>

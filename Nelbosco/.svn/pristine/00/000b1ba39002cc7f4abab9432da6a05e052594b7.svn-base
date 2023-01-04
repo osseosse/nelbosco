@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<title>넬보스코 관리자</title>
+   <head th:replace="admin/adminHead :: headFragment"></head>
+<link rel="stylesheet" type="text/css" href="../css/temp.css" />
+
+</head>
+<body>
+<header th:replace="admin/adminHeader :: headerFragment"></header>
+    <h1>관리자 로그인</h1>
+    <form th:action="@{/admin/login}" method="post">
+        <input name="id" placeholder="ID"> <br>
+        <input type="password" name="pw" placeholder="PW"> <br>
+        <button>로그인</button>
+    </form>
+</body>
+</html>

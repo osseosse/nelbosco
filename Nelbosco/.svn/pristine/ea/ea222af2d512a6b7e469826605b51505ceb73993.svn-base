@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<header id="admin-header" th:fragment="headerFragment">
+<script type="text/javascript">
+function printDate() {
+        var date = new Date();
+        var day  = date.getDate();
+        var month = date.getMonth() + 1;
+        var year = date.getYear();
+        year = (year < 1000) ? year + 1900 : year;
+
+        document.write(year + "."+ month + "." + day + "")
+}
+</script>
+<div id="head">
+	<h1 class="alignC">넬보스코 관리자<br /></h1>
+	<p class="today"><script type="text/javascript">printDate();</script></p>
+	<br>
+	<div th:if="${session.administrator == 'vegemil'}">
+		<h2><a class="today" href="/admin/login">[로그아웃]</a></h2>
+	</div>
+	<div th:unless="${session.administrator == 'vegemil'}">
+		<h2><a class="today" href="/admin/logout">[로그인]</a></h2>
+	</div>
+</div>
+</header>
+</html>

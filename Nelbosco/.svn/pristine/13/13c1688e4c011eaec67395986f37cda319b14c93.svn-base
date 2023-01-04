@@ -1,0 +1,266 @@
+﻿<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head th:replace="fragments/head :: headFragment"></head>
+<body>
+<div id="wrap">
+<!-- ====================== * HEADER *========================== -->
+<header th:replace="fragments/mainHeader :: headerFragment"></header>
+<!-- ======================* //HEADER *========================== -->
+
+	<!-- ====================== * contant * ========================== -->
+	<div id="contant">
+		<!-- subBigBanner -->
+		<div class="container100">
+			<div class="row">
+			  <div class="col-md-12 bg_menu subTop">
+				<div class="coffeType">
+					<p class="f20_7w f_mw">Menu</p>
+					<p class="f45_4w mt20">Bread</p>
+				</div>
+			  </div>
+			</div>
+		</div><!-- // container100 -->
+		<!-- //subBigBanner -->
+
+
+		<!--// Portfolio Cobbles Start //-->
+		<section class="section matychale-gallery-cobbles">
+			<div class="container100 mt100">
+				<!-- AJAX로 각메뉴 불러오기 -->
+				<div class="gallery-filter-btn-wrapper">
+					<div class="menu_cate">
+						<a href="/menu/bakery" class="current"><img th:src="@{/img/btn_menu04.png}" alt="#"><p>BAKERY</p></a>
+						<a href="/menu/cake"><img th:src="@{/img/btn_menu05.png}" alt="#"><p>CAKE</p></a>
+						<a href="/menu/coffee"><img th:src="@{/img/btn_menu02.png}" alt="#"><p>COFFEE</p></a>
+						<a href="/menu/beverage"><img th:src="@{/img/btn_menu03.png}" alt="#"><p>BEVERAGE</p></a>
+						<a href="/menu/brunch" ><img th:src="@{/img/btn_menu01.png}" alt="#"><p>BRUNCH</p></a>
+						<a href="/menu/dessert" ><img th:src="@{/img/btn_menu01.png}" alt="#"><p>DESSERT</p></a>
+					</div>
+				</div>
+				<!-- // AJAX로 각메뉴 불러오기  -->
+			</div>
+			<!--// .container100_15 //-->
+
+
+			<div class="container100">
+				<div class="row" >
+					<div class="col-lg-4 col-md-12 col-sm-12  mt70" >
+						<div class="menu_new">
+							<p class="nRound">new</p>
+							<p class="f38_7 center mt20">모카 쉬폰 케이크</p>
+							<p class="f20_4 center mt10">mocha Chiffon Cake</p>
+							<p class="center mt40"><img th:src="@{/img/product/new_ck01.jpg}" alt="" /></p>
+							<p class="f20_4 mt60 newType">촉촉한 시트 사이로 느껴지는 생크림과 커피향의 은은한 조화가 어울리는 케이크 </p>
+						</div><!-- //new -->
+					</div>
+					<div class="col-lg-8 col-md-12 col-sm-12  mt70"  >
+						<div class="products">
+								<!-- PC DISCOVER MENU -->
+								<div class="menu_cate_de">
+									<p class="menu_title f19_4">분류</p>
+									<div class="portfolio-filter">
+										<a href="#" data-gallery-filter="*" class="current"><p>ALL</p></a>
+										<a href="#" data-gallery-filter=".b1"><p>베이커리 종류1</p></a><!-- b1 -->
+										<a href="#" data-gallery-filter=".b2"><p>베이커리 종류2</p></a><!-- b2 -->
+										<a href="#" data-gallery-filter=".b3"><p>베이커리 종류3</p></a><!-- b3 -->
+										<a href="#" data-gallery-filter=".b4"><p>베이커리 종류4</p></a><!-- b4 -->
+										<a href="#" data-gallery-filter=".b5"><p>베이커리 종류5</p></a><!-- b5 -->
+									</div>
+								</div>
+								<div class="portfolio-gallery row clear">
+									
+									<div class="col-md-6 col-lg-4 portfolio-cobbles-item glry-item col-sm-6 b1">
+										<div class="ba01">
+											<!-- 제품 -->
+											<div class="thumbnail2">
+												<div class="portfolio-item-img centered2">
+													<img th:src="@{/img/product/ck01.jpg}" alt="Portfolio Img" class="img-fluid portfolio-img">
+													<h5 class="portfolio-detail-title">BAKERY</h5>
+												</div>
+											</div>
+											<div class="portfolio-buttons">
+												<a href="#;" onClick="function()"> 
+													<p class="f32_4 pdTitle">브라운슈가 라떼 브라운슈가 라떼</p>
+													<p class="mt10 g_type">넬보스코 에스프레소에 로우슈가 흑당을 더해! 넬보스코 에스프레소에 로우슈가 흑당을 더해!넬보스코 에스프레소에 로우슈가 흑당을 더해!</p>
+													<p class="f24_4 mt30">
+														<div class="infoBox">
+															<dl>
+																<dt>칼로리</dt>
+																<dd>(276Kcal)</dd>
+															</dl>
+															<dl>
+																<dt>당류</dt>
+																<dd>(41Kcal)</dd>
+															</dl>
+															<dl>
+																<dt>단백질</dt>
+																<dd>(6g)</dd>
+															</dl>
+															<dl>
+																<dt>포화지방</dt>
+																<dd>(4.3g)</dd>
+															</dl>
+															<dl>
+																<dt>카페인</dt>
+																<dd>(10mg)</dd>
+															</dl>
+															
+														</div>
+													</p>
+													<p class="alleg">알래르기 유발요인: 우유</p>
+												</a>
+											</div>
+											<div class="subType">
+												<p class="f20_4 mt30">1브라운슈가 라떼 브라운슈가 라떼</p>
+												<p class="f18_4 mt10">Cheese In Cheese Cake</p>
+											</div>
+											<!-- //제품 -->
+										</div>
+									</div>
+									<div class="col-md-6 col-lg-4 portfolio-cobbles-item glry-item col-sm-6 b2">
+										<div class="ba02">
+											<!-- 제품 -->
+											<div class="thumbnail2">
+												<div class="portfolio-item-img centered2">
+													<img th:src="@{/img/product/ck02.jpg}" alt="Portfolio Img" class="img-fluid portfolio-img">
+													<h5 class="portfolio-detail-title">BAKERY</h5>
+												</div>
+											</div>
+											<div class="portfolio-buttons">
+												<a href="#;" onClick="function()"> 
+													<p class="f32_4 pdTitle">브라운슈가 라떼</p>
+													<p class="mt10 g_type">넬보스코 에스프레소에 로우슈가 흑당을 더해! 넬보스코 에스프레소에 로우슈가 흑당을 더해!넬보스코 에스프레소에 로우슈가 흑당을 더해!</p>
+													<p class="f24_4 mt30">
+														<div class="infoBox">
+															<dl>
+																<dt>칼로리</dt>
+																<dd>(276Kcal)</dd>
+															</dl>
+															<dl>
+																<dt>당류</dt>
+																<dd>(41Kcal)</dd>
+															</dl>
+															<dl>
+																<dt>단백질</dt>
+																<dd>(6g)</dd>
+															</dl>
+															<dl>
+																<dt>포화지방</dt>
+																<dd>(4.3g)</dd>
+															</dl>
+															<dl>
+																<dt>카페인</dt>
+																<dd>(10mg)</dd>
+															</dl>
+															
+														</div>
+													</p>
+													<p class="alleg">알래르기 유발요인: 우유</p>
+												</a>
+											</div>
+											<div class="subType">
+												<p class="f20_4 mt30">브라운슈가 라떼</p>
+												<p class="f18_4 mt10">Cheese In Cheese Cake</p>
+											</div>
+											<!-- //제품 -->
+										</div>
+									</div>
+									<div class="col-md-6 col-lg-4 portfolio-cobbles-item glry-item col-sm-6 b3">
+										<div class="ba03">
+											<!-- 제품 -->
+											<div class="thumbnail2">
+												<div class="portfolio-item-img centered2">
+													<img th:src="@{/img/product/menu02.jpg}" alt="Portfolio Img" class="img-fluid portfolio-img">
+													<h5 class="portfolio-detail-title">BAKERY</h5>
+												</div>
+											</div>
+											<div class="portfolio-buttons">
+												<a href="#;" onClick="function()"> 
+													<p class="f32_4 pdTitle">브라운슈가 라떼</p>
+													<p class="mt10 g_type">넬보스코 에스프레소에 로우슈가 흑당을 더해! 넬보스코 에스프레소에 로우슈가 흑당을 더해!넬보스코 에스프레소에 로우슈가 흑당을 더해!</p>
+													<p class="f24_4 mt30">
+														<div class="infoBox">
+															<dl>
+																<dt>칼로리</dt>
+																<dd>(276Kcal)</dd>
+															</dl>
+															<dl>
+																<dt>당류</dt>
+																<dd>(41Kcal)</dd>
+															</dl>
+															<dl>
+																<dt>단백질</dt>
+																<dd>(6g)</dd>
+															</dl>
+															<dl>
+																<dt>포화지방</dt>
+																<dd>(4.3g)</dd>
+															</dl>
+															<dl>
+																<dt>카페인</dt>
+																<dd>(10mg)</dd>
+															</dl>
+															
+														</div>
+													</p>
+													<p class="alleg">알래르기 유발요인: 우유</p>
+												</a>
+											</div>
+											<div class="subType">
+												<p class="f20_4 mt30">브라운슈가 라떼</p>
+												<p class="f18_4 mt10">Cheese In Cheese Cake</p>
+											</div>
+											<!-- //제품 -->
+										</div>
+									</div>
+									
+								</div><!--// .row //-->
+
+								<!--
+								<script>
+									
+								  $( document ).ready( function() {
+									$( '.ba01' ).load( 'http://image.edaymall.com/images/mail/news/dcf/test/ba01' );
+									$( '.ba02' ).load( 'http://image.edaymall.com/images/mail/news/dcf/test/ba02' );
+									$( '.ba03' ).load( 'http://image.edaymall.com/images/mail/news/dcf/test/ba03' );
+									$( '.ba04' ).load( 'http://image.edaymall.com/images/mail/news/dcf/test/ba04' );
+									$( '.ba05' ).load( 'http://image.edaymall.com/images/mail/news/dcf/test/ba05' );
+									$( '.ba06' ).load( 'http://image.edaymall.com/images/mail/news/dcf/test/ba01' );
+									$( '.ba07' ).load( 'http://image.edaymall.com/images/mail/news/dcf/test/ba02' );
+									$( '.ba08' ).load( 'http://image.edaymall.com/images/mail/news/dcf/test/ba03' );
+								  } );
+								</script>
+								-->
+
+								<!-- // PC DISCOVER MENU -->
+							
+						</div><!-- products -->
+					</div>
+					 
+				</div>
+				<!-- row -->
+			</div><!-- // container -->
+
+
+		</section>
+		<!--// Portfolio Cobbles End //-->
+		
+		
+
+		
+		
+
+		
+		
+	</div>
+	<!-- ======================
+		 * //contant *
+	========================== -->
+
+	<!-- ====================== * FOOTER * ========================== -->
+	<footer class="container100" th:replace="fragments/mainFooter :: footerFragment"></footer>
+	<!-- ====================== * //FOOTER * ========================== -->
+	<div th:replace="fragments/footerScript :: footerScriptFragment"></div> 
+</div><!-- // wrap -->
+</body>
+</html>

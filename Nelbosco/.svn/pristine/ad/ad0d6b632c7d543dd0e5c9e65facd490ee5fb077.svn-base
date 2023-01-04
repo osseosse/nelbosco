@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nelbosco.mapper.GoodsMapper">
+
+	<sql id="goodsColumns">
+		  goods_code
+		, goods_name
+		, lgroup
+		, mgroup
+		, sgroup
+		, sale_gb
+		, keyword
+		, sale_price
+		, dc_price
+		, brand_code
+		, insert_id
+		, insert_date
+		, modify_id
+		, modify_date
+	</sql>
+
+	<select id="selectGoodsDetail" parameterType="long" resultType="com.nelbosco.domain.GoodsDTO">
+		SELECT
+			<include refid="goodsColumns" />
+		FROM
+			tb_goods
+		WHERE
+			sale_gb = '00'
+		AND
+			goods_code = #{goodsCode}
+	</select>
+
+	<select id="selectGoodsList" parameterType="com.nelbosco.domain.GoodsDTO" resultType="com.nelbosco.domain.GoodsDTO">
+		SELECT
+			<include refid="goodsColumns" />
+		FROM
+			tb_goods
+		WHERE
+			sale_gb = '00'
+		<include refid="CommonMapper.search" />
+		ORDER BY
+			goods_name ASC,
+			insert_date DESC
+		<include refid="CommonMapper.paging" />
+	</select>
+
+	<select id="selectGoodsTotalCount" parameterType="com.nelbosco.domain.GoodsDTO" resultType="int">
+		SELECT
+			COUNT(*)
+		FROM
+			tb_goods
+		WHERE
+			sale_gb = '00'
+		<include refid="CommonMapper.search" />
+	</select>
+
+</mapper>

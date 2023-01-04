@@ -1,0 +1,141 @@
+﻿<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<title>넬보스코 음료 이야기</title>
+    <head th:replace="fragments/head :: headFragment"></head>
+</head>
+<body>
+<div id="wrap">
+<header th:replace="fragments/mainHeader :: headerFragment"></header>
+<div id="contant">
+<!-- subBigBanner -->
+<div class="container100">
+	<div class="row" style="border:5px dsahed blue ">
+	  <div class="col-md-12 bg_drink subTop" >
+		<div class="coffeType">
+			<p class="f45_4w mt20">시그니처 음료, 스페셜 소이 밀크</p>
+			<p class="f20_4w"></p>
+		</div>
+	  </div>
+	</div>
+</div><!-- // container100 -->
+<!-- //subBigBanner -->
+
+<section class="section matychale-gallery-cobbles">
+    <div>
+              <div class="container">
+                  <div class="row">
+                          <div class="menu_cate">
+                          	<a href="/brandstory/about"><p>브랜드 스토리</p></a>
+                              <a href="/brandstory/bi"><p>브랜드 아이덴티티</p></a>
+                              <a href="/brandstory/place"><p>공간 이야기</p></a>
+                              <a href="/brandstory/lab"><p>연구소</p></a>
+                              <a href="/story/coffeeStory"><p>커피 이야기</p></a>
+                              <a href="/story/drink" class="active"><p>음료 이야기</p></a>
+                              <a href="/story/bakery"><p>베이커리 이야기</p></a>
+                              <!-- <a href="/story/music"><p>음악 공연 이야기</p></a> -->
+                          </div>
+                  </div>
+              </div>
+	</div>
+	<div class="container">
+		<div class="location">
+			<span><a href="">HOME</a></span><img th:src="@{/img/location_arrow.gif}">
+			<span><a href="">Brand Story</a></span><img th:src="@{/img/location_arrow.gif}">
+			<span>음료 이야기</span>
+		</div>
+	</div>
+	<div class="container Box1130">
+		    <div class="row mt120 " >
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<p class="f38_7">
+                           시그니처 두유를 이용한<br class="none2"> 건강하고 맛있는 소이 음료와 디저트,<br class="none">
+                           채식주의자를 위한 비건 음료 등<br class="none">
+                           넬보스코에서만 경험할 수 있는 메뉴들을 제공합니다.
+
+						
+                       </p>
+				</div>
+			</div>
+			<div class="row mt160">
+			  <div class="col-lg-4 col-md-12 col-sm-12 mb70 mt50m" >
+			        <p class="f20_7g">Special Soy Milk</p>
+					<p class="f40_7 mt20">스페셜 소이 밀크</p>
+					<p class="f20_4 mt50"> 
+						두유를 이용한 건강하고<br class="none">
+                           맛있는 스페셜 소이 밀크로<br class="none"><br>
+                           넬보스코의 시그니처 음료입니다.<br class="none">
+					</p>
+			  </div>
+			  <div class="col-lg-8 col-md-12 col-sm-12" >
+					<img class="img100" th:src="@{/img/drink_01.jpg}" alt="스페셜소이밀크"/>
+			  </div>
+			</div>
+			<div class="row mt120">
+                   <div class="center col-lg-4 col-md-4 col-sm-6 mt30m">
+                       <img th:src="@{/img/drink_02.png}" alt="인절미소이라떼">
+                       <p class="f24_4 mt10">인절미 소이 라떼</p>
+                   </div>
+                   <div class="center col-lg-4 col-md-4 col-sm-6 mt30m">
+                       <img th:src="@{/img/drink_03.png}" alt="말차 소이 라떼">
+                       <p class="f24_4 mt10">말차 소이 라떼</p>
+                   </div>
+                   <div class="center col-lg-4 col-md-4 col-sm-6 mt30m">
+                       <img th:src="@{/img/drink_04.png}" alt="바닐라 소이 밀크티">
+                       <p class="f24_4 mt10">바닐라 소이 밀크티</p>
+                   </div>
+			</div>
+			
+		</div>
+		<!--// .container100_15 //-->
+
+
+		<div class="container mt160 Box1130">
+			<div class="row">
+			  <div class="col-lg-4 col-md-12 col-sm-12  mb70  mt50m" >
+			        <p class="f20_7g">Vegan Drink</p>
+					<p class="f40_7 mt20">비건 음료</p>
+					<p class="f20_4 mt50"> 
+						채식주의자분을 위한 비건 음료로,<br class="none">
+                           동물성 재료를 넣지 않고 만들었습니다.<br class="none"><br>
+                           동물성 재료를 제외하여<br class="none"> 
+                           보다 담백하고 깔끔한 맛을<br class="none">
+                           즐길 수 있습니다.
+					</p>
+			  </div>
+			  <div class="col-lg-8 col-md-12 col-sm-12" >
+					<img class="img100" th:src="@{/img/drink_05.jpg}" alt="비건음료"/>
+			  </div>
+			</div>
+			<div class="row mt120">
+                   <div class="center col-lg-4 col-md-4 col-sm-6 mt30m">
+                       <img th:src="@{/img/drink_06.png}" alt="비건 레드 스무디">
+                       <p class="f24_4 mt10">비건 레드 스무디</p>
+                   </div>
+                   <div class="center col-lg-4 col-md-4 col-sm-6 mt30m">
+                       <img th:src="@{/img/drink_07.png}" alt="비건 그린 스무디">
+                       <p class="f24_4 mt10">비건 그린 스무디</p>
+                   </div>
+                   <!--  
+                   <div class="center col-lg-4 col-md-4 col-sm-6 mt30m">
+                       <img th:src="@{/img/drink_08.png}" alt="핑크 자몽 블랙티">
+                       <p class="f24_4 mt10">핑크 자몽 블랙티</p>
+                   </div>
+                   -->
+               </div>
+		</div><!-- // container -->
+
+
+	</section>
+	<!--// Portfolio Cobbles End //-->	
+</div>
+<!-- ======================
+	 * //contant *
+========================== -->
+<!-- ====================== * FOOTER * ========================== -->
+<footer class="container100" th:replace="fragments/mainFooter :: footerFragment"></footer>
+<!-- ====================== * //FOOTER * ========================== -->
+<div th:replace="fragments/footerScript :: footerScriptFragment"></div> 
+</div><!-- // wrap -->
+</body>
+</html>

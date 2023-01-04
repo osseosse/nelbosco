@@ -1,0 +1,196 @@
+﻿<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head th:replace="fragments/head :: headFragment">
+<th:block layout:fragment="script"></head>
+<body>
+<div id="wrap">
+<!-- ====================== * HEADER *========================== -->
+<header th:replace="fragments/mainHeader :: headerFragment"></header>
+<!-- ======================* //HEADER *========================== -->
+
+	<!-- ======================
+		 * contant *
+	========================== -->
+	<div id="contant">
+		<!-- subBigBanner -->
+		<div class="container100">
+			<div class="row">
+			  <div class="col-md-12 bg_event subTop">
+				<div class="coffeType">
+					<p class="f45_4w mt20">이벤트</p>
+				</div>
+			  </div>
+			</div>
+		</div><!-- // container100 -->
+		<!-- //subBigBanner -->
+
+		<!--// Portfolio Cobbles Start //-->
+		<section class="section matychale-gallery-cobbles" >
+			<div>
+				<div class="container">
+					<div class="row">
+						<div class="menu_cate">
+							<a href="notice" ><p>공지사항</p></a>
+							<a href="event" class="current"><p>이벤트</p></a>
+							<a href="recipe"><p>넬보스코 맛있는 레시피</p></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="location">
+					<span><a href="">HOME</a></span><img th:src="@{/img/location_arrow.gif}">
+					<span><a href="">Community</a></span><img th:src="@{/img/location_arrow.gif}">
+					<span>이벤트</span>
+				</div>
+				<div class="row clearboth mt100">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						
+						<!-- Vetical -->
+						<div id="css3-animated-example3" class="mt50m">
+							<th:block th:if="${eventList !=null}" th:each="event : ${eventList}">
+								<div class="cae">
+									<ul>
+										<li th:text="${event.idx}"></li>
+										<li>
+											<div class="thumbnail-wrapper">
+												<div class="thumbnail">
+													<div class="centered">
+														<img th:src="@{'/img/'+ ${event.imgPath}}" alt="제품사진"/>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li th:text="${event.title}"></li>
+										<li th:text="${#temporals.format(event.insertTime, 'yyyy-MM-dd')}"></li>
+									</ul>
+								</div>
+								<div>
+									<div class="v_content">
+										<p><img th:src="@{'/img/'+ ${event.imgPath}}" alt="제품사진"/></p>
+									</div>
+								</div>
+							</th:block>
+						</div>
+						<script>
+							$("#css3-animated-example3").collapse({
+							  accordion: true,
+							  open: function() {
+								this.addClass("open");
+								this.css({ height: this.children().outerHeight() });
+							  },
+							  close: function() {
+								this.css({ height: "0px" });
+								this.removeClass("open");
+							  }
+							});
+						</script>
+						<!-- // Vetical -->
+					</div>
+				</div>
+				<!-- //row -->
+
+				<!-- paging -->
+				<th:block layout:fragment="paging">
+					<nav th:replace="fragments/common :: pagination"></nav>
+				</th:block>
+				<!-- paging //-->
+			</div><!-- // container -->
+		</section>
+		<!--// Portfolio Cobbles End //-->	
+	</div>
+	<!-- ======================
+		 * //contant *
+	========================== -->
+
+	<!-- ====================== * FOOTER * ========================== -->
+	<footer class="container100" th:replace="fragments/mainFooter :: footerFragment"></footer>
+	<!-- ====================== * //FOOTER * ========================== -->
+	<div th:replace="fragments/footerScript :: footerScriptFragment"></div>
+</div><!-- // wrap -->
+<th:block layout:fragment="script">
+<script th:inline="javascript">
+	/*<![CDATA[*/
+	function movePage(uri, queryString) {
+		location.href = uri + queryString;
+	}
+/*
+	function getQueryStringObject(queryString) {
+	    var a = queryString.split('&');
+	    if (a == "") return {};
+	    var b = {};
+	    for (var i = 0; i < a.length; ++i) {
+	        var p = a[i].split('=', 2);
+	        if (p.length == 1)
+	            b[p[0]] = "";
+	        else
+	            b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
+	    }
+	    return b;
+	}
+	
+	function movePage(uri, queryString) {
+		var qs = getQueryStringObject(queryString.substr(1));
+		var cpn = qs.currentPageNo;
+		var rpp = qs.recordsPerPage;
+		var eventDTO={
+				currentPageNo:cpn, recordsPerPage:rpp
+		    };
+		
+		$.ajax({
+		    url: '/event/more',
+		    contentType: "application/json; charset=utf-8",
+		    dataType:'json',
+		    data: eventDTO,
+		    async: false,
+		    success:function(response){
+		      	if(response != null){
+		            var eventList = response.eventList;
+		            var timehtml = "";
+		            var size = eventList.length;
+		            
+		            for(var i=0;i<size; i++){
+		            	  var date = eventList[i].insertTime.substring(0,10);
+		            	  
+		                  timehtml+='<div class="cae">';
+		                  //timehtml+='<a href="#test'+i+'" data-toggle="collapse">';
+		                  timehtml+='<ul>';
+		                  timehtml+='<li>'+eventList[i].idx+'</li>';
+		                  timehtml+='<li><div class="thumbnail-wrapper">';
+		                  timehtml+='<div class="thumbnail">';
+		                  timehtml+='<div class="centered">';
+		                  timehtml+='<img src="/img/'+ eventList[i].imgPath+'" alt="제품사진" >';
+		                  timehtml+='</div>';
+		                  timehtml+='</div>';
+		                  timehtml+='</div></li>';
+		                  timehtml+='<li>'+eventList[i].title+'</li>';
+		                  timehtml+='<li>'+date+'</li>';
+		                  timehtml+='</ul>';
+		                  //timehtml+='</a>';
+		                  timehtml+='</div>';
+		                  timehtml+='<div>';
+		                  timehtml+='<div class="v_content">';
+		                  timehtml+='<p><img src="/img/'+ eventList[i].imgPath+'" alt="제품사진" ></p>';
+		                  timehtml+='</div>';
+		                  timehtml+='</div>';
+		                  
+		            }//for		            
+		           
+		            $('#css3-animated-example3').html(timehtml).trigger("create");
+		            
+		        }else{
+		          //alert("품절입니다.");
+		        }
+		    },error:function(request,status,error){
+		      alert("다시시도해주세요");
+		      alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+		      //winddow.href="/";
+		    } 
+		  });
+	}
+		*/
+	/*]]>*/
+</script>
+</th:block>					
+</body>
+</html>

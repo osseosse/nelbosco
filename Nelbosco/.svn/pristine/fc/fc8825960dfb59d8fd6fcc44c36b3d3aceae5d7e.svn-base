@@ -1,0 +1,67 @@
+﻿<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head th:replace="fragments/head :: headFragment"></head>
+<body>
+<div id="wrap">
+<!-- ====================== * HEADER *========================== -->
+<header th:replace="fragments/mainHeader :: headerFragment"></header>
+<!-- ======================* //HEADER *========================== -->
+
+	<!-- ====================== * contant * ========================== -->
+	<div id="contant">
+		<!-- subBigBanner -->
+		<div class="container100">
+			<div class="row">
+			  <div class="col-md-12 bg_about subTop">
+				<div class="coffeType">
+					<p class="f45_4w  f_mw">Brand Identity</p>
+				</div>
+			  </div>
+			</div>
+		</div><!-- // container100 -->
+		<!-- //subBigBanner -->
+
+
+		<!--// Portfolio Cobbles Start //-->
+		<section class="section">
+			<div class="container">
+				<div class="row">
+				  <div class="col-md-12 subTop mt100">
+					<p class="f32_7 mt70 center">nelBosco는 이탈리아어로 ‘숲속에서’라는 의미입니다.</p>
+					<p class="f20_4 mt30 center">
+					심볼은 매장 이름과 같이 음악이 있는 숲속의 평온함을 형상화한 이미지입니다.<br>
+					넬보스코는 아름다운 공간과 음악 그리고 건강한 먹거리 어우러져 있는 힐링 공간을 추구합니다. 
+					</p>
+					<p class="img100"><img th:src="@{/img/bi.jpg}" alt="bi" /></p>
+				  </div>
+				</div>
+			</div>
+			<!--// .container100_15 //-->
+
+			<!--
+			<div class="container mt100">
+				<div class="row" >
+					<div class="col-lg-6 col-md-6 col-sm-6  mt70 mb70" >
+						<p class="mt40"><img th:src="{@/img/about_02.jpg}" alt="제품사진"/></p>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6  mt70"  >
+						<p class="mt40"><img th:src="{@/img/about_03.jpg}" alt="제품사진"/></p>
+					</div>
+				</div>
+				
+			</div>-->
+
+
+		</section>
+		<!--// Portfolio Cobbles End //-->
+	</div>
+	<!-- ====================== * //contant * ========================== -->
+	
+	<!-- ====================== * FOOTER * ========================== -->
+	<footer class="container100" th:replace="fragments/mainFooter :: footerFragment"></footer>
+	<!-- ====================== * //FOOTER * ========================== -->
+	<div th:replace="fragments/footerScript :: footerScriptFragment"></div> 
+	
+</div><!-- // wrap -->
+</body>
+</html>

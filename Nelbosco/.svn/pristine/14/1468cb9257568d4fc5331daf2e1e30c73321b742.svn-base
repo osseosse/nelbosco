@@ -1,0 +1,208 @@
+﻿<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+	<meta name="author" content="osse">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<meta name="description" content="넬보스코 이탈리안 레스토랑 사이트에 오신것을 환영합니다."/> 
+	<meta name="Keywords" content="넬보스코, 이탈리안 레스토랑, 남촌, 다이닝, 디너, 콘서트,  와인, 정식품, 베지밀, 음악 " />
+	<meta property="og:title" content="넬보스코 이탈리안 레스토랑"> 
+	<meta property="og:url" content="https://nelbosco.co.kr/b_index"> 
+	<meta property="og:image" content="https://nelbosco.co.kr/img/brunch/ogImg.jpg" /> 
+	<meta property="og:description" content="넬보스코 이탈리안 레스토랑은 경쾌하게 재해석한 이탈리안 캐주얼 브런치 & 다이닝입니다."/> 
+    <title>넬보스코 이탈리안 레스토랑 이벤트</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script type="text/javascript" src="./common/js/common.js"></script><!-- GNB PC웹접근성 메뉴 -->
+	<script src="./common/js/jquery.collapse.js"></script><!-- FAQ vertical -->
+	<link href="./common/css/reset.css" rel="stylesheet">
+	<link href="./common/css/bootstrap.css" rel="stylesheet">
+    <link href="./common/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+	<div id="wrap">
+	<!-- ======================
+		 * HEADER *
+	========================== -->
+    <header>
+	
+	</header>
+	<script>
+		/* 로드방식 local 크롬에서 노출되지 않음. */
+	  $( document ).ready( function() {
+		$( 'header' ).load( './b_mainHeader.html' );
+	  } );
+	</script>
+	<!-- ======================
+		 * //HEADER *
+	========================== -->
+
+	<!-- ======================
+		 * contant *
+	========================== -->
+	<div id="contant">
+		<!-- subBigBanner -->
+		<div class="container100">
+			<div class="row">
+			  <div class="col-md-12 bg_b_event subTop">
+				<div class="coffeType">
+					<p class="f45_4w mt20 f_mo">Event</p>
+				</div>
+			  </div>
+			</div>
+		</div><!-- // container100 -->
+		<!-- //subBigBanner -->
+
+
+		<!--// Portfolio Cobbles Start //-->
+		<section class="section matychale-gallery-cobbles" >
+			<div>
+				<div class="container">
+					<div class="row">
+						<div class="menu_cate2">
+							<a href="b_notice.html"><p>공지사항</p></a>
+							<a href="b_contact.html"><p>고객상담</p></a>
+							<a href="b_event.html" class="current"><p>이벤트</p></a>
+							<a href="b_map.html"><p>오시는길</p></a>
+							<a href="b_faq.html"><p>자주묻는질문</p></a>
+							<a href="#"><p>예약하기</p></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="location">
+					<span><a href="">HOME</a></span><img src="./img/location_arrow.gif">
+					<span><a href="">Contact</a></span><img src="./img/location_arrow.gif">
+					<span>이벤트</span>
+				</div>
+				<div class="row clearboth mt100">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						
+						<!-- Vetical -->
+						<div id="css3-animated-example3" class="mt50m">
+							<div class="cae">
+								<ul>
+									<li>2</li>
+									<li>
+										<div class="thumbnail-wrapper">
+											<div class="thumbnail">
+												<div class="centered">
+													<img src="./img/open_banner_20210714.jpg" alt="오픈썸네일"/>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>고객 감사 할인 이벤트</li>
+									<li>2021.07.16</li>
+								</ul>
+							</div>
+							<div>
+								<div class="v_content">
+									<p><img src="./img/open_banner_20210714.jpg" alt="오픈배너1"/></p>
+								</div>
+							</div>
+							<div class="cae">
+								<ul>
+									<li>1</li>
+									<li>
+										<div class="thumbnail-wrapper">
+											<div class="thumbnail">
+												<div class="centered">
+													<img src="./img/open_banner_thum.jpg" alt="오픈썸네일"/>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>넬보스코 GRAND OPEN </li>
+									<li>2021.06.08</li>
+								</ul>
+							</div>
+							<div>
+								<div class="v_content">
+									<p><img src="./img/open_banner.jpg" alt="오픈배너1"/></p>
+								</div>
+							</div>
+							
+
+							
+						</div>
+						<script>
+						$("#css3-animated-example3").collapse({
+						  accordion: true,
+						  open: function() {
+							this.addClass("open");
+							this.css({ height: this.children().outerHeight() });
+						  },
+						  close: function() {
+							this.css({ height: "0px" });
+							this.removeClass("open");
+						  }
+						});
+						</script>
+						<!-- // Vetical -->
+					</div>
+				</div>
+				<!-- //row -->
+
+				<!-- paging -->
+				<div class="paging3">
+					<ol>
+						<li class="preEnd"><img src="img/btn_preEnd.gif" alt="처음" /></li>
+						<li class="pre"><img src="img/btn_pre.gif" alt="이전" /></li>
+						<li><a href="#">1</a></li>
+						<li class="active">2</li><!-- 현재페이지 -->
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li class="next"><img src="img/btn_next.gif" alt="다음" /></li>
+						<li class="nextEnd"><img src="img/btn_nextEnd.gif" alt="끝" /></li>
+					</ol>
+				</div>
+				<!-- paging //-->
+			</div><!-- // container -->
+
+
+		</section>
+		<!--// Portfolio Cobbles End //-->
+		
+		
+
+		
+		
+
+		
+		
+	</div>
+	<!-- ======================
+		 * //contant *
+	========================== -->
+
+	<!-- ======================
+		 * FOOTER *
+	========================== -->
+	<footer class="container100 bg_black">
+		
+	</footer>
+	<script>
+		/* 로드방식 local 크롬에서 노출되지 않음. */
+	  $( document ).ready( function() {
+		$( 'footer' ).load( './mainFooter.html' );
+	  } );
+	</script>
+	<!-- ======================
+		 * //FOOTER *
+	========================== -->
+	<!-- 모바일 메뉴 -->
+	<script src="./common/js/jquery.collapse.js"></script>
+	<script src="./common/js/script.js"></script> 
+	<!-- 엔바토 : matychale-masonry & grid gallery -->
+	<script src="./common/js/main.js"></script>
+	<script src="./common/js/plugins.js"></script>
+	<!-- prrple 모바일용 슬라이드 -->
+	<script src="./common/js/prrple.slider.js"></script>
+	<script src="./common/js/jquery.touchSwipe.1.6.min.js"></script>
+	</div><!-- // wrap -->
+	</body>
+</html>

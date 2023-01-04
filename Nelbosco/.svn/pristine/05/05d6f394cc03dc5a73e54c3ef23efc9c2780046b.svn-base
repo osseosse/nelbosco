@@ -1,0 +1,566 @@
+﻿<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<title>넬보스코  남촌빵집</title>
+    <head th:replace="fragments/head :: headFragment"></head>
+</head>
+<body>
+<div id="wrap">
+<!-- ====================== * HEADER *========================== -->
+<header th:replace="fragments/mainHeader :: headerFragment"></header>
+<!-- ======================* //HEADER *========================== -->
+<div id="contant">
+	<!-- REVOLUTION SLIDER -->
+	<div id="rev_slider_5_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container slide-overlay" data-alias="classic4export" data-source="gallery">
+		<!-- START REVOLUTION SLIDER 5.4.8 auto mode -->
+		<div id="rev_slider_5_1" class="rev_slider fullwidthabanner rev_slider_5_1_height" data-version="5.4.8.1">
+			<ul>
+				<li data-index="rs-1" data-transition="curtain-3" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="./img/mainBig01.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+					
+					<img th:src="@{/img/mainBig01.jpg}" alt="" title="Home 1" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+					<div class="tp-caption tp-resizeme slide-main-text" id="slide-1-layer-2" data-x="['center','center','center','center']" data-hoffset="['0','0','0','-1']" data-y="['middle','middle','middle','middle']" data-voffset="['-70','-70','-85','-23']"
+					data-fontsize="['70','70','60','42']"
+					data-lineheight="['100','100','70','60']"
+					data-fontweight="['500','500','500','500']"
+					data-color="['rgb(240, 244, 247)','rgb(240, 244, 247)','rgb(240, 244, 247)','rgb(240, 244, 247)']"
+					data-width="none"
+					data-height="none"
+					data-whitespace="nowrap"
+					data-type="text"
+					data-responsive_offset="on"
+					data-frames='[{"delay":90,"split":"chars","splitdelay":0.05000000000000000277555756156289135105907917022705078125,"speed":500,"split_direction":"forward","frame":"0","from":"y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power0.easeIn"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+					data-textAlign="['inherit','inherit','inherit','inherit']"
+					data-paddingtop="[0,0,0,0]"
+					data-paddingright="[0,0,0,0]"
+					data-paddingbottom="[0,0,0,0]"
+					data-paddingleft="[0,0,0,0]"
+					 >The Brilliant Moment</div>
+					<div class="tp-caption tp-resizeme" id="slide-1-layer-6" data-x="['center','center','center','center']" data-hoffset="['0','0','1','-432']" data-y="['middle','middle','middle','middle']" data-voffset="['25','25','-17','-67']"
+					data-fontsize="['40','40','27','27']"
+					data-lineheight="['40','40','27','27']"
+					data-fontweight="['400','400','400','400']"
+					data-color="['rgb(255, 255, 255)','rgb(255, 255, 255)','rgb(255, 255, 255)','rgb(255, 255, 255)']"
+					data-width="none"
+					data-height="none"
+					data-whitespace="nowrap"
+					data-visibility="['on','on','on','off']"
+					data-type="text"
+					data-responsive_offset="on"
+					data-frames='[{"delay":580,"speed":500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power0.easeIn"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+					data-textAlign="['inherit','inherit','inherit','inherit']"
+					data-paddingtop="[0,0,0,0]"
+					data-paddingright="[0,0,0,0]"
+					data-paddingbottom="[0,0,0,0]"
+					data-paddingleft="[0,0,0,0]"
+					>일상의 특별한 순간, 넬보스코</div>
+				</li>
+
+				<!--2 -->
+				<li data-index="rs-2" data-transition="curtain-3" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="./img/mainBig02.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+
+					<img th:src="@{/img/mainBig02.jpg}" alt="" title="Home 1" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+					<div class="tp-caption tp-resizeme slide-main-text" id="slide-1-layer-2" data-x="['center','center','center','center']" data-hoffset="['0','0','0','-1']" data-y="['middle','middle','middle','middle']" data-voffset="['-70','-70','-85','-23']"
+					data-fontsize="['76','76','60','42']"
+					data-lineheight="['100','100','70','60']"
+					data-fontweight="['400','400','400','400']"
+					data-color="['rgb(240, 244, 247)','rgb(240, 244, 247)','rgb(240, 244, 247)','rgb(240, 244, 247)']"
+					data-width="none"
+					data-height="none"
+					data-whitespace="nowrap"
+					data-type="text"
+					data-responsive_offset="on"
+					data-frames='[{"delay":90,"split":"chars","splitdelay":0.05000000000000000277555756156289135105907917022705078125,"speed":500,"split_direction":"forward","frame":"0","from":"y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power0.easeIn"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+					data-textAlign="['inherit','inherit','inherit','inherit']"
+					data-paddingtop="[0,0,0,0]"
+					data-paddingright="[0,0,0,0]"
+					data-paddingbottom="[0,0,0,0]"
+					data-paddingleft="[0,0,0,0]"
+					>The Brilliant Moment</div>
+				   
+					<div class="tp-caption tp-resizeme" id="slide-1-layer-6" data-x="['center','center','center','center']" data-hoffset="['0','0','1','-432']" data-y="['middle','middle','middle','middle']" data-voffset="['25','25','-17','-67']"
+					
+					data-fontsize="['40','40','27','27']"
+					data-lineheight="['40','40','27','27']"
+					data-fontweight="['500','500','500','500']"
+					data-color="['rgb(255, 255, 255)','rgb(255, 255, 255)','rgb(255, 255, 255)','rgb(255, 255, 255)']"
+					data-width="none"
+					data-height="none"
+					data-whitespace="nowrap"
+					data-visibility="['on','on','on','off']"
+					data-type="text"
+					data-responsive_offset="on"
+					data-frames='[{"delay":580,"speed":500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power0.easeIn"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+					data-textAlign="['inherit','inherit','inherit','inherit']"
+					data-paddingtop="[0,0,0,0]"
+					data-paddingright="[0,0,0,0]"
+					data-paddingbottom="[0,0,0,0]"
+					data-paddingleft="[0,0,0,0]"
+					>일상의 특별한 순간, 넬보스코</div>
+				</li>
+
+				<!-- 3 -->
+				<li data-index="rs-3" data-transition="curtain-3" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="./img/mainBig03.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+
+					<img th:src="@{/img/mainBig03.jpg}" alt="" title="Home 1" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+
+					<div class="tp-caption tp-resizeme slide-main-text" id="slide-1-layer-2" data-x="['center','center','center','center']" data-hoffset="['0','0','0','-1']" data-y="['middle','middle','middle','middle']" data-voffset="['-70','-70','-85','-23']"
+				   
+					data-fontsize="['76','76','60','42']"
+					data-lineheight="['100','100','70','60']"
+					data-fontweight="['400','400','400','400']"
+					data-color="['rgb(240, 244, 247)','rgb(240, 244, 247)','rgb(240, 244, 247)','rgb(240, 244, 247)']"
+					data-width="none"
+					data-height="none"
+					data-whitespace="nowrap"
+					data-type="text"
+					data-responsive_offset="on"
+					data-frames='[{"delay":90,"split":"chars","splitdelay":0.05000000000000000277555756156289135105907917022705078125,"speed":500,"split_direction":"forward","frame":"0","from":"y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power0.easeIn"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+					data-textAlign="['inherit','inherit','inherit','inherit']"
+					data-paddingtop="[0,0,0,0]"
+					data-paddingright="[0,0,0,0]"
+					data-paddingbottom="[0,0,0,0]"
+					data-paddingleft="[0,0,0,0]"
+					>The Brilliant Moment</div>
+
+					
+					<div class="tp-caption tp-resizeme" id="slide-1-layer-6" data-x="['center','center','center','center']" data-hoffset="['0','0','1','-432']" data-y="['middle','middle','middle','middle']" data-voffset="['25','25','-17','-67']"
+					
+					data-fontsize="['40','40','27','27']"
+					data-lineheight="['40','40','27','27']"
+					data-fontweight="['500','500','500','500']"
+					data-color="['rgb(255, 255, 255)','rgb(255, 255, 255)','rgb(255, 255, 255)','rgb(255, 255, 255)']"
+					data-width="none"
+					data-height="none"
+					data-whitespace="nowrap"
+					data-visibility="['on','on','on','off']"
+					data-type="text"
+					data-responsive_offset="on"
+					data-frames='[{"delay":580,"speed":500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power0.easeIn"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+					data-textAlign="['inherit','inherit','inherit','inherit']"
+					data-paddingtop="[0,0,0,0]"
+					data-paddingright="[0,0,0,0]"
+					data-paddingbottom="[0,0,0,0]"
+					data-paddingleft="[0,0,0,0]"
+					>일상의 특별한 순간, 넬보스코 </div>
+					
+				</li>
+
+
+				<li data-index="rs-4" data-transition="curtain-3" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="./img/mainBig04.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+
+					<img th:src="@{/img/mainBig04.jpg}" alt="" title="Home 1" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+
+					<div class="tp-caption tp-resizeme slide-main-text" id="slide-1-layer-2" data-x="['center','center','center','center']" data-hoffset="['0','0','0','-1']" data-y="['middle','middle','middle','middle']" data-voffset="['-70','-70','-85','-23']"
+				   
+					data-fontsize="['76','76','60','42']"
+					data-lineheight="['100','100','70','60']"
+					data-fontweight="['400','400','400','400']"
+					data-color="['rgb(240, 244, 247)','rgb(240, 244, 247)','rgb(240, 244, 247)','rgb(240, 244, 247)']"
+					data-width="none"
+					data-height="none"
+					data-whitespace="nowrap"
+					data-type="text"
+					data-responsive_offset="on"
+					data-frames='[{"delay":90,"split":"chars","splitdelay":0.05000000000000000277555756156289135105907917022705078125,"speed":500,"split_direction":"forward","frame":"0","from":"y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power0.easeIn"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+					data-textAlign="['inherit','inherit','inherit','inherit']"
+					data-paddingtop="[0,0,0,0]"
+					data-paddingright="[0,0,0,0]"
+					data-paddingbottom="[0,0,0,0]"
+					data-paddingleft="[0,0,0,0]"
+					>The Brilliant Moment</div>
+					
+					
+				   
+					<div class="tp-caption tp-resizeme" id="slide-1-layer-6" data-x="['center','center','center','center']" data-hoffset="['0','0','1','-432']" data-y="['middle','middle','middle','middle']" data-voffset="['25','25','-17','-67']"
+					
+					data-fontsize="['40','40','27','27']"
+					data-lineheight="['40','40','27','27']"
+					data-fontweight="['500','500','500','500']"
+					data-color="['rgb(255, 255, 255)','rgb(255, 255, 255)','rgb(255, 255, 255)','rgb(255, 255, 255)']"
+					data-width="none"
+					data-height="none"
+					data-whitespace="nowrap"
+					data-visibility="['on','on','on','off']"
+					data-type="text"
+					data-responsive_offset="on"
+					data-frames='[{"delay":580,"speed":500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power0.easeIn"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+					data-textAlign="['inherit','inherit','inherit','inherit']"
+					data-paddingtop="[0,0,0,0]"
+					data-paddingright="[0,0,0,0]"
+					data-paddingbottom="[0,0,0,0]"
+					data-paddingleft="[0,0,0,0]"
+					>일상의 특별한 순간, 넬보스코</div>
+			
+				</li>
+				<li data-index="rs-5" data-transition="curtain-3" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="./img/mainBig05.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+
+					<img th:src="@{/img/mainBig05.jpg}" alt="" title="Home 1" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+
+					<div class="tp-caption tp-resizeme slide-main-text" id="slide-1-layer-2" data-x="['center','center','center','center']" data-hoffset="['0','0','0','-1']" data-y="['middle','middle','middle','middle']" data-voffset="['-70','-70','-85','-23']"
+				   
+					data-fontsize="['76','76','60','42']"
+					data-lineheight="['100','100','70','60']"
+					data-fontweight="['400','400','400','400']"
+					data-color="['rgb(240, 244, 247)','rgb(240, 244, 247)','rgb(240, 244, 247)','rgb(240, 244, 247)']"
+					data-width="none"
+					data-height="none"
+					data-whitespace="nowrap"
+					data-type="text"
+					data-responsive_offset="on"
+					data-frames='[{"delay":90,"split":"chars","splitdelay":0.05000000000000000277555756156289135105907917022705078125,"speed":500,"split_direction":"forward","frame":"0","from":"y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power0.easeIn"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+					data-textAlign="['inherit','inherit','inherit','inherit']"
+					data-paddingtop="[0,0,0,0]"
+					data-paddingright="[0,0,0,0]"
+					data-paddingbottom="[0,0,0,0]"
+					data-paddingleft="[0,0,0,0]"
+					>The Brilliant Moment</div>
+
+				   
+					<div class="tp-caption tp-resizeme" id="slide-1-layer-6" data-x="['center','center','center','center']" data-hoffset="['0','0','1','-432']" data-y="['middle','middle','middle','middle']" data-voffset="['25','25','-17','-67']"
+					
+					data-fontsize="['40','40','27','27']"
+					data-lineheight="['40','40','27','27']"
+					data-fontweight="['500','500','500','500']"
+					data-color="['rgb(255, 255, 255)','rgb(255, 255, 255)','rgb(255, 255, 255)','rgb(255, 255, 255)']"
+					data-width="none"
+					data-height="none"
+					data-whitespace="nowrap"
+					data-visibility="['on','on','on','off']"
+					data-type="text"
+					data-responsive_offset="on"
+					data-frames='[{"delay":580,"speed":500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power0.easeIn"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+					data-textAlign="['inherit','inherit','inherit','inherit']"
+					data-paddingtop="[0,0,0,0]"
+					data-paddingright="[0,0,0,0]"
+					data-paddingbottom="[0,0,0,0]"
+					data-paddingleft="[0,0,0,0]"
+					>일상의 특별한 순간, 넬보스코</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 제스터 : Revolution Slider -->
+	<script th:src="@{/js/jquery.themepunch.tools.min.js}"></script>
+	<script th:src="@{/js/jquery.themepunch.revolution.min.js}"></script>
+	<script th:src="@{/js/slider.js}"></script>
+	<script th:src="@{/js/extensions/revolution.extension.slideanims.min.js}"></script>
+	<script th:src="@{/js/extensions/revolution.extension.navigation.min.js}"></script>
+	<script th:src="@{/js/extensions/revolution.extension.parallax.min.js}"></script>
+	<script th:src="@{/js/extensions/revolution.extension.layeranimation.min.js}"></script>
+	<!-- END REVOLUTION SLIDER -->
+
+	<div class="container100">
+			<div class="spot_mo"><a href="/community/event"><img th:src="@{/img/top_spotbanner_mo.jpg}" alt="" /></a></div> 
+		<div class="row">
+			<div class="col-lg-12 center">
+				<p class="mt110 f20_4 ">OUR STORY</p>
+				<p class="mt10 f48_7">ABOUT Nel Bosco</p><!-- 2021-06-10 -->
+			</div>
+		</div><!-- /.row -->
+		<div class="row mt90">
+			<div class="col-lg-6">
+				<p><img th:src="@{/img/main_01.jpg}" alt="넬보스코테이트아웃잔" /></p>
+			</div>
+			<div class="col-lg-6">
+				<div class="ourBox">
+					<p class="f22_4">우리는 늘 건강하고 행복한 공간을<br>만들기 위해 고민했습니다. </p>
+					<p class="f22_4 mt30">신선한 커피와 갓 구운 빵이 함께 하는 곳,<br>건강한 음식과 좋은 사람들이 함께하는 곳,<br>잠깐의 휴식과 일상 속의 특별함이 함께하는 곳,  </p>
+					<p class="f42_7 mt50">바로, 넬보스코입니다. </p>
+					<p class="mt70 btn_about"><a href="/brandstory/about">ABOUT US</a></p>
+				</div>
+			</div>
+			
+		</div><!-- /.row -->
+		<!-- START THE FEATURETTES -->
+	</div><!-- /.container -->
+	<div class="container100">
+		<div class="row">
+			<div class="col-lg-12 center mt130">
+				<!-- pp slide -->
+				<div  id="slider1">
+					<div class="slider">
+						<div class="slider_area">
+							<div class="slides">
+								<div class="slide">
+									<div class="bg_int01 h800">
+										<div class="intBox">
+											<p class="f20_4w">Nel Bosco Place</p><!-- 2021-06-10 -->
+											<p class="f65_6w mt10">Terrace</p>
+											<p class="f22_4w mt40">정원이 있는 테라스는 도심 속 답답함에 지칠 때<br>한 줄기 시원한 바람을 느끼며 휴식하는 공간입니다.</p>
+											<p class="btn_about_w mt40"><a href="/brandstory/place">넬보스코 공간 이야기</a></p>
+										</div>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="bg_int02 h800">
+										<div class="intBox">
+											<p class="f20_4w">Nel Bosco Place</p><!-- 2021-06-10 -->
+											<p class="f65_6w mt10">1F. Bakery Cafe</p>
+											<p class="f22_4w mt40">넬보스코를 찾는 고객 분들이 편안하고 특별한 순간을<br>즐기실 수 있도록 최선을 다하겠습니다. </p>
+											<p class="btn_about_w mt40"><a href="/brandstory/place">넬보스코 공간 이야기</a></p>
+										</div>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="bg_int03 h800">
+										<div class="intBox">
+											<p class="f20_4w">Nel Bosco Place</p><!-- 2021-06-10 -->
+											<p class="f65_6w mt10">1F. Bakery Cafe</p>
+											<p class="f22_4w mt40">넬보스코를 찾는 고객 분들이 편안하고 특별한 순간을<br>즐기실 수 있도록 최선을 다하겠습니다. </p>
+											<p class="btn_about_w mt40"><a href="/brandstory/place">넬보스코 공간 이야기</a></p>
+										</div>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="bg_int04 h800">
+										<div class="intBox">
+											<p class="f20_4w">Nel Bosco Place</p><!-- 2021-06-10 -->
+											<p class="f65_6w mt10">2F. Brunch Restaurant</p>
+											<p class="f22_4w mt40">셰프가 직접 조리하는 정통 이탈리안 요리와 최상의 서비스를<br>함께 제공하는 브런치 레스토랑입니다.</p>
+											<p class="btn_about_w mt40"><a href="/brandstory/place">넬보스코 공간 이야기</a></p>
+										</div>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="bg_int05 h800">
+										<div class="intBox">
+											<p class="f20_4w">Nel Bosco Place</p><!-- 2021-06-10 -->
+											<p class="f65_6w mt10">Performance Stage</p>
+											<p class="f22_4w mt40">무대와 대형 스크린, 음향 및 영상 시설이 완비되어 있어<br>행사와 품격 있는 식사를 한 공간에서 즐기실 수 있습니다. </p>
+											<p class="btn_about_w mt40"><a href="/brandstory/place">넬보스코 공간 이야기</a></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="slider_PNbox">
+						<a class="slider_left"><img th:src="@{/img/btn_pre2.gif}" alt="이전" /></a>
+						<a class="slider_right"><img th:src="@{/img/btn_next2.gif}" alt="다음" /></a>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div><!-- /.row -->
+	</div><!-- /.container100 -->
+	<div class="container100 mt130">
+		<div class="row nc">
+		  <div class="col-md-7">		
+				<div class="ncBox">
+					<p class="f42_7 mt20">남촌(南村)의 유래</p>
+					<ul class="ncUL">
+						<li>
+							<p class="f18_4">수도 한양의 4대문(동대문-흥인지문, 서대문-돈의문, 남대문-숭례문, 북대문-숙정문)과 4소문(동소문-혜화문, 서소문-소덕문, 남소문-광화문, 북소문-창의문) 안에 종로와 청계천을 기준으로 북쪽지역에 분포되어 있던 거주지를 북촌이라 불렀으며 청계천의 남부부터 남산의 북쪽 기슭 일대까지 이르는 지역에 분포한 거주지를 남촌이라 불렀다.</p>
+						</li>
+						<li>
+							<p class="f18_4 ">
+							남산은 조선시대에는 목멱산(木覓山), 순 우리말로 ‘마뫼’라 불렀는데 이는 남쪽의 산이라는 뜻이다.
+							</p>
+							<p class="f18_4 mt40">
+							서울을 상징하는 꽃으로 서울시는 개나리꽃을 선정하였으며 서울을 상징하는 나무로는 은행나무를 지정하였다.
+							</p>
+						</li>
+					</ul>
+					<p class="f30_6 mt80">역사적 가치와 정체성을 바탕으로<br>이제는 새로운 문화거리로 조성되고 있는<br>남촌의 거리에서 넬보스코를 만나보세요. </p>
+				</div>
+			 </div>
+		   <div class="col-md-5">
+			<p class="cn_cup"><img th:src="@{/img/nc.png}" /></p>
+		  </div>
+		</div>
+	</div><!-- // container100 -->
+	
+
+	<div class="container100 mt200 test">
+		<div class="row ">
+			<div class="col-lg-12 center">
+				<p class="mt110 f20_4 ">WHAT WE OFFER</p>
+				<p class="mt10 f48_7">DISCOVER MENU</p>
+			</div>
+		  <div class="col-md-12">
+				<!-- 2021-06-03 -->
+				<div id="tabwrap2">
+					<ul class="tabs2">
+						<li class=""><a href="/menu/espresso">Espresso</a></li>
+						<li class=""><a href="/menu/tea">Tea</a></li>
+						<li class=""><a href="/menu/soymilk">Special Drink</a></li>
+						<li class=""><a href="/menu/ade">Ade</a></li>
+						<li class=""><a href="/menu/smoothie">Smoothie</a></li>
+						<li class=""><a href="/menu/bread">Bread</a></li>
+						<li class=""><a href="/menu/cake">Cake & Dessert</a></li>
+						<li class=""><a href="/menu/gift">Gift</a></li>
+					</ul>
+					<div class="tab_content2">
+						<!-------- Espresso -------->
+						<dd id="spf_tab01">
+							<ul class="dm_ul">
+								<li class="bg_main_dm01"></li>
+								<li>
+									<div class="dmBox">
+										<p class="f32_7">Espresso</p>
+										<p class="f38_7 mt40">최고의 커피를 위한<br>넬보스코의 137고집</p>
+										<p class="f22_4 mt30">끝없는 블렌딩 연구를 통해 탄생한 차별화된 커피 </p>
+									</div>
+									<!-- pp slide -->
+									<div id="sliderh6-1" class="sliderh6">
+										<div class="slider">
+											<div class="slider_area">
+												<div class="slides">
+													<div class="slide">
+														<p class="dm_thum"><a href="#"><img th:src="@{/img/product/cf01.png}" /></a></p>
+													</div>
+													<div class="slide">
+														<p class="dm_thum"><a href="#"><img th:src="@{/img/product/cf02.png}" /></a></p>
+													</div>
+													<div class="slide">
+														<p class="dm_thum"><a href="#"><img th:src="@{/img/product/cf03.png}" /></a></p>
+													</div>
+													<div class="slide">
+														<p class="dm_thum"><a href="#"><img th:src="@{/img/product/cf04.png}" /></a></p>
+													</div>
+													<div class="slide">
+														<p class="dm_thum"><a href="#"><img th:src="@{/img/product/cf05.png}" /></a></p>
+													</div>
+													
+												</div>
+											</div>
+											<div class="slider_PNbox">
+											<a class="slider_left"><img th:src="@{/img/btn_pre2.gif}" alt="이전" /></a>
+											<a class="slider_right"><img th:src="@{/img/btn_next2.gif}" alt="다음" /></a>
+											</div>
+										</div>
+									</div>
+									<!-- // pp slide -->
+								</li>
+							</ul>
+						</dd>
+						<!-------- Tea -------->
+						<dd id="spf_tab02">
+							<ul class="dm_ul">
+								<li class="bg_main_dm01"></li>
+								<li>
+									<div class="dmBox">
+										<p class="f32_7">Espresso</p>
+										<p class="f38_7 mt40">최고의 커피를 위한<br>넬보스코의 137고집</p>
+										<p class="f22_4 mt30">끝없는 블렌딩 연구를 통해 탄생한 차별화된 커피 </p>
+									</div>
+									<!-- pp slide -->
+									<div id="sliderh6-2" class="sliderh6">
+										<div class="slider">
+											<div class="slider_area">
+												<div class="slides">
+													<div class="slide">
+														<p class="dm_thum"><a href="#"><img th:src="@{/img/product/cf01.png}" /></a></p>
+													</div>
+													<div class="slide">
+														<p class="dm_thum"><a href="#"><img th:src="@{/img/product/cf02.png}" /></a></p>
+													</div>
+													<div class="slide">
+														<p class="dm_thum"><a href="#"><img th:src="@{/img/product/cf03.png}" /></a></p>
+													</div>
+													<div class="slide">
+														<p class="dm_thum"><a href="#"><img th:src="@{/img/product/cf04.png}" /></a></p>
+													</div>
+													<div class="slide">
+														<p class="dm_thum"><a href="#"><img th:src="@{/img/product/cf05.png}" /></a></p>
+													</div>
+													
+												</div>
+											</div>
+											<div class="slider_PNbox">
+											<a class="slider_left"><img th:src="@{/img/btn_pre2.gif}" alt="이전" /></a>
+											<a class="slider_right"><img th:src="@{/img/btn_next2.gif}" alt="다음" /></a>
+											</div>
+										</div>
+									</div>
+									<!-- // pp slide -->
+								</li>
+							</ul>
+						</dd>
+						<!-------- Special Soy Milk -------->
+						<dd id="spf_tab03">
+						</dd>
+						<!-------- Aid -------->
+						<dd id="spf_tab04">
+						</dd>
+						<!-------- Smoothie -------->
+						<dd id="spf_tab05">
+						</dd>
+						<!-------- Bread -------->
+						<dd id="spf_tab06">
+						</dd>
+						<!-------- Cake & Dessert -------->
+						<dd id="spf_tab07">
+						</dd>
+						<!-------- Gift -------->
+						<dd id="spf_tab08">
+						</dd>
+					</div>
+				</div>
+				<!-- // 2021-06-03 -->
+		  </div>
+		</div>
+	</div><!-- // container100 -->
+	<div class="container1640 mt150">
+		<div class="row ">
+		  <div class="col-md-6">
+			<p class="f20_4">건강한 식음료의 전통성을 그대로</p>
+			<p class="f48_7 mt20">Nel Bosco LAB.</p>
+			<p class="f18_4 mt70">최고의 품질과 맛을 위한 연구는 지금도 계속됩니다. </p>
+			<p class="btn_about mt40"><a href="/brandstory/lab">연구소 자세히 보기</a></p>
+			<p class="mt90"><img th:src="@{/img/main_lab.jpg}" /></p>
+		  </div>
+		  <div class="col-md-6">
+			<p class="f20_4 mt50m">남촌의 중심에서 만나는 힐링 공간</p>
+			<p class="f48_7 mt20">LOCATION</p>
+			
+			<ul class="loca">
+				<li>
+					<p class="f20_7 ">Address</p>
+					<p class="f18_4 mt70">서울특별시 중구 퇴계로  </p>
+					<p class="f18_4">8길 16 (우)04634</p>
+				</li>
+				<li>
+					<p class="f20_7 ">Opening hours</p>
+					
+					<dl>
+						<dd style="width:100%;">
+							<p class="f18_4">(연중무휴)</p>
+							<p class="f18_4">평일: 7:00AM ~ 9:00PM</p>
+							<p class="f18_4">주말&middot;공휴일: 9:00AM ~ 7:00PM</p>
+						</dd>
+					</dl>
+				</li>
+			</ul>
+			<p class="mt50"><img th:src="@{/img/main_location.jpg}" /></p>
+		  </div>
+		</div> 
+	</div><!-- // container100 -->
+</div>
+<!-- ======================
+	 * //contant *
+========================== -->
+<!-- ====================== * FOOTER * ========================== -->
+<footer class="container100" th:replace="fragments/mainFooter :: footerFragment"></footer>
+<!-- ====================== * //FOOTER * ========================== -->
+<div th:replace="fragments/footerScript :: footerScriptFragment"></div>
+<!-- 2021-06-03 -->
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#tabwrap2').basicTabs2();/* basicTabs2 변경 */
+	});
+</script>
+</div><!-- // wrap -->
+<script type="text/x-javascript">
+(function(w, d, a){
+    w.__beusablerumclient__ = {
+        load : function(src){
+            var b = d.createElement("script");
+            b.src = src; b.async=true; b.type = "text/x-javascript";
+            d.getElementsByTagName("head")[0].appendChild(b);
+        }
+    };w.__beusablerumclient__.load(a);
+})(window, document, "//rum.beusable.net/script/b161207e112311u833/1a01da0ba9");
+</script>
+</body>
+</html>

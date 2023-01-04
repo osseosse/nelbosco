@@ -1,0 +1,106 @@
+﻿<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<title>넬보스코 브랜드 아이덴티티</title>
+    <head th:replace="fragments/head :: headFragment"></head>
+</head>
+<body>
+<div id="wrap">
+<!-- ====================== * HEADER *========================== -->
+<header th:replace="fragments/mainHeader :: headerFragment"></header>
+<!-- ======================* //HEADER *========================== -->
+
+	<!-- ======================
+		 * contant *
+	========================== -->
+	<div id="contant">
+		<!-- subBigBanner -->
+		<div class="container100">
+			<div class="row">
+			  <div class="col-md-12 bg_bi subTop">
+				<div class="coffeType">
+					<p class="f45_4w">건강한 먹거리가 있는 힐링공간</p>
+				</div>
+			  </div>
+			</div>
+		</div><!-- // container100 -->
+		<!-- //subBigBanner -->
+
+
+		<!--// Portfolio Cobbles Start //-->
+		<section class="section matychale-gallery-cobbles">
+		    <div>
+                <div class="container">
+                    <div class="row">
+                            <div class="menu_cate">
+                                <a href="/brandstory/about"><p>브랜드 스토리</p></a>
+                                <a href="/brandstory/bi" class="active"><p>브랜드 아이덴티티</p></a>
+                                <a href="/brandstory/place"><p>공간 이야기</p></a>
+                                <a href="/brandstory/lab"><p>연구소</p></a>
+                                <a href="/story/coffeeStory"><p>커피 이야기</p></a>
+                                <a href="/story/drink"><p>음료 이야기</p></a>
+                                <a href="/story/bakery"><p>베이커리 이야기</p></a>
+                                <!-- <a href="/story/music"><p>음악 공연 이야기</p></a> -->
+                            </div>
+                    </div>
+                </div>
+			</div>
+			<div class="container">
+				<div class="location">
+						<span><a href="">HOME</a></span><img th:src="@{/img/location_arrow.gif}">
+						<span><a href="">Brand Story</a></span><img th:src="@{/img/location_arrow.gif}">
+						<span>Brand Identity</span>
+					</div>
+				<div class="row">
+				  <div class="col-md-12 mt100">
+					<p class="f40_7 mt60 center">넬보스코는<br class="none2">이탈리아어로 ‘숲속에서’라는 의미입니다.</p>
+					<p class="f30_4 mt90 center">
+					심볼은 매장 이름과 같이<br> 음악이 있는 숲속의 평온함을 형상화한 이미지입니다.<br>
+					넬보스코는 아름다운 공간과 음악 그리고<br> 건강한 먹거리 어우러져 있는 힐링 공간을 추구합니다. 
+					</p>				
+				  </div>
+				</div>
+			</div>
+			<!--// .container100_15 //-->
+			
+			<div class="container mt120m">
+				<div class="row biBox">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                       <p class="f20_5">BI 기본형</p>
+                       <img th:src="@{/img/brand_identity1.png}" alt="기본형" class="mt50">
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <p class="f20_5">로고타입</p>
+                       <img th:src="@{/img/brand_identity2.jpg}" alt="로고타입" class="mt50">
+                    </div>
+				</div>
+				<!-- row -->
+			</div><!-- // container -->
+			<div class="container mt120m">
+				<div class="row">
+                   <p class="col-md-12 f30_4 center">넬보스코 컬러 시스템</p>
+                    <div class="col-lg-6 col-md-6 col-sm-12 mt70m">
+                       <img th:src="@{/img/brand_identity3.jpg}" alt="넬보스코그린">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 mt70m">
+                       <img th:src="@{/img/brand_identity4.jpg}" alt="넬보스코레드">
+                    </div>
+				</div>
+				<!-- row -->
+			</div><!-- // container -->
+			
+		</section>
+		<!--// Portfolio Cobbles End //-->
+	</div>
+	<!-- ======================
+		 * //contant *
+	========================== -->
+	
+	<!-- ====================== * FOOTER * ========================== -->
+	<footer class="container100" th:replace="fragments/mainFooter :: footerFragment"></footer>
+	<!-- ====================== * //FOOTER * ========================== -->
+	<div th:replace="fragments/footerScript :: footerScriptFragment"></div> 
+	
+</div><!-- // wrap -->
+</body>
+</html>

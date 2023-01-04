@@ -1,0 +1,15 @@
+﻿<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<div id="eventBanner" class="container100" th:fragment="eventFragment">
+   <div class="row">
+       <div class="col-md-12 eventBimg">
+           <a href="/community/event" class="pcBanner">
+               <img th:src="@{/img/eventBimg.jpg}" alt="이벤트배너">
+           </a>
+           <a href="/community/event" class="moBanner">
+               <img th:src="@{/img/eventBimg_mobile.jpg}" alt="이벤트배너">
+           </a>
+       </div>
+   </div>
+</div>
+</html>

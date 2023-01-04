@@ -1,0 +1,128 @@
+﻿<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<title>넬보스코 공간 이야기</title>
+    <head th:replace="fragments/head :: headFragment"></head>
+</head>
+<body>
+<div id="wrap">
+<!-- ====================== * HEADER *========================== -->
+<header th:replace="fragments/mainHeader :: headerFragment"></header>
+<!-- ======================* //HEADER *========================== -->
+
+<!-- ======================
+	 * contant *
+========================== -->
+<div id="contant">
+	<!-- subBigBanner -->
+	<div class="container100">
+		<div class="row">
+		  <div class="col-md-12 bg_place subTop">
+			<div class="coffeType">
+				<p class="f45_4w mt20">함께하는 공간</p>
+			</div>
+		  </div>
+		</div>
+	</div><!-- // container100 -->
+	<!-- //subBigBanner -->
+
+
+	<!--// Portfolio Cobbles Start //-->
+	<section class="section matychale-gallery-cobbles">
+	    <div>
+               <div class="container">
+                   <div class="row">
+                           <div class="menu_cate">
+                                <a href="/cafe/brandstory/about"><p>브랜드 스토리</p></a>
+                                <a href="/cafe/brandstory/bi"><p>브랜드 아이덴티티</p></a>
+                                <a href="/cafe/brandstory/place" class="active"><p>공간 이야기</p></a>
+                                <a href="/cafe/brandstory/lab"><p>연구소</p></a>
+                                <a href="/cafe/story/coffeeStory"><p>커피 이야기</p></a>
+                                <a href="/cafe/story/drink"><p>음료 이야기</p></a>
+                                <a href="/cafe/story/bakery"><p>베이커리 이야기</p></a>
+                                <!-- <a href="/story/music"><p>음악 공연 이야기</p></a> -->
+                           </div>
+                   </div>
+               </div>
+		</div>
+		<div class="container">
+			<div class="location">
+				<span><a href="">HOME</a></span><img th:src="@{/img/location_arrow.gif}">
+				<span><a href="">Brand Story</a></span><img th:src="@{/img/location_arrow.gif}">
+				<span>Brand Identity</span>
+			</div>
+			<div class="row">
+				  <div class="col-md-12 mt100">
+					<p class="f40_7 mt60">
+					도심 속 한적한 정원과 따뜻하고<br class="none2"> 안락한 느낌의 실내 공간은<br class="none">
+		                        단순한 장소가 아닌 바쁜 일상과 스트레스로부터<br class="none"> 
+		                        현대인들에게 쉼과 여유를 주는 힐링 공간입니다.
+					</p>
+					<p class="f24_4 mt70">
+		                        예로부터 역사 자원이 많아 서울의 주요 장소로 손꼽히던 남촌.<br>
+		                        최근에는 유행을 주도하는 젊은이들이 모여  새로운 문화 지역으로도 손꼽히는 거리가 되었습니다.<br>
+		                        남촌의 중심에서 마음이 편안해지는 힐링 공간을 제공하는 넬보스코를 만나보세요.
+					</p>				
+				  </div>
+				</div>
+			</div>
+			<!--// .container100_15 //-->
+			<div class="container100 place_bg mt120">
+			    <p class="f48_5w center">Good Food<br>And Good Mood</p>
+			</div>
+			
+			
+
+			<div class="container mt100 placeList">
+				<div class="row" >
+				    <div class="col-lg-12 col-md-12 col-sm-12">
+                       <p class="f30_4">정원이 있는 테라스</p>
+                    </div>
+					<div class="col-lg-6 col-md-6 col-sm-6" >
+						<p class="mt30"><img class="img100"  th:src="@{/img/place02.jpg}" alt="정원이 있는 테라스 사진"/></p>
+					</div>
+					
+					<div class="col-lg-6 col-md-6 col-sm-6"  >
+						<p class="mt30"><img th:src="@{/img/place03.jpg}" alt="정원이 있는 테라스 사진"/></p>
+					</div>
+					 <div class="col-lg-12 col-md-12 col-sm-12">
+                      <p class="mt30"><img th:src="@{/img/place09.jpg}" alt="정원이 있는 테라스 사진"/></p>
+                    </div>
+					
+				</div>
+				<!-- row -->
+				<div class="row mt100" >
+				    <div class="col-lg-12 col-md-12 col-sm-12">
+                       <p class="f30_4">심플하고 고급스러운 인테리어</p>
+                    </div>
+					<div class="col-lg-12 col-md-12 col-sm-12" >
+						<p class="mt30"><img th:src="@{/img/place04.jpg}" alt="심플하고 고급스러운 인테리어 사진"/></p>
+					</div>
+				</div>
+				<!-- row -->
+				<div class="row mt100" >
+				    <div class="col-lg-12 col-md-12 col-sm-12">
+                       <p class="f30_4">넓은 실내 공간과 여유 있는 좌석</p>
+                    </div>
+					<div class="col-lg-6 col-md-6 col-sm-6" >
+						<p class="mt30"><img th:src="@{/img/place05.jpg}" alt="넓은 실내 공간과 여유 있는 좌석 사진"/></p>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6"  >
+						<p class="mt30"><img th:src="@{/img/place06.jpg}" alt="넓은 실내 공간과 여유 있는 좌석 사진"/></p>
+					</div>
+				</div>
+			</div><!-- // container -->
+		</section>
+		<!--// Portfolio Cobbles End //-->
+</div>
+<!-- ======================
+	 * //contant *
+========================== -->
+
+<!-- ====================== * FOOTER * ========================== -->
+<footer class="container100" th:replace="fragments/mainFooter :: footerFragment"></footer>
+<!-- ====================== * //FOOTER * ========================== -->
+<div th:replace="fragments/footerScript :: footerScriptFragment"></div> 
+</div><!-- // wrap -->
+</body>
+</html>

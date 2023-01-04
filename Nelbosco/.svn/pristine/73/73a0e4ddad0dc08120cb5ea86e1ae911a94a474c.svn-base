@@ -1,0 +1,175 @@
+﻿<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<title>넬보스코 루프탑</title>
+    <head th:replace="fragments/r_head :: headFragment"></head>
+</head>
+<body>
+<div id="wrap">
+<!-- ======================* HEADER *========================== -->
+<header th:replace="fragments/r_mainHeader :: headerFragment"></header>
+<!-- ======================* //HEADER *========================== -->
+<!-- ======================* contant *========================== -->
+<div id="contant">
+	<!-- subBigBanner -->
+	<div class="container100">
+		<div class="row">
+		  <div class="col-md-12 bg_r_03 subTop">
+			<div class="coffeType">
+				<p class="f45_4w mt20 f_mo">Nel Bosco rooftop Lounge & Bar</p>
+			</div>
+		  </div>
+		</div>
+	</div><!-- // container100 -->
+	<!-- //subBigBanner -->
+
+	<!--// Portfolio Cobbles Start //-->
+	<section class="section matychale-gallery-cobbles">
+	    <div style="background:none; height:0">  </div>
+		
+		<div class="container">
+			<div class="location">
+				<span><a href="">HOME</a></span><img th:src="@{/img/location_arrow.gif}">
+				<span><a href="">About</a></span><img th:src="@{/img/location_arrow.gif}">
+				<span>Brand</span>
+			</div>
+		</div>
+		<!--// .container100_15 //-->
+	        
+	        
+		<div class="container1400 mt120 ">
+			<div class="row" >
+				<div class="col-lg-6 col-md-12 col-sm-12  ">
+					<p class="f18_5 f_mo gold">Nel Bosco rooftop Lounge & Bar</p>
+					<p class="f62_4 f_mo mt20">rooftop</p>
+					<p class="mt40 f18_4">
+						바쁘게 돌아가는 일상 속, 도심의 불빛이 제공하는 다양한 볼거리와 아름다운<br>
+						회현의 풍경이 한눈에 보이는 야외테라스를 갖춘<br>
+						이색적인 분위기의 루프탑 가든입니다.
+					</p>
+					<p class="mt40 f18_4">
+						넬보스코 루프탑은 최고의 제품과 서비스를 선보이기 위해 노력하고 있습니다.<br>
+						넬보스코만의 스타일로 재해석한 현대 속 힐링을 즐겨보세요
+					</p>
+				</div>
+				<div class="col-lg-6 col-md-12 col-sm-12  mt50">
+					<p class="img100 "><img th:src="@{/img/rooftop/r_brand_01.jpg}" alt="" /></p>
+				</div>
+			</div>
+			<div class="row mt170" >
+				<div class="col-lg-12 center" >
+					<p class="f18_5 f_mo gold">Nel Bosco rooftop Lounge & Bar</p>
+					<p class="f62_4 mt20 f_mo">rooftop Value</p>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-12  mt80">
+					<p class="img100"><img th:src="@{/img/rooftop/r_brand_02.jpg}" alt="넬보스코 루프타 온전한 휴식" /></p>
+					<div class="r_value_text">
+						<p class="f16_4">Value 01</p>
+						<p class="f45_4 f_mo mt30">Life & Healing</p>
+						<p class="f18_4 mt20">
+							일상에서 휴식을 찾는것은 어려운 <br>일이지만
+							넬보스코 루프탑에서는 온전한 <br>휴식을
+							어렵지 않게 찾으실 수 있습니다. 
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-12 mt180 ">
+					<p class="img100"><img th:src="@{/img/rooftop/r_brand_03.jpg}" alt="넬보스코 루프타 온전한 휴식" /></p>
+					<div class="r_value_text">
+						<p class="f16_4">Value 02</p>
+						<p class="f45_4 f_mo mt30">View</p>
+						<p class="f18_4 mt20">
+							남산이 보이는 뷰 맛집 <br>
+							루프탑에서 열리는 4계절 야외 음악공연을<br>
+							경험할 수 있습니다.
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-12 mt80">
+					<p class="img100"><img th:src="@{/img/rooftop/r_brand_04.jpg}" alt="넬보스코 루프타 온전한 휴식" /></p>
+					<div class="r_value_text">
+						<p class="f16_4">Value 03</p>
+						<p class="f45_4 f_mo mt30">Experience</p>
+						<p class="f18_4 mt20">
+							도심 속 정원, 몸과 마음을 안정을 주며<br>
+							편안하고 행복한 경험을 선사합니다.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div><!-- // container1400 -->
+	
+	
+		<div class="container100 mt120 ">
+			<div class="row" >
+				<div class="col-lg-12 col-md-12 col-sm-12 h600 bg_r_04">
+					<div class="h-center">
+						<p class="f62_4w  f_mo">Your Rest</p>
+						<p class="f18_4w mt40">지친몸과 마음에 새로운 에너지를 얻을 수 있는 곳.<br>머무는 순간의 모든 기억이 소중한 추억이 될 수 있도록.  </p>
+					</div>
+				</div>
+			</div>
+		</div><!-- // container100 -->
+	
+	
+		<div class="container1400 ">
+			<div class="row mt170" >
+				<div class="col-lg-12 center" >
+					<p class="f18_5 f_mo gold">Nel Bosco rooftop Lounge & Bar</p>
+					<p class="f62_4 mt20 f_mo">Signature</p>
+				</div>
+				<div class="col-lg-5 col-md-5 col-sm-12  mt100">
+					<p class="img100"><img th:src="@{/img/rooftop/r_brand_06.jpg}" alt="넬보스코 루프탑 남산야경" /></p>
+					<!-- <p class="btn_about_g  mt10 f-right"><a href="./r_drink.html">View more</a></p> -->
+					<p class="f32_5 mt30 clear mt80m">남산아래 도심속 루프탑</p>
+					<p class="f18_4 mt20">
+						남산과 명동 도심이 조화를이루는<br>
+						이색적인 야경 속에서 넬보스코 루프탑만의<br>
+						특별한 휴식을 선사합니다.  
+					</p>
+				</div>
+				<div class="col-lg-7 col-md-7 col-sm-12 mt100 ">
+					<!-- tab -->
+					<script type="text/javascript">
+						$(document).ready(function(){
+							$('#tabwrap4').basicTabs4();/* basicTabs4 변경 */
+						});
+					</script>
+	
+					<div id="tabwrap4" class="tabwrap4-s mt80m">
+						<div class="tabLineBox-s">
+							<ul class="tabs4 tabs4-s">
+								<li><a href="#tour01">Food</a></li>
+								<li><a href="#tour02">Cocktail</a></li>
+								<li><a href="#tour03">Showcase</a></li>
+							</ul>
+						</div>
+						<div class="tab_content4 content4-s">
+							<div id="tour01"><p class="img100"><img th:src="@{/img/rooftop/r_brand_08.jpg}" alt="넬보스코 푸드"/></p></div>
+							<div id="tour02"><p class="img100"><img th:src="@{/img/rooftop/r_brand_07.jpg}" alt="넬보스코 음료"/></p></div>
+							<div id="tour03"><p class="img100"><img th:src="@{/img/rooftop/r_brand_09.jpg}" alt="넬보스코 디저트"/></p></div>
+						</div>
+						<!-- // tab_content3 -->
+						
+					</div>
+					<!-- //tab -->
+				</div>
+				
+			</div>
+		</div><!-- // container1400 -->
+	</section>
+	<!--// Portfolio Cobbles End //-->
+	
+</div>
+<!-- ======================
+	 * //contant *
+========================== -->
+
+<!-- ======================* FOOTER *========================== -->
+<footer th:replace="fragments/r_mainFooter :: footerFragment"></footer>
+<!-- ======================* //FOOTER *========================== -->
+<!-- ====================== * //FOOTER * ========================== -->
+<div th:replace="fragments/footerScript :: footerScriptFragment"></div> 
+</div><!-- // wrap -->
+</body>
+</html>

@@ -1,0 +1,196 @@
+﻿<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<title>넬보스코 베이커리 이야기</title>
+    <head th:replace="fragments/head :: headFragment"></head>
+</head>
+<body>
+<div id="wrap">
+<header th:replace="fragments/mainHeader :: headerFragment"></header>
+<div id="contant">
+<!-- subBigBanner -->
+<div class="container100">
+	<div class="row">
+		<div class="col-md-12 bg_bakery subTop">
+			<div class="coffeType">
+				<p class="f45_4w mt20 ">저온에서 장시간 발효</p>
+			</div>
+		</div>
+          </div>
+</div><!-- // container100 -->
+<!-- //subBigBanner -->
+<section class="section matychale-gallery-cobbles">
+    <div>
+              <div class="container">
+                  <div class="row">
+                          <div class="menu_cate">
+                              <a href="/brandstory/about"><p>브랜드 스토리</p></a>
+                              <a href="/brandstory/bi"><p>브랜드 아이덴티티</p></a>
+                              <a href="/brandstory/place"><p>공간 이야기</p></a>
+                              <a href="/brandstory/lab"><p>연구소</p></a>
+                              <a href="/story/coffeeStory"><p>커피 이야기</p></a>
+                              <a href="/story/drink"><p>음료 이야기</p></a>
+                              <a href="/story/bakery" class="active"><p>베이커리 이야기</p></a>
+                              <!-- <a href="/story/music"><p>음악 공연 이야기</p></a> -->
+                          </div>
+                  </div>
+              </div>
+	</div>
+	<div class="container">
+		<div class="location">
+			<span><a href="">HOME</a></span><img th:src="@{/img/location_arrow.gif}">
+			<span><a href="">Brand Story</a></span><img th:src="@{/img/location_arrow.gif}">
+			<span>베이커리 이야기</span>
+		</div>
+	</div>
+	<div class="container mt120 Box1130">
+			<div class="row" >
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<p class="f38_7">넬보스코는 <br>식후의 편안함을 추구 합니다.</p>
+				</div>
+               </div>
+           </div>
+           <div class="container mt120">
+			<div class="row" >
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<p class="img100">
+					    <img th:src="@{/img/bakerystory_02.jpg}" alt="베이커리 연출컷">
+					</p>
+                   </div>
+			</div>
+           </div>
+           <div class="container Box1130">
+			<div class="row">
+			    <div class="col-lg-6 col-md-12 col-sm-12 mt80 bakery_title">
+                       <div>
+                           <p class="f50_7">
+                               Low<br>
+                               temperature<br>
+                               ripening
+                           </p>
+                       </div>
+                       <p class="img100"><img th:src="@{/img/bakerystory_03.jpg}" alt="베이커리사진03"/></p>
+                       <p class="f32_7 mt30">저온숙성법 </p>
+					<p class="mt30 f20_4">
+						넬보스코가 지향 하는
+						저온에서  장시간 발효하는 방식으로써
+						순리를 따라 느리고 정성스럽게 걷습니다.<br class="none">
+
+						저온에서 장시간 발효 시키는 과정에서 효소들의
+						활동이 활성화 되어 빵의 풍미는 물론 맛도
+						좋아집니다.<br class="none">
+
+						장인정신으로 건강에 가치를 부여한 빵을 만들고자
+						매진하고 있습니다.
+					</p>
+				</div>
+				<div class="col-lg-6 col-md-12 col-sm-12 mt80 bakery_title">
+                       <div>
+                           <p class="f50_7">
+                               poolish
+                           </p>
+                       </div>
+                       <p class="img100"><img th:src="@{/img/bakerystory_04.jpg}" alt="베이커리사진04"/></p>
+                       <p class="f32_7 mt30">폴리쉬 반죽</p>
+					<p class="mt30 f20_4">
+						넬보스코의 대표 제품인 치아바타와 페이스트리에는 풀리쉬 반죽(Poolish)을 사용 합니다.<br class="none">
+                           풀리쉬는 폴란드에서 처음 만들어진 반죽으로 <br>물과 밀가루 1:1 비율에 이스트를 최소량만 첨가 하여 6~8시간 정도 발효 시켜 만드는 발효 반죽을 말합니다.<br class="none"><br>
+
+                           풀리쉬 반죽은 중종 반죽 보다 물의양이 많고 발효 시간도 6시간 이상으로 길기 때문에 빵의 풍미가 매우 깊고 좋으며 수분이 많으므로 더 촉촉하고 탄력 있는 상태의 빵을 만들기 위한 반죽법 입니다.
+					</p>
+				</div>
+				
+				<div class="col-lg-6 col-md-12 col-sm-12 mt80 bakery_title">
+                       <div>
+                           <p class="f50_7">
+                               Leaven
+                           </p>
+                       </div>
+                       <p class="img100"><img th:src="@{/img/bakerystory_05.jpg}" alt="베이커리사진05"/></p>
+                       <p class="f32_7 mt30">"효모"란 발효의 씨</p>
+					<p class="mt30 f20_4">
+						넬보스코에서는 건포도로 천연 효모종을 배양하여 레이즌 화이트 르방을 만들어 사용합니다.<br class="none">
+                           화이트 르방은 수분 70%가 들어가는 르방이며 적절한 산미와 깊은 풍미는 물론이고, 뛰어난 발효력과 빵의 보존성을 높여주는 역할을 하므로 바게트와 사워도우외에도 다양한 반죽에 사용 하고 있습니다
+					</p>
+				</div>
+				
+				<div class="col-lg-6 col-md-12 col-sm-12 mt80 bakery_title">
+                       <div>
+                           <p class="f50_7">
+                               Wheat flour
+                           </p>
+                       </div>
+                       <p class="img100"><img th:src="@{/img/bakerystory_06.jpg}" alt="베이커리사진06"/></p>
+                       <p class="f32_7 mt30">엄선된 다양한 밀가루</p>
+					<p class="mt30 f20_4">
+						넬보스코는 엄선된 다양한 밀가루를 블렌딩 하여 사용합니다.<br class="none">
+                           밀가루는 빵에서 가장 큰 비중을 차지하는 재료 입니다.<br class="none">
+                           밀가루의 종류에 따라 수분과 단백질 함량 회분율 등을 고려하고, 수분율 조정을 거쳐 그제서야 하나의 반죽을 위한 블렌딩 된 밀가루가 탄생합니다.<br class="none"><!-- 2021-06-10 -->
+                           이는 차별화된 맛은 물론 각기 다른 제품들의 특징을 조화롭게 살리고 만들어내는 가장 기본적인 원칙 입니다.
+					</p>
+				</div>
+			</div>
+
+			<div class="row mt150 mt100m">
+				<div class="col-lg-12 col-md-12 col-sm-12 signature_title center">
+                       <img th:src="@{/img/bakerystory_logo.png}" alt="넬보스코" class="mb10m"><br class="none2">
+                       <p class="f38_5">&ensp;Signature</p>
+				</div>
+			</div>
+			<div class="row mt120 centerM">
+			    <div class="col-lg-4 col-md-4 col-sm-4">
+			        <img th:src="@{/img/bakerystory_06.png}" alt="진 두유 식빵">
+			    </div>
+                   <div class="col-lg-8 col-md-8 col-sm-8 mt30m">
+                       <p class="f32_7">영양 두유 식빵</p>
+                       <p class="f20_4 mt30">
+                           두유를 이용한 건강하고 맛있는 시그니처 식빵으로써<br class="none">
+                           중종법 (스펀지 도우법)과 장시간 저온숙성을 거쳐 만들어집니다.<br><br>
+                           중종법이란?<br>
+                           두 번에 걸쳐 믹싱을 진행 하며 첫 반죽(중종)을 저온에서 <br class="none">장시간 숙성 시킨 후 (본반죽)을 합니다.<br class="none">이러한 과정을 통하여 충분히 글루텐을 연화 시킴으로써 빵의 풍미가 짙고, 더욱 깊은 맛을 내며 부드러운 질감을 극대화 시킵니다. 또한 수분 보유력이 뛰어나 조금 더 긴 시간 동안 촉촉하게 드실 수 있도록 만든 넬보스코 시그니처 식빵입니다.
+                       </p>
+                   </div>
+               </div><!--//row-->
+               <div class="row mt120 centerM">
+			    <div class="col-lg-4 col-md-4 col-sm-4">
+			        <img th:src="@{/img/bakerystory_07.png}" alt="크림 브리오슈코코넛">
+			    </div>
+                   <div class="col-lg-8 col-md-8 col-sm-8 mt30m">
+                       <p class="f32_7">크림 브리오슈코코넛</p>
+                       <p class="f20_4 mt30">
+                           프랑스의 단과자빵이라 불리는 브리오슈 반죽을 응용하여 만든 제품으로써<br class="none">
+                           넬보스코만의 정성과 장인정신을 담아 만들어집니다.<br class="none">
+                           사전 반죽과 본 반죽을 거쳐 장장 3일간의 저온 숙성을 거쳐 만들어내고 있으며 버터의 진한 풍미를 살리고 가볍고 부드러운 질감이 일품입니다.<br class="none">
+                           매일 수제로 직접 생산하는 바닐라빈 가득한 커스터드 크림과 바삭하고 달콤한 코코넛 토핑이 한데 어우러져 입안에 들어가면 춤을 추며 미끄러지듯 깔끔하게 넘어갑니다. <!-- 2021-06-10 -->
+                       </p>
+                   </div>
+               </div><!--//row-->
+               <div class="row mt120 centerM">
+			    <div class="col-lg-4 col-md-4 col-sm-4">
+			        <img th:src="@{/img/bakerystory_08.png}" alt="무화과 트위스트">
+			    </div>
+                   <div class="col-lg-8 col-md-8 col-sm-8 mt30m">
+                       <p class="f32_7">무화과 트위스트</p>
+                       <p class="f20_4 mt30">
+                           버터와 함께 반죽을 겹겹이 접어 성형한 다음 구워내는 페이스트리 제품으로써<br class="none">
+                           저온에서 16시간 이상의 충분한 발효를 통해 만들며 가볍고 바삭한 겉껍질과 수제 바닐라 커스터드와 함께 입안에서 톡톡 터지는 새콤달콤한 무화과까지 더해져 익숙한 듯
+                           전혀 다른 새로운 맛을 선사하는 제품입니다.
+                       </p>
+                   </div>
+               </div><!--//row-->
+		</div><!-- // container -->
+
+	</section>
+	<!--// Portfolio Cobbles End //-->
+</div>
+<!-- ======================
+	 * //contant *
+========================== -->
+
+<!-- ====================== * FOOTER * ========================== -->
+<footer class="container100" th:replace="fragments/mainFooter :: footerFragment"></footer>
+<!-- ====================== * //FOOTER * ========================== -->
+<div th:replace="fragments/footerScript :: footerScriptFragment"></div> 
+</div><!-- // wrap -->
+</body>
+</html>

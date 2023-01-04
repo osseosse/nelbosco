@@ -1,0 +1,56 @@
+package com.nelbosco.service;
+
+import java.util.Collections;
+import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import com.nelbosco.domain.MemberDTO;
+import com.nelbosco.mapper.MemberMapper;
+import com.nelbosco.paging.PaginationInfo;
+
+@Service
+public class MemberServiceImpl implements MemberService {
+
+	@Autowired
+	private MemberMapper memberMapper;
+	
+	@Override
+	public boolean registerMember(MemberDTO params) {
+
+		int queryResult = 0;
+
+		if (params.getMemNo() == null) {
+			queryResult = memberMapper.insertMember(params);
+		} else {
+			queryResult = memberMapper.updateMember(params);
+		}
+
+		return (queryResult > 0);
+	}
+
+	@Override
+	public MemberDTO getMemberDetail(Long memNo) {
+		return memberMapper.selectMemberDetail(memNo);
+	}
+
+
+	@Override
+	public List<MemberDTO> getMemberList(MemberDTO params) {
+		List<MemberDTO> boardList = Collections.emptyList();
+
+		int boardTotalCount = memberMapper.selectMemberTotalCount(params);
+
+		PaginationInfo paginationInfo = new PaginationInfo(params);
+		paginationInfo.setTotalRecordCount(boardTotalCount);
+
+		params.setPaginationInfo(paginationInfo);
+
+		if (boardTotalCount > 0) {
+			boardList = memberMapper.selectMemberList(params);
+		}
+
+		return boardList;
+	}
+
+
+}
