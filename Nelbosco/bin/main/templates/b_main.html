@@ -13,7 +13,7 @@
 		 * contant *
 	========================== -->
 	<div id="popup_350570" style="position:absolute; top:110px; left:20px; z-index:10001; height:628px; display:none;">
-		<iframe th:src="@{/fragments/b_popup_350}" marginwidth="0" marginheight="0" width="400px" height="638px" frameborder="0" scrolling="no"></iframe>
+		<iframe th:src="@{/fragments/b_popup_350}" marginwidth="0" marginheight="0" width="350px" height="560px" frameborder="0" scrolling="no"></iframe>
 	</div>
 	<div id="popup" style="position:absolute; top:110px; left: 450px; z-index:10001; height:550px; display:none;">
 		<iframe th:src="@{/fragments/popup}" marginwidth="0" marginheight="0" width="350px" height="560px" frameborder="0" scrolling="no"></iframe>
@@ -497,10 +497,10 @@
 			popup.style.display = 'block';
 		}
 		
-		var cookieCheck = getCookie("b_rightPopup");
-		if (cookieCheck != "done"){
-			rightPopup.style.display = 'block';
-		}
+// 		var cookieCheck = getCookie("b_rightPopup");
+// 		if (cookieCheck != "done"){
+// 			rightPopup.style.display = 'block';
+// 		}
 		
 		var cookieCheck = getCookie("b_popup_350570");
 		if (cookieCheck != "done"){
