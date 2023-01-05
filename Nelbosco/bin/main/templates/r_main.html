@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <head>
 	<title>넬보스코 루프탑</title>
@@ -16,11 +16,11 @@
 	<div id="popup_350570" style="position:absolute; top:110px; left:20px; z-index:10001; height:628px; display:none;">
 		<iframe th:src="@{/fragments/b_popup_350}" marginwidth="0" marginheight="0" width="400px" height="638px" frameborder="0" scrolling="no"></iframe>
 	</div>
-	<!-- 
-	<div id="popup" style="position:absolute; top:110px; left:20px; z-index:10001; height:380px; display:none;">
-		<iframe th:src="@{/fragments/b_popup}" marginwidth="0" marginheight="0" width="430" height="460" frameborder="0" scrolling="no"></iframe>
+	-->
+	<div id="popup" style="position:absolute; top:110px; left:450px; z-index:10001; height:380px; display:none;">
+		<iframe th:src="@{/fragments/popup}" marginwidth="0" marginheight="0" width="350px" height="560px" frameborder="0" scrolling="no"></iframe>
 	</div>
-	 -->
+	 
 	<!-- popup 
 	<div id="rightPopup" style="position:absolute; top:110px; right:20px; z-index:1000; height:608px; display:none;">
 		<iframe th:src="@{/fragments/b_rightPopup}" marginwidth="0" marginheight="0" width="400px" height="641px" frameborder="0" scrolling="no"></iframe>
@@ -387,24 +387,23 @@
 	}
 	
 	$(document).ready(function(){
-		//var popup = document.getElementById("popup");
-		var rightPopup = document.getElementById("rightPopup");
-		var popup_350570 = document.getElementById("popup_350570");
-		/*
-		var cookieCheck = getCookie("b_popup");
+		var popup = document.getElementById("popup");
+// 		var rightPopup = document.getElementById("rightPopup");
+// 		var popup_350570 = document.getElementById("popup_350570");
+		
+		var cookieCheck = getCookie("popup");
 		if (cookieCheck != "done"){
 			popup.style.display = 'block';
 		}
-		*/
-		var cookieCheck = getCookie("b_rightPopup");
-		if (cookieCheck != "done"){
-			rightPopup.style.display = 'block';
-		}
+// 		var cookieCheck = getCookie("b_rightPopup");
+// 		if (cookieCheck != "done"){
+// 			rightPopup.style.display = 'block';
+// 		}
 		
-		var cookieCheck = getCookie("b_popup_350570");
-		if (cookieCheck != "done"){
-			popup_350570.style.display = 'block';
-		}
+// 		var cookieCheck = getCookie("b_popup_350570");
+// 		if (cookieCheck != "done"){
+// 			popup_350570.style.display = 'block';
+// 		}
 		
 		$('#tabwrap2').basicTabs2();/* basicTabs2 변경 */
 	});
