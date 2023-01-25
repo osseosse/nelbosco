@@ -473,42 +473,63 @@
 <footer th:replace="fragments/b_mainFooter :: footerFragment"></footer>
 <!-- 2021-06-03 -->
 <script type="text/javascript">
-	function getCookie(name) {
-	    var cookie = document.cookie;
-	
-	    if (document.cookie != "") {
-	         var cookieArray = cookie.split("; ");
-	         for ( var index in cookieArray) {
-	             var cookieName = cookieArray[index].split("=");
-	             if (cookieName[0] == name) {
-	                  return cookieName[1];
-	             }
-	         }
-	    }
-	    return ;    
+function getCookie(name) {
+    var cookie = document.cookie;
+
+    if (document.cookie != "") {
+         var cookieArray = cookie.split("; ");
+         for ( var index in cookieArray) {
+             var cookieName = cookieArray[index].split("=");
+             if (cookieName[0] == name) {
+                  return cookieName[1];
+             }
+         }
+    }
+    return ;    
+}
+
+$(document).ready(function(){
+	var popup = document.getElementById("popup");
+	//var rightPopup = document.getElementById("rightPopup");
+	var popup_350570 = document.getElementById("popup_350570");
+	var cookieCheck = getCookie("b_popup");
+	if (cookieCheck != "done"){
+		popup.style.display = 'block';
+	}
+
+	var cookieCheck = getCookie("b_popup_350570");
+	if (cookieCheck != "done"){
+		popup_350570.style.display = 'block';
 	}
 	
-	$(document).ready(function(){
-		var popup = document.getElementById("popup");
-		//var rightPopup = document.getElementById("rightPopup");
-		var popup_350570 = document.getElementById("popup_350570");
-		var cookieCheck = getCookie("b_popup");
-		if (cookieCheck != "done"){
-			popup.style.display = 'block';
-		}
-		
-// 		var cookieCheck = getCookie("b_rightPopup");
-// 		if (cookieCheck != "done"){
-// 			rightPopup.style.display = 'block';
-// 		}
-		
-		var cookieCheck = getCookie("b_popup_350570");
-		if (cookieCheck != "done"){
-			popup_350570.style.display = 'block';
-		}
-		
-		$('#tabwrap2').basicTabs2();/* basicTabs2 변경 */
-	});
+	$('#tabwrap2').basicTabs2();/* basicTabs2 변경 */
+	
+	/*팝업 날짜*/
+	
+	var today = new Date();
+	var year = today.getFullYear();
+	
+	if((today.getMonth()+1)<10){
+		var month = "0" + (today.getMonth()+1);
+	}
+	else{
+		var month = today.getMonth()+1;
+	}
+	
+	if(today.getDate()<10){
+		var date = "0" + today.getDate();
+	}
+	else{
+		var date = today.getDate();
+	}
+	
+	var currDate = year.toString() + month + date;
+	
+	if(currDate >= 20230122){
+    	$("#popup_350570").attr("style", "display:none;");
+    }
+	
+});
 </script>
 <!-- ======================* //FOOTER *========================== -->
 <div th:replace="fragments/footerScript :: footerScriptFragment"></div>
