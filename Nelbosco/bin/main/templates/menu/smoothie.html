@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <title>넬보스코 스무디</title>
+	<head th:replace="fragments/head :: headFragment"></head>
+  </head>
+  <body>
+	<div id="wrap">
+	<!-- ====================== * HEADER *========================== -->
+		<header th:replace="fragments/mainHeader :: headerFragment"></header>
+	<!-- ======================* //HEADER *========================== -->
+
+
+	<!-- ======================
+		 * contant *
+	========================== -->
+	<div id="contant">
+		<!-- subBigBanner -->
+		<div class="container100">
+			<div class="row">
+			  <div class="col-md-12 bg_smoothie subTop">
+				<div class="coffeType">
+					<p class="f45_4w mt20 ">Smoothie</p>
+				</div>
+			  </div>
+			</div>
+		</div><!-- // container100 -->
+		<!-- //subBigBanner -->
+
+
+		<!--// Portfolio Cobbles Start //-->
+		<section class="section matychale-gallery-cobbles">
+		    <div>
+               <div class="container">
+                   <!-- AJAX로 각메뉴 불러오기 -->
+                   <div class="row">
+                       <!--<div class="gallery-filter-btn-wrapper">-->
+                           <div class="menu_cate" id="menuDiv">
+                               <a href="javascript:void(0);" class="btn" onclick="getGoodsList('espresso')"><p>Espresso</p></a>
+                               <a href="javascript:void(0);" class="btn" onclick="getGoodsList('tea')"><p>Tea</p></a>
+                               <a href="javascript:void(0);" class="btn" onclick="getGoodsList('soymilk')"><p>Special Drink</p></a>
+                               <a href="javascript:void(0);" class="btn" onclick="getGoodsList('ade')"><p>Ade</p></a>
+                               <a href="javascript:void(0);" class="btn active" onclick="getGoodsList('smoothie')"><p>Smoothie</p></a>
+                               <a href="javascript:void(0);" class="btn" onclick="getGoodsList('bread')"><p>Bread</p></a>
+                               <a href="javascript:void(0);" class="btn" onclick="getGoodsList('cake')"><p>Cake &amp; Dessert</p></a>
+                               <a href="javascript:void(0);" class="btn" onclick="getGoodsList('etc')"><p>Ice Dessert</p></a>
+                               <a href="javascript:void(0);" class="btn" onclick="getGoodsList('gift')"><p>Gift</p></a>
+                           </div>
+                       <!--</div>-->
+                   </div>
+                   <!-- // AJAX로 각메뉴 불러오기  -->
+               </div>
+			</div>
+			<!-- 이벤트 배너 코드 시작 -->
+				<div th:replace="fragments/eventFragment :: eventFragment"></div>
+        	<!-- //이벤트 배너 코드 끝 -->
+			<div class="container1640">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-sm-12  mt90"  >
+						<div class="products">
+								<div class="portfolio-gallery row clear">
+									<div class="portfolio-cobbles-item glry-item col-md-3 col-sm-6 col-6">
+										<div class="thumbnail2">
+											
+											
+												<div class="bg01">
+													<img th:src="@{/img/product/sm01.png}" alt="#" >
+												</div>
+											
+										</div>
+										<div class="portfolio-buttons mb70m">
+											<p class="f26_4 pdTitle">딸기 요거트 스무디</p>
+											<p class="mt10 f16_3g">생요거트와 진짜 딸기를 이용하여 더욱 신선하고 건강한 스무디</p>
+											<div class="alleg">알레르기 유발요인: 우유</div>
+										</div>
+									</div>
+								
+									<div class="portfolio-cobbles-item glry-item col-md-3 col-sm-6 col-6">
+										<div class="thumbnail2">
+											
+											
+												<div class="bg01">
+													<img th:src="@{/img/product/sm02.png}" alt="#" >
+												</div>
+											
+										</div>
+										<div class="portfolio-buttons mb70m">
+											<p class="f26_4 pdTitle">블루베리 요거트 스무디</p>
+											<p class="mt10 f16_3g">생요거트와 진짜 블루베리를 이용하여 더욱 신선하고 건강한 스무디</p>
+											<div class="alleg">알레르기 유발요인: 우유</div>
+										</div>
+									</div>
+								
+									<div class="portfolio-cobbles-item glry-item col-md-3 col-sm-6 col-6">
+										<div class="thumbnail2">
+											
+											
+												<div class="bg01">
+													<img th:src="@{/img/product/sm03.png}" alt="#" >
+												</div>
+											
+										</div>
+										<div class="portfolio-buttons mb70m">
+											<p class="f26_4 pdTitle">유자블라썸 스무디</p>
+											<p class="mt10 f16_3g">맛이면 맛. 비주얼이면 비주얼. 어느 하나 손색이 없는 새콤달콤한 스무디</p>
+											<div class="alleg">알레르기 유발요인: 없음</div>
+										</div>
+									</div>
+								
+									<div class="portfolio-cobbles-item glry-item col-md-3 col-sm-6 col-6">
+										<div class="thumbnail2">
+											<div class="bg01">
+												<img th:src="@{/img/product/sm04.png}" alt="#" >
+											</div>
+										
+										</div>
+										<div class="portfolio-buttons mb70m">
+											<p class="f26_4 pdTitle">비건 그린 스무디</p>
+											<p class="mt10 f16_3g">식물성 단백질과 신선한 과일과 채소를 함유한 넬보스코의 건강 스무디</p>
+											<div class="alleg">알레르기 유발요인: 대두</div>
+										</div>
+									</div>
+								
+									<div class="portfolio-cobbles-item glry-item col-md-3 col-sm-6 col-6">
+										<div class="thumbnail2">
+											<div class="bg01">
+												<img th:src="@{/img/product/sm05.png}" alt="#" >
+											</div>
+										</div>
+										<div class="portfolio-buttons mb70m">
+											<p class="f26_4 pdTitle">비건 레드 스무디</p>
+											<p class="mt10 f16_3g">식물성 단백질과 신선한 과일과 채소를 함유한 넬보스코의 건강 스무디</p>
+											<div class="alleg">알레르기 유발요인: 대두</div>
+										</div>
+									</div>
+								</div><!--// .row //-->
+
+								
+
+								<!-- // PC DISCOVER MENU -->
+							
+						</div><!-- products -->
+					</div>
+				</div>
+				<!-- row -->
+			</div><!-- // container -->
+		</section>
+		<!--// Portfolio Cobbles End //-->
+	</div>
+	<!-- ======================
+		 * //contant *
+	========================== -->
+
+	<!-- ====================== * FOOTER * ========================== -->
+	<footer class="container100" th:replace="fragments/mainFooter :: footerFragment"></footer>
+	<!-- ====================== * //FOOTER * ========================== -->
+	<div th:replace="fragments/menuScript :: menuScriptFragment"></div>
+	<div th:replace="fragments/footerScript :: footerScriptFragment"></div>
+	</div><!-- // wrap -->
+	</body>
+</html>

@@ -1,0 +1,858 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>넬보스코 루프탑 Lunch</title>
+    <head th:replace="fragments/r_head :: headFragment"></head>
+</head>
+  <body>
+	<div id="wrap">
+	<!-- ======================* HEADER *========================== -->
+	<header th:replace="fragments/r_mainHeader :: headerFragment"></header>
+	<!-- ======================* //HEADER *========================== -->
+
+	<!-- ======================
+		 * contant *
+	========================== -->
+	<div id="contant">
+		<!-- subBigBanner -->
+		<div class="container100">
+			<div class="row">
+			  <div class="col-md-12 bg_r_05 subTop">
+				<div class="coffeType"><!-- // 2023.06.21 start -->
+					<p class="f45_4w mt20 f_mo">Lunch</p><!-- // 2023.06.21 end -->
+				</div>
+			  </div>
+			</div>
+		</div><!-- // container100 -->
+		<!-- //subBigBanner -->
+		<!--// Portfolio Cobbles Start //-->
+		<section class="section matychale-gallery-cobbles">
+		    <div>
+				<div class="container">
+				   <div class="row">
+					<div class="menu_cate3"><!-- // 2023.06.21 start -->
+						<a href="#lunch_01"><p>Brunch & Rice & Salad</p></a>
+						<a href="#lunch_02"><p>Pasta</p></a>
+						<a href="#lunch_03"><p>Pizza</p></a>
+						<a href="#lunch_04"><p>Simple Dish</p></a>
+						<a href="#lunch_05"><p>Afternoon Tea Set</p></a>
+						<a href="#lunch_06"><p>Beverage</p></a>
+						<a href="#lunch_07"><p>Alcoholic Beverage</p></a><!-- // 2023.06.21 end -->
+					</div>
+				   </div>
+				</div>
+			</div>
+			
+			<div class="container">
+				<div class="location">
+					<span><a href="">HOME</a></span><img th:src="@{/img/location_arrow.gif}">
+					<span><a href="">Menu</a></span>
+				</div>
+			</div>
+			<!--// .container100_15 //-->
+          
+          
+			<div class="container1400 mt120 ">
+				<div class="row" >
+					<div class="col-lg-12 col-md-12 col-sm-12 center ">
+						<p class="f18_5 f_mo gold">Nel Bosco Rooftop Lounge & Bar</p><!-- // 2023.06.21 start -->
+						<p class="f62_4 f_mo mt20">Lunch</p>
+						<p class="mt40 f18_4">
+							야외에서 즐기기는 이색적인 분위기의 루프탑에서<br>
+							넬보스코 셰프가 준비한 루프탑과 어울리는 음식을 제공해 드립니다.<br>
+							맛있는 음식, 와인, 칵테일, 위스키 하이볼 등 다양한 메뉴와 함께 루프탑에서 힐링해보세요.
+						</p><!-- // 2023.06.21 end -->
+					
+						<div class="btn_type03 mt30 inlineB"><a th:href="@{/img/rooftop/menu_rooftopLounge&bar_lunch.pdf}" target="_blank">View All Menu <img th:src="@{/img/rooftop/ico_arrow_down.png}" alt="다운로드" /></a></div>
+						
+						
+					</div>
+					<!--
+					<div class="col-lg-6 col-md-12 col-sm-12  mt50">
+						<p class="img100 "><img src="./img/rooftop/r_brand_01.jpg" alt="" /></p>
+					</div>
+					-->
+				</div>
+				<div class="row mt100" id="lunch_01"><!-- // 2023.06.21 start -->
+					<div class="col-lg-12" >
+						<p class="f39_4 mt20 f_mo">Brunch & Rice & Salad</p>
+						<p class="img100 mt30 r_menuBox"><img th:src="@{/img/rooftop/r_lunch_02.jpg}" alt="Brunch & Rice & Salad" /><span class="f30_4w f_mo ">French Toast</span><b><img th:src="@{/img/rooftop/r_food_bi.jpg}" alt="넬보스코 BI" /></b></p>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+						<ul class="menu_half">
+							<li>
+								<p class="f20_4">프렌치 토스트</p>
+								<p class="f16_4 mt10 gold">French Toast</p>
+							</li>
+							<li>
+								<p class="f18_4 mt5 right">14.0</p>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+						<ul class="menu_half">
+							<li>
+								<p class="f20_4">카레 미트 그라탱</p>
+								<p class="f16_4 mt10 gold">Curry Meat Gratin</p>
+							</li>
+							<li>
+								<p class="f18_4 mt5 right">14.0</p>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+						<ul class="menu_half">
+							<li>
+								<p class="f20_4">새우 루꼴라 샐러드</p>
+								<p class="f16_4 mt10 gold">Shirmps Rucloa Salad</p>
+							</li>
+							<li>
+								<p class="f18_4 mt5 right">16.5</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row mt100" id="lunch_02">
+					<div class="col-lg-12" >
+						<p class="f39_4 mt20 f_mo">Pasta</p>
+						<p class="img100 mt30 r_menuBox"><img th:src="@{/img/rooftop/r_lunch_03.jpg}" alt="Pasta" /><span class="f30_4 f_mo left ">Toowoomba Fettuccine</span><b class="left"><img th:src="@{/img/rooftop/r_food_bi.jpg}" alt="넬보스코 BI" /></b></p>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+						<ul class="menu_half">
+							<li>
+								<p class="f20_4">봉골레 화이트 라구 스파게티</p>
+								<p class="f16_4 mt10 gold">Vongole White Ragu Spaghetti</p>
+							</li>
+							<li>
+								<p class="f18_4 mt5 right">17.0</p>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+						<ul class="menu_half">
+							<li>
+								<p class="f20_4">로제 크림 스파게티</p>
+								<p class="f16_4 mt10 gold">Rose Cream Spaghetti</p>
+							</li>
+							<li>
+								<p class="f18_4 mt5 right">18.5</p>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+						<ul class="menu_half">
+							<li>
+								<p class="f20_4">투움바 페투치네</p>
+								<p class="f16_4 mt10 gold">Toowoomba Fettuccine</p>
+							</li>
+							<li>
+								<p class="f18_4 mt5 right">19.5</p>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+						<ul class="menu_half">
+							<li>
+								<p class="f20_4">부라따치즈 토마토 페투치네</p>
+								<p class="f16_4 mt10 gold">Tomato Fettuccine with Burrata</p>
+							</li>
+							<li>
+								<p class="f18_4 mt5 right">19.5</p>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+						<ul class="menu_half">
+							<li>
+								<p class="f20_4">부채살 버섯 리가토니</p>
+								<p class="f16_4 mt10 gold">Flat Iron Funghi Cream Rigatoni</p>
+							</li>
+							<li>
+								<p class="f18_4 mt5 right">23.5</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row mt100" id="lunch_03">
+					<div class="col-lg-12" >
+						<p class="f39_4 mt20 f_mo">Pizza</p>
+						<p class="img100 mt30 r_menuBox"><img th:src="@{/img/rooftop/r_lunch_04.jpg}" alt="Pizza" /><span class="f30_4w f_mo  ">Proscuiutto E Rucola</span><b><img th:src="@{/img/rooftop/r_food_bi.jpg}" alt="넬보스코 BI" /></b></p>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+						<ul class="menu_half">
+							<li>
+								<p class="f20_4">페파로니</p>
+								<p class="f16_4 mt10 gold">Pepperoni</p>
+							</li>
+							<li>
+								<p class="f18_4 mt5 right">17.5</p>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+						<ul class="menu_half">
+							<li>
+								<p class="f20_4">부라따치즈 마르게리따</p>
+								<p class="f16_4 mt10 gold">Burrata Margherita</p>
+							</li>
+							<li>
+								<p class="f18_4 mt5 right">21.5</p>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+						<ul class="menu_half">
+							<li>
+								<p class="f20_4">꽈뜨로 스타지오니</p>
+								<p class="f16_4 mt10 gold">Quattro Stagioni</p>
+							</li>
+							<li>
+								<p class="f18_4 mt5 right">21.5</p>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+						<ul class="menu_half">
+							<li>
+								<p class="f20_4">프로쉬또 루꼴라</p>
+								<p class="f16_4 mt10 gold">Prosciutto E Rucola</p>
+							</li>
+							<li>
+								<p class="f18_4 mt5 right">23.5</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row mt100" id="lunch_04">
+					<div class="col-lg-12" >
+						<p class="f39_4 mt20 f_mo">Simple Dish</p>
+						<p class="img100 mt30 r_menuBox"><img th:src="@{/img/rooftop/r_lunch_05.jpg}" alt="Sweet Chillie Chicken" /><span class="f30_4 f_mo  left">Sweet Chilli Chicken</span><b class="left"><img th:src="@{/img/rooftop/r_food_bi.jpg}" alt="넬보스코 BI" /></b></p>
+					</div>
+					
+					<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+						<ul class="menu_half">
+							<li>
+								<p class="f20_4">스윗칠리 치킨</p>
+								<p class="f16_4 mt10 gold">Sweet Chilli Chicken</p>
+							</li>
+							<li>
+								<p class="f18_4 mt5 right">16.0</p>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+						<ul class="menu_half">
+							<li>
+								<p class="f20_4">바비큐 폭립</p>
+								<p class="f16_4 mt10 gold">BBQ Pork Rib</p>
+							</li>
+							<li>
+								<p class="f18_4 mt5 right">23.0</p>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+						<ul class="menu_half">
+							<li>
+								<p class="f20_4">채끝등심 찹스테이크</p>
+								<p class="f16_4 mt10 gold">Beef Striploin Chop Steak</p>
+							</li>
+							<li>
+								<p class="f18_4 mt5 right">27.0</p>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+						<ul class="menu_half">
+							<li>
+								<p class="f20_4">부채살 스테이크</p>
+								<p class="f16_4 mt10 gold">Flat Iron Steak</p>
+							</li>
+							<li>
+								<p class="f18_4 mt5 right">29.0</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row mt100" id="lunch_05">
+					<div class="col-lg-12" >
+						<p class="f39_4 mt20 f_mo">Afternoon Tea Set</p>
+						<p class="img100 mt30 r_menuBox"><img th:src="@{/img/rooftop/r_lunch_06.jpg}" alt="Afternoon Tea Set" /><span class="f30_4 f_mo  ">Nel Bosco Afternoon Tea Set</span><b><img th:src="@{/img/rooftop/r_food_bi.jpg}" alt="넬보스코 BI" /></b></p>
+					</div>
+					
+					<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+						<ul class="menu_half">
+							<li>
+								<p class="f20_4">넬보스코 애프터눈 티 세트</p>
+								<p class="f16_4 mt10 gold">Nel Bosco Afternoon Tea Set</p>
+							</li>
+							<li>
+								<p class="f18_4 mt5 right">49.0</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row mt100" id="lunch_06">
+					<div class="row" >
+					<div class="col-lg-12" >
+						<p class="f39_4 mt20 f_mo">Beverage</p>
+						<p class="img100 mt30 r_menuBox_gray f30_4 f_mo">Coffee</p>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+						<ul class="menu_half">
+							<li>
+								<p class="f20_4">아메리카노 (Hot/Ice)</p>
+								<p class="f16_4 mt10 gold">Americano</p>
+							</li>
+							<li>
+								<p class="f18_4 mt5 right">4.5</p>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+						<ul class="menu_half">
+							<li>
+								<p class="f20_4">카페라떼 (Hot/Ice)</p>
+								<p class="f16_4 mt10 gold">Cafe Latte</p>
+							</li>
+							<li>
+								<p class="f18_4 mt5 right">5.0</p>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+						<ul class="menu_half">
+							<li>
+								<p class="f20_4">카푸치노 (only Hot)</p>
+								<p class="f16_4 mt10 gold">Capuccino</p>
+							</li>
+							<li>
+								<p class="f18_4 mt5 right">5.0</p>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+						<ul class="menu_half">
+							<li>
+								<p class="f20_4">바닐라빈 라떼 (Hot/Ice)</p>
+								<p class="f16_4 mt10 gold">Vanilla Bean Latte</p>
+							</li>
+							<li>
+								<p class="f18_4 mt5 right">5.6</p>
+							</li>
+						</ul>
+					</div>
+
+
+
+					<!-- Tea & Ade -->
+					<div class="col-lg-12 mt50" >
+						<p class="img100 mt30 r_menuBox_gray f30_4 f_mo" id="drink_05">Tea & Ade</p>
+					</div>
+					
+					<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+						<ul class="menu_half">
+							<li>
+								<p class="f20_4">캐모마일 티 (Hot/Ice)</p>
+								<p class="f16_4 mt10 gold">Chamomile Tea</p>
+							</li>
+							<li>
+								<p class="f18_4 mt5 right">5.0</p>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+						<ul class="menu_half">
+							<li>
+								<p class="f20_4">얼그레이 티 (Hot/Ice)</p>
+								<p class="f16_4 mt10 gold">Earl Grey Tea</p>
+							</li>
+							<li>
+								<p class="f18_4 mt5 right">5.0</p>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+						<ul class="menu_half">
+							<li>
+								<p class="f20_4">블루베리 히비스커스 티 (Hot/Ice)</p>
+								<p class="f16_4 mt10 gold">Blueberry Hibiscus Tea</p>
+							</li>
+							<li>
+								<p class="f18_4 mt5 right">5.0</p>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+						<ul class="menu_half">
+							<li>
+								<p class="f20_4">바닐라밀크티 (Hot/Ice)</p>
+								<p class="f16_4 mt10 gold">Vanilla Milk Tea</p>
+							</li>
+							<li>
+								<p class="f18_4 mt5 right">6.0</p>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+						<ul class="menu_half">
+							<li>
+								<p class="f20_4">100% 수제 레몬에이드</p>
+								<p class="f16_4 mt10 gold">Handmade Lemon Ade</p>
+							</li>
+							<li>
+								<p class="f18_4 mt5 right">7.0</p>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+						<ul class="menu_half">
+							<li>
+								<p class="f20_4">100% 수제 자몽에이드</p>
+								<p class="f16_4 mt10 gold">Handmade Grapefruit Ade</p>
+							</li>
+							<li>
+								<p class="f18_4 mt5 right">7.0</p>
+							</li>
+						</ul>
+					</div>
+					<!-- Soft Drinks -->
+					<div class="col-lg-12 mt50" >
+						<p class="img100 mt30 r_menuBox_gray f30_4 f_mo" id="drink_06">Soft Drinks</p>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+						<ul class="menu_half">
+							<li>
+								<p class="f20_4">코카콜라</p>
+								<p class="f16_4 mt10 gold">Coca Cola</p>
+							</li>
+							<li>
+								<p class="f18_4 mt5 right">3.0</p>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+						<ul class="menu_half">
+							<li>
+								<p class="f20_4">코카콜라 제로</p>
+								<p class="f16_4 mt10 gold">Coca Cola Zero</p>
+							</li>
+							<li>
+								<p class="f18_4 mt5 right">3.0</p>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+						<ul class="menu_half">
+							<li>
+								<p class="f20_4">스프라이트</p>
+								<p class="f16_4 mt10 gold">Sprite</p>
+							</li>
+							<li>
+								<p class="f18_4 mt5 right">3.0</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row mt100" id="lunch_07">
+
+					<div class="row">
+						<div class="col-lg-12" >
+							<p class="f39_4 mt20 f_mo">Whisky Highball</p>
+						</div>
+						<!-- Single Malt -->
+						<div class="col-lg-12" >
+							<p class="img100 mt30 r_menuBox_gray f30_4 f_mo">Single Malt</p>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+							<ul class="menu_half">
+								<li>
+									<p class="f20_4">발베니 12Y 하이볼</p>
+									<p class="f16_4 mt10 gold">Balvenie 12Y Highball</p>
+								</li>
+								<li>
+									<p class="f18_4 mt5 right">22.0    /    320.0</p>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+							<ul class="menu_half">
+								<li>
+									<p class="f20_4">글랜피딕 12Y 하이볼</p>
+									<p class="f16_4 mt10 gold">Glenfiddich 12Y Highball</p>
+								</li>
+								<li>
+									<p class="f18_4 mt5 right">19.0    /    270.0</p>
+								</li>
+							</ul>
+						</div>
+						<!-- Bourbon -->
+						<div class="col-lg-12 mt40" >
+							<p class="img100 mt30 r_menuBox_gray f30_4 f_mo">Bourbon</p>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+							<ul class="menu_half">
+								<li>
+									<p class="f20_4">메이커스마크 하이볼</p>
+									<p class="f16_4 mt10 gold">Maker's Mark Highball</p>
+								</li>
+								<li>
+									<p class="f18_4 mt5 right">15.0    /    200.0</p>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+							<ul class="menu_half">
+								<li>
+									<p class="f20_4">잭다니엘 하이볼</p>
+									<p class="f16_4 mt10 gold">Jack Daniel's Highball</p>
+								</li>
+								<li>
+									<p class="f18_4 mt5 right">14.0    /    180.0</p>
+								</li>
+							</ul>
+						</div>
+						<!-- Blended -->
+						<div class="col-lg-12 mt40" >
+							<p class="img100 mt30 r_menuBox_gray f30_4 f_mo">Blended</p>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+							<ul class="menu_half">
+								<li>
+									<p class="f20_4">조니워커 블랙라벨 하이볼</p>
+									<p class="f16_4 mt10 gold">Johnnie Walker Black Label Highball</p>
+								</li>
+								<li>
+									<p class="f18_4 mt5 right">14.0    /    180.0</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="row mt100 width100" >
+						<div class="col-lg-12" >
+							<p class="f39_4 mt20 f_mo">Soju Highball</p>
+						</div>
+						
+						<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+							<ul class="menu_half">
+								<li>
+									<p class="f20_4">남촌의 밤 하이볼</p>
+									<p class="f16_4 mt10 gold">Namchon Night Highball</p>
+								</li>
+								<li>
+									<p class="f18_4 mt5 right">12.0</p>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+							<ul class="menu_half">
+								<li>
+									<p class="f20_4">남촌의 밤 하이볼 레몬</p>
+									<p class="f16_4 mt10 gold">Namchon Night Highball Lemon</p>
+								</li>
+								<li>
+									<p class="f18_4 mt5 right">12.0</p>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+							<ul class="menu_half">
+								<li>
+									<p class="f20_4">남촌의 밤 하이볼 얼그레이</p>
+									<p class="f16_4 mt10 gold">Namchon Night Highball Earl Grey</p>
+								</li>
+								<li>
+									<p class="f18_4 mt5 right">12.0</p>
+								</li>
+							</ul>
+						</div>
+
+						<!-- Cocktail -->
+						<div class="col-lg-12 " >
+							<p class="f39_4 mt20 f_mo">Cocktail</p>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+							<ul class="menu_half">
+								<li>
+									<p class="f20_4">진토닉</p>
+									<p class="f16_4 mt10 gold">Gin & Tonic</p>
+								</li>
+								<li>
+									<p class="f18_4 mt5 right">15.0</p>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+							<ul class="menu_half">
+								<li>
+									<p class="f20_4">싱가폴 슬링</p>
+									<p class="f16_4 mt10 gold">Singapore Sling</p>
+								</li>
+								<li>
+									<p class="f18_4 mt5 right">15.0</p>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+							<ul class="menu_half">
+								<li>
+									<p class="f20_4">하비 월뱅어</p>
+									<p class="f16_4 mt10 gold">Harvey Wallbanger</p>
+								</li>
+								<li>
+									<p class="f18_4 mt5 right">15.0</p>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+							<ul class="menu_half">
+								<li>
+									<p class="f20_4">피나콜라다 (Alcoholic/Non Alcoholic)</p>
+									<p class="f16_4 mt10 gold">Pinacolada</p>
+								</li>
+								<li>
+									<p class="f18_4 mt5 right">15.0</p>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+							<ul class="menu_half">
+								<li>
+									<p class="f20_4">모히또 (Alcoholic/Non Alcoholic)</p>
+									<p class="f16_4 mt10 gold">Mojito</p>
+								</li>
+								<li>
+									<p class="f18_4 mt5 right">15.0</p>
+								</li>
+							</ul>
+						</div>
+
+						<!-- Beer -->
+						<div class="col-lg-12 mt100" >
+							<p class="f39_4 mt20 f_mo">Beer</p>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+							<ul class="menu_half">
+								<li>
+									<p class="f20_4">클라우드 생 드래프트</p>
+									<p class="f16_4 mt10 gold">Kloud Draft</p>
+								</li>
+								<li>
+									<p class="f18_4 mt5 right">6.0</p>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+							<ul class="menu_half">
+								<li>
+									<p class="f20_4">테라</p>
+									<p class="f16_4 mt10 gold">Terra</p>
+								</li>
+								<li>
+									<p class="f18_4 mt5 right">6.0</p>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+							<ul class="menu_half">
+								<li>
+									<p class="f20_4">카스</p>
+									<p class="f16_4 mt10 gold">Cass</p>
+								</li>
+								<li>
+									<p class="f18_4 mt5 right">6.0</p>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+							<ul class="menu_half">
+								<li>
+									<p class="f20_4">버드와이저</p>
+									<p class="f16_4 mt10 gold">Budweiser</p>
+								</li>
+								<li>
+									<p class="f18_4 mt5 right">6.0</p>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+							<ul class="menu_half">
+								<li>
+									<p class="f20_4">호가든</p>
+									<p class="f16_4 mt10 gold">Hoegaarden</p>
+								</li>
+								<li>
+									<p class="f18_4 mt5 right">8.0</p>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+							<ul class="menu_half">
+								<li>
+									<p class="f20_4">스텔라 아르투아</p>
+									<p class="f16_4 mt10 gold">Stella Artois</p>
+								</li>
+								<li>
+									<p class="f18_4 mt5 right">9.0</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="row mt100">
+						<div class="col-lg-12" >
+							<p class="f39_4 mt20 f_mo">Wine</p>
+							<p class="img100 mt30 r_menuBox_gray f30_4 f_mo">Sparkling</p>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+							<ul class="menu_half">
+								<li>
+									<p class="f20_4">라 셰또, 장 발몽 브뤼</p>
+									<p class="f16_4 mt10 gold">LaCheteau, Jean Balmont Brut NV (Bordeaux, France)</p>
+								</li>
+								<li>
+									<p class="f18_4 mt5 right">40.0</p>
+								</li>
+							</ul>
+						</div>
+						<!-- white -->
+						<div class="col-lg-12 mt50" >
+							<p class="img100 mt30 r_menuBox_gray f30_4 f_mo">White</p>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+							<ul class="menu_half">
+								<li>
+									<p class="f20_4">아바찌아, 허니문 모스카토</p>
+									<p class="f16_4 mt10 gold">Abbazia, Honeymoon Moscato NV</p>
+								</li>
+								<li>
+									<p class="f18_4 mt5 right">30.0</p>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+							<ul class="menu_half">
+								<li>
+									<p class="f20_4">라 셰또, 장발몽 샤르도네</p>
+									<p class="f16_4 mt10 gold">La Chesteau, jean balmont Chardonnay 2020 (Loire, France)</p>
+								</li>
+								<li>
+									<p class="f18_4 mt5 right">40.0</p>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+							<ul class="menu_half">
+								<li>
+									<p class="f20_4">판티니, 판티니 컬렉션 비앙코</p>
+									<p class="f16_4 mt10 gold">Fantini, Fantini Collection Bianco2020 (Aburzzo, Italy)</p>
+								</li>
+								<li>
+									<p class="f18_4 mt5 right">65.0</p>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+							<ul class="menu_half">
+								<li>
+									<p class="f20_4">도멘 라포르트, 르부케 로제</p>
+									<p class="f16_4 mt10 gold">Domaine Laporte, Le Bouquet Rose 2019 (Loire, France)</p>
+								</li>
+								<li>
+									<p class="f18_4 mt5 right">75.0</p>
+								</li>
+							</ul>
+						</div>
+						<!-- Red -->
+						<div class="col-lg-12 mt50" >
+							<p class="img100 mt30 r_menuBox_gray f30_4 f_mo">Red</p>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+							<ul class="menu_half">
+								<li>
+									<p class="f20_4">차카나, 마이페 리저브 까베르네 소비뇽</p>
+									<p class="f16_4 mt10 gold">Chakana, Maipe Reserve Cabermet Sauvignon 2018 (Mendoza, Argentina)</p>
+								</li>
+								<li>
+									<p class="f18_4 mt5 right">30.0</p>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+							<ul class="menu_half">
+								<li>
+									<p class="f20_4">샤또 꾸르통, 라 페리에르</p>
+									<p class="f16_4 mt10 gold">Chteau Curton, La Perriere 2019 (Bordeaux, France)</p>
+								</li>
+								<li>
+									<p class="f18_4 mt5 right">40.0</p>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+							<ul class="menu_half">
+								<li>
+									<p class="f20_4">실버라이닝, 피노누아</p>
+									<p class="f16_4 mt10 gold">Siver Lining, Pinot noir 2018 (Bordeaux, France)</p>
+								</li>
+								<li>
+									<p class="f18_4 mt5 right">45.0</p>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+							<ul class="menu_half">
+								<li>
+									<p class="f20_4">안델루나, 1300 말벡</p>
+									<p class="f16_4 mt10 gold">Domaine Laporte, Le Bouquet Rose 2019 (Loire, France)</p>
+								</li>
+								<li>
+									<p class="f18_4 mt5 right">55.0</p>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+							<ul class="menu_half">
+								<li>
+									<p class="f20_4">샤또 드 라 가르딘, 꼬뜨 뒤 론 루즈</p>
+									<p class="f16_4 mt10 gold">LaCheteau, Jean Balmont Brut NV  (Bordeaux, France)</p>
+								</li>
+								<li>
+									<p class="f18_4 mt5 right">60.0</p>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12  mt40">
+							<ul class="menu_half">
+								<li>
+									<p class="f20_4">판티니, 까살레베끼오 몬테풀치아노 다브루쪼</p>
+									<p class="f16_4 mt10 gold">Fantini, Casale Vecchio Montepulciano d’Abruzzo 2018 (Aburzzo, Italy) </p>
+								</li>
+								<li>
+									<p class="f18_4 mt5 right">75.0</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div><!-- // 2023.06.21 end -->
+			</div>
+			<!-- // container1400 -->
+		</section>
+		<!--// Portfolio Cobbles End //-->
+	</div>
+	<!-- ======================
+		 * //contant *
+	========================== -->
+	<!-- ======================* FOOTER *========================== -->
+	<footer th:replace="fragments/r_mainFooter :: footerFragment"></footer>
+	<!-- ======================* //FOOTER *========================== -->
+	<!-- ====================== * //FOOTER * ========================== -->
+	<div th:replace="fragments/footerScript :: footerScriptFragment"></div> 
+	</div><!-- // wrap -->
+	</body>
+</html>

@@ -41,6 +41,7 @@
 .f15_5w a {font-size:15px;color:#fff;  font-weight:500; line-height:150%}
 .f15_4g {font-size:15px;color:#808080;  font-weight:400; line-height:150% }
 .f16_3g {font-size:16px;color:#808080;  font-weight:300; line-height:150%; padding-bottom: 0px; overflow: hidden; }
+.f16_4 {font-size:16px; line-height:150%; }
 .f18_4 {font-size:18px;color:#000;  font-weight:400; line-height:150% ; } 
 .f18_4w {font-size:18px;color:#fff;  font-weight:400; line-height:150% ; } 
 .f18_7 {font-size:18px;color:#000;  font-weight:700; line-height:150% ; } 
@@ -101,6 +102,7 @@
 
 .red{color:#e60013}
 .gold {color:#c7a582; !important}
+.width100 {width:100%}
 /* ----------------------------------------------- */
 /* common
 -------------------------------------------------- */
@@ -512,7 +514,7 @@ ul.count_box li {padding:0px 25px 25px 25px}
 .bg_r_03 {background: url('../../img/rooftop/bg_r_brand.jpg')  no-repeat; width: 100%;height: 100%;-webkit-background-size: cover;background-size: cover;  text-align:center; background-position:center }
 .bg_r_04 {background: url('../../img/rooftop/r_brand_05.jpg')  no-repeat; width: 100%;height: 100%;-webkit-background-size: cover;background-size: cover;  text-align:center; background-position:center }
 .bg_r_05 {background: url('../../img/rooftop/r_food_01.jpg')  no-repeat; width: 100%;height: 100%;-webkit-background-size: cover;background-size: cover;  text-align:center; background-position:center }
-.bg_r_06 {background: url('../../img/rooftop/r_drink_01.jpg')  no-repeat; width: 100%;height: 100%;-webkit-background-size: cover;background-size: cover;  text-align:center; background-position:center }
+.bg_r_06 {background: url('../../img/rooftop/r_dinner_01.jpg')  no-repeat; width: 100%;height: 100%;-webkit-background-size: cover;background-size: cover;  text-align:center; background-position:center }
 .bg_r_07 {background: url('../../img/rooftop/r_notice.jpg')  no-repeat; width: 100%;height: 100%;-webkit-background-size: cover;background-size: cover;  text-align:center; background-position:center }
 .bg_r_08 {background: url('../../img/rooftop/r_contact_big.jpg')  no-repeat; width: 100%;height: 100%;-webkit-background-size: cover;background-size: cover;  text-align:center; background-position:center }
 .bg_r_09 {background: url('../../img/rooftop/r_faq.jpg')  no-repeat; width: 100%;height: 100%;-webkit-background-size: cover;background-size: cover;  text-align:center; background-position:center }
@@ -1964,8 +1966,8 @@ textarea.insBox2 {width:100%; height:1000px; text-align:left; font-size:12px; co
 	.r_menuBox b {position:absolute; right:0; top:0px; max-width:100px }
 	.r_menuBox b.left {position:absolute; left:0; top:0px; max-width:100px }
 	.menu_half {position:relative; }
-	.menu_half li {width:50%; float:left; vertical-align:top}
-	.menu_half li:last-child {text-align:right; padding-right:30px}
+	.menu_half li:first-child {width:79%; float:left; vertical-align:top; display:inline-block}
+	.menu_half li:last-child {width:19%; float:right; text-align:right; padding-right:30px}
 	.r_menuBox_gray {position:relative; background:#f2f2f2; padding:13px 20px }
 	.nstore {background:#fff; border-radius:10px; padding:10px 0;  font-size:13px; border:1px solid #d2d2d2 }
 	.nstore a {color:#999999;}
@@ -2075,6 +2077,7 @@ textarea.insBox2 {width:100%; height:1000px; text-align:left; font-size:12px; co
 	.bg_recipe {min-height:600px}
 	.bg_menu2 {min-height:600px}
 	*/
+	.f16_4 {font-size:13px; line-height:150%; }
 	.f19_4 {font-size:17px;}
 	.f20_4 {font-size:18px}
 	.f20_4w {font-size:18px}
