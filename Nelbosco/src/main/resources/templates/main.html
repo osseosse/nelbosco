@@ -10,7 +10,7 @@
 <header th:replace="fragments/mainHeader :: headerFragment"></header>
 <!-- ======================* //HEADER *========================== -->
 	<div id="popup_350570" style="position:absolute; top:110px; left:20px; z-index:10001; height:628px; display:none;">
-		<iframe th:src="@{/fragments/popup_350}" marginwidth="0" marginheight="0" width="350px" height="560px" frameborder="0" scrolling="no"></iframe>
+		<iframe th:src="@{/fragments/b_popup_350}" marginwidth="0" marginheight="0" width="350px" height="560px" frameborder="0" scrolling="no"></iframe>
 	</div>
 	
 	<!--
@@ -522,68 +522,38 @@
 <!-- ====================== * //FOOTER * ========================== -->
 <!-- 2021-06-03 -->
 <script type="text/javascript">
-	function getCookie(name) {
-	    var cookie = document.cookie;
+function getCookie(name) {
+    var cookie = document.cookie;
+    if (document.cookie != "") {
+         var cookieArray = cookie.split(";");
+         for ( var index in cookieArray) {
+             var cookieName = cookieArray[index].split("="); 
+             if (cookieName[0].includes(name)) {
+            	 console.log(cookieName[1]);
+                 return cookieName[1];
+             }
+         }
+    }
 	
-	    if (document.cookie != "") {
-	         var cookieArray = cookie.split("; ");
-	         for ( var index in cookieArray) {
-	             var cookieName = cookieArray[index].split("=");
-	             if (cookieName[0] == name) {
-	                  return cookieName[1];
-	             }
-	         }
-	    }
-	    return ;    
+    return ;    
+}
+
+function timeCheck(theDay){
+	var today = new Date();	
+	return (today<theDay);
+}
+
+$(document).ready(function(){
+	
+	var cookieCheck = getCookie("b_popup_350570"); // 쿠키 체크 //
+	var theDay = new Date('2023-10-04 00:00:00'); // 팝업 게시 종료일 //
+	if (cookieCheck != "done" && timeCheck(theDay)){
+		$("#popup_350570").css("display","block");
 	}
 
-	$(document).ready(function(){
-		var popup = document.getElementById("popup");
-		//var rightPopup = document.getElementById("rightPopup");
-		var popup_350570 = document.getElementById("popup_350570");
-		
-		var cookieCheck = getCookie("popup");
-		if (cookieCheck != "done"){
-			popup.style.display = 'block';
-		}
-		/*
-		var cookieCheck = getCookie("rightPopup");
-		if (cookieCheck != "done"){
-			rightPopup.style.display = 'block';
-		}
-		*/
-		
-		var cookieCheck = getCookie("popup_350570");
-		if (cookieCheck != "done"){
-			popup_350570.style.display = 'block';
-		}
-		
-		var today = new Date();
-		var year = today.getFullYear();
-		
-		if((today.getMonth()+1)<10){
-			var month = "0" + (today.getMonth()+1);
-		}
-		else{
-			var month = today.getMonth()+1;
-		}
-		
-		if(today.getDate()<10){
-			var date = "0" + today.getDate();
-		}
-		else{
-			var date = today.getDate();
-		}
-		
-		var currDate = year.toString() + month + date;
-		
-		
-		if(currDate >= 20230122){
-	    	$("#popup_350570").attr("style", "display:none;");
-	    }
-		
-		$('#tabwrap2').basicTabs2();/* basicTabs2 변경 */
-	});
+	$('#tabwrap2').basicTabs2();/* basicTabs2 변경 */		
+});
+
 </script>
 <div th:replace="fragments/footerScript :: footerScriptFragment"></div>
 </div><!-- // wrap -->

@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 
 <head>
@@ -8,9 +8,9 @@
 	<script th:src="@{/js/prrple.slider.js}"></script>
 </head>
 <script type="text/javascript">
-	function PopupCookieSave2(){
+	function PopupCookieSave2(){	
 		setCookie("b_popup_350570", "done" , 1);
-		parent.popup_350570.style.display = "none";
+		$("#mainPop_350570").css("display","none");
 		//window.close();
 	}
 	// 쿠키 저장(X) 닫기
@@ -31,7 +31,7 @@
 <div class="popBox_350570"><!-- 400px * 570px -->
 	<!-- img -->
 	<div class="img">
-		<a href="#" onclick="return false;" target="_blank"><img th:src="@{/img/pop_20221226_r.jpg}" alt="설선물" border="0"/></a>
+		<a href="#" onclick="return false;" target="_blank"><img th:src="@{/img/pop_20230913.jpg}" alt="추석운영시간" border="0"/></a>
 	</div>
 
 	<!-- action -->
