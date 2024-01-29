@@ -11,7 +11,7 @@
 <!-- ======================* //HEADER *========================== -->
 	<!-- 팝업 날짜, 쿠키 생성하는 코드 최하단에 있음 -->
 	<div id="popup_350570" style="position:absolute; top:110px; left:20px; z-index:10001; height:628px; display:none;">
-		<iframe th:src="@{/fragments/b_popup_350}" marginwidth="0" marginheight="0" width="350px" height="560px" frameborder="0" scrolling="no"></iframe>
+		<iframe th:src="@{/fragments/b_popup_350_slide}" marginwidth="0" marginheight="0" width="350px" height="560px" frameborder="0" scrolling="no"></iframe>
 	</div>
 	
 	<!--
@@ -541,14 +541,20 @@ function getCookie(name) {
 
 function timeCheck(theDay){
 	var today = new Date();	
-	return (today<theDay);
+	return (today<=theDay);
+}
+
+function startDayCheck(startDay){
+	var today = new Date();
+	return (today>=startDay);
 }
 
 $(document).ready(function(){
 	
 	var cookieCheck = getCookie("b_popup_350570"); // 쿠키 체크 //
-	var theDay = new Date('2023-12-16 00:00:00'); // 팝업 게시 종료일 //
-	if (cookieCheck != "done" && timeCheck(theDay)){
+	var startDay 	= new Date('2024-01-18 09:00:00') 	// 팝업 게시 시작일 // 
+	var theDay 		= new Date('2024-02-14 18:00:00'); // 팝업 게시 종료일 //
+	if (cookieCheck != "done" && timeCheck(theDay) && startDayCheck(startDay)){
 		$("#popup_350570").css("display","block");
 	}
 

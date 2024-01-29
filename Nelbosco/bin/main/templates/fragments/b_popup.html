@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 
 <head>
@@ -36,12 +36,28 @@
 			<div class="slider">
 				<div class="slider_area">
 					<div class="slides">
+						<!-- img -->
+
+						<div class="slide">
+							<div class="slidetitle" >
+								<a href="/restaurant/bcontact/notice" target="_blank"><img th:src="@{/img/pop_20240118_r.jpg}"  alt="공지사항" border="0"/></a>	
+							</div>
+						</div>
+		
+						<div class="slide">
+							<div class="slidetitle" >
+								<a href="https://www.instagram.com/p/CWXqeiHsKpI/" target="_blank"><img th:src="@{/img/brunch/popup_20211118.jpg}" alt="수능이벤트" border="0"/></a>	
+							</div>
+						</div>
+						
+						<!-- img //-->
 					</div>
 				</div>
 				<a class="slider_left">Left</a>
 				<a class="slider_right">Right</a>
 			</div>
 		</div>
+		<!-- // pp-slider -->
 	</div>
 	<!-- action--> 
 	<div class="action">

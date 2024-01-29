@@ -12,8 +12,8 @@
 <!-- ======================
 		 * contant *
 	========================== -->
-	<div id="popup_350570" style="position:absolute; top:110px; left:20px; z-index:10001; height:628px; display:none;">
-		<iframe th:src="@{/fragments/b_popup_350}" marginwidth="0" marginheight="0" width="350px" height="560px" frameborder="0" scrolling="no"></iframe>
+	<div id="popup_350570" style="position:absolute; top:110px; left:20px; z-index:10001; display:none;">
+		<iframe th:src="@{/fragments/popup_350_slide}" marginwidth="0" marginheight="0" width="350px" height="560px" frameborder="0" scrolling="no"></iframe>
 	</div>
 	<!-- 
 	<div id="popup" style="position:absolute; top:110px; left: 450px; z-index:10001; height:550px; display:none;">
@@ -310,7 +310,7 @@
 						<p class="BIU-type03">Nel Bosco Italian Restaurant</p>
 						<p class="BIU-type04 f_mo">INFORMATION</p>
 						<p class="btn_b_01 mt70"> <a href="https://app.catchtable.co.kr/ct/shop/nelbosco" target="_blank">레스토랑 예약하기</a></p>
-						<p class="btn_b_01_w mt20"> <a href="/upload/menu/nelbosco-menu2022.pdf" target="_blank"><!-- <a href="#" target="_blank" onClick="alert('준비중입니다.')"> -->MENU PDF 다운로드</a></p>	
+						<p class="btn_b_01_w mt20"> <a href="/upload/menu/nelbosco-menu2023-11.pdf">MENU PDF 다운로드</a></p> 
 					</div>
 					<div class="col-md-8 mt50m">
 						<ul class="b_info_ul">
@@ -507,14 +507,20 @@ function getCookie(name) {
 
 function timeCheck(theDay){
 	var today = new Date();	
-	return (today<theDay);
+	return (today<=theDay);
+}
+
+function startDayCheck(startDay){
+	var today = new Date();
+	return (today>=startDay);
 }
 
 $(document).ready(function(){	
 	
-	var cookieCheck = getCookie("b_popup_350570"); // 쿠키 체크 //
-	var theDay = new Date('2023-10-04 00:00:00'); // 팝업 게시 종료일 //
-	if (cookieCheck != "done" && timeCheck(theDay)){
+	var cookieCheck = getCookie("popup_350570"); // 쿠키 체크 //
+	var startDay 	= new Date('2024-01-18 09:00:00') 	// 팝업 게시 시작일 // 
+	var theDay 		= new Date('2024-02-14 18:00:00'); // 팝업 게시 종료일 //
+	if (cookieCheck != "done" && timeCheck(theDay) && startDayCheck(startDay)){
 		$("#popup_350570").css("display","block");
 	}
 
