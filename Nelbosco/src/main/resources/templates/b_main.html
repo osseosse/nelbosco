@@ -519,8 +519,9 @@ $(document).ready(function(){
 	
 	var cookieCheck = getCookie("popup_350570"); // 쿠키 체크 //
 	var startDay 	= new Date('2024-01-18 09:00:00') 	// 팝업 게시 시작일 // 
-	var theDay 		= new Date('2024-02-14 18:00:00'); // 팝업 게시 종료일 //
-	if (cookieCheck != "done" && timeCheck(theDay) && startDayCheck(startDay)){
+	var theDay 		= new Date('2024-02-10 10:00:00'); // 팝업 게시 종료일 //
+	if ((cookieCheck != "done") && timeCheck(theDay) && startDayCheck(startDay)){
+				
 		$("#popup_350570").css("display","block");
 	}
 
