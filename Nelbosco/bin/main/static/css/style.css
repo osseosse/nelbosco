@@ -497,6 +497,8 @@ ul.count_box li {padding:0px 25px 25px 25px}
 .bg_b_tour{background: url('../../img/brunch/bg_b_tour.jpg')  no-repeat; width: 100%;height: 100%;-webkit-background-size: cover;background-size: cover;  text-align:center; background-position:center }
 .bg_b_brunch {background: url('../../img/brunch/bg_b_brunch.jpg')  no-repeat; width: 100%;height: 100%;-webkit-background-size: cover;background-size: cover;  text-align:center; background-position:center }
 .bg_b_dinner {background: url('../../img/brunch/bg_b_dinner.jpg')  no-repeat; width: 100%;height: 100%;-webkit-background-size: cover;background-size: cover;  text-align:center; background-position:center }
+.bg_b_lunch-dinner {background: url('../../img/brunch/bg_b_lunch&dinner.jpg')  no-repeat; width: 100%;height: 100%;-webkit-background-size: cover;background-size: cover;  text-align:center; background-position:center }
+
 .bg_b_beverage {background: url('../../img/brunch/bg_b_beverage.jpg')  no-repeat; width: 100%;height: 100%;-webkit-background-size: cover;background-size: cover;  text-align:center; background-position:center }
 .bg_b_course {background: url('../../img/brunch/bg_b_course.jpg')  no-repeat; width: 100%;height: 100%;-webkit-background-size: cover;background-size: cover;  text-align:center; background-position:center }
 .bg_b_wine {background: url('../../img/brunch/bg_b_wine.jpg')  no-repeat; width: 100%;height: 100%;-webkit-background-size: cover;background-size: cover;  text-align:center; background-position:center }
@@ -1717,6 +1719,16 @@ textarea.insBox2 {width:100%; height:1000px; text-align:left; font-size:12px; co
 	.b_menubg02 { background:#fff url('../../img/brunch/food_02.jpg')  no-repeat 0 0; text-align:center; background-position:center; background-size:cover}
 	.b_menubg03 { background:#fff url('../../img/brunch/food_03.jpg')  no-repeat 0 0; text-align:center; background-position:center; background-size:cover}
 	.b_menubg04 { background:#fff url('../../img/brunch/food_04.jpg')  no-repeat 0 0; text-align:center; background-position:center; background-size:cover}
+
+
+
+    .b_menubg05 { background:#fff url('../../img/brunch/b_s_brunch03.jpg')  no-repeat 0 0; text-align:center; background-position:center; background-size:cover}
+	.b_menubg06 { background:#fff url('../../img/brunch/b_s_brunch06.jpg')  no-repeat 0 0; text-align:center; background-position:center; background-size:cover}
+	.b_menubg07 { background:#fff url('../../img/brunch/b_s_brunch07.jpg')  no-repeat 0 0; text-align:center; background-position:center; background-size:cover}
+
+
+
+	
 	.h410 {height:410px}
 	
 	/* 브런치레스토랑 > 메인 INFO */
