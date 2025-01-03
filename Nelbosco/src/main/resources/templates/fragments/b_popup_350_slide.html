@@ -175,8 +175,24 @@
 	    document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";";
 	}
 </script>
+<script>
+    window.onload = function() {
+        // 종료 날짜 설정
+        const endDate = new Date('2025-01-02T23:59:59'); // 1/30 자정까지 유효
 
+        // 현재 날짜 가져오기
+        const today = new Date();
 
+        // 두 번째 팝업 요소 선택
+        const slides = document.querySelectorAll('#firstRemove');
+        const secondPopup = slides[1]; // 두 번째 팝업
+
+        // 날짜 비교 후 팝업 숨기기
+        if (today > endDate) {
+            secondPopup.remove(); // 두 번째 팝업 완전히 삭제
+        }
+    };
+</script>
 <body id="mainPop_350570">
 		<!-- pp-slider -->
 		<div class="container" id="sliderh3">
@@ -188,15 +204,15 @@
 						<div class="slide">
 							<div class="slidetitle" >
 								<a href="https://map.naver.com/p/entry/place/1471317586?lng=126.9797956&lat=37.5586861&placePath=%2Fbooking&searchType=place&c=15.00,0,0,0,dh" target="_blank">
-									<img th:src="@{/img/pop_20241122_01.jpg}"  alt="크리스마스" border="0"/>
+									<img th:src="@{/img/pop_20250102.jpg}"  alt="갈레트데루아" border="0"/>
 								</a>	
 							</div>
 						</div>
 						
-						<div class="slide">
+						<div class="slide" th:if="${#dates.format(#dates.createNow(), 'yyyy-MM-dd') le '2025-01-30'}">
 							<div class="slidetitle" >
-								<a href="https://map.naver.com/p/entry/place/1471317586?lng=126.9797956&lat=37.5586861&placePath=%2Fbooking&searchType=place&c=15.00,0,0,0,dh" target="_blank">
-									<img th:src="@{/img/pop_20241122_02.jpg}" alt="크리스마스 안내" border="0"/>
+								<a href="javascript:void(0);" target="_parent">
+									<img th:src="@{/img/pop_20250103.jpg}" alt="설휴무 안내" border="0"/>
 								</a>	
 							</div>
 						</div>
