@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nelbosco.mapper.NoticeMapper">
+
+	<sql id="NoticeColumns">
+		 id, 
+		 writer,
+		 title, 
+		 content, 
+		 img_saved, 
+		 img_original, 
+		 insert_date, 
+		 modified_date, 
+		 division,
+		 notice_yn,
+		 secret_yn
+	</sql>
+
+	<insert id="insertNotice" parameterType="com.nelbosco.domain.NoticeDTO" useGeneratedKeys="true" keyProperty="id">
+		INSERT INTO tb_notice (
+			 writer,
+			 title, 
+			 content, 
+			 img_saved, 
+			 img_original, 
+			 insert_date, 
+			 modified_date, 
+			 division,
+			 notice_yn,
+			 secret_yn
+		) VALUES (
+			  #{writer}
+			, #{title}
+			, #{content}
+			, #{imgSaved}
+			, #{imgOriginal}
+			, NOW()
+			, NOW()		
+			, #{division}
+			, IFNULL(#{noticeYn}, 'N')
+			, IFNULL(#{secretYn}, 'N')
+		)
+	</insert>
+	
+	<select id="selectAllNotices" resultType="com.nelbosco.domain.NoticeDTO">
+		SELECT
+			<include refid="NoticeColumns" />
+		FROM
+			tb_notice
+		WHERE
+			delete_yn = 'N'		
+		ORDER BY
+			id DESC,
+			insert_date DESC
+	</select>
+
+	<select id="selectNewsDetail" parameterType="long" resultType="com.nelbosco.domain.NoticeDTO">
+		SELECT
+			<include refid="NoticeColumns" />
+		FROM
+			tb_notice
+		WHERE
+			delete_yn = 'N'
+		AND
+			id = #{id}
+	</select>
+	
+	<update id="updateNotice" parameterType="com.nelbosco.domain.NoticeDTO">
+	    UPDATE tb_notice
+	    SET
+	        title = #{title},
+	        content = #{content},
+	        modified_date = NOW(),
+	        division = #{division},
+	        notice_yn = IFNULL(#{noticeYn}, 'N'),
+	        secret_yn = IFNULL(#{secretYn}, 'N')
+	    WHERE id = #{id}
+	</update>
+
+</mapper>

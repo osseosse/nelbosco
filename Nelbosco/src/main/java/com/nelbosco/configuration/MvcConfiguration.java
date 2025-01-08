@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import com.nelbosco.interceptor.LoggerInterceptor;
@@ -23,6 +24,14 @@ public class MvcConfiguration implements WebMvcConfigurer {
         registry.addMapping("/**")
                 .allowedOrigins("*");
 	}
+	
+	
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registry.addResourceHandler("/img/upload/**")
+                .addResourceLocations("file:src/main/resources/static/img/upload/")
+                .setCachePeriod(0); // 캐시 비활성화
+    }
 	
 	@Bean
 	public CommonsMultipartResolver multipartResolver() {
