@@ -15,24 +15,24 @@ public class MvcConfiguration implements WebMvcConfigurer {
 
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
-		registry.addInterceptor(new LoggerInterceptor())
-				.excludePathPatterns("/css/**", "/img/**", "/js/**", "/fonts/**", "/plugin/**", "/scripts/**");
+		registry.addInterceptor(new LoggerInterceptor()).excludePathPatterns("/css/**", "/img/**", "/js/**",
+				"/fonts/**", "/plugin/**", "/scripts/**");
+
+		registry.addInterceptor(new AdminCheckInterceptor()).addPathPatterns("/admin/**")
+				.excludePathPatterns("/admin/login");
 	}
 
 	@Override
-    public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/**")
-                .allowedOrigins("*");
+	public void addCorsMappings(CorsRegistry registry) {
+		registry.addMapping("/**").allowedOrigins("*");
 	}
-	
-	
-    @Override
-    public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/img/upload/**")
-                .addResourceLocations("file:src/main/resources/static/img/upload/")
-                .setCachePeriod(0); // 캐시 비활성화
-    }
-	
+
+	@Override
+	public void addResourceHandlers(ResourceHandlerRegistry registry) {
+		registry.addResourceHandler("/img/upload/**").addResourceLocations("file:src/main/resources/static/img/upload/")
+				.setCachePeriod(0); // 캐시 비활성화 // 추가
+	}
+
 	@Bean
 	public CommonsMultipartResolver multipartResolver() {
 		CommonsMultipartResolver multipartResolver = new CommonsMultipartResolver();

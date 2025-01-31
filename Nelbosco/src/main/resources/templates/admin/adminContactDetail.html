@@ -1,58 +1,16 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
-<head>
-	<title>넬보스코 관리자</title>
-	<head th:replace="admin/adminHead :: headFragment"></head>
-    <head th:replace="fragments/head :: headFragment"></head>
-	<link th:href="@{/css/modality.css}" rel="stylesheet" /><!-- 2021-06-02 -->
-	<script th:src="@{/js/bootstrap.min.js}"></script>
-</head>
-<body>
-<div id="wrap">
-<div id="commentModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="commentModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="form-group">
-                        <label for="modalWriter" class="col-form-label">작성자</label>
-                        <input type="text" id="modalWriter" class="form-control" placeholder="작성자를 입력해 주세요." />
-                    </div>
-                    <div class="form-group">
-                        <label for="modalContent" class="col-form-label">내용</label>
-                        <textarea id="modalContent" class="form-control" placeholder="내용을 입력해 주세요."></textarea>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" id="btnModalCancel" class="btn btn-default waves-effect waves-light" data-dismiss="modal">취소하기</button>
-                <button type="button" id="btnCommentUpdate" class="btn btn-primary waves-effect waves-light" onclick="updateComment()">수정하기</button>
-                <button type="button" id="btnCommentDelete" class="btn btn-danger waves-effect waves-light">삭제하기</button>
-            </div>
-        </div>
-    </div>
-</div>
+<head th:replace="fragments/admin :: head"></head>
+  <body>
+  <header class="p-3 text-bg-dark" th:replace="fragments/admin :: header">
+  </header>
+  <div class="row min-vh-100">
+  <div class="p-2 text-bg-dark col-2"  th:replace="fragments/admin :: sidebar" >
+  </div>
 <!-- ======================
-	 * contant *
+	 * //content *
 ========================== -->
-<div id="contant">
-<!--// Portfolio Cobbles Start //-->
-<section class="section matychale-gallery-cobbles">
-<div>
-    <div class="container">
-        <div class="row">
-		<div class="menu_cate">
-		<br><br>
-		</div>
-       </div>
-   </div>
-</div>
-<div class="container">
+	<div class="container col-9">
 	<div class="location">
 		<span><a href="/admin/adminList">관리자 메인</a></span><img th:src="@{/img/location_arrow.gif}">
 		<span><a href="/admin/adminContactList">예약문의 리스트</a></span><img th:src="@{/img/location_arrow.gif}">
@@ -123,6 +81,34 @@
 <!-- ======================
 	 * //contant *
 ========================== -->
+<div id="commentModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="commentModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="modalWriter" class="col-form-label">작성자</label>
+                        <input type="text" id="modalWriter" class="form-control" placeholder="작성자를 입력해 주세요." />
+                    </div>
+                    <div class="form-group">
+                        <label for="modalContent" class="col-form-label">내용</label>
+                        <textarea id="modalContent" class="form-control" placeholder="내용을 입력해 주세요."></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="btnModalCancel" class="btn btn-default waves-effect waves-light" data-dismiss="modal">취소하기</button>
+                <button type="button" id="btnCommentUpdate" class="btn btn-primary waves-effect waves-light" onclick="updateComment()">수정하기</button>
+                <button type="button" id="btnCommentDelete" class="btn btn-danger waves-effect waves-light">삭제하기</button>
+            </div>
+        </div>
+    </div>
+</div>
 <div th:replace="fragments/footerScript :: footerScriptFragment"></div> 
 </div><!-- // wrap -->
 <script th:src="@{/scripts/moment.js}"></script>

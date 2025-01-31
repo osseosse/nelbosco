@@ -21,6 +21,14 @@
 			</li>
 		</ol>
 	</div>
+	<th:block layout:fragment="script">
+	<script th:inline="javascript">
+		/*<![CDATA[*/
+		function movePage(uri, queryString) {
+			location.href = uri + queryString;
+		}
+	</script>
+	</th:block> 
 	</nav>
 
 	<div th:fragment="search" id="adv-search" class="input-group">

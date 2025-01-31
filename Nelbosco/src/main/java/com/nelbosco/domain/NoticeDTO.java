@@ -10,18 +10,16 @@ import org.springframework.web.multipart.MultipartFile;
 import com.nelbosco.constant.Business;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 
-@Data
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class NoticeDTO {
+public class NoticeDTO extends CommonDTO {
 	
 	private Long id;
 	
@@ -30,6 +28,7 @@ public class NoticeDTO {
 	@NotNull@NotBlank
 	private String title;
 	
+	@NotNull@NotBlank
 	private String content;
 	private String imgSaved; 
 	private String imgOriginal; 
@@ -40,6 +39,18 @@ public class NoticeDTO {
 	
 	private MultipartFile uploadImg;
 	
-	@NotNull@NotBlank
+	@NotNull
 	private Business division;
+	
+	private String createIp;
+	private String modifyIp;
+
+	public NoticeDTO(String writer) {
+		super();
+		this.writer = writer;
+	}
+	
+	
+	
+	
 }

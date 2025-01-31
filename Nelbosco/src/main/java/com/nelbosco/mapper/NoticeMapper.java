@@ -13,12 +13,17 @@ public interface NoticeMapper {
 	
 	List<NoticeDTO> selectAllNotices();
 	
+	List<NoticeDTO> selectAllNotices(NoticeDTO params);
+	
 	NoticeDTO selectNewsDetail(Long id);
 	
 	Long updateNotice(NoticeDTO params);
 	
+	Long deleteNotice(Long id);
 	
+	int selectTotalCount(NoticeDTO params);
 	
+	Long updateNoticeOpenState(NoticeDTO params);
 	
 
 

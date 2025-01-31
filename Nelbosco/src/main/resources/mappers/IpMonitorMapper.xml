@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nelbosco.mapper.IpMonitorMapper">
+
+	<sql id="ipMonitorColumns">
+		 id, 
+		 ip_addr, 
+		 policy, 
+		 insert_date, 
+		 modify_date, 
+		 note
+	</sql>
+
+	<insert id="insertIp" parameterType="com.nelbosco.domain.IpMonitorDTO" useGeneratedKeys="true" keyProperty="id">
+		INSERT INTO ip_monitoring (
+			 ip_addr, 
+			 policy, 
+			 insert_date, 
+			 modify_date, 
+			 note
+		) VALUES (
+			  #{ipAddr}
+			, IFNULL(#{policy}, 'DENY')
+			, NOW()
+			, NOW()		
+			, IFNULL(#{note}, 'SYSTEM')
+		)
+	</insert>
+	
+	<select id="selectAllDeniedIps" resultType="com.nelbosco.domain.IpMonitorDTO">
+		SELECT
+			<include refid="ipMonitorColumns" />
+		FROM
+			tb_notice
+		WHERE
+			policy = 'DENY'		
+	</select> 
+	<select id="selectAllAllowedIps" resultType="com.nelbosco.domain.IpMonitorDTO">
+		SELECT
+			<include refid="ipMonitorColumns" />
+		FROM
+			tb_notice
+		WHERE
+			policy = 'ALLOW'		
+	</select> 
+	
+		<select id="selectAllIps" resultType="com.nelbosco.domain.IpMonitorDTO">
+		SELECT
+			<include refid="ipMonitorColumns" />
+		FROM
+			tb_notice
+				
+	</select> 
+	
+	
+</mapper>

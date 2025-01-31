@@ -1,25 +1,16 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
-<head>
-	<title>넬보스코 관리자</title>
-	<head th:replace="admin/adminHead :: headFragment"></head>
-    <head th:replace="fragments/head :: headFragment"></head>
-</head>
-<body>
-<div id="wrap">
-<div id="contant">
-<!--// Portfolio Cobbles Start //-->
-<section class="section matychale-gallery-cobbles">
-   	<div>
-        <div class="container">
-            <div class="row">
-			<div class="menu_cate">
-			<br><br>
-			</div>
-            </div>
-        </div>
-     </div>
-	<div class="container">
+<head th:replace="fragments/admin :: head"></head>
+  <body>
+  <header class="p-3 text-bg-dark" th:replace="fragments/admin :: header">
+  </header>
+  <div class="row min-vh-100">
+  <div class="p-2 text-bg-dark col-2"  th:replace="fragments/admin :: sidebar" >
+  </div>
+<!-- ======================
+	 * //content *
+========================== -->
+	<div class="container col-9">
 		<div class="location">
 			<span><a href="/admin/adminList">관리자 메인</a></span><img th:src="@{/img/location_arrow.gif}">
 			<span><a href="/admin/adminBookingList">예약문의 리스트</a></span><img th:src="@{/img/location_arrow.gif}">
@@ -54,17 +45,16 @@
 		</th:block>
 		<!-- paging //-->
 		
-		
-	</div><!-- // container -->
-</section>
+			
+	<div th:replace="fragments/footerScript :: footerScriptFragment"></div> 
+	</div>
+</div><!-- // container -->
+
 <!--// Portfolio Cobbles End //-->
-	
-</div>
+
 <!-- ======================
-	 * //contant *
+	 * //content *
 ========================== -->
-<div th:replace="fragments/footerScript :: footerScriptFragment"></div> 
-</div><!-- // wrap -->
 <th:block layout:fragment="script">
 <script th:inline="javascript">
 	/*<![CDATA[*/

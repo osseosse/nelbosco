@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <head>
 	<title>넬보스코 관리자</title>
@@ -31,12 +31,22 @@
 	</style>
     
 </head>
-<body>
-	<div id="wrap">
+
+<head th:replace="fragments/admin :: head"></head>
+  <body>
+  <header class="p-3 text-bg-dark" th:replace="fragments/admin :: header">
+  </header>
+  <div class="row min-vh-100">
+  <div class="p-2 text-bg-dark col-2"  th:replace="fragments/admin :: sidebar" >
+  </div>
+<!-- ======================
+	 * //content *
+========================== -->
+	<div class="container col-9 pt-2 mt-5">
+	<h1>공연 일정 입력 </h1>
+	<div id="wrap" class="p-5">
 		<div id="contant">
-		
 			<div id='calendar'></div>
-			
 			<!-- Modal -->
 			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 			  <div class="modal-dialog">
@@ -222,7 +232,8 @@
 		========================== -->
 		<div th:replace="fragments/footerScript :: footerScriptFragment"></div> 
 	</div><!-- // wrap -->
-	
+	</div>
+	</div>
 	
 <th:block layout:fragment="script">
 <script th:inline="javascript">

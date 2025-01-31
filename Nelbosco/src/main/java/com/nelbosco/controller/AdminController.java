@@ -1,20 +1,20 @@
 package com.nelbosco.controller;
 
-import java.io.File;
-import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.CollectionUtils;
+import org.springframework.util.StringUtils;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -24,7 +24,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.google.gson.Gson;
@@ -32,20 +31,31 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.nelbosco.adapter.GsonLocalDateTimeAdapter;
+import com.nelbosco.constant.IpPolicy;
 import com.nelbosco.constant.Method;
 import com.nelbosco.domain.AdminDTO;
 import com.nelbosco.domain.BoardDTO;
+import com.nelbosco.domain.IpMonitorDTO;
 import com.nelbosco.domain.MusicDTO;
 import com.nelbosco.domain.NoticeDTO;
+import com.nelbosco.domain.ReleaseDTO;
 import com.nelbosco.domain.ReservationDTO;
+import com.nelbosco.mapper.IpMonitorMapper;
 import com.nelbosco.service.AdminMusicService;
 import com.nelbosco.service.AdminNoticeService;
+import com.nelbosco.service.AdminReleaseService;
 import com.nelbosco.service.AdminService;
 import com.nelbosco.service.BoardService;
 import com.nelbosco.service.ReservationService;
 import com.nelbosco.util.UiUtils;
 
+import io.github.bucket4j.Bandwidth;
+import io.github.bucket4j.Bucket;
+import io.github.bucket4j.Refill;
+import lombok.extern.slf4j.Slf4j;
+
 @Controller
+@Slf4j
 public class AdminController extends UiUtils {
 
 	@Autowired
@@ -59,10 +69,11 @@ public class AdminController extends UiUtils {
 	
 	@Autowired
 	private AdminMusicService adminMusicService;
-	
-	@Autowired
-	private AdminNoticeService adminNoticeService;
-	
+
+	// Bucket 생성: 1분에 최대 3개 요청
+    //private final Bucket bucket = Bucket.builder().addLimit(Bandwidth.classic(3, Refill.greedy(3, Duration.ofMinutes(1)))).build();
+   
+
 	@GetMapping("admin/login")
     public String openLogin() {
         return "admin/login";
@@ -71,32 +82,27 @@ public class AdminController extends UiUtils {
 	@GetMapping("admin/logout")
     public String openLogout(HttpServletRequest req, Model model) {
 		HttpSession session = req.getSession();
-		session.setAttribute("administrator", null);
+		session.setAttribute("r5T29Ut6IBJ5", null);
 		return showMessageWithRedirect("로그아웃 되었습니다.", "/admin/login", Method.GET, null, model);
     }
 	
 	@GetMapping("admin/adminList")
     public String openAdminList(HttpServletRequest req, Model model) {
-		
-		HttpSession session = req.getSession();
-		if(session.getAttribute("administrator") == null) {
-			return showMessageWithRedirect("관리자 로그인 하십시오.", "/admin/login", Method.GET, null, model);
-		}
-		
+
         return "admin/adminList";
     }
 
-	@PostMapping("/admin/login" )
+	@PostMapping("/admin/login")
 	public String execMail(AdminDTO dto, Model model , HttpServletRequest req, RedirectAttributes rttr) {
 		int result = 0;
 		HttpSession session = req.getSession();
 		result = adminService.login(dto);
 		
 		if(result == 1) {
-			session.setAttribute("administrator", dto.getId());
-			return showMessageWithRedirect("관리자로 로그인 합니다.", "/admin/adminList", Method.GET, null, model);
+			session.setAttribute("r5T29Ut6IBJ5", dto.getId());
+			return showMessageWithRedirect("관리자로 로그인 합니다.", "/admin/main", Method.GET, null, model);
 		} else {
-			session.setAttribute("administrator", null);
+			session.setAttribute("r5T29Ut6IBJ5", null);
 			return showMessageWithRedirect("올바르지 않은 접근입니다.", "/", Method.GET, null, model);
 		}
     }
@@ -104,10 +110,6 @@ public class AdminController extends UiUtils {
 	@GetMapping(value = "/admin/adminBookingList")
 	public String openReservationListAdmin(@ModelAttribute("params") ReservationDTO params, Model model , HttpServletRequest req) {
 		
-		HttpSession session = req.getSession();
-		if(session.getAttribute("administrator") == null) {
-			return showMessageWithRedirect("관리자 로그인 하십시오.", "/admin/login", Method.GET, null, model);
-		}
 		
 		List<ReservationDTO> reservationList = reservationService.getReservationList(params);
 		model.addAttribute("reservationList", reservationList);
@@ -117,11 +119,6 @@ public class AdminController extends UiUtils {
 	
 	@GetMapping(value = "/admin/adminBookingDetail")
 	public String openReservationDetailAdmin(@ModelAttribute("params") ReservationDTO params, @RequestParam(value = "idx", required = false) Long idx, Model model , HttpServletRequest req) {
-		
-		HttpSession session = req.getSession();
-		if(session.getAttribute("administrator") == null) {
-			return showMessageWithRedirect("관리자 로그인 하십시오.", "/admin/login", Method.GET, null, model);
-		}
 		
 		if (idx == null) {
 			return showMessageWithRedirect("올바르지 않은 접근입니다.", "/admin/adminBookingList", Method.GET, null, model);
@@ -138,11 +135,6 @@ public class AdminController extends UiUtils {
 	@GetMapping(value = "/admin/adminContactList")
 	public String openContactListAdmin(@ModelAttribute("params") BoardDTO params, Model model , HttpServletRequest req) {
 		
-		HttpSession session = req.getSession();
-		if(session.getAttribute("administrator") == null) {
-			return showMessageWithRedirect("관리자 로그인 하십시오.", "/admin/login", Method.GET, null, model);
-		}
-		
 		List<BoardDTO> contactList = boardService.getBoardList(params);
 		model.addAttribute("contactList", contactList);
 
@@ -151,11 +143,6 @@ public class AdminController extends UiUtils {
 	
 	@GetMapping(value = "/admin/adminContactDetail")
 	public String openContactDetailAdmin(@ModelAttribute("params") BoardDTO params, @RequestParam(value = "idx", required = false) Long idx, Model model , HttpServletRequest req) {
-		
-		HttpSession session = req.getSession();
-		if(session.getAttribute("administrator") == null) {
-			return showMessageWithRedirect("관리자 로그인 하십시오.", "/admin/login", Method.GET, null, model);
-		}
 		
 		if (idx == null) {
 			return showMessageWithRedirect("올바르지 않은 접근입니다.", "/admin/adminContactList", Method.GET, null, model);
@@ -171,12 +158,6 @@ public class AdminController extends UiUtils {
 	
 	@GetMapping(value = "/admin/music")
 	public String openMusicAdmin(@ModelAttribute("params") MusicDTO params, Model model , HttpServletRequest req) {
-		
-		HttpSession session = req.getSession();
-		if(session.getAttribute("administrator") == null) {
-			return showMessageWithRedirect("관리자 로그인 하십시오.", "/admin/login", Method.GET, null, model);
-		}
-
 		
 		return "admin/adminMusic";
 	}
@@ -197,12 +178,7 @@ public class AdminController extends UiUtils {
 	
 	@PostMapping(value = "/admin/music/register")
 	public String registerAdminMusic(final MusicDTO params, Model model, HttpServletRequest req) {
-		
-		HttpSession session = req.getSession();
-		if(session.getAttribute("administrator") == null) {
-			return showMessageWithRedirect("관리자 로그인 하십시오.", "/admin/login", Method.GET, null, model);
-		}
-		
+
 		try {
 			boolean isRegistered = adminMusicService.registerAdminMusic(params);
 			if (isRegistered == false) {
@@ -220,13 +196,7 @@ public class AdminController extends UiUtils {
 	
 	@RequestMapping(value = "/admin/music/delete", method = {RequestMethod.GET, RequestMethod.POST})
 	public String deleteMusic(@ModelAttribute("params") MusicDTO params, Model model, HttpServletRequest req) {
-		
-		HttpSession session = req.getSession();
-		if(session.getAttribute("administrator") == null) {
-			return showMessageWithRedirect("관리자 로그인 하십시오.", "/admin/login", Method.GET, null, model);
-		}
 
-		
 		try {
 			boolean isDeleted = adminMusicService.deleteAdminMusic(params);
 			if (isDeleted == false) {
@@ -242,90 +212,5 @@ public class AdminController extends UiUtils {
 		return showMessageWithRedirect("공연일정 삭제가 완료되었습니다.", "/admin/music", Method.GET, null, model);
 	}
 	
-	//==================새 관리자  추가 ==================  
-	
-	@GetMapping("/admin/main")
-	public String getAdminMain(HttpServletRequest req, Model model) {		
-		List<NoticeDTO> list = adminNoticeService.getAllNotices();
-			
-		model.addAttribute("notices", list);
-		
-		return "admin/main";	
-	}
-	
-	@GetMapping("/admin/notice")
-	public String getMakeNotice(HttpServletRequest req, Model model) {
-		
-		model.addAttribute("notice", new NoticeDTO());
-		return "admin/postNotice";
-	}
-	
-	@GetMapping("/admin/notice/detail/{id}")
-	public String getNoticeContent(HttpServletRequest req, Model model, @PathVariable("id") Long id) {
-		
-		model.addAttribute("notice", adminNoticeService.getNoticeDetail(id));
 
-		return "admin/detailNotice";
-	}
-	
-	@GetMapping("/admin/notice/update/{id}")
-	public String getUpdatedNotice(HttpServletRequest req, Model model, @PathVariable("id") Long id) {
-		
-		model.addAttribute("notice", adminNoticeService.getNoticeDetail(id));
-		
-		return "admin/updateNotice";
-	}
-	
-	
-	@PostMapping("/admin/notice/update")
-	public String PostUpdatedNotice(HttpServletRequest req, Model model,  @ModelAttribute("notice") NoticeDTO dto,  BindingResult bindingResult) {
-		
-		String result = "redirect:/admin/notice/detail/"+dto.getId();
-		
-		if (bindingResult.hasErrors()) {
-	        return "admin/updateNotice"; // 오류가 있을 경우 폼 페이지로 돌아감
-	    }
-		
-		if(!adminNoticeService.noticeUpdate(dto)) {
-			result = "redirect:/admin/notice/"+dto.getId();
-		}		
-		return result;
-	}
-	
-	@GetMapping("/admin/notice/delete/{id}")
-	public String deleteNotice(HttpServletRequest req, @PathVariable("id") Long id) {
-		
-		return "redirect:/admin/main";
-		
-	}
-	
-	@PostMapping("/admin/notice")
-	public String PostNotice(HttpServletRequest req, Model model, @ModelAttribute("notice") NoticeDTO dto,  BindingResult bindingResult) {
-		System.out.println("하이이");
-		
-		if (bindingResult.hasErrors()) {
-	        return "admin/postNotice"; // 오류가 있을 경우 폼 페이지로 돌아감
-	    }
-		
-		MultipartFile file = dto.getUploadImg();
-		String uploadDir = "src/main/resources/static/img/";
-		Path filePath = Paths.get(uploadDir, file.getOriginalFilename());
-		
-		 try {
-	            // 파일 저장
-	            file.transferTo(filePath.toFile());
-	            dto.setImgOriginal(file.getOriginalFilename());	    
-
-	        } catch (IOException e) {
-	            e.printStackTrace();
-	            model.addAttribute("message", "파일 업로드 실패!");
-	        }
-		
-		adminNoticeService.postNotice(dto);
-		return "redirect:/admin/notice";
-	}
-	
-
-
-	
 }

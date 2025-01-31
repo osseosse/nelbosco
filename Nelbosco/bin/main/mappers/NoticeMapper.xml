@@ -14,7 +14,9 @@
 		 modified_date, 
 		 division,
 		 notice_yn,
-		 secret_yn
+		 secret_yn,
+		 create_ip,
+		 modify_ip
 	</sql>
 
 	<insert id="insertNotice" parameterType="com.nelbosco.domain.NoticeDTO" useGeneratedKeys="true" keyProperty="id">
@@ -28,7 +30,9 @@
 			 modified_date, 
 			 division,
 			 notice_yn,
-			 secret_yn
+			 secret_yn,
+			 create_ip,
+			 modify_ip
 		) VALUES (
 			  #{writer}
 			, #{title}
@@ -40,21 +44,39 @@
 			, #{division}
 			, IFNULL(#{noticeYn}, 'N')
 			, IFNULL(#{secretYn}, 'N')
+			, #{createIp}			
+			, #{modifyIp}
 		)
 	</insert>
 	
-	<select id="selectAllNotices" resultType="com.nelbosco.domain.NoticeDTO">
+	<!-- <select id="selectAllNotices" resultType="com.nelbosco.domain.NoticeDTO">
 		SELECT
 			<include refid="NoticeColumns" />
 		FROM
 			tb_notice
 		WHERE
 			delete_yn = 'N'		
+		<include refid="CommonMapper.search" />
+		ORDER BY
+			id DESC,
+			insert_time DESC
+		<include refid="CommonMapper.paging" />
+	</select> -->
+
+	<select id="selectAllNotices" resultType="com.nelbosco.domain.NoticeDTO"  parameterType="com.nelbosco.domain.NoticeDTO">
+		SELECT
+			<include refid="NoticeColumns" />
+		FROM
+			tb_notice
+		WHERE
+			delete_yn = 'N'		
+		<include refid="CommonMapper.search" />
 		ORDER BY
 			id DESC,
 			insert_date DESC
+		<include refid="CommonMapper.paging" />
 	</select>
-
+	
 	<select id="selectNewsDetail" parameterType="long" resultType="com.nelbosco.domain.NoticeDTO">
 		SELECT
 			<include refid="NoticeColumns" />
@@ -66,6 +88,16 @@
 			id = #{id}
 	</select>
 	
+	<select id="selectTotalCount" parameterType="com.nelbosco.domain.NoticeDTO" resultType="int">
+		SELECT
+			count(*)
+		FROM
+			tb_notice
+		WHERE
+			delete_yn = 'N'		
+		<include refid="CommonMapper.search" />
+	</select>
+	
 	<update id="updateNotice" parameterType="com.nelbosco.domain.NoticeDTO">
 	    UPDATE tb_notice
 	    SET
@@ -74,8 +106,25 @@
 	        modified_date = NOW(),
 	        division = #{division},
 	        notice_yn = IFNULL(#{noticeYn}, 'N'),
-	        secret_yn = IFNULL(#{secretYn}, 'N')
+	        secret_yn = IFNULL(#{secretYn}, 'N'),
+	        modify_ip = #{modifyIp}
 	    WHERE id = #{id}
 	</update>
-
+	
+	<update id="deleteNotice" parameterType="long">
+	    UPDATE tb_notice
+	    SET
+	        delete_yn = 'Y'
+	    WHERE id = #{id}
+	</update>
+	
+	<update id="updateNoticeOpenState" parameterType="com.nelbosco.domain.NoticeDTO">
+		    UPDATE tb_notice
+	    SET
+	        notice_yn = #{noticeYn},
+	        secret_yn = #{secretYn}
+	    WHERE id = #{id}
+	</update>
+	
+	
 </mapper>
