@@ -86,14 +86,14 @@
                     formData.append('file', files[0]);
 
                     $.ajax({
-                        url: '/upload/notice/img',  // 이미지 업로드 URL
+                    	url: '/admin/summer/insertImg',  // 이미지 업로드 URL
                         method: 'POST',
                         data: formData,
                         contentType: false,
                         processData: false,
                         success: function(data) {
                    
-                             var imageUrl = 'https://www.nelbosco.co.kr/img/upload/' + data.path; // 경로 연결
+                        	 var imageUrl = 'https://nelbosco.co.kr/upload/admin/' + data.path; // 경로 연결
                              
                              console.log("imageUrl", imageUrl);
 

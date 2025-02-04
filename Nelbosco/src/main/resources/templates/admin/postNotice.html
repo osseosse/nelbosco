@@ -87,9 +87,9 @@
                         contentType: false,
                         processData: false,
                         success: function(data) {
-                   
-//                             var imageUrl = 'https://nelbosco.co.kr/static/img/upload/' + data.path; // 경로 연결
-                             var imageUrl = 'http://localhost:8080/static/img/upload/' + data.path; // 경로 연결
+                   			console.log(data);
+                             var imageUrl = 'https://nelbosco.co.kr/upload/admin/' + data.path; // 경로 연결
+                             //var imageUrl = 'http://localhost:8080/static/img/upload/' + data.path; // 경로 연결
                              
                              console.log("imageUrl", imageUrl);
 

@@ -29,10 +29,9 @@ public class AdminImgaeUploadController {
 
 		// return ResponseEntity.status(200).body("임시임시");
 
-		String uploadDir = servletContext.getRealPath("/static/img/upload/");
-		// String uploadDir = "/www/nelbosco_co_kr/upload/admin";
+		//String uploadDir = servletContext.getRealPath("/static/img/upload/");
+		 String uploadDir = "/www/nelbosco_co_kr/upload/admin/";
 
-		// String uploadDir = new
 		// File("src/main/resources/static/upload/").getAbsolutePath();
 
 		// 파일을 지정된 경로에 저장
