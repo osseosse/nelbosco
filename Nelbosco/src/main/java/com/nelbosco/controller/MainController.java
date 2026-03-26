@@ -30,108 +30,108 @@ public class MainController extends UiUtils {
 	@GetMapping(value = {"/cafe", "/cafe/"})
 	public String moveMain(Model model) {
 
-		return "/main";
+		return "main";
 	}
 	
 	@GetMapping(value = {"/restaurant", "/restaurant/"})
 	public String moveBmain(Model model) {
 
-		return "/b_main";
+		return "b_main";
 	}
 	
 	@GetMapping(value = {"/rooftop", "/rooftop/"})
 	public String moveRmain(Model model) {
 
-		return "/r_main";
+		return "r_main";
 	}
 	
 	@RequestMapping(value = "/fragments/{viewName}")
     public String openFragments(@PathVariable(value = "viewName", required = false) String viewName)throws Exception{
 		
-		return "/fragments/"+viewName;
+		return "fragments/"+viewName;
     }
 	
 	@RequestMapping(value = "/cafe/brandstory/{viewName}")
     public String moveBrandStory(@PathVariable(value = "viewName", required = false) String viewName)throws Exception{
 		
-		return "/brandstory/"+viewName;
+		return "brandstory/"+viewName;
     }
 	
 	@RequestMapping(value = "/cafe/story/{viewName}")
     public String moveStory(@PathVariable(value = "viewName", required = false) String viewName)throws Exception{
 		
-		return "/story/"+viewName;
+		return "story/"+viewName;
     }
 	
 	@RequestMapping(value = "/restaurant/music/{viewName}")
     public String moveMusik(@PathVariable(value = "viewName", required = false) String viewName)throws Exception{
 		
-		return "/music/"+viewName;
+		return "music/"+viewName;
     }
 	
 	@RequestMapping(value = "/cafe/community/{viewName}")
     public String moveCommunity(@PathVariable(value = "viewName", required = false) String viewName)throws Exception{
 		
-		return "/community/"+viewName;
+		return "community/"+viewName;
     }
 	
 	@RequestMapping(value = "/cafe/contact/{viewName}")
     public String moveContact(@PathVariable(value = "viewName", required = false) String viewName)throws Exception{
 		
-		return "/contact/"+viewName;
+		return "contact/"+viewName;
     }
 	
 	@RequestMapping(value = "/cafe/menu/{viewName}")
     public String moveCafeMenu(@PathVariable(value = "viewName", required = false) String viewName)throws Exception{
 		
-		return "/menu/"+viewName;
+		return "menu/"+viewName;
     }
 	
 	@RequestMapping(value = "/restaurant/menu/{viewName}")
     public String moveRestaurantMenu(@PathVariable(value = "viewName", required = false) String viewName)throws Exception{
 		
-		return "/menu/"+viewName;
+		return "menu/lunchDinner";
     }
 	
 	@RequestMapping(value = "/restaurant/bcontact/{viewName}")
     public String moveBcontact(@PathVariable(value = "viewName", required = false) String viewName)throws Exception{
 		
-		return "/bcontact/"+viewName;
+		return "bcontact/"+viewName;
     }
 	
 	@RequestMapping(value = "/restaurant/about/{viewName}")
     public String moveAbout(@PathVariable(value = "viewName", required = false) String viewName)throws Exception{
 		
-		return "/about/"+viewName;
+		return "about/"+viewName;
     }
 	
 	@RequestMapping(value = "/rooftop/about/{viewName}")
     public String moveRabout(@PathVariable(value = "viewName", required = false) String viewName)throws Exception{
 		
-		return "/rabout/"+viewName;
+		return "rabout/"+viewName;
     }
 	
 	@RequestMapping(value = "/rooftop/menu/{viewName}")
     public String moveRmenu(@PathVariable(value = "viewName", required = false) String viewName)throws Exception{
 		
-		return "/menu/"+viewName;
+		return "menu/"+viewName;
     }
 	
 	@RequestMapping(value = "/rooftop/community/{viewName}")
     public String moveRcommunity(@PathVariable(value = "viewName", required = false) String viewName)throws Exception{
 		
-		return "/rcommunity/"+viewName;
+		return "rcommunity/"+viewName;
     }
 	
 	@RequestMapping(value = "/rooftop/contact/{viewName}")
     public String moveRcontact(@PathVariable(value = "viewName", required = false) String viewName)throws Exception{
 		
-		return "/rcontact/"+viewName;
+		return "rcontact/"+viewName;
     }
 	
 	@GetMapping("/mail")
     public String dispMail() {
-        return "/utils/mail";
+        return "utils/mail";
     }
 	
 	@PostMapping("/mail")

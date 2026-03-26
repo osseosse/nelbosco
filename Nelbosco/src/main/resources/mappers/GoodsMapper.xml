@@ -44,7 +44,8 @@
 		FROM
 			tb_goods
 		WHERE
-			sale_gb = '00'
+			 sale_gb = '00'
+			
 		<if test="categoryName != null and categoryName != ''">
 	    AND
 	    	category_name = #{categoryName}
@@ -54,8 +55,7 @@
 	    	m_group = #{mGroup}
 	    </if>
 		ORDER BY
-			goods_code ASC,
-			insert_date DESC
+			displayNum
 	</select>
 
 	<select id="selectGoodsTotalCount" parameterType="com.nelbosco.domain.GoodsDTO" resultType="int">

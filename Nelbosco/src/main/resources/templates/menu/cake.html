@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
  <head>
  	<title>Cake</title>
@@ -77,10 +77,17 @@
 									<div class="portfolio-buttons mb70m">
 										<p class="f26_4 pdTitle" th:text="${goods.goodsName}"></p>
 										<p class="mt10 f16_3g" th:text="${goods.goodsExplan}"></p>
-										<span class="price" th:if="${goods.salePrice2} > 0" th:text="'(홀)' + ${#numbers.formatInteger(goods.salePrice,0,'COMMA')} + '원&nbsp;&nbsp;'"></span>
-										<span class="price" th:unless="${goods.salePrice2} > 0" th:text="${#numbers.formatInteger(goods.salePrice,0,'COMMA')} + '원'"></span>
-										<span class="price" th:if="${goods.salePrice2} > 0 and (${goods.goodsCode} == 'cr02' or ${goods.goodsCode} == 'cr03' or ${goods.goodsCode} == 'cr07')" th:text="'(하프)' + ${#numbers.formatInteger(goods.salePrice2,0,'COMMA')} + '원'"></span>
-										<span class="price" th:unless="${goods.salePrice2} == 0 or ${goods.goodsCode} == 'cr02' or ${goods.goodsCode} == 'cr03' or ${goods.goodsCode} == 'cr07'" th:text="'(조각)' + ${#numbers.formatInteger(goods.salePrice2,0,'COMMA')} + '원'"></span>
+										
+										<th:block th:if="${goods.goodsName == '플레인 롤 케이크'}">
+											<span class="price" th:if="${goods.salePrice2} > 0" th:text="'(하프)' + ${#numbers.formatInteger(goods.salePrice,0,'COMMA')} + '원&nbsp;&nbsp;'"></span>
+											<span class="price" th:if="${goods.salePrice2} > 0 and (${goods.goodsCode} == 'cr02' or ${goods.goodsCode} == 'cr03' or ${goods.goodsCode} == 'cr07')" th:text="'(조각)' + ${#numbers.formatInteger(goods.salePrice2,0,'COMMA')} + '원'"></span>
+										</th:block>
+										<th:block th:if="${goods.goodsName != '플레인 롤 케이크'}">
+											<span class="price" th:if="${goods.salePrice2} > 0" th:text="'(홀)' + ${#numbers.formatInteger(goods.salePrice,0,'COMMA')} + '원&nbsp;&nbsp;'"></span>
+											<span class="price" th:unless="${goods.salePrice2} > 0" th:text="${#numbers.formatInteger(goods.salePrice,0,'COMMA')} + '원'"></span>
+											<span class="price" th:if="${goods.salePrice2} > 0 and (${goods.goodsCode} == 'cr02' or ${goods.goodsCode} == 'cr03' or ${goods.goodsCode} == 'cr07')" th:text="'(하프)' + ${#numbers.formatInteger(goods.salePrice2,0,'COMMA')} + '원'"></span>
+											<span class="price" th:unless="${goods.salePrice2} == 0 or ${goods.goodsCode} == 'cr02' or ${goods.goodsCode} == 'cr03' or ${goods.goodsCode} == 'cr07'" th:text="'(조각)' + ${#numbers.formatInteger(goods.salePrice2,0,'COMMA')} + '원'"></span>
+										</th:block>
 										<div class="alleg" th:text="'알레르기 유발요인: '+${goods.allergIngr}"></div>
 									</div>
 								</div>

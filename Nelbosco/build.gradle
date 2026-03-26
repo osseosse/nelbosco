@@ -47,6 +47,10 @@ dependencies {
 	//rate limit
     implementation 'com.giffing.bucket4j.spring.boot.starter:bucket4j-spring-boot-starter:0.7.0'
 	
-	
+	war {
+    baseName = 'my-app' // WAR 파일 기본 이름
+    version =  '0.1.0'   // 버전 설정
+    archiveFileName = 'my-app.war' // WAR 파일 이름 설정
+	}
 }
 
