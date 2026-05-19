@@ -84,20 +84,22 @@ public class BoardController extends UiUtils {
 			if(params.getCategory().equals("남촌빵집") || params.getCategory().equals("공연문의") || params.getCategory().equals("공연출연")) {
 				uri = "/cafe/contact/contact";
 				if(params.getCategory().equals("공연문의") || params.getCategory().equals("공연출연"))	uri = "/restaurant/music/music";
-				mailDto.setAddress("bncbusinessteam@vegemil.co.kr");
-				mailService.mailSend(mailDto);
-				mailDto.setAddress("webmaster@vegemil.co.kr");
-				mailService.mailSend(mailDto);
+				// mailDto.setAddress("bncbusinessteam@vegemil.co.kr");
+				mailDto.setAddress("hypark023@osse.co.kr");
+				//mailService.mailSend(mailDto);
+				
 			}
 			else if(params.getCategory().equals("레스토랑")){
 				uri = "/restaurant/bcontact/contact";
-				mailDto.setAddress("bncbusinessteam@vegemil.co.kr");
-				mailService.mailSend(mailDto);
+				//mailDto.setAddress("bncbusinessteam@vegemil.co.kr");
+				mailDto.setAddress("hypark023@osse.co.kr");
+				// mailService.mailSend(mailDto);
 			}
 			else if(params.getCategory().equals("루프탑")){
 				uri = "/rooftop/contact/contact";
-				mailDto.setAddress("bncbusinessteam@vegemil.co.kr");
-				mailService.mailSend(mailDto);
+				//mailDto.setAddress("bncbusinessteam@vegemil.co.kr");
+				mailDto.setAddress("hypark023@osse.co.kr");
+				//mailService.mailSend(mailDto);
 			}
 			
 			if (isRegistered == false) {
