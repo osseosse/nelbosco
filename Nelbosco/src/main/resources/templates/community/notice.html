@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <head>
 	<title>넬보스코 공지사항</title>
@@ -48,22 +48,25 @@
 				<!-- Vetical -->
 					<div id="css3-animated-example2">
 					
-						<th:block th:if="${newsList !=null}" th:each="news : ${newsList}">
-							<div class="cae">
-								<ul>
-									<li th:text="${newsStat.size-newsStat.index}"></li>
-									<li th:text="${news.title}"></li>
-									<li th:text="${#temporals.format(news.insertTime, 'yyyy-MM-dd')}"></li>
-									
-								</ul>
-							</div>
-							<div>
-								<div class="v_content">
-									<p><img th:src="@{'/img/'+ ${news.imgPath}}" alt="#" ></p>
-									<div th:text="${news.content}"></div>
+						
+							
+							<th:block th:if="${notices !=null}" th:each="notice : ${notices}">
+								<div class="cae">
+									<ul>
+										 <li th:text="${noticeStat.size-noticeStat.index}"></li> 
+										<li th:text="${notice.title}"></li>
+										<li th:text="${#temporals.format(notice.insertDate, 'yyyy-MM-dd')}"></li>
+										
+									</ul>
 								</div>
-							</div>
-						</th:block>
+								<div>
+									<div class="v_content">
+										<p th:if="${notice.imgSaved != null}"><img th:src="@{'/img/'+ ${notice.imgSaved}}" alt="#" ></p>
+										<div th:utext="${notice.content}"></div>
+									</div>
+								</div>
+							</th:block>
+							
 						
 					</div>
 					<script>

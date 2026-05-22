@@ -15,6 +15,8 @@ public interface NoticeMapper {
 	
 	List<NoticeDTO> selectAllNotices(NoticeDTO params);
 	
+	List<NoticeDTO> selectAllOpenNotices(NoticeDTO params);
+	
 	NoticeDTO selectNewsDetail(Long id);
 	
 	Long updateNotice(NoticeDTO params);

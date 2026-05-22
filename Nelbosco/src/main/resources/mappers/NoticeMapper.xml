@@ -77,6 +77,21 @@
 		<include refid="CommonMapper.paging" />
 	</select>
 	
+		<select id="selectAllOpenNotices" resultType="com.nelbosco.domain.NoticeDTO"  parameterType="com.nelbosco.domain.NoticeDTO">
+		SELECT
+			<include refid="NoticeColumns" />
+		FROM
+			tb_notice
+		WHERE
+			delete_yn = 'N'
+			AND notice_yn = 'Y'		
+		<include refid="CommonMapper.search" />
+		ORDER BY
+			id DESC,
+			insert_date DESC
+		<include refid="CommonMapper.paging" />
+	</select>
+	
 	<select id="selectNewsDetail" parameterType="long" resultType="com.nelbosco.domain.NoticeDTO">
 		SELECT
 			<include refid="NoticeColumns" />

@@ -17,6 +17,9 @@
 				<!-- 검색 유형이 있을 때 -->
 				<when test="searchType != null and searchType != ''">
 					<choose>
+						<when test="'division'.equals(searchType)">
+							AND division LIKE CONCAT('%', #{searchKeyword}, '%')
+						</when>
 						<when test="'title'.equals(searchType)">
 							AND title LIKE CONCAT('%', #{searchKeyword}, '%')
 						</when>

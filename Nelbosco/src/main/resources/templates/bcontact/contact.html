@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <head>
  	<title>넬보스코 이탈리안 레스토랑 고객상담</title>
@@ -199,7 +199,7 @@
 							<input type="hidden" id="category" name="category" value="레스토랑">
 							<div class="btnCenter mt50">
 								<ul>
-									<li><input type="image" th:src="@{/img/btn_c_ok.gif}"></li>
+									<li><input id="submitbtn" type="image" th:src="@{/img/btn_c_ok.gif}"></li>
 									<li><a href="index.html"><img th:src="@{/img/btn_c_cancle.gif}" alt="취소"/></a></li>
 								</ul>
 							</div>
@@ -237,9 +237,27 @@
 					   isChecked(form.cc1, "개인정보 수집 및 이용에 대한 동의", null, null)
 			);
 		
-			if ( result == false ) {
+			if (!result) {
 				return false;
 			}
+			
+
+			const submitBtn = document.querySelector('#submitBtn');
+
+		    if (submitBtn) {
+		        submitBtn.disabled = true;
+		    }
+
+		    // 5초 후 자동 해제
+		    setTimeout(function () {
+		        submitting = false;
+
+		        if (submitBtn) {
+		            submitBtn.disabled = false;
+		        }
+		    }, 5000);
+
+		    return true;
 	
 		}
 		/*[- end of function -]*/

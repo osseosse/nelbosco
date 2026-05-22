@@ -11,7 +11,6 @@ import org.springframework.ui.Model;
 import org.springframework.util.CollectionUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -22,11 +21,13 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.nelbosco.adapter.GsonLocalDateTimeAdapter;
+import com.nelbosco.constant.Business;
 import com.nelbosco.constant.Method;
 import com.nelbosco.domain.AttachDTO;
-import com.nelbosco.domain.GoodsDTO;
 import com.nelbosco.domain.NewsDTO;
+import com.nelbosco.domain.NoticeDTO;
 import com.nelbosco.service.NewsService;
+import com.nelbosco.service.NoticeService;
 import com.nelbosco.util.UiUtils;
 
 @Controller
@@ -34,6 +35,8 @@ public class NewsController extends UiUtils {
 
 	@Autowired
 	private NewsService newsService;
+	@Autowired
+	private NoticeService noticeService;
 
 	@GetMapping(value = "/notice/write")
 	public String openNewsWrite(@ModelAttribute("params") NewsDTO params, @RequestParam(value = "idx", required = false) Long idx, Model model) {
@@ -71,13 +74,6 @@ public class NewsController extends UiUtils {
 		return showMessageWithRedirect("게시글 등록이 완료되었습니다.", "/board/list", Method.GET, pagingParams, model);
 	}
 
-	@GetMapping(value = "/cafe/community/notice")
-	public String openNewsList(@ModelAttribute("params") NewsDTO params, Model model) {
-		List<NewsDTO> newsList = newsService.getNewsList(params);
-		model.addAttribute("newsList", newsList);
-
-		return "community/notice";
-	}
 	
 	@GetMapping(value = "/notice/more")
 	 public @ResponseBody JsonObject getCommentList(@ModelAttribute("params") NewsDTO params, Model model) {
@@ -134,20 +130,53 @@ public class NewsController extends UiUtils {
 	}
 
 
+//	@GetMapping(value = "/restaurant/bcontact/notice")
+//	public String openBNewsList(@ModelAttribute("params") NewsDTO params, Model model) {
+//		List<NewsDTO> bnewsList = newsService.getBNewsList(params);
+//		model.addAttribute("bnewsList", bnewsList);
+//
+//		return "/bcontact/notice";
+//	}
+	
+	
 	@GetMapping(value = "/restaurant/bcontact/notice")
-	public String openBNewsList(@ModelAttribute("params") NewsDTO params, Model model) {
-		List<NewsDTO> bnewsList = newsService.getBNewsList(params);
-		model.addAttribute("bnewsList", bnewsList);
+	public String openBakeryNotices(@ModelAttribute("params") NoticeDTO params, Model model) {
+		params.setSearchKeyword(Business.RESTAURANT.toString());
+		params.setSearchType("division");
+		List<NoticeDTO> notices = noticeService.retrieveNotices(params);
+		model.addAttribute("notices", notices);
 
 		return "/bcontact/notice";
 	}
 	
+//	@GetMapping(value = "/rooftop/community/notice")
+//	public String openRNewsList(@ModelAttribute("params") NewsDTO params, Model model) {
+//		List<NewsDTO> newsList = newsService.getRNewsList(params);
+//		model.addAttribute("newsList", newsList);
+//
+//		return "/rcommunity/notice";
+//	}
+//	
 	@GetMapping(value = "/rooftop/community/notice")
-	public String openRNewsList(@ModelAttribute("params") NewsDTO params, Model model) {
-		List<NewsDTO> newsList = newsService.getRNewsList(params);
-		model.addAttribute("newsList", newsList);
+	public String openRooftopNotices(@ModelAttribute("params") NoticeDTO params, Model model) {
+		params.setSearchKeyword(Business.ROOFTOP.toString());
+		params.setSearchType("division");
+		List<NoticeDTO> notices = noticeService.retrieveNotices(params);
+		model.addAttribute("notices", notices);
 
 		return "/rcommunity/notice";
+	}
+	
+	
+
+	@GetMapping(value = "/cafe/community/notice")
+	public String openNewsList(@ModelAttribute("params") NoticeDTO params, Model model) {
+		params.setSearchKeyword(Business.BAKERY.toString());
+		params.setSearchType("division");
+		List<NoticeDTO> notices = noticeService.retrieveNotices(params);
+		model.addAttribute("notices", notices);
+
+		return "community/notice";
 	}
 
 }
