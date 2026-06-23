@@ -83,5 +83,17 @@
 		AND
 			board_idx = #{boardIdx}
 	</select>
+	
+	
+	<select id="selectCommentIdx" parameterType="com.nelbosco.domain.CommentDTO" resultType="Long">
+		SELECT
+			idx
+		FROM
+			tb_comment
+		WHERE
+			delete_yn = 'N'
+		AND
+			board_idx = #{boardIdx}
+	</select>
 
 </mapper>

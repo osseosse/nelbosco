@@ -18,11 +18,17 @@ public class CommentServiceImpl implements CommentService {
 	@Override
 	public boolean registerComment(CommentDTO params) {
 		int queryResult = 0;
+		
+		System.out.println("params = " +  params);
 
 		if (params.getIdx() == null) {
 			int commentTotalCount = commentMapper.selectCommentTotalCount(params);
 			if (commentTotalCount < 1) {
 				queryResult = commentMapper.insertComment(params);
+			}else {
+				Long idx = commentMapper.selectCommentIdx(params);
+				params.setIdx(idx);
+				queryResult = commentMapper.updateComment(params);
 			}
 		} else {
 			queryResult = commentMapper.updateComment(params);

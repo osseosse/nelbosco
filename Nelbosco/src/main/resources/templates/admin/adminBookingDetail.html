@@ -138,7 +138,7 @@ function insertComment(reservationIdx) {
 		return false;
 	}
 
-	var uri = /*[[ @{/comments} ]]*/;
+	var uri = [[ @{/comments/} ]] 
 	var headers = {"Content-Type": "application/json", "X-HTTP-Method-Override": "POST"};
 	var params = {"boardIdx": reservationIdx, "content": content.value, "writer": "관리자"};
 
@@ -159,6 +159,8 @@ function insertComment(reservationIdx) {
 		},
 		error: function(xhr, status, error) {
 			alert("에러가 발생하였습니다.");
+			console.log("error = ",error)
+			console.log(status)
 			return false;
 		}
 	});
@@ -254,7 +256,7 @@ function printCommentList() {
 function deleteReservation(idx, queryString) {
 
 	if (confirm(idx + "번 게시글을 삭제할까요?")) {
-		var uri = /*[[ @{/reservation/delete} ]]*/;
+		var uri = /*[[ @{/cafe/reservation/delete} ]]*/;
 		var html = "";
 
 		html += '<form name="dataForm" action="'+uri+'" method="post">';

@@ -19,7 +19,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.google.gson.JsonObject;
 import com.nelbosco.constant.Method;
+import com.nelbosco.domain.MailDTO;
 import com.nelbosco.domain.ReservationDTO;
+import com.nelbosco.service.MailService;
 import com.nelbosco.service.ReservationService;
 import com.nelbosco.util.UiUtils;
 
@@ -28,6 +30,9 @@ public class ReservationController extends UiUtils {
 
 	@Autowired
 	private ReservationService reservationService;
+	
+	@Autowired
+	private MailService mailService;
 
 	@GetMapping(value = "/cafe/reservation/write")
 	public String openReservationWrite(@ModelAttribute("params") ReservationDTO params, @RequestParam(value = "idx", required = false) Long idx, Model model) {
@@ -47,10 +52,20 @@ public class ReservationController extends UiUtils {
 	@RequestMapping(value = "/cafe/reservation/register", method = {RequestMethod.GET, RequestMethod.POST})
 	public String registerReservation(final ReservationDTO params, Model model) {
 		try {
-			boolean isRegistered = reservationService.registerReservation(params);
+			boolean isRegistered = reservationService.registerReservation(params);					
 			if (isRegistered == false) {
 				return showMessageWithRedirect("게시글 등록에 실패하였습니다.", "/cafe/contact/booking", Method.GET, null, model);
 			}
+			
+			MailDTO mailDto = new MailDTO();
+			
+			mailDto.setTitle("[남촌빵집-예약문의]" + params.getTitle());
+			mailDto.setMessage("\n\n고객명 : " + params.getWriter() + 
+					   			"\n\n이메일 : " + params.getEmail() + 
+					   			"\n\n전화번호 : " + params.getHp() + 
+					   			"\n\n내용 : " + params.getContent());
+//			mailDto.setAddress("bncbusinessteam@vegemil.co.kr");
+//			mailService.mailSend(mailDto);
 		} catch (DataAccessException e) {
 			return showMessageWithRedirect("데이터베이스 처리 과정에 문제가 발생하였습니다.", "/cafe/contact/booking", Method.GET, null, model);
 
